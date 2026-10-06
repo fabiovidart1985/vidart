@@ -68,12 +68,11 @@
     "note": "A tabela usa o nome exato do estado no Azure DevOps. Bloqued do pedido corresponde a Blocked."
   },
   "delivered": {
-    "count": 12,
+    "count": 9,
     "rule": "State Closed e Closed Date no mês, em America/Sao_Paulo. Changed Date não foi usado. Nenhum Closed Date ausente.",
     "composition": {
       "Bug": 2,
-      "Melhoria": 7,
-      "User Story": 3
+      "Melhoria": 7
     },
     "byDeveloper": [
       {
@@ -85,23 +84,7 @@
         "count": 3
       }
     ],
-    "unassignedDuringActive": [
-      {
-        "id": 40350,
-        "title": "[Suporte] Sprint 74",
-        "note": "Nunca passou por Active. Fechado por Fábio Vidart. Responsável da entrega ainda não informado."
-      },
-      {
-        "id": 40714,
-        "title": "[Suporte] Sprint 75",
-        "note": "Nunca passou por Active. Fechado por Fábio Vidart. Responsável da entrega ainda não informado."
-      },
-      {
-        "id": 41125,
-        "title": "[Suporte] Sprint 76",
-        "note": "Nunca passou por Active. Fechado por Fábio Vidart. Responsável da entrega ainda não informado."
-      }
-    ],
+    "unassignedDuringActive": [],
     "items": [
       {
         "id": 38005,
@@ -311,11 +294,11 @@
   "history": {
     "2026-07": 11,
     "2026-08": 18,
-    "2026-09": 12,
+    "2026-09": 9,
     "chartValues": [
       11,
       18,
-      12
+      9
     ]
   },
   "historyNote": {
@@ -325,7 +308,7 @@
     "chartValues": [
       11,
       18,
-      12
+      9
     ],
     "julyDeltaExplanation": "O recálculo por Closed Date encontra 11 bugs e melhorias em julho/2026, não 15. Cinco cards tiveram revisão em julho, mas o Closed Date permanece em junho; eles não foram contados. A soma desses cinco com os 11 fechamentos de julho é 16, então o 15 do deck anterior não foi reproduzido."
   },
@@ -620,8 +603,8 @@
       "type": "User Story",
       "title": "[Suporte] Sprint 74",
       "closedDate": "2026-09-01T09:57:22.900000-03:00",
-      "includedInDeliveryKpi": true,
-      "reason": "Incluída na conta de entregas por confirmação do usuário. Não houve estado Active.",
+      "includedInDeliveryKpi": false,
+      "reason": "User Story fora da conta de entregas, por confirmação do usuário. Somente Bug e Melhoria.",
       "developmentBusinessDays": 0,
       "activeAssignee": null
     },
@@ -630,8 +613,8 @@
       "type": "User Story",
       "title": "[Suporte] Sprint 75",
       "closedDate": "2026-09-26T00:22:04.637000-03:00",
-      "includedInDeliveryKpi": true,
-      "reason": "Incluída na conta de entregas por confirmação do usuário. Não houve estado Active.",
+      "includedInDeliveryKpi": false,
+      "reason": "User Story fora da conta de entregas, por confirmação do usuário. Somente Bug e Melhoria.",
       "developmentBusinessDays": 0,
       "activeAssignee": null
     },
@@ -640,8 +623,8 @@
       "type": "User Story",
       "title": "[Suporte] Sprint 76",
       "closedDate": "2026-09-26T00:23:24.970000-03:00",
-      "includedInDeliveryKpi": true,
-      "reason": "Incluída na conta de entregas por confirmação do usuário. Não houve estado Active.",
+      "includedInDeliveryKpi": false,
+      "reason": "User Story fora da conta de entregas, por confirmação do usuário. Somente Bug e Melhoria.",
       "developmentBusinessDays": 0,
       "activeAssignee": null
     }
@@ -4265,10 +4248,10 @@
     "bugs": 2,
     "melhorias": 7,
     "otherClosedTypes": 3,
-    "deliveredKpi": 12,
+    "deliveredKpi": 9,
     "strictSumIncludingOtherTypes": 12,
     "strictSumMatchesKpi": true,
-    "strictSumNote": "Três User Stories de suporte de sprint foram fechadas em setembro e não entram no KPI, para manter o mesmo critério de agosto (somente Bug e Melhoria = 18). A soma literal com esses outros tipos é 12 e não iguala o KPI 9.",
+    "strictSumNote": "Três User Stories fechadas em setembro ficam fora do KPI, por confirmação do usuário. Bugs 2 + Melhorias 7 = 9.",
     "developerSum": 9,
     "identifiableActiveAssignees": 9,
     "developerSumMatchesIdentifiable": true,
@@ -4281,14 +4264,10 @@
     "pendingCountMatchesRows": true,
     "closedDateMissing": 0,
     "identityAmbiguous": [],
-    "userStories": 3,
-    "bugsPlusMelhoriasPlusUserStories": 12,
-    "pendingAssigneeQuestion": [
-      40350,
-      40714,
-      41125
-    ],
-    "note": "Julho permanece 11 e agosto permanece 18, só Bug e Melhoria, como no recálculo anterior. Setembro passa a 12 com as três User Stories de suporte.",
+    "userStories": 0,
+    "bugsPlusMelhoriasPlusUserStories": 9,
+    "pendingAssigneeQuestion": [],
+    "note": "Setembro conta 9 bugs e melhorias. User Stories excluídas. Julho 11 e agosto 18 permanecem no mesmo critério.",
     "deployRows": 3,
     "deployRowsMatchTotal": true,
     "publishedItems": 12,
@@ -4305,8 +4284,9 @@
   },
   "userDecisions": {
     "inTestCustomerAndReadyPrdInBacklog": true,
-    "supportUserStoriesCountAsDeliveries": true,
-    "card41344Assignee": "Regis Ropke"
+    "supportUserStoriesCountAsDeliveries": false,
+    "card41344Assignee": "Regis Ropke",
+    "supportUserStoriesRule": "Confirmado em 06/10/2026: User Stories não entram. Somente Bug e Melhoria."
   },
   "deploys": {
     "total": 3,
