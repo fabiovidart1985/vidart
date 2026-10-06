@@ -4256,10 +4256,9 @@
     "septemberItems": 9
   },
   "slides6And7": {
-    "status": "pending",
-    "deploysKnown": false,
+    "deploysKnown": true,
     "srsKnown": false,
-    "note": "Deploys e SRs de setembro/2026 não foram informados. No arquivo rascunho, os slides 6 e 7 permanecem visualmente iguais ao template de agosto e não devem ser apresentados como dados de setembro."
+    "note": "Deploys de setembro atualizados. SRs do slide ainda são as de agosto do template."
   },
   "validation": {
     "bugsPlusMelhoriasEqualsDelivered": true,
@@ -4289,7 +4288,12 @@
       40714,
       41125
     ],
-    "note": "Julho permanece 11 e agosto permanece 18, só Bug e Melhoria, como no recálculo anterior. Setembro passa a 12 com as três User Stories de suporte."
+    "note": "Julho permanece 11 e agosto permanece 18, só Bug e Melhoria, como no recálculo anterior. Setembro passa a 12 com as três User Stories de suporte.",
+    "deployRows": 3,
+    "deployRowsMatchTotal": true,
+    "publishedItems": 12,
+    "publishedItemsMatchLines": true,
+    "successRate": "100%"
   },
   "output": {
     "draftPptx": "/workspace/Status Report - Salon Line - Setembro 2026 - rascunho.pptx",
@@ -4300,5 +4304,50 @@
     "inTestCustomerAndReadyPrdInBacklog": true,
     "supportUserStoriesCountAsDeliveries": true,
     "card41344Assignee": "Regis Ropke"
+  },
+  "deploys": {
+    "total": 3,
+    "publishedItems": 12,
+    "successCount": 3,
+    "successRate": "100%",
+    "statusRule": "Sucesso porque a validação pós-deploy de Julio Lima marcou todos os checks como aprovados. Horário do deploy não constava na mensagem.",
+    "items": [
+      {
+        "date": "01/09/2026",
+        "time": null,
+        "status": "Sucesso",
+        "observation": "",
+        "workItemIds": [
+          40949,
+          40838,
+          38005,
+          40608,
+          40344,
+          41059
+        ]
+      },
+      {
+        "date": "22/09/2026",
+        "time": null,
+        "status": "Sucesso",
+        "observation": "",
+        "workItemIds": [
+          40912,
+          40351,
+          40930,
+          41344,
+          41401
+        ]
+      },
+      {
+        "date": "30/09/2026",
+        "time": null,
+        "status": "Sucesso",
+        "observation": "",
+        "workItemIds": [
+          41755
+        ]
+      }
+    ]
   }
 }
