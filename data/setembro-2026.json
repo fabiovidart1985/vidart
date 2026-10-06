@@ -4358,7 +4358,7 @@
     "emAnaliseOracle": 2,
     "emAnaliseSalonLine": 0,
     "emAnaliseLighthouse": 0,
-    "note": "Lista da aba em que a Oracle está trabalhando. A aba 'Esses Pedidos de Serviço exigem sua atenção' não foi enviada.",
+    "note": "Usuário confirmou em 06/10/2026 que somente estas duas SRs estão abertas. A aba que exige atenção do cliente não tem outras SRs.",
     "items": [
       {
         "sr": "4-0003585464",
