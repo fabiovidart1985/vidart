@@ -4257,7 +4257,7 @@
   },
   "slides6And7": {
     "deploysKnown": true,
-    "srsKnown": false,
+    "srsKnown": true,
     "note": "Deploys de setembro atualizados. SRs do slide ainda são as de agosto do template."
   },
   "validation": {
@@ -4293,7 +4293,10 @@
     "deployRowsMatchTotal": true,
     "publishedItems": 12,
     "publishedItemsMatchLines": true,
-    "successRate": "100%"
+    "successRate": "100%",
+    "srRows": 2,
+    "srRowsMatchTotal": true,
+    "srStatusSum": 2
   },
   "output": {
     "draftPptx": "/workspace/Status Report - Salon Line - Setembro 2026 - rascunho.pptx",
@@ -4347,6 +4350,35 @@
         "workItemIds": [
           41755
         ]
+      }
+    ]
+  },
+  "srs": {
+    "total": 2,
+    "emAnaliseOracle": 2,
+    "emAnaliseSalonLine": 0,
+    "emAnaliseLighthouse": 0,
+    "note": "Lista da aba em que a Oracle está trabalhando. A aba 'Esses Pedidos de Serviço exigem sua atenção' não foi enviada.",
+    "items": [
+      {
+        "sr": "4-0003585464",
+        "subject": "Inconsistências recorrentes nos dados de relatórios e atualizações atrasadas de relatórios",
+        "opened": "21/08/2026",
+        "openedSource": "Data registrada no status report anterior e criação do card 40883. A tela da Oracle não exibiu a data de abertura.",
+        "lastUpdate": "06/10/2026",
+        "portalStatus": "Defeito de Revisão",
+        "status": "Em Análise Oracle",
+        "observation": "Oracle enviou plano de ação em 06/10: segue analisando o fluxo de pedidos e a falha na atualização dos relatórios, com escalação interna. Pediu retorno em até 5 dias."
+      },
+      {
+        "sr": "4-0003839520",
+        "subject": "Black Friday 2026 - Avaliação Preventiva da Prontidão e Capacidade Ambiental do OCC",
+        "opened": "22/09/2026",
+        "openedSource": "Comentário de Fábio Vidart no card 41486 em 22/09/2026: Abrimos a SR 4-0003839520.",
+        "lastUpdate": "05/10/2026",
+        "portalStatus": "Atualização da Análise",
+        "status": "Em Análise Oracle",
+        "observation": "Em 05/10 a Lighthouse detalhou os slots da home e pediu a avaliação preventiva de capacidade para a Black Friday, mantendo os Espaços de Variação de Conteúdo."
       }
     ]
   }
