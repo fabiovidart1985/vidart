@@ -68,11 +68,12 @@
     "note": "A tabela usa o nome exato do estado no Azure DevOps. Bloqued do pedido corresponde a Blocked."
   },
   "delivered": {
-    "count": 9,
+    "count": 12,
     "rule": "State Closed e Closed Date no mês, em America/Sao_Paulo. Changed Date não foi usado. Nenhum Closed Date ausente.",
     "composition": {
       "Bug": 2,
-      "Melhoria": 7
+      "Melhoria": 7,
+      "User Story": 3
     },
     "byDeveloper": [
       {
@@ -81,13 +82,24 @@
       },
       {
         "name": "Regis Ropke",
-        "count": 2
+        "count": 3
       }
     ],
     "unassignedDuringActive": [
       {
-        "id": 41344,
-        "title": "Logo não aparecendo no site"
+        "id": 40350,
+        "title": "[Suporte] Sprint 74",
+        "note": "Nunca passou por Active. Fechado por Fábio Vidart. Responsável da entrega ainda não informado."
+      },
+      {
+        "id": 40714,
+        "title": "[Suporte] Sprint 75",
+        "note": "Nunca passou por Active. Fechado por Fábio Vidart. Responsável da entrega ainda não informado."
+      },
+      {
+        "id": 41125,
+        "title": "[Suporte] Sprint 76",
+        "note": "Nunca passou por Active. Fechado por Fábio Vidart. Responsável da entrega ainda não informado."
       }
     ],
     "items": [
@@ -257,7 +269,11 @@
         "closedDate": "2026-09-28T15:08:06.053000-03:00",
         "closedDateRaw": "2026-09-28T18:08:06.053Z",
         "developmentBusinessDays": 1,
-        "activeAssignee": null,
+        "activeAssignee": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br",
+          "source": "Informado pelo usuário em 06/10/2026"
+        },
         "activeIntervals": [
           {
             "start": "2026-09-11T09:07:52.343000-03:00",
@@ -266,7 +282,8 @@
             "businessDaysExclusiveEnd": 0
           }
         ],
-        "assigneeDeterminable": false
+        "assigneeDeterminable": true,
+        "assigneeSource": "user"
       },
       {
         "id": 40949,
@@ -294,7 +311,12 @@
   "history": {
     "2026-07": 11,
     "2026-08": 18,
-    "2026-09": 9
+    "2026-09": 12,
+    "chartValues": [
+      11,
+      18,
+      12
+    ]
   },
   "historyNote": {
     "julyPreviousDeck": 15,
@@ -303,7 +325,7 @@
     "chartValues": [
       11,
       18,
-      9
+      12
     ],
     "julyDeltaExplanation": "O recálculo por Closed Date encontra 11 bugs e melhorias em julho/2026, não 15. Cinco cards tiveram revisão em julho, mas o Closed Date permanece em junho; eles não foram contados. A soma desses cinco com os 11 fechamentos de julho é 16, então o 15 do deck anterior não foi reproduzido."
   },
@@ -598,24 +620,30 @@
       "type": "User Story",
       "title": "[Suporte] Sprint 74",
       "closedDate": "2026-09-01T09:57:22.900000-03:00",
-      "includedInDeliveryKpi": false,
-      "reason": "User Story de suporte da sprint, fora do critério Bug + Melhoria usado em agosto (18 itens)."
+      "includedInDeliveryKpi": true,
+      "reason": "Incluída na conta de entregas por confirmação do usuário. Não houve estado Active.",
+      "developmentBusinessDays": 0,
+      "activeAssignee": null
     },
     {
       "id": 40714,
       "type": "User Story",
       "title": "[Suporte] Sprint 75",
       "closedDate": "2026-09-26T00:22:04.637000-03:00",
-      "includedInDeliveryKpi": false,
-      "reason": "User Story de suporte da sprint, fora do critério Bug + Melhoria usado em agosto (18 itens)."
+      "includedInDeliveryKpi": true,
+      "reason": "Incluída na conta de entregas por confirmação do usuário. Não houve estado Active.",
+      "developmentBusinessDays": 0,
+      "activeAssignee": null
     },
     {
       "id": 41125,
       "type": "User Story",
       "title": "[Suporte] Sprint 76",
       "closedDate": "2026-09-26T00:23:24.970000-03:00",
-      "includedInDeliveryKpi": false,
-      "reason": "User Story de suporte da sprint, fora do critério Bug + Melhoria usado em agosto (18 itens)."
+      "includedInDeliveryKpi": true,
+      "reason": "Incluída na conta de entregas por confirmação do usuário. Não houve estado Active.",
+      "developmentBusinessDays": 0,
+      "activeAssignee": null
     }
   ],
   "backlog": {
@@ -4238,12 +4266,12 @@
     "bugs": 2,
     "melhorias": 7,
     "otherClosedTypes": 3,
-    "deliveredKpi": 9,
+    "deliveredKpi": 12,
     "strictSumIncludingOtherTypes": 12,
-    "strictSumMatchesKpi": false,
+    "strictSumMatchesKpi": true,
     "strictSumNote": "Três User Stories de suporte de sprint foram fechadas em setembro e não entram no KPI, para manter o mesmo critério de agosto (somente Bug e Melhoria = 18). A soma literal com esses outros tipos é 12 e não iguala o KPI 9.",
-    "developerSum": 8,
-    "identifiableActiveAssignees": 8,
+    "developerSum": 9,
+    "identifiableActiveAssignees": 9,
     "developerSumMatchesIdentifiable": true,
     "historySeptemberEqualsDelivered": true,
     "historyAugustMatchesPreviousDeck": true,
@@ -4253,11 +4281,24 @@
     "pendingCount": 81,
     "pendingCountMatchesRows": true,
     "closedDateMissing": 0,
-    "identityAmbiguous": []
+    "identityAmbiguous": [],
+    "userStories": 3,
+    "bugsPlusMelhoriasPlusUserStories": 12,
+    "pendingAssigneeQuestion": [
+      40350,
+      40714,
+      41125
+    ],
+    "note": "Julho permanece 11 e agosto permanece 18, só Bug e Melhoria, como no recálculo anterior. Setembro passa a 12 com as três User Stories de suporte."
   },
   "output": {
     "draftPptx": "/workspace/Status Report - Salon Line - Setembro 2026 - rascunho.pptx",
     "finalPptxNotProduced": true,
     "reason": "Deploys e SRs ainda pendentes."
+  },
+  "userDecisions": {
+    "inTestCustomerAndReadyPrdInBacklog": true,
+    "supportUserStoriesCountAsDeliveries": true,
+    "card41344Assignee": "Regis Ropke"
   }
 }
