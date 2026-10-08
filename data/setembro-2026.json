@@ -770,7 +770,7 @@
         "font": "FFFFFF"
       }
     },
-    "responsavelRule": "Na coluna Responsável, item bloqueado mostra quem segura o bloqueio, conforme o comentário ou a descrição do card. Nos demais estados, mostra o Assigned To. Célula com travessão quando não há responsável atribuído.",
+    "responsavelRule": "A coluna Responsável só é preenchida em itens Bloqueado, com quem segura o bloqueio e o motivo informados pelo usuário. Nos demais status a célula fica com travessão.",
     "items": [
       {
         "id": 41682,
@@ -784,7 +784,7 @@
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T02:55:07.147Z",
         "assignedTo": null,
-        "responsavel": "Área de negócios",
+        "responsavel": "",
         "observation": "Bloqueado pela área de negócios: faltam os nomes das Analytics Tags de cada tela.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
@@ -812,7 +812,7 @@
           "displayName": "Regis Ropke",
           "uniqueName": "regis.ropke@lighthouseit.com.br"
         },
-        "responsavel": "Rakuten",
+        "responsavel": "",
         "observation": "Bloqueado pela Rakuten: o card espera credenciais da API e a resposta às dúvidas de homologação.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
@@ -847,7 +847,7 @@
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T17:27:20.003Z",
         "assignedTo": null,
-        "responsavel": "Oracle",
+        "responsavel": "",
         "observation": "Bloqueado pela Oracle (SR 4-0003839520; histórico SR 4-0001220950): análise preventiva de capacidade para a Black Friday.",
         "srCandidates": [
           "4-0001220950",
@@ -880,7 +880,7 @@
         "createdDate": "24/08/2026",
         "createdDateRaw": "2026-08-24T14:10:20.91Z",
         "assignedTo": null,
-        "responsavel": "Google",
+        "responsavel": "",
         "observation": "Bloqueado pelo Google: aguardando a confirmação de quais imagens e configurações o Merchant Center exige.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
@@ -915,7 +915,7 @@
         "createdDate": "21/08/2026",
         "createdDateRaw": "2026-08-21T15:04:37.15Z",
         "assignedTo": null,
-        "responsavel": "Oracle",
+        "responsavel": "",
         "observation": "Bloqueado pela Oracle (SR 4-0003585464): cobrada a causa raiz das falhas recorrentes do serviço de relatórios.",
         "srCandidates": [
           "4-0003585464"
@@ -994,7 +994,7 @@
           "displayName": "Ewerton Bezerra",
           "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
         },
-        "responsavel": "Ewerton Bezerra",
+        "responsavel": "",
         "observation": "Em desenvolvimento: réplicas de ordenação por preço e mais vendidos e índice de filtros na Algolia.",
         "srCandidates": [],
         "reason": "Moved to state Active",
@@ -1032,7 +1032,7 @@
         "assignedTo": {
           "displayName": "Regis Ropke"
         },
-        "responsavel": "Regis Ropke",
+        "responsavel": "",
         "observation": "Em desenvolvimento: envelopamento visual do site para a campanha de Black Friday.",
         "srCandidates": [],
         "reason": "Moved to state Active",
@@ -1102,7 +1102,7 @@
           "displayName": "Regis Ropke",
           "uniqueName": "regis.ropke@lighthouseit.com.br"
         },
-        "responsavel": "Regis Ropke",
+        "responsavel": "",
         "observation": "Em revisão de código: hero da nova página de produto. O Figma do botão de compartilhar ainda foi apontado como pendência.",
         "reason": "Moved to state Code Review",
         "srCandidates": [],
@@ -1122,7 +1122,7 @@
           "displayName": "Regis Ropke",
           "uniqueName": "regis.ropke@lighthouseit.com.br"
         },
-        "responsavel": "Regis Ropke",
+        "responsavel": "",
         "observation": "Em revisão de código: novo layout da página de produto, com o desenvolvimento acompanhado em TST.",
         "reason": "Moved to state Code Review",
         "srCandidates": [],
@@ -1308,7 +1308,7 @@
         "assignedTo": {
           "displayName": "luana.santos salonline.com.br"
         },
-        "responsavel": "luana.santos salonline.com.br",
+        "responsavel": "",
         "observation": "Pronto para publicar em produção: buscas recentes salvas no navegador e reaproveitadas no autocomplete.",
         "srCandidates": [],
         "reason": "Moved to state Ready PRD",
@@ -1335,7 +1335,7 @@
         "assignedTo": {
           "displayName": "luana.santos salonline.com.br"
         },
-        "responsavel": "luana.santos salonline.com.br",
+        "responsavel": "",
         "observation": "Pronto para publicar em produção: indexação do catálogo Oracle na Algolia.",
         "srCandidates": [],
         "reason": "Moved to state Ready PRD",
@@ -1355,7 +1355,7 @@
         "assignedTo": {
           "displayName": "luana.santos salonline.com.br"
         },
-        "responsavel": "luana.santos salonline.com.br",
+        "responsavel": "",
         "observation": "Pronto para publicar em produção: estudo de viabilidade do InstantSearch da Algolia, já disponível em TST.",
         "srCandidates": [],
         "reason": "Moved to state Ready PRD",
@@ -1393,7 +1393,7 @@
           "displayName": "daniela.damasceno salonline.com.br",
           "uniqueName": "daniela.damasceno@salonline.com.br"
         },
-        "responsavel": "daniela.damasceno salonline.com.br",
+        "responsavel": "",
         "observation": "Em validação de produção: inclusão da marca Trata no menu do site.",
         "srCandidates": [],
         "reason": "Moved to state Validation PRD",
@@ -1421,7 +1421,7 @@
           "displayName": "daniela.damasceno salonline.com.br",
           "uniqueName": "daniela.damasceno@salonline.com.br"
         },
-        "responsavel": "daniela.damasceno salonline.com.br",
+        "responsavel": "",
         "observation": "Em validação de produção: exibição de vídeo ou GIF na galeria da página de produto.",
         "srCandidates": [],
         "reason": "Moved to state Validation PRD",
