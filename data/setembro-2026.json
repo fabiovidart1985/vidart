@@ -766,8 +766,8 @@
       },
       "Code Review": {
         "label": "Em revisão de código",
-        "fill": null,
-        "font": null
+        "fill": "1565C0",
+        "font": "FFFFFF"
       }
     },
     "responsavelRule": "Na coluna Responsável, item bloqueado mostra quem segura o bloqueio, conforme o comentário ou a descrição do card. Nos demais estados, mostra o Assigned To. Célula com travessão quando não há responsável atribuído.",
