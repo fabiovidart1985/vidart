@@ -640,9 +640,9 @@
     }
   ],
   "backlog": {
-    "count": 33,
+    "count": 31,
     "asOf": "2026-10-08",
-    "scope": "Bug e Melhoria da Sprint 77, iteração atual, nos estados que ainda estão no board, exceto Monitoramento. Não há sprint futura. Tasks, User Stories e itens Closed ficam fora.",
+    "scope": "Bug e Melhoria da Sprint 77, iteração atual, nos estados que ainda estão no board, exceto Monitoramento. Não há sprint futura. Tasks, User Stories e itens Closed ficam fora. Itens em Validação (PRD) ficam de fora porque já foram entregues.",
     "isCurrentRule": "Recorte da iteração atual e das futuras. Em 08/10/2026 só existe a Sprint 77. Itens em Monitoramento saíram do slide de Backlog Atual. Itens em Code Review voltaram porque estão no board da sprint.",
     "excludedBecausePastIteration": [
       {
@@ -1379,112 +1379,6 @@
         ]
       },
       {
-        "id": 41853,
-        "type": "Melhoria",
-        "title": "Adicinar a marca Trata no menu",
-        "state": "Validation PRD",
-        "statusLabel": "Em Validação (PRD)",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "05/10/2026",
-        "createdDateRaw": "2026-10-05T17:47:23.147Z",
-        "assignedTo": {
-          "displayName": "daniela.damasceno salonline.com.br",
-          "uniqueName": "daniela.damasceno@salonline.com.br"
-        },
-        "responsavel": "",
-        "observation": "Em validação de produção: inclusão da marca Trata no menu do site.",
-        "srCandidates": [],
-        "reason": "Moved to state Validation PRD",
-        "descriptionExcerpt": "Objetivo Adicionar a marca Trata ao menu principal do site Salon Line, facilitando o acesso dos usuários à página da marca. \n Descrição Incluir a marca Trata na estrutura de navegação do menu do site, direcionando o usuário para a página oficial da marca: \n https://www.salonline.com.br/trata \n Requisitos/Regras - Adicionar a marca Trata no menu do site, seguindo o padrão visual e estrutural das demais marcas. \n \n- Configurar o direcionamento para a URL: https://www.salonline.com.br/trata \n \n- Validar o funcionamento do link nas versões desktop e mobile. \n \n- Garantir que a alteração não impacte as demais opções e categorias do menu. \n \n- Validar a navegação após a publicação em ambiente prod",
-        "comments": [
-          {
-            "created": "2026-10-06T12:23:02.62Z",
-            "by": "Regis Ropke",
-            "text": "Passo a Passo para adicionar nova marca pelo Admin\n 1- Acessar o menu catalogo, clicar com o botão direito do mouse em cima da categoria que for criar uma categoria filha, acessar Nova Coleção Filha e preencher os dados\n \n2- Após criar a categoria acessar com o botão direito do mouse em cima da categoria recem criada e clicar editar\n \n \n3 - Preencher os dados da categoria, OBS: para ela ser apresentada no storefront deve DESMARCAR o checkbox \"Para não mostrar no menu\" e se tiver pagina para landing page preecher no formato \"/trata\""
-          }
-        ]
-      },
-      {
-        "id": 40639,
-        "type": "Melhoria",
-        "title": "Permitir vídeo ou GIF na PDP",
-        "state": "Validation PRD",
-        "statusLabel": "Em Validação (PRD)",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "12/08/2026",
-        "createdDateRaw": "2026-08-12T13:33:13.36Z",
-        "assignedTo": {
-          "displayName": "daniela.damasceno salonline.com.br",
-          "uniqueName": "daniela.damasceno@salonline.com.br"
-        },
-        "responsavel": "",
-        "observation": "Em validação de produção: exibição de vídeo ou GIF na galeria da página de produto.",
-        "srCandidates": [],
-        "reason": "Moved to state Validation PRD",
-        "descriptionExcerpt": "Criar suporte para inclusão de vídeos ou GIFs na página de produto (PDP) , permitindo que esses formatos sejam utilizados como conteúdo visual complementar às imagens do produto. \n A ideia é possibilitar que conteúdos demonstrativos, animações ou vídeos de apresentação sejam exibidos diretamente na PDP, seguindo o comportamento e layout definidos atualmente para a galeria de imagens. \n Requisitos - Permitir o cadastro de vídeo ou GIF na galeria da PDP. \n- Garantir a correta exibição do conteúdo no Desktop, Mobile e App , conforme aplicável. \n- Avaliar o comportamento de reprodução, carregamento e interação com o conteúdo. \n- Garantir que a inclusão desses formatos não prejudique a performanc",
-        "comments": [
-          {
-            "created": "2026-10-05T23:09:24.76Z",
-            "by": "daniela.damasceno salonline.com.br",
-            "text": "@Fábio Vidart   @Regis Ropke   Por Favor incluir esse item no deploy de 06/10 @Ewerton Bezerra \nValidado em tst:"
-          },
-          {
-            "created": "2026-10-01T18:09:55.203Z",
-            "by": "Fábio Vidart",
-            "text": "@"
-          },
-          {
-            "created": "2026-09-30T15:40:57.32Z",
-            "by": "Julio Lima",
-            "text": "## Validação TST \n* Produto usado para testes `sku-31618`\n* Criado novas propriedades no produto para inserir URL do video, e posição dele na galeria de miniaturas\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/9e107197-bc4b-40bf-a208-af649c5815c6?fileName=image.png) \n----------------------------------------------------------------------------------------------\n## Cenário 1 - Nenhum valor indicado na posição\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/3a763e54-6248-4879-8a42-be4bb764487c?fileName=image.png) \n*Resultado*\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/ebc2a56d-e287-4655-8b78-25762c78fd6b?fileName=image.png) \n*Mobile*\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/989e14ce-736a-4894-b736-37fe48892b10?fileName=image.png) \n----------------------------------------------------------------------------------------------\n## Cenário 2 - Vídeo instanciado na 1ª posição\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/92cffd75-2163-4163-8ab0-f5d768144153?fileName=image.png)\n*Resultado* \n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/abc3f168-3aae-4d07-96d2-3e39968a0529?f"
-          },
-          {
-            "created": "2026-09-29T14:25:32.36Z",
-            "by": "Regis Ropke",
-            "text": "Para adicionar vídeo e aparecer na PDP, popule o campo sl_videoAssetway nas propriedades do produto com a URL da página do vídeo no AssetWay (ex: a URL que aparece ao abrir o asset lá). O vídeo precisa estar marcado como público no painel do AssetWay. \n \n Para editar a posição em que o vídeo é apresentado, edite o campo sl_videoPosition, também nas propriedades do produto, com um número (ex: 2 = aparece na 2ª posição, depois da 1ª foto). Se deixar o campo vazio, o vídeo será apresentado na última posição."
-          },
-          {
-            "created": "2026-09-10T17:27:34.093Z",
-            "by": "daniela.damasceno salonline.com.br",
-            "text": "@luana.santos salonline.com.br   @Julio Lima @Ewerton Bezerra @Fábio Vidart \nSegue Vídeo:\n https://salonline.assetway.com.br/public/asset/17250"
-          },
-          {
-            "created": "2026-09-10T12:28:43.683Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@daniela.damasceno salonline.com.br  consegue verificar com a Karina o link do vídeo, por favor?"
-          },
-          {
-            "created": "2026-09-04T18:11:17.563Z",
-            "by": "Fábio Vidart",
-            "text": "Aguardando informações da localização do vídeo e também de um link de um video para teste."
-          },
-          {
-            "created": "2026-09-02T20:02:12.32Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Como próximo passo, ficou definido avaliarmos a viabilidade de consumir os vídeos disponibilizados pela Assetway . \n \n \n Segue abaixo a documentação das APIs para análise: \n https://app.notion.com/p/Guia-R-pido-API-Assetway-36fac6d80338802b99dbeb227947da0a \n \n https://salonline.assetway.com.br/api/gaia/docs \n \n @Fábio Vidart   @Ewerton Bezerra"
-          },
-          {
-            "created": "2026-08-31T12:38:20.713Z",
-            "by": "Fábio Vidart",
-            "text": "Aguardando retorno sobre qual estratégia seguirmos."
-          },
-          {
-            "created": "2026-08-28T18:16:57.373Z",
-            "by": "Fábio Vidart",
-            "text": "@ segue para avaliação."
-          },
-          {
-            "created": "2026-08-28T17:33:52.523Z",
-            "by": "Ewerton Bezerra",
-            "text": "Hoje por padrão é possível realizar o upload de arquivos de GIF animados através do OCC, não sendo necessário alteração da nossa parte.\nPorém vale ressaltar que os arquivos de .mp4 com alta qualidade que forem transformados em GIF, irão ficar com o tamanho maior e a qualidade reduzida.\nExemplo abaixo com base no vídeo em anexo:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/ee42bf16-dd70-4863-a9ac-64e7bb45b4db?fileName=image.png) \nAlém disso, podemos realizar o upload através da pagina ecomm-config, como no exemplo abaixo, fiz a alteração em TST para que fosse aceito:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/935f1f8f-784e-444c-b99b-23c25d41a9b4?fileName=image.png) \nO vídeo fica disponível em, [https://p7724145c1tst-store.occa.ocs.oraclecloud.com/file/general/video-teste.mp4](https://p7724145c1tst-store.occa.ocs.oraclecloud.com/file/general/video-teste.mp4)\nPorém no cadastro do produto não aparece para que seja possível atrelar o vídeo ao produto:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/c4afa442-e986-444c-a324-548fd1160f9d?fileName=image.png) \n# **Recomendação**\nO ideal é que esses vídeos sejam enviados e gerado o link (por vídeo) e a gente adicione esse link a uma propriedade custom no produto, no lado do frontend podemos fazer com que esse vídeo seja carregado n"
-          }
-        ]
-      },
-      {
         "id": 41949,
         "type": "Melhoria",
         "title": "Algolia - Incluir campos relavantes de produto no index",
@@ -1994,6 +1888,22 @@
         "state": "Monitoring",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "reason": "Em Monitoramento. Fora do slide de Backlog Atual, a pedido."
+      }
+    ],
+    "excludedBecauseValidationPRD": [
+      {
+        "id": 41853,
+        "title": "Adicinar a marca Trata no menu",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Validação (PRD). Já entregue, fora do slide de Backlog Atual."
+      },
+      {
+        "id": 40639,
+        "title": "Permitir vídeo ou GIF na PDP",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Validação (PRD). Já entregue, fora do slide de Backlog Atual."
       }
     ]
   },
