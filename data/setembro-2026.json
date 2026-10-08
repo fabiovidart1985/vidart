@@ -65,7 +65,17 @@
       "EM DESENVOLVIMENTO": "Active",
       "EM TESTE - LH": "In Test Light"
     },
-    "note": "A tabela usa o nome exato do estado no Azure DevOps. Bloqued do pedido corresponde a Blocked."
+    "note": "A tabela do backlog usa os rótulos em português definidos para o status report de setembro/2026.",
+    "displayLabels": {
+      "Blocked": "Bloqueado",
+      "Active": "Em Desenvolvimento",
+      "In Test Light": "Em Testes LH",
+      "In Test Customer": "Em Testes Salon",
+      "Ready PRD": "Pronto para Publicar PRD",
+      "Validation PRD": "Em Validação (PRD)",
+      "Monitoring": "Em Monitoramento",
+      "New": "À fazer"
+    }
   },
   "delivered": {
     "count": 9,
@@ -630,20 +640,171 @@
     }
   ],
   "backlog": {
-    "count": 81,
-    "scope": "Bug e Melhoria em estado aberto, incluindo In Test Customer e Ready PRD. Tasks, User Stories, Epics e Test Tasks ficam fora da tabela.",
+    "count": 69,
+    "asOf": "2026-10-08",
+    "scope": "Bug e Melhoria em estado aberto, no backlog do projeto ou na Sprint 77. In Test Customer e Ready PRD continuam no backlog quando o estado está aberto. Tasks, User Stories, Epics e Test Tasks ficam fora.",
+    "isCurrentRule": "Não existe campo Is Current no work item nem no processo lighthouseinnovation Kanban. O equivalente usado foi o timeFrame da iteração do time: current na Sprint 77 e o backlog raiz do projeto. Itens em iteração past (Sprint 1, Sprint 29, Sprint 47 e Sprint 73) saíram porque não fazem parte do backlog atual.",
+    "excludedBecausePastIteration": [
+      {
+        "id": 12356,
+        "title": "Pedido com amountAuthorized zerado",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 13160,
+        "title": "Divergência Pedido x Payload -Site Pedido 570495481",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 13441,
+        "title": "Não é possivel acessar a conta de algumas clientes",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 19253,
+        "title": "Pedido com erro - OCC",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 20387,
+        "title": "Implementação cód. LP Galeria feed",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 29",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 20412,
+        "title": "Análise: Produtos iguais não estão sendo agrupados no pedido",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 27982,
+        "title": "Pedido sem registro de produtos na propriedade \"commerceItems\": [],",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 28070,
+        "title": "Erros retornados pela SSE Smart Checkout ao finalizar pedidos pelo App",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 47",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 39603,
+        "title": "[Análise & Ajuste] array dataLayer",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 73",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      }
+    ],
+    "leftOpenStatesSincePriorSnapshot": [
+      {
+        "id": 41479,
+        "title": "[PDP] Hero da PDP",
+        "previousState": "Active",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      },
+      {
+        "id": 40929,
+        "title": "Desenvolvimento do novo layout da Página de Produto",
+        "previousState": "Active",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      },
+      {
+        "id": 41820,
+        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "previousState": "In Test Light",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      },
+      {
+        "id": 41786,
+        "title": "Algolia | Adaptar FrontEnd da busca",
+        "previousState": "In Test Light",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      },
+      {
+        "id": 41726,
+        "title": "[Projeto CDP] Abandono Checkout",
+        "previousState": "Ready PRD",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      },
+      {
+        "id": 40912,
+        "title": "Pedidos falhando na Integração - Erro \"VL_DESC_INC_UNIT nao poder ser menor que 0\"",
+        "previousState": "Monitoring",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      }
+    ],
+    "statusLabels": {
+      "Blocked": {
+        "label": "Bloqueado",
+        "fill": "C62828",
+        "font": "FFFFFF"
+      },
+      "Active": {
+        "label": "Em Desenvolvimento",
+        "fill": "1565C0",
+        "font": "FFFFFF"
+      },
+      "In Test Light": {
+        "label": "Em Testes LH",
+        "fill": "FFF4CC",
+        "font": "1A1A1A"
+      },
+      "In Test Customer": {
+        "label": "Em Testes Salon",
+        "fill": "FFF4CC",
+        "font": "1A1A1A"
+      },
+      "Ready PRD": {
+        "label": "Pronto para Publicar PRD",
+        "fill": "1565C0",
+        "font": "FFFFFF"
+      },
+      "Validation PRD": {
+        "label": "Em Validação (PRD)",
+        "fill": "2E7D32",
+        "font": "FFFFFF"
+      },
+      "Monitoring": {
+        "label": "Em Monitoramento",
+        "fill": "F6C445",
+        "font": "1A1A1A"
+      },
+      "New": {
+        "label": "À fazer",
+        "fill": null,
+        "font": null
+      }
+    },
+    "responsavelRule": "Na coluna Responsável, item bloqueado mostra quem segura o bloqueio, conforme o comentário ou a descrição do card. Nos demais estados, mostra o Assigned To. Célula com travessão quando não há responsável atribuído.",
     "items": [
       {
         "id": 41682,
         "type": "Melhoria",
         "title": "Algolia | Adicionar AnalyticsTags",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T02:55:07.147Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueado pela área de negócios: faltam os nomes das Analytics Tags de cada tela.",
+        "responsavel": "Área de negócios",
+        "observation": "Bloqueado pela área de negócios: faltam os nomes das Analytics Tags de cada tela.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Enviar nas consultas da Algolia realizadas pelo Site OCC as AnalyticsTags definidas pela área de negócios para identificar a origem das buscas e permitir a segmentação no Analytics. Implementar o mapeamento das tags por tela após a disponibilização da definição prevista na linha 22. \n \n \n Dependência: definição prévia de nomes e valores por tela pela área de negócios. \n \n \n Critérios de aceite: mapeamento de telas e tags documentado; consultas enviam os valores definidos; segmentação validada no Analytics.",
@@ -660,15 +821,18 @@
         "type": "Melhoria",
         "title": "Integração Server to Server Rakuten",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "18/09/2026",
         "createdDateRaw": "2026-09-18T15:48:34.283Z",
         "assignedTo": {
           "displayName": "Regis Ropke",
           "uniqueName": "regis.ropke@lighthouseit.com.br"
         },
-        "observation": "Responsável: Regis Ropke. Bloqueado pela Rakuten: o card espera credenciais da API e a resposta às dúvidas de homologação.",
+        "responsavel": "Rakuten",
+        "observation": "Bloqueado pela Rakuten: o card espera credenciais da API e a resposta às dúvidas de homologação.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Objetivo \n Implementar um mecanismo de rastreamento preciso, confiável e automatizado das vendas originadas por links de afiliados da Rakuten nos canais digitais da Salon Line (Site e App), utilizando comunicação Server-to-Server (S2S) . Descrição Será implementado um fluxo para captura, processamento e envio dos eventos de conversão à plataforma de afiliados da Rakuten por meio de uma comunicação Server-to-Server (S2S) . O fluxo deverá considerar as informações necessárias para identificar a conversão e realizar sua correta atribuição ao afiliado, contemplando os canais Site e App e respeitando as particularidades técnicas de cada canal. \n \nA definição da arquitetura e da estratégia de inte",
@@ -695,12 +859,15 @@
         "type": "Melhoria",
         "title": "Alinhamento de Expectativa de Tráfego e Capacidade para a Black Friday 2026",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T17:27:20.003Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueado pela Oracle (SR 4-0003839520; histórico SR 4-0001220950): análise preventiva de capacidade para a Black Friday.",
+        "responsavel": "Oracle",
+        "observation": "Bloqueado pela Oracle (SR 4-0003839520; histórico SR 4-0001220950): análise preventiva de capacidade para a Black Friday.",
         "srCandidates": [
           "4-0001220950",
           "4-0003839520"
@@ -725,12 +892,15 @@
         "type": "Melhoria",
         "title": "Novos Requisitos para Imagem dos Produtos",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "24/08/2026",
         "createdDateRaw": "2026-08-24T14:10:20.91Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueado pelo Google: aguardando a confirmação de quais imagens e configurações o Merchant Center exige.",
+        "responsavel": "Google",
+        "observation": "Bloqueado pelo Google: aguardando a confirmação de quais imagens e configurações o Merchant Center exige.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Objetivo:  Avaliar e definir as ações necessárias para adequação ao novo requisito de tamanho mínimo de imagens de produtos exigido pelo Google Merchant Center (mínimo de 500x500 pixels até 31/01/2027). \n Contexto:  O Google Merchant Center notificou uma alteração em suas diretrizes de qualidade, estipulando que, a partir de 31/01/2027 , todos os produtos publicados deverão possuir imagens com dimensões mínimas de 500x500 pixels .\n \n Como a fonte de dados do Merchant Center é capturada diretamente do nosso e-commerce, é necessário investigar se o ajuste deverá ser feito diretamente pelo site ou se existe alguma outra tratativa que possa ser realizada. \n Para embasamento e validação inicial, ",
@@ -757,17 +927,19 @@
         "type": "Bug",
         "title": "Bug Relatorios",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "21/08/2026",
         "createdDateRaw": "2026-08-21T15:04:37.15Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueado pela Oracle (SR 4-0003585464): cobrada a causa raiz das falhas recorrentes do serviço de relatórios.",
+        "responsavel": "Oracle",
+        "observation": "Bloqueado pela Oracle (SR 4-0003585464): cobrada a causa raiz das falhas recorrentes do serviço de relatórios.",
         "srCandidates": [
           "4-0003585464"
         ],
         "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2026-10-06T11:26:48.873Z",
@@ -827,325 +999,19 @@
         ]
       },
       {
-        "id": 20412,
-        "type": "Bug",
-        "title": "Análise: Produtos iguais não estão sendo agrupados no pedido",
-        "state": "Blocked",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
-        "sprint": "Sprint 1",
-        "createdDate": "22/10/2024",
-        "createdDateRaw": "2024-10-22T17:36:43.96Z",
-        "assignedTo": {
-          "displayName": "marta.bispo salonline.com.br",
-          "uniqueName": "marta.bispo@salonline.com.br"
-        },
-        "observation": "Responsável: marta.bispo salonline.com.br. O histórico cita a SR Oracle 3-38505981351, fora do formato 4-. O motivo vigente do bloqueio não está fechado.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Pedido acabou de ser feito e não agrupou o item.",
-        "comments": [
-          {
-            "created": "2025-02-13T18:21:56.367Z",
-            "by": "Nelson Richter",
-            "text": "Seguimos aguardando novos casos."
-          },
-          {
-            "created": "2025-02-10T17:43:43.28Z",
-            "by": "Lucas Borges",
-            "text": "Na resposta da SR, foi ativado novmente o log para tentar capturar esse erro com mais detalhes, como ficou muito tempo sem ter esta ocorrencia o suporte desativou e agora ativou novamnete e está aguardando novos casos"
-          },
-          {
-            "created": "2025-02-04T17:15:00.043Z",
-            "by": "Lucas Borges",
-            "text": "Atualizada a SR e informado novos casos para o suporte da Oracle"
-          },
-          {
-            "created": "2025-02-03T19:17:40.34Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "Caso do dia 30/01"
-          },
-          {
-            "created": "2025-01-20T19:19:02.253Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Aguardaremos até o final da Sprint 33, caso o erro não ocorra mais encerraremos o Ticket e a SR"
-          },
-          {
-            "created": "2025-01-16T18:29:38.04Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Seguimos aguardando novas ocorrências"
-          },
-          {
-            "created": "2025-01-07T15:13:50.883Z",
-            "by": "Anderson Thiago Pereira Fagundes",
-            "text": "@ Temos novos casos após o dia 01/01 para enviarmos para a Oracle?\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/8659c2c0-cd5d-4e1d-b636-5412a00747f3?fileName=image.png)"
-          },
-          {
-            "created": "2025-01-06T11:58:01.83Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/8232b553-d9f7-4731-927c-30224c174cb8?fileName=image.png)"
-          },
-          {
-            "created": "2025-01-03T12:45:39.61Z",
-            "by": "Jéssica Coelho",
-            "text": "@ enviado a Oracle."
-          },
-          {
-            "created": "2025-01-03T12:37:25.053Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "@Jéssica Coelho  Novo caso de ontem 02/01 às 18h52."
-          },
-          {
-            "created": "2024-12-31T12:30:28.357Z",
-            "by": "Jéssica Coelho",
-            "text": "@ se tiver novos casos, por favor nos avise, pois a oracle ativou uma depuração no ambiente para tentar pegar o erro."
-          },
-          {
-            "created": "2024-12-31T12:26:42.113Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/30565f42-6131-433f-b502-80f9c744a588?fileName=image.png)"
-          },
-          {
-            "created": "2024-12-30T13:25:46.233Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/2c6280c4-8bc6-4013-9450-51e0da9e0d2a?fileName=image.png)"
-          },
-          {
-            "created": "2024-12-27T11:43:13.773Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/1e50e03f-743f-4d7d-b1a0-682e462837de?fileName=image.png)"
-          },
-          {
-            "created": "2024-12-26T15:10:01.443Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/4855d92e-ae33-4fde-a878-43a57423b6a1?fileName=image.png)"
-          },
-          {
-            "created": "2024-12-26T15:09:52.25Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/7c9b4b51-14d3-4041-8d10-ed7db61dd4f9?fileName=image.png)"
-          },
-          {
-            "created": "2024-12-23T11:42:44.45Z",
-            "by": "Jéssica Coelho",
-            "text": "Novo caso mencionado na SR."
-          },
-          {
-            "created": "2024-12-21T00:47:59.34Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "Novo caso: Pedido: 572447628 - Anexo payload antes da alteração de quantity do produto para 2 unidades do idproduto: 32650."
-          },
-          {
-            "created": "2024-12-20T13:16:49.347Z",
-            "by": "Jéssica Coelho",
-            "text": "aguardando novos casos para enviarmos para a oracle."
-          },
-          {
-            "created": "2024-12-02T11:45:05.173Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/f3d74cd2-423e-4ffe-b1ee-29017d417e4f?fileName=image.png)"
-          },
-          {
-            "created": "2024-11-29T17:52:29.397Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/44b25221-fb02-442e-a1c3-44de38a05648?fileName=image.png)"
-          },
-          {
-            "created": "2024-11-27T15:56:11.857Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/85b716aa-2518-4259-9c2b-3ab4b69dd417?fileName=image.png)"
-          },
-          {
-            "created": "2024-11-27T13:59:57.473Z",
-            "by": "Jéssica Coelho",
-            "text": "assim, como nós, eles não estão conseguindo reproduzir o problema, questionamos se a oracle consegue pegar o log do ambiente no momento certo do erro.\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/72798aa7-c8cf-4068-96f5-fa6298cd6966?fileName=image.png)"
-          },
-          {
-            "created": "2024-11-26T19:16:47.313Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b0b2f393-bafb-446b-89c0-68c1f43203a8?fileName=image.png)"
-          },
-          {
-            "created": "2024-11-25T13:52:25.22Z",
-            "by": "Jéssica Coelho",
-            "text": "SR aberta referenciando a antiga e com as evidências que o Martinha nos trouxe:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b326cdd9-ed18-4f25-9c4d-d059daa4bda7?fileName=image.png)"
-          },
-          {
-            "created": "2024-11-18T16:17:47.337Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "@Jéssica Coelho  Novo caso: \n Deixei o payload salvo antes de alterar para o pedido integrar no ERP OK.  alterei apenas o campo \"quantity\":  do item  08295."
-          },
-          {
-            "created": "2024-10-30T12:31:04.51Z",
-            "by": "Jéssica Coelho",
-            "text": "@ eles estão nos pedindo para fornecermos a reprodução do erro acontecendo, quando você pegar este erro, você pode gravar para enviarmos a ele, por favor?"
-          },
-          {
-            "created": "2024-10-30T12:28:30.74Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/1cd06978-84d5-4b3e-9be9-fd49bb6e78fd?fileName=image.png)"
-          },
-          {
-            "created": "2024-10-28T14:07:47.413Z",
-            "by": "Jéssica Coelho",
-            "text": "https://support.oracle.com/epmos/faces/DocumentDisplay?parent=SrDetailText&sourceId=3-38505981351&id=2509215.1"
-          },
-          {
-            "created": "2024-10-28T14:07:38.073Z",
-            "by": "Jéssica Coelho",
-            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/683c426c-3e5d-4d55-bd2a-52b63c7a1271?fileName=image.png)"
-          },
-          {
-            "created": "2024-10-24T12:42:13.807Z",
-            "by": "Lucas Borges",
-            "text": "Aberto SR com o time da oracle, pois tanto em ambiente de tst e prd foram feitos varios pedidos e ocorreu o agrupamento dos itens sem problema nenhum, segue anexo a evidencia do agrupamento"
-          }
-        ]
-      },
-      {
-        "id": 19253,
-        "type": "Bug",
-        "title": "Pedido com erro - OCC",
-        "state": "Blocked",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
-        "sprint": "Sprint 1",
-        "createdDate": "20/09/2024",
-        "createdDateRaw": "2024-09-20T16:34:26.277Z",
-        "assignedTo": {
-          "displayName": "Thiago Beserra",
-          "uniqueName": "thiago.beserra@lighthouseit.com.br"
-        },
-        "observation": "Responsável: Thiago Beserra. Card sem descrição e sem comentário. Dependência e motivo do bloqueio não identificados.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "",
-        "comments": []
-      },
-      {
-        "id": 13441,
-        "type": "Bug",
-        "title": "Não é possivel acessar a conta de algumas clientes",
-        "state": "Blocked",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
-        "sprint": "Sprint 1",
-        "createdDate": "10/05/2024",
-        "createdDateRaw": "2024-05-10T18:10:47.917Z",
-        "assignedTo": {
-          "displayName": "kauan.oliveira salonline.com.br",
-          "uniqueName": "kauan.oliveira@salonline.com.br"
-        },
-        "observation": "Responsável: kauan.oliveira salonline.com.br. O erro deixou de reproduzir. O card permanece bloqueado até surgir um novo caso para investigar.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "",
-        "comments": [
-          {
-            "created": "2024-05-15T17:33:17.57Z",
-            "by": "Gianluca Ferreira",
-            "text": "O bug não está mais acontecendo, conforme testado em conjunto com @kauan.oliveira .\nFoi acertado de esperar mais insumos pois acreditamos ter a ver com o carrinho, e quando acontecer algum caso, testo na hora para conseguir o erro e resolver."
-          }
-        ]
-      },
-      {
-        "id": 12356,
-        "type": "Bug",
-        "title": "Pedido com amountAuthorized zerado",
-        "state": "Blocked",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
-        "sprint": "Sprint 1",
-        "createdDate": "10/04/2024",
-        "createdDateRaw": "2024-04-10T17:36:49.78Z",
-        "assignedTo": {
-          "displayName": "marta.bispo salonline.com.br",
-          "uniqueName": "marta.bispo@salonline.com.br"
-        },
-        "observation": "Responsável: marta.bispo salonline.com.br. A discussão de 2024 trata do retorno do Mercado Pago via Digibee. O bloqueio vigente não está explícito.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "",
-        "comments": [
-          {
-            "created": "2024-04-26T14:17:34.75Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "Aguardando ocorrer um novo caso para solicitar um fórum com digibee e lighthouse."
-          },
-          {
-            "created": "2024-04-24T13:13:07.527Z",
-            "by": "Lucas Borges",
-            "text": "Foram extraido logs do ambiente do dia 22-04 das respectivas orders  570433227 e  570418991 e não consta nenhum erro."
-          },
-          {
-            "created": "2024-04-23T19:13:12.787Z",
-            "by": "Marcelo Bortolini",
-            "text": "O campos paymentType são iguais nos dois pedidos e inclusive para o pedido  564997799  pedido pago com PIX \n \n             \"paymentType\": \"generic\",\n             \"paymentGroupClassType\": \"onlinePaymentGroup\",\n             \"paymentMethod\": \"onlinePaymentGroup\","
-          },
-          {
-            "created": "2024-04-23T19:04:19.503Z",
-            "by": "Marcelo Bortolini",
-            "text": "pedido que não integrou 570433227 (foi inserido manual o valor de  amountAuthorized  para que fosse integrado) Este pedido não recebeu as informações de pagamento, é necessário investigar no evento que grava estas informações na Oracle pois é a partir dai que conseguiremos solucionar o problema."
-          },
-          {
-            "created": "2024-04-23T19:00:22.237Z",
-            "by": "Marcelo Bortolini",
-            "text": "pedido com sucesso 570423461"
-          },
-          {
-            "created": "2024-04-23T18:18:49.667Z",
-            "by": "Marcelo Bortolini",
-            "text": "agenda em 24/04 às 11:20"
-          },
-          {
-            "created": "2024-04-23T17:34:43.843Z",
-            "by": "Marcelo Bortolini",
-            "text": "@marta.bispo   Estruturalmente os pedidos que vc me mandou os retornos, um que gravou corretor (570423461) e um que deu problema hoje (570433227), ambos estão com os campos preenchidos corretamente, tirando-se as particularidades de cada um dos pedidos como valores, itens e o cliente, não parece haver diferenças."
-          },
-          {
-            "created": "2024-04-23T14:54:55.57Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "@Marcelo Bortolini  Anexo"
-          },
-          {
-            "created": "2024-04-23T14:48:33.5Z",
-            "by": "Marcelo Bortolini",
-            "text": "@marta.bispo  me encaminha os mesmo retornos do pedido 570423461 por gentileza"
-          },
-          {
-            "created": "2024-04-23T13:20:46.053Z",
-            "by": "Marcelo Bortolini",
-            "text": "@marta.bispo   é possível ver o retorno deste POST ? \"queryAndPath\": {},\n \"method\": \"POST\",\n \"path\": \"/pipeline/salonline/v1/pagamentos\",\n \"absoluteURI\": \"http://{DIGIBEE_HOST}/pipeline/salonline/v1/pagamentos\""
-          },
-          {
-            "created": "2024-04-23T12:58:52.813Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "@Marcelo Bortolini  anexo."
-          },
-          {
-            "created": "2024-04-23T12:51:26.217Z",
-            "by": "Marcelo Bortolini",
-            "text": "@marta.bispo   \n Consegue passar os logs de saída e de entrada ? Pois o fluxo que conhecemos o pedidos segue assim \n OCC -> Degebee -> MP (fluxo de saída) MP -> Degebee -> OCC (fluxo de entrada) aqui é onde não estamos recebendo o retorno precisamos o reponse do envio destes pipeline"
-          },
-          {
-            "created": "2024-04-23T11:35:22.54Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "Novos casos:  570433227 e  570418991. Precisamos priorizar essa verificação, o numero de pedidos nesta situação esta crescendo. Não da para ficar ajustando para o pedido integrar. @Marcelo Bortolini"
-          },
-          {
-            "created": "2024-04-17T15:18:23.867Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "Novo caso: 570247123 @Marcelo Bortolini  pode solicitar uma verificação? Anexo aqui o retorno do MP. Vou precisar liberar este pedido para não impactar na entrega ao cliente."
-          }
-        ]
-      },
-      {
         "id": 41484,
         "type": "Melhoria",
         "title": "[PDP] Tire suas dúvidas",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T15:18:41.037Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueado na definição com a YourViews: falta decidir se a seção Tire suas dúvidas será da ferramenta ou interna.",
+        "responsavel": "YourViews",
+        "observation": "Bloqueado na definição com a YourViews: falta decidir se a seção Tire suas dúvidas será da ferramenta ou interna.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Objetivo \n Adequar a seção “Tire suas dúvidas” da PDP ao novo layout aprovado no Figma, preservando integralmente as funcionalidades atuais da integração com a YourViews . \n A implementação deverá considerar as possibilidades de customização disponibilizadas pela ferramenta, sem alterar o comportamento funcional já existente. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Adaptar a seção “Tire suas dúvidas” , integrada à You",
@@ -1167,12 +1033,15 @@
         "type": "Melhoria",
         "title": "[PDP] Avaliações",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T15:15:51.37Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueado na definição com a YourViews: falta decidir se o front das avaliações será da ferramenta ou interno.",
+        "responsavel": "YourViews",
+        "observation": "Bloqueado na definição com a YourViews: falta decidir se o front das avaliações será da ferramenta ou interno.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Objetivo \n Adequar a seção de Avaliações da PDP ao novo layout aprovado no Figma, preservando integralmente as funcionalidades atuais da integração com a YourViews . \n A implementação deverá considerar as possibilidades de customização disponibilizadas pela ferramenta, sem comprometer o funcionamento existente. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Adaptar a seção de Avaliações integrada à YourViews ao novo layout d",
@@ -1194,12 +1063,15 @@
         "type": "Melhoria",
         "title": "Inclusão de novos campos no formulário da central de atendimento",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "13/07/2026",
         "createdDateRaw": "2026-07-13T18:51:42.383Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueado pela Salesforce: a plataforma ainda precisa receber os novos campos do formulário da central de atendimento.",
+        "responsavel": "Salesforce",
+        "observation": "Bloqueado pela Salesforce: a plataforma ainda precisa receber os novos campos do formulário da central de atendimento.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Objetivo O objetivo desta funcionalidade é otimizar o processo de identificação, triagem e resolução de bugs reportados pelos usuários dentro da plataforma. \n Atualmente, quando um cliente enfrenta um erro, ele preenche relatos vagos ou precisa acionar o SAC. Isso gera um tempo alto de diagnóstico para o time, que frequentemente não sabe em qual canal o erro ocorreu ou o que exatamente o cliente visualizou. \n Essa feature resolve esse problema ao estruturar a captura do erro na raiz, colhendo o canal exato e a prova visual (print) direto da jornada do usuário. \n Descrição Será implementada uma melhoria no formulário de contato/ajuda do cliente, adicionando duas novas interações obrigatórias,",
@@ -1221,15 +1093,18 @@
         "type": "Melhoria",
         "title": "Análise de Performance do Site",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "22/04/2026",
         "createdDateRaw": "2026-04-22T18:18:04.013Z",
         "assignedTo": {
           "displayName": "Marcus Linck",
           "uniqueName": "marcus.linck@lighthouseit.com.br"
         },
-        "observation": "Responsável: Marcus Linck. Bloqueado pela Salon Line: a lentidão foi atribuída ao peso das imagens e o plano de ação ficou com o time interno.",
+        "responsavel": "Salon Line",
+        "observation": "Bloqueado pela Salon Line: a lentidão foi atribuída ao peso das imagens e o plano de ação ficou com o time interno.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Contexto: \nA performance do site já apresenta degradação. Após implementações recentes, precisamos identificar se houve impacto adicional ou se os problemas já eram existentes. \n Escopo: \n - Métricas principais (LCP, CLS, INP, TTFB) \n \n- Comparativo antes vs depois (se houver histórico) \n \n- Scripts/componentes com maior impacto \n \n- Assets pesados (imagens, vídeos) \n \n- Requisições externas (APIs, trackers) \n \n \n Critérios de sucesso: \n \n - Principais gargalos identificados/ Navegação Fluída",
@@ -1251,15 +1126,18 @@
         "type": "Melhoria",
         "title": "Inclusão de Apple Pay e Google Pay como formas de pagamento",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "09/04/2026",
         "createdDateRaw": "2026-04-09T17:30:20.957Z",
         "assignedTo": {
           "displayName": "luana.santos salonline.com.br",
           "uniqueName": "luana.santos@salonline.com.br"
         },
-        "observation": "Responsável: luana.santos salonline.com.br. Bloqueado pela área de negócios: o Mercado Pago não cobre Apple Pay nem Google Pay e o gateway ainda não foi escolhido.",
+        "responsavel": "Área de negócios",
+        "observation": "Bloqueado pela área de negócios: o Mercado Pago não cobre Apple Pay nem Google Pay e o gateway ainda não foi escolhido.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Objetivo Disponibilizar Apple Pay e Google Pay como métodos de pagamento no   aplicativo   e no   site   da Salon Line, com o objetivo de: \n - Reduzir fricção no checkout \n- Aumentar a taxa de conversão \n- Melhorar a experiência de compra \n- Oferecer meios de pagamento alinhados ao comportamento atual dos consumidores \n- Padronizar a oferta de métodos de pagamento entre os canais digitais \n \n Público impactado - Usuários de iPhone compatíveis com Apple Pay \n- Usuários de Android compatíveis com Google Pay \n \n- Clientes que compram pelo site em dispositivos e navegadores compatíveis \n \n- Clientes recorrentes que valorizam agilidade no checkout \n \n \n Escopo da solução: Inclusões: \n - Integraçã",
@@ -1291,15 +1169,18 @@
         "type": "Melhoria",
         "title": "Ajustar exibição de mensagem de frete grátis no cálculo de frete",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "02/04/2026",
         "createdDateRaw": "2026-04-02T17:22:03.917Z",
         "assignedTo": {
           "displayName": "Marcus Linck",
           "uniqueName": "marcus.linck@lighthouseit.com.br"
         },
-        "observation": "Responsável: Marcus Linck. Bloqueado pela Salon Line: a prioridade foi adiada até a definição das regras de mensagem de frete grátis.",
+        "responsavel": "Salon Line",
+        "observation": "Bloqueado pela Salon Line: a prioridade foi adiada até a definição das regras de mensagem de frete grátis.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Atualmente, o componente de cálculo de frete exibe a mensagem “Oba, você já tem frete grátis!” mesmo para clientes/localidades que não estão elegíveis à regra de frete grátis. \n Regra desejada: \nA mensagem de frete grátis não deve ser exibida para clientes que pertencem às listas da Intelipost que não recebem frete grátis (ou seja, quando houver cobrança de frete). \n Comportamento esperado: \n - \nValidar, via retorno da Intelipost, se o cliente/região está elegível para frete grátis.\n- \nExibir a mensagem de frete grátis somente quando o valor do frete for R$ 0,00 .\n- \nCaso exista qualquer valor de frete (Normal, Expresso, etc.), não exibir a mensagem .",
@@ -1321,15 +1202,18 @@
         "type": "Melhoria",
         "title": "Integração App SEO + Oracle",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "26/03/2026",
         "createdDateRaw": "2026-03-26T18:46:56.91Z",
         "assignedTo": {
           "displayName": "Ewerton Bezerra",
           "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
         },
-        "observation": "Responsável: Ewerton Bezerra. O título cita integração com a Oracle e não há SR 4-. O comentário recente diz que os ajustes pedidos já foram feitos.",
+        "responsavel": "Área de negócios",
+        "observation": "Bloqueado pela área de negócios: a contratação do Semrush está em aprovação e o card só avança depois dela.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Pessoal, gostaríamos de avaliar, junto ao time, a viabilidade técnica de integração entre um aplicativo de SEO e a Oracle. Objetivo da análise: \nEntender as possibilidades de automação e validar a viabilidade técnica da implementação. \n Pontos que precisamos avaliar: \n - \nQuais processos podem ser automatizados dentro da Oracle;\n- \nViabilidade técnica para automação dessas ações;\n- \nPossibilidade de inclusão automática de conteúdos como H1, H2 e textos descritivos.\n Proposta do aplicativo: \nO app em questão oferece as seguintes funcionalidades: \n - \nAnálise de SEO;\n- \nGeração de sugestões de conteúdo;\n- \nAutomação da implementação de textos na Oracle;\n- \nPontuação de produtos com base em cri",
@@ -1366,15 +1250,18 @@
         "type": "Melhoria",
         "title": "Integração \"Viva Você Studio\" + Ecomm",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "26/03/2026",
         "createdDateRaw": "2026-03-26T18:40:24.01Z",
         "assignedTo": {
           "displayName": "karina.zaghetto salonline.com.br",
           "uniqueName": "karina.zaghetto@salonline.com.br"
         },
-        "observation": "Responsável: karina.zaghetto salonline.com.br. Bloqueado pela Salon Line: faltam as URLs de TST e PRD, a escolha entre iframe e subdomínio e a correção da API exposta.",
+        "responsavel": "Viva Você Studio",
+        "observation": "Aguardando a revisão do Viva Você Studio.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "Objetivo \n Integrar o aplicativo Viva Você Studio ao Ecomm, disponibilizando seu conteúdo como uma página interna do site via iframe. \n Descrição \n O aplicativo Viva Você Studio será incorporado ao Ecomm por meio de um iframe, acessado através de um slug dedicado no site. Essa abordagem mantém a navegação dentro do domínio, oferecendo ao usuário uma experiência fluida como se fosse uma página nativa. A URL de TST já está disponível para início da implementação; a URL de produção será compartilhada assim que os testes forem concluídos. \n Requisitos / Regras \n \n - A página do Viva Você Studio deve ser carregada via iframe dentro do Ecomm. \n- Deve ser criado um slug no site para que a página se",
@@ -1426,15 +1313,18 @@
         "type": "Melhoria",
         "title": "Implementação no Modal de Visualização Rápida (Quick View) – PLP Web e Mobile",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "25/03/2026",
         "createdDateRaw": "2026-03-25T14:32:02.797Z",
         "assignedTo": {
           "displayName": "karina.zaghetto salonline.com.br",
           "uniqueName": "karina.zaghetto@salonline.com.br"
         },
-        "observation": "Responsável: karina.zaghetto salonline.com.br. O estado segue Blocked, mas o comentário mais recente libera o Figma. O motivo atual da dependência não está explícito.",
+        "responsavel": "Salon Line",
+        "observation": "Bloqueado pela Salon Line: o time ainda analisa se a funcionalidade segue.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
         "descriptionExcerpt": "📄 Contexto \n O modal de visualização rápida (Quick View) deve ser simplificado para exibir apenas informações essenciais, mantendo uma experiência leve e objetiva. \n Como benchmark, seguimos o padrão da Lacoste, que permite: \n - Visualização rápida do produto \n \n- Ação direta (adicionar à sacola) \n \n- Navegação para PDP quando necessário \n \n 🎯 Objetivo de UX - Leitura rápida (scan em poucos segundos) \n \n- Redução de fricção \n \n- Permitir ação rápida (add to cart) \n \n- Manter acesso fácil à PDP \n \n 👤 Necessidade do usuário O usuário quer: \n - Entender rapidamente o produto \n \n- Saber se é para o tipo de cabelo dele \n \n- Ver o preço \n \n- Visualizar a volumetria (ex: 300ml, 500g, 1kg) \n \n- Pode",
@@ -1466,31 +1356,34 @@
         "type": "Bug",
         "title": "Boleto Pago Após o Vencimento",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "07/02/2024",
         "createdDateRaw": "2024-02-07T18:18:44.22Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Card sem descrição e sem comentário. Dependência e motivo do bloqueio não identificados.",
+        "responsavel": "Não identificado",
+        "observation": "Card sem descrição e sem comentário. O responsável pelo bloqueio não está no card.",
         "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "Moved to state Blocked"
       },
       {
         "id": 10100,
         "type": "Bug",
         "title": "Indexação não está sendo refletida no Front - Categorias não são atualizadas",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "19/01/2024",
         "createdDateRaw": "2024-01-19T14:58:43.767Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Bloqueio sem dono nem motivo vigente. O último comentário é de janeiro de 2024.",
+        "responsavel": "Não identificado",
+        "observation": "Bloqueio sem dono nem motivo vigente. O último comentário é de janeiro de 2024.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2024-01-19T15:02:27.183Z",
@@ -1504,18 +1397,20 @@
         "type": "Bug",
         "title": "Request para Cotação de Frete com divergências - PESO INCORRETO",
         "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "12/12/2023",
         "createdDateRaw": "2023-12-12T13:01:18.823Z",
         "assignedTo": {
           "displayName": "Lucas Borges",
           "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
         },
-        "observation": "Responsável: Lucas Borges. Mantido bloqueado para preservar as evidências de peso incorreto na cotação, no aguardo de nova ocorrência.",
+        "responsavel": "Marcelo Bortolini",
+        "observation": "Mantido bloqueado para preservar as evidências de peso incorreto, no aguardo de nova ocorrência.",
         "srCandidates": [],
         "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2024-01-04T18:21:19.77Z",
@@ -1529,103 +1424,74 @@
         "type": "Melhoria",
         "title": "Algolia | Criar replicas de ordenação e filtros",
         "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "01/10/2026",
         "createdDateRaw": "2026-10-01T12:17:31.067Z",
         "assignedTo": {
           "displayName": "Ewerton Bezerra",
           "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
         },
-        "observation": "Responsável: Ewerton Bezerra. Em desenvolvimento: réplicas de ordenação por preço e mais vendidos e índice de filtros na Algolia.",
+        "responsavel": "Ewerton Bezerra",
+        "observation": "Em desenvolvimento: réplicas de ordenação por preço e mais vendidos e índice de filtros na Algolia.",
         "srCandidates": [],
         "reason": "Moved to state Active",
-        "descriptionExcerpt": "Precisamos criar as replicas de index para ordenação (Preço menor, preço maior, mais vendidos) assim como também deverá ser criado o index de filtros dentro da plataforma da Algolia.",
-        "comments": []
+        "descriptionExcerpt": "Precisamos criar as replicas de index para ordenação (Preço menor, preço maior, mais vendidos) assim como também deverá ser criado o index de filtros dentro da plataforma da Algolia."
       },
       {
         "id": 41681,
         "type": "Melhoria",
         "title": "Algolia | Adicionar a Algolia nas páginas de categoria",
         "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T02:49:37.79Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em desenvolvimento: consulta de produtos das páginas de categoria pela Algolia.",
+        "responsavel": "",
+        "observation": "Em desenvolvimento: consulta de produtos das páginas de categoria pela Algolia.",
         "srCandidates": [],
         "reason": "Moved to state Active",
-        "descriptionExcerpt": "Integrar as páginas de categoria do Site OCC à Algolia para consultar e apresentar os produtos correspondentes à categoria acessada, mantendo uma experiência consistente entre busca e navegação. Registrar o atributo ou filtro utilizado para identificar cada categoria e reutilizar os componentes de resultados aplicáveis. \n Critérios de aceite: categorias de referência apresentam os produtos correspondentes; filtros e navegação funcionam conforme o comportamento aprovado; consultas utilizam a identificação correta da categoria; validação no desktop e mobile web.",
-        "comments": []
+        "descriptionExcerpt": "Integrar as páginas de categoria do Site OCC à Algolia para consultar e apresentar os produtos correspondentes à categoria acessada, mantendo uma experiência consistente entre busca e navegação. Registrar o atributo ou filtro utilizado para identificar cada categoria e reutilizar os componentes de resultados aplicáveis. \n Critérios de aceite: categorias de referência apresentam os produtos correspondentes; filtros e navegação funcionam conforme o comportamento aprovado; consultas utilizam a identificação correta da categoria; validação no desktop e mobile web."
       },
       {
-        "id": 41479,
+        "id": 41577,
         "type": "Melhoria",
-        "title": "[PDP] Hero da PDP",
+        "title": "Envelopamento do Site — Black Friday",
         "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
-        "createdDate": "17/09/2026",
-        "createdDateRaw": "2026-09-17T14:55:29.463Z",
+        "iterationTimeFrame": "current",
+        "createdDate": "23/09/2026",
+        "createdDateRaw": "2026-09-23T16:53:19.993Z",
         "assignedTo": {
-          "displayName": "Regis Ropke",
-          "uniqueName": "regis.ropke@lighthouseit.com.br"
+          "displayName": "Regis Ropke"
         },
-        "observation": "Responsável: Regis Ropke. Hero da página de produto em desenvolvimento. O botão de compartilhar ainda aguarda o Figma.",
+        "responsavel": "Regis Ropke",
+        "observation": "Em desenvolvimento: envelopamento visual do site para a campanha de Black Friday.",
         "srCandidates": [],
         "reason": "Moved to state Active",
-        "descriptionExcerpt": "Objetivo \n Adequar a seção Hero da PDP ao novo layout aprovado no Figma, reorganizando os componentes existentes e preservando as funcionalidades atuais, conforme definido no card pai #40929 . \n Referência \n Este desenvolvimento faz parte do card pai #40929 – Desenvolvimento do novo layout da PDP . \n As definições visuais e de comportamento devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição \n Atualizar a Hero da PDP conforme o layout definido no Figma, realizando a reorganização das informações existentes e o reposicionamento dos componentes previstos para essa seção. \n As funcionalida",
+        "descriptionExcerpt": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI. \n A entrega deverá estar concluída até 1º de novembro . \n Requisitos/Regras - Aplicar a identidade visual da campanha nas áreas definidas do site. \n- Contemplar as versões Desktop e Mobile. \n- Garantir a responsividade dos elementos. \n- Validar a exibição das imagens, banners, textos e links. \n- Manter a usabilidade e a performance do",
         "comments": [
           {
-            "created": "2026-09-29T17:58:48.627Z",
+            "created": "2026-09-29T15:21:29.797Z",
             "by": "daniela.damasceno salonline.com.br",
-            "text": "@Fábio Vidart  \nA orientação para o botão de compartilhamento: \n @Daniela Damasceno , esse botão já existia na interface; apenas ajustei sua posição. Ao analisar o site, percebi que ele não está presente na PDP já implementada."
+            "text": "Cor que vamos utilizae no envelopamento \n Black Crow — #080806 - \nRGB: rgb(8, 8, 6)"
           },
           {
-            "created": "2026-09-29T12:07:34.807Z",
-            "by": "Fábio Vidart",
-            "text": "@ Foi passado o Figma do Modal, porém aguardamos o Figma do botão de compartilhar."
+            "created": "2026-09-28T16:51:06.497Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Virada no dia 02/11"
           },
           {
-            "created": "2026-09-28T18:02:35.543Z",
+            "created": "2026-09-23T17:02:20.413Z",
             "by": "daniela.damasceno salonline.com.br",
-            "text": "@Fábio Vidart   https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5643-114361&t=DQT0f0OsOqS4TO8A-0"
-          },
-          {
-            "created": "2026-09-23T12:12:09.2Z",
-            "by": "Fábio Vidart",
-            "text": "@ \nConforme alinhado, aguardamos o figma do Modal de tamanhos e do botão de compartilhar.\nFicamos no aguardo para dar continuidade na demanda."
-          }
-        ]
-      },
-      {
-        "id": 40929,
-        "type": "Melhoria",
-        "title": "Desenvolvimento do novo layout da Página de Produto",
-        "state": "Active",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "25/08/2026",
-        "createdDateRaw": "2026-08-25T16:59:34.3Z",
-        "assignedTo": {
-          "displayName": "Regis Ropke",
-          "uniqueName": "regis.ropke@lighthouseit.com.br"
-        },
-        "observation": "Responsável: Regis Ropke. Novo layout da página de produto em desenvolvimento, com dúvidas de Figma mobile ainda abertas.",
-        "srCandidates": [],
-        "reason": "Moved to state Active",
-        "descriptionExcerpt": "Objetivo \n Desenvolver o novo layout da PDP, reorganizando os componentes existentes e criando os novos widgets necessários, conforme o protótipo aprovado no Figma. \n Link do Figma\n \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição \n A PDP deverá ser atualizada de acordo com o layout definido no Figma. A implementação contempla ajustes na Hero, reposicionamento de informações existentes, criação de novos componentes e adequação das integrações atuais. \n O desenvolvimento deverá manter as funcionalidades já existentes, garantindo que a atualização seja apenas visual ou estrutural quando não houver indicação de mudança de comport",
-        "comments": [
-          {
-            "created": "2026-09-16T21:25:07.753Z",
-            "by": "Regis Ropke",
-            "text": "@daniela.damasceno salonline.com.br , seguem algumas duvidas sobre o figma mobile, algumas seções aparecem estar repetidas\no primeiro item Ritual em X passos, ja esta implementado desktop e mobile\n \naparentemente mesmo conteudo\n \nEtapas de uso caiu no desktop mas aparece figma mobile\n \nEsses detalhes adicionais estao confusos tambem e de certa forma repetido com a seção que tem acima conforme a foto (2)\n \n(Foto2)Esses detalhes adicionais aqui abaixo existe na versao desktop ja reaprovietada no mobile e ja implementado na pagina de teste"
-          },
-          {
-            "created": "2026-09-03T17:52:32.593Z",
-            "by": "Regis Ropke",
-            "text": "@daniela.damasceno salonline.com.br   Pagina da nova PDP para acompanhar o desenvolvimento \n https://p7724145c1tst-store.occa.ocs.oraclecloud.com/creme-para-pentear-sos-bomba-original-salon-line-300ml"
+            "text": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI.\n A entrega deverá estar concluída até 1º de novembro .\n Requisitos/Regras - \nAplicar a identidade visual da campanha nas áreas definidas do site.\n- \nContemplar as versões Desktop e Mobile.\n- \nGarantir a responsividade dos elementos.\n- \nValidar a exibição das imagens, banners, textos e links.\n- \nManter a usabilidade e a performance do site.\n- \nRealizar os testes antes da publicação em produção.\n Critérios de validação - \nEnvelopamento aplicado corretamente nas páginas previstas.\n- \nElementos visuais funcionando em Desktop e Mobile.\n- \nLinks e redirecionamentos validados.\n- \nAusência de quebras de layout ou problemas de carregamento.\n- \nAprovação final das áreas responsáveis.\n Prazo Data de entrega: 1º de novembro."
           }
         ]
       },
@@ -1634,18 +1500,20 @@
         "type": "Bug",
         "title": "Problema/Cronograma-Capilar exibindo imagens quebradas",
         "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "09/01/2025",
         "createdDateRaw": "2025-01-09T20:26:20.967Z",
         "assignedTo": {
           "displayName": "Gianluca Ferreira",
           "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
         },
-        "observation": "Responsável: Gianluca Ferreira. Imagens quebradas no Cronograma Capilar. O último comentário, de janeiro de 2025, pede validação em produção.",
+        "responsavel": "Gianluca Ferreira",
+        "observation": "Imagens quebradas no Cronograma Capilar. O último comentário, de janeiro de 2025, pede validação em produção.",
         "srCandidates": [],
         "reason": "Approved",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2025-01-10T18:28:42.833Z",
@@ -1664,119 +1532,55 @@
         "type": "Bug",
         "title": "Produtos sendo exibidos como \"Grátis\" no carrinho incorretamente",
         "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "17/01/2024",
         "createdDateRaw": "2024-01-17T18:00:32.467Z",
         "assignedTo": {
           "displayName": "Gianluca Ferreira",
           "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
         },
-        "observation": "Responsável: Gianluca Ferreira. Bug antigo ainda em desenvolvimento, sem descrição nem comentário recente no card.",
+        "responsavel": "Gianluca Ferreira",
+        "observation": "Bug antigo ainda em desenvolvimento, sem descrição nem comentário recente no card.",
         "srCandidates": [],
-        "reason": "Approved",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "Approved"
       },
       {
         "id": 9669,
         "type": "Bug",
         "title": "Valor TOTAL de pedido parcelado COM Juros está sendo exibido com soma incorreta",
         "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "04/01/2024",
         "createdDateRaw": "2024-01-04T17:35:47.72Z",
         "assignedTo": {
           "displayName": "Gianluca Ferreira",
           "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
         },
-        "observation": "Responsável: Gianluca Ferreira. Bug antigo ainda em desenvolvimento, sem descrição nem comentário recente no card.",
+        "responsavel": "Gianluca Ferreira",
+        "observation": "Bug antigo ainda em desenvolvimento, sem descrição nem comentário recente no card.",
         "srCandidates": [],
-        "reason": "Approved",
-        "descriptionExcerpt": "",
-        "comments": []
-      },
-      {
-        "id": 41820,
-        "type": "Melhoria",
-        "title": "Algolia | Implementar atualizações incrementais do catálogo",
-        "state": "In Test Light",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "02/10/2026",
-        "createdDateRaw": "2026-10-02T20:45:09.937Z",
-        "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: atualização incremental do catálogo, com rotina a cada cinco minutos.",
-        "srCandidates": [],
-        "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Implementar atualizações incrementais do catálogo Oracle na Algolia utilizando Partial Updates, com envio das alterações em pacotes. Documentar como as alterações são identificadas, agrupadas e processadas, utilizando a integração realizada no card 41515. A implementação atende à recomendação de melhorar a eficiência da indexação para os usos previstos de Data Transformation e Collections. \n Critérios de aceite: alterações enviadas incrementalmente em pacotes; registros correspondentes atualizados corretamente;",
-        "comments": [
-          {
-            "created": "2026-10-05T17:01:32.967Z",
-            "by": "Ewerton Bezerra",
-            "text": "Implementado, job no SSE rodando a cada 5 minutos buscando os últimos produtos que foram atualizados conforme a data da ultima modificação.\n**Antes:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/1fb9e83b-1cd0-43bd-96ab-8f09ce4e8ee0?fileName=image.png) \n**Endpoint com status:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b52e5bcc-9b2d-4e9f-8f63-2ec20854625a?fileName=image.png) \n**Após alteração:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/0b96c67e-2c08-469c-953f-79714e67c037?fileName=image.png) \n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/e459311d-84b0-4709-adba-a734d5ad55bf?fileName=image.png)"
-          }
-        ]
-      },
-      {
-        "id": 41786,
-        "type": "Melhoria",
-        "title": "Algolia | Adaptar FrontEnd da busca",
-        "state": "In Test Light",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "01/10/2026",
-        "createdDateRaw": "2026-10-01T20:08:20.603Z",
-        "assignedTo": {
-          "displayName": "Julio Lima",
-          "uniqueName": "julio.lima@lighthouseit.com.br"
-        },
-        "observation": "Responsável: Julio Lima. Em teste LH: autocomplete da busca no padrão recomendado pela Algolia.",
-        "srCandidates": [],
-        "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Objetivo: O objetivo desta funcionalidade é implementar um componente de autocomplete  no site, seguindo os padrões de experiência de usuário (UX) recomendados pela Algolia. \n - Recent Searches: Facilitar o reuso de termos pesquisados anteriormente \n- Suggestions: Agilizar a busca através de termos sugeridos \n- Products: Exibir os produtos diretamente no menu suspenso de busca.  \n \n \n Descrição: Será reformulada a interface do campo de busca. Ao clicar ou começar a digitar no campo, o sistema exibirá um menu suspenso estruturado em formato de lista , dividido em três seções bem definidas: \n - Buscas Recentes (Recent Searches): Histórico das últimas buscas realizadas pelo usuário no dispositi",
-        "comments": [
-          {
-            "created": "2026-10-05T15:08:59.163Z",
-            "by": "Ewerton Bezerra",
-            "text": "Foi implementado o autocomplete, conforme documentação e exemplo presente na algolia:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b988b593-a4da-41d5-99a2-963ae315f02d?fileName=image.png)"
-          }
-        ]
-      },
-      {
-        "id": 41677,
-        "type": "Melhoria",
-        "title": "Algolia | Implementar Recent Searches",
-        "state": "In Test Light",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "25/09/2026",
-        "createdDateRaw": "2026-09-26T02:14:43.083Z",
-        "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: buscas recentes salvas no navegador e reaproveitadas no autocomplete.",
-        "srCandidates": [],
-        "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Armazenar localmente no navegador as buscas recentes realizadas no Site OCC e permitir sua reutilização no autocomplete.\n \n \n \n Critérios de aceite: histórico persistido localmente; termos recentes exibidos; seleção de um termo executa a busca correspondente; remoção funciona conforme a regra aprovada; validação no desktop e mobile web.",
-        "comments": [
-          {
-            "created": "2026-10-05T15:14:36.787Z",
-            "by": "Ewerton Bezerra",
-            "text": "implementado:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/3d433557-5380-4217-b205-9605bcd27a95?fileName=image.png)"
-          }
-        ]
+        "reason": "Approved"
       },
       {
         "id": 41676,
         "type": "Melhoria",
         "title": "Algolia | Implementar userToken nos eventos",
         "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T01:59:53.97Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: identificador de usuário nos eventos e nas consultas da Algolia.",
+        "responsavel": "",
+        "observation": "Em teste LH: identificador de usuário nos eventos e nas consultas da Algolia.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
         "descriptionExcerpt": "Aplicar o userToken de forma\nconsistente nas consultas e nos eventos do Site OCC, para permitir a associação\ndas interações de uma mesma jornada. \n \n \n Critérios de aceite: Consultas e eventos de uma mesma jornada de teste utilizam o\nidentificador esperado, conforme a regra aprovada. \n \n \n Documentação:  https://www.algolia.com/doc/guides/sending-events/concepts/usertoken",
@@ -1798,12 +1602,15 @@
         "type": "Melhoria",
         "title": "Algolia | Eventos & Analitycs",
         "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "18/09/2026",
         "createdDateRaw": "2026-09-18T20:07:31.137Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: eventos de visualização, clique e conversão da Algolia.",
+        "responsavel": "",
+        "observation": "Em teste LH: eventos de visualização, clique e conversão da Algolia.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
         "descriptionExcerpt": "Implementar no Site OCC os eventos de view , click e conversion acordados para as jornadas de busca e navegação. Documentar os pontos de disparo, os dados enviados e validar o recebimento na Algolia, atendendo à recomendação de disponibilizar dados para Analytics e funcionalidades de IA. Documentações: - Insights API Overview \n \n- Analytics Overview \n \n- https://www.algolia.com/doc/guides/sending-events/concepts/event-types",
@@ -1826,35 +1633,19 @@
         ]
       },
       {
-        "id": 41515,
-        "type": "Melhoria",
-        "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
-        "state": "In Test Light",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "18/09/2026",
-        "createdDateRaw": "2026-09-18T19:52:14.257Z",
-        "assignedTo": {
-          "displayName": "Julio Lima",
-          "uniqueName": "julio.lima@lighthouseit.com.br"
-        },
-        "observation": "Responsável: Julio Lima. Em teste LH: indexação do catálogo Oracle na Algolia.",
-        "srCandidates": [],
-        "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Objetivo: - Mapear os atributos disponíveis no Oracle para o primeiro índice. \n- Identificar campos adicionais necessários para relevância e ordenação, como vendas dos últimos 90 dias.  \n- Validar acesso ao Sandbox e às credenciais da Algolia. \n- Realizar a integração do catálogo Oracle com a Algolia e a estruturação do processo de envio dos dados.  \n Critérios de aceite: catálogo previsto enviado e consultável na Algolia \n \n Documentações: - Getting Started \n \n- Importing Data \n \n- Push to Algolia \n \n- Prepare Your Data for Algolia \n \n- Partial Updates",
-        "comments": []
-      },
-      {
         "id": 41485,
         "type": "Melhoria",
         "title": "[PDP] Monte sua Rotina",
         "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T15:20:04.45Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: widget Monte sua Rotina, com destaque do produto que o cliente está vendo.",
+        "responsavel": "",
+        "observation": "Em teste LH: widget Monte sua Rotina, com destaque do produto que o cliente está vendo.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
         "descriptionExcerpt": "Objetivo \n Desenvolver o novo widget “Monte sua Rotina” na PDP para apresentar produtos complementares organizados por etapas, conforme o layout aprovado no Figma. \n O componente deverá destacar o produto correspondente à PDP acessada e permitir a navegação para a rotina completa, respeitando as estruturas de relacionamento de produtos já existentes sempre que aplicável. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o",
@@ -1871,12 +1662,15 @@
         "type": "Melhoria",
         "title": "[PDP] Ritual em {x} passos",
         "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T15:14:25Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: ritual em passos, exibido somente quando o produto tem o conteúdo preenchido.",
+        "responsavel": "",
+        "observation": "Em teste LH: ritual em passos, exibido somente quando o produto tem o conteúdo preenchido.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
         "descriptionExcerpt": "Objetivo \n Desenvolver um novo widget para apresentar o modo de uso do produto em etapas , conforme o layout aprovado no Figma, permitindo uma quantidade variável de passos e atualização dinâmica do título do componente. \n O widget deverá ser configurável pela OCC, responsivo e exibido somente quando houver conteúdo cadastrado. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o novo componente “Ritual em {x} passos” para",
@@ -1893,12 +1687,15 @@
         "type": "Melhoria",
         "title": "[PDP] Informações do Produto",
         "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T15:11:41.233Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: informações do produto, incluindo a seção Dica de Ouro.",
+        "responsavel": "",
+        "observation": "Em teste LH: informações do produto, incluindo a seção Dica de Ouro.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
         "descriptionExcerpt": "Objetivo \n Adequar a seção Informações do Produto ao novo layout da PDP, preservando as informações já existentes e adicionando a nova seção “Dica de Ouro” , conforme definido no Figma e no card pai #40929 . \n A implementação deverá manter o padrão de accordion já utilizado no projeto e respeitar as regras gerais de responsividade, configuração e exibição condicional definidas no card principal. \n Referência \n Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-7",
@@ -1915,12 +1712,15 @@
         "type": "Melhoria",
         "title": "[PDP] Trust Bar",
         "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "17/09/2026",
         "createdDateRaw": "2026-09-17T15:10:06.063Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste LH: faixa de benefícios da nova página de produto.",
+        "responsavel": "",
+        "observation": "Em teste LH: faixa de benefícios da nova página de produto.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
         "descriptionExcerpt": "Objetivo \n Desenvolver o novo componente Trust Bar da PDP, conforme o layout aprovado no Figma, permitindo a apresentação de benefícios comerciais e institucionais de forma configurável pela OCC. \n O componente deverá seguir os padrões visuais e técnicos já utilizados no projeto, preservando a experiência responsiva da PDP. \n Referência \n Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar um novo widget para exibição de benefícios na P",
@@ -1933,18 +1733,70 @@
         ]
       },
       {
+        "id": 41677,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Recent Searches",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:14:43.083Z",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
+        "responsavel": "luana.santos salonline.com.br",
+        "observation": "Pronto para publicar em produção: buscas recentes salvas no navegador e reaproveitadas no autocomplete.",
+        "srCandidates": [],
+        "reason": "Moved to state Ready PRD",
+        "descriptionExcerpt": "Armazenar localmente no navegador as buscas recentes realizadas no Site OCC e permitir sua reutilização no autocomplete.\n \n \n \n Critérios de aceite: histórico persistido localmente; termos recentes exibidos; seleção de um termo executa a busca correspondente; remoção funciona conforme a regra aprovada; validação no desktop e mobile web.",
+        "comments": [
+          {
+            "created": "2026-10-05T15:14:36.787Z",
+            "by": "Ewerton Bezerra",
+            "text": "implementado:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/3d433557-5380-4217-b205-9605bcd27a95?fileName=image.png)"
+          }
+        ]
+      },
+      {
+        "id": 41515,
+        "type": "Melhoria",
+        "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "18/09/2026",
+        "createdDateRaw": "2026-09-18T19:52:14.257Z",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
+        "responsavel": "luana.santos salonline.com.br",
+        "observation": "Pronto para publicar em produção: indexação do catálogo Oracle na Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state Ready PRD",
+        "descriptionExcerpt": "Objetivo: - Mapear os atributos disponíveis no Oracle para o primeiro índice. \n- Identificar campos adicionais necessários para relevância e ordenação, como vendas dos últimos 90 dias.  \n- Validar acesso ao Sandbox e às credenciais da Algolia. \n- Realizar a integração do catálogo Oracle com a Algolia e a estruturação do processo de envio dos dados.  \n Critérios de aceite: catálogo previsto enviado e consultável na Algolia \n \n Documentações: - Getting Started \n \n- Importing Data \n \n- Push to Algolia \n \n- Prepare Your Data for Algolia \n \n- Partial Updates"
+      },
+      {
         "id": 41513,
         "type": "Melhoria",
         "title": "Algolia | Spike Técnico: Viabilidade de Instalação (widgets/showcase/js)",
-        "state": "In Test Customer",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "18/09/2026",
         "createdDateRaw": "2026-09-18T18:59:18.69Z",
-        "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em teste com o cliente: estudo de viabilidade do InstantSearch da Algolia, já disponível em TST.",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
+        "responsavel": "luana.santos salonline.com.br",
+        "observation": "Pronto para publicar em produção: estudo de viabilidade do InstantSearch da Algolia, já disponível em TST.",
         "srCandidates": [],
-        "reason": "Moved to state In Test Customer",
+        "reason": "Moved to state Ready PRD",
         "descriptionExcerpt": "Objetivo: O objetivo desta tarefa é realizar um estudo de viabilidade técnica para avaliar a integração do mecanismo de busca e recomendação da Algolia com a nossa plataforma de e-commerce, utilizando os componentes da biblioteca de interface ( widgets showcase / InstantSearch). Descrição: Realizar uma análise de arquitetura baseada na documentação oficial do Algolia (widgets/showcase/js) para mapear: \n - As formas de instalação da biblioteca no nosso ambiente;\n \n- A compatibilidade dos widgets de busca com a nossa estrutura atual de front-end. \n Entregáveis do Spike Técnico: - Avaliar como a Algolia será integrada ao OCC e a recomendação oficial de instalação e padrões de implementação.\n \n-",
         "comments": [
           {
@@ -1965,32 +1817,30 @@
         ]
       },
       {
-        "id": 41726,
+        "id": 41853,
         "type": "Melhoria",
-        "title": "[Projeto CDP] Abandono Checkout",
-        "state": "Ready PRD",
+        "title": "Adicinar a marca Trata no menu",
+        "state": "Validation PRD",
+        "statusLabel": "Em Validação (PRD)",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
-        "createdDate": "29/09/2026",
-        "createdDateRaw": "2026-09-29T18:53:58.03Z",
+        "iterationTimeFrame": "current",
+        "createdDate": "05/10/2026",
+        "createdDateRaw": "2026-10-05T17:47:23.147Z",
         "assignedTo": {
-          "displayName": "Fábio Vidart",
-          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+          "displayName": "daniela.damasceno salonline.com.br",
+          "uniqueName": "daniela.damasceno@salonline.com.br"
         },
-        "observation": "Responsável: Fábio Vidart. Pronto para produção: campos de abandono de checkout validados em TST.",
+        "responsavel": "daniela.damasceno salonline.com.br",
+        "observation": "Em validação de produção: inclusão da marca Trata no menu do site.",
         "srCandidates": [],
-        "reason": "Moved to state Ready PRD",
-        "descriptionExcerpt": "**Contexto** \nPara tratar o abandono de checkout, vamos reaproveitar o webhook de carrinho abandonado já existente, sem criar novas integrações. Para isso, o pedido precisa carregar informações sobre o acesso do usuário ao checkout e o ponto do fluxo em que ele parou.\n**Solicitação** \nCriar os dois campos customizados abaixo no pedido e preenchê-los conforme o usuário avança no fluxo de checkout do e-commerce.\n| Campo | Tipo | Descrição | Exemplo |\n| --- | --- | --- | --- |\n| `sl_checkout_accessed` | Booleano | Indica se o usuário acessou o checkout | `true` / `false` |\n| `sl_checkout_last_step` | Texto | Último step do checkout acessado pelo usuário | `\"identification\"`, `\"shipping\"`, `\"pay",
+        "reason": "Moved to state Validation PRD",
+        "descriptionExcerpt": "Objetivo Adicionar a marca Trata ao menu principal do site Salon Line, facilitando o acesso dos usuários à página da marca. \n Descrição Incluir a marca Trata na estrutura de navegação do menu do site, direcionando o usuário para a página oficial da marca: \n https://www.salonline.com.br/trata \n Requisitos/Regras - Adicionar a marca Trata no menu do site, seguindo o padrão visual e estrutural das demais marcas. \n \n- Configurar o direcionamento para a URL: https://www.salonline.com.br/trata \n \n- Validar o funcionamento do link nas versões desktop e mobile. \n \n- Garantir que a alteração não impacte as demais opções e categorias do menu. \n \n- Validar a navegação após a publicação em ambiente prod",
         "comments": [
           {
-            "created": "2026-10-02T17:39:13.237Z",
-            "by": "lucas.figueiredo veredatech.com.br",
-            "text": "Validado:\n \n \n \n psc @Fábio Vidart   @luana.santos salonline.com.br"
-          },
-          {
-            "created": "2026-10-02T12:12:26.723Z",
-            "by": "Julio Lima",
-            "text": "## Validação TST\n* Propriedades corretamente criadas na `Order`, e sendo preenchidas corretamente ao longo da navegação\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/7950e592-c445-47c3-a111-218fde8a76a0?fileName=image.png)"
+            "created": "2026-10-06T12:23:02.62Z",
+            "by": "Regis Ropke",
+            "text": "Passo a Passo para adicionar nova marca pelo Admin\n 1- Acessar o menu catalogo, clicar com o botão direito do mouse em cima da categoria que for criar uma categoria filha, acessar Nova Coleção Filha e preencher os dados\n \n2- Após criar a categoria acessar com o botão direito do mouse em cima da categoria recem criada e clicar editar\n \n \n3 - Preencher os dados da categoria, OBS: para ela ser apresentada no storefront deve DESMARCAR o checkbox \"Para não mostrar no menu\" e se tiver pagina para landing page preecher no formato \"/trata\""
           }
         ]
       },
@@ -1998,18 +1848,21 @@
         "id": 40639,
         "type": "Melhoria",
         "title": "Permitir vídeo ou GIF na PDP",
-        "state": "Ready PRD",
+        "state": "Validation PRD",
+        "statusLabel": "Em Validação (PRD)",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "12/08/2026",
         "createdDateRaw": "2026-08-12T13:33:13.36Z",
         "assignedTo": {
           "displayName": "daniela.damasceno salonline.com.br",
           "uniqueName": "daniela.damasceno@salonline.com.br"
         },
-        "observation": "Responsável: daniela.damasceno salonline.com.br. Pronto para produção: exibição de vídeo ou GIF na galeria da página de produto.",
+        "responsavel": "daniela.damasceno salonline.com.br",
+        "observation": "Em validação de produção: exibição de vídeo ou GIF na galeria da página de produto.",
         "srCandidates": [],
-        "reason": "Moved to state Ready PRD",
+        "reason": "Moved to state Validation PRD",
         "descriptionExcerpt": "Criar suporte para inclusão de vídeos ou GIFs na página de produto (PDP) , permitindo que esses formatos sejam utilizados como conteúdo visual complementar às imagens do produto. \n A ideia é possibilitar que conteúdos demonstrativos, animações ou vídeos de apresentação sejam exibidos diretamente na PDP, seguindo o comportamento e layout definidos atualmente para a galeria de imagens. \n Requisitos - Permitir o cadastro de vídeo ou GIF na galeria da PDP. \n- Garantir a correta exibição do conteúdo no Desktop, Mobile e App , conforme aplicável. \n- Avaliar o comportamento de reprodução, carregamento e interação com o conteúdo. \n- Garantir que a inclusão desses formatos não prejudique a performanc",
         "comments": [
           {
@@ -2070,46 +1923,23 @@
         ]
       },
       {
-        "id": 41853,
-        "type": "Melhoria",
-        "title": "Adicinar a marca Trata no menu",
-        "state": "Validation PRD",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "05/10/2026",
-        "createdDateRaw": "2026-10-05T17:47:23.147Z",
-        "assignedTo": {
-          "displayName": "daniela.damasceno salonline.com.br",
-          "uniqueName": "daniela.damasceno@salonline.com.br"
-        },
-        "observation": "Responsável: daniela.damasceno salonline.com.br. Em validação de produção: inclusão da marca Trata no menu do site.",
-        "srCandidates": [],
-        "reason": "Moved to state Validation PRD",
-        "descriptionExcerpt": "Objetivo Adicionar a marca Trata ao menu principal do site Salon Line, facilitando o acesso dos usuários à página da marca. \n Descrição Incluir a marca Trata na estrutura de navegação do menu do site, direcionando o usuário para a página oficial da marca: \n https://www.salonline.com.br/trata \n Requisitos/Regras - Adicionar a marca Trata no menu do site, seguindo o padrão visual e estrutural das demais marcas. \n \n- Configurar o direcionamento para a URL: https://www.salonline.com.br/trata \n \n- Validar o funcionamento do link nas versões desktop e mobile. \n \n- Garantir que a alteração não impacte as demais opções e categorias do menu. \n \n- Validar a navegação após a publicação em ambiente prod",
-        "comments": [
-          {
-            "created": "2026-10-06T12:23:02.62Z",
-            "by": "Regis Ropke",
-            "text": "Passo a Passo para adicionar nova marca pelo Admin\n 1- Acessar o menu catalogo, clicar com o botão direito do mouse em cima da categoria que for criar uma categoria filha, acessar Nova Coleção Filha e preencher os dados\n \n2- Após criar a categoria acessar com o botão direito do mouse em cima da categoria recem criada e clicar editar\n \n \n3 - Preencher os dados da categoria, OBS: para ela ser apresentada no storefront deve DESMARCAR o checkbox \"Para não mostrar no menu\" e se tiver pagina para landing page preecher no formato \"/trata\""
-          }
-        ]
-      },
-      {
         "id": 41755,
         "type": "Bug",
         "title": "Preço zerado em produtos após retorno null no endpoint listProducts",
-        "state": "Validation PRD",
+        "state": "Monitoring",
+        "statusLabel": "Em Monitoramento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "30/09/2026",
         "createdDateRaw": "2026-09-30T22:37:37.71Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em validação de produção. SR Oracle 4-0003936169 aberta para o preço zerado após retorno nulo de produtos.",
+        "responsavel": "",
+        "observation": "Em monitoramento. SR Oracle 4-0003936169 aberta para o preço zerado após retorno nulo de produtos.",
         "srCandidates": [
           "4-0003936169"
         ],
-        "reason": "Moved to state Validation PRD",
-        "descriptionExcerpt": "",
+        "reason": "Moved out of state Validation PRD",
         "comments": [
           {
             "created": "2026-10-01T00:26:48.2Z",
@@ -2124,279 +1954,24 @@
         ]
       },
       {
-        "id": 39603,
-        "type": "Melhoria",
-        "title": "[Análise & Ajuste] array dataLayer",
-        "state": "Validation PRD",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 73",
-        "sprint": "Sprint 73",
-        "createdDate": "10/07/2026",
-        "createdDateRaw": "2026-07-10T17:33:40.677Z",
-        "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em validação de produção: preço com desconto no dataLayer. A Salon indicou que a prova só ocorre em produção.",
-        "srCandidates": [],
-        "reason": "Moved to state Validation PRD",
-        "descriptionExcerpt": "Hoje no dataLayer recebemos um array com os itens do carrinho em   cart_items . Porém nesse exemplo usei um cupom o e valor de cada item ficou 17,95. No entanto, não temos o valor do item com desconto, somente o valor com desconto multiplicado pela quantidade de itens em price ou unitário sem desconto em   item_saleprice   ou   price_unit . O ideal seria, ao invés de alterar um desses, criar um novo   price_unit_discount   que mostre o valor unitário do item com desconto aplicado.  cart_items: [     {       item_id: \"33596\",       productId: \"33596\",       item_name: \"Óleo de Tratamento Multy Cereja 50ml\",       coupon: \"LANCAMENTO10\",       index: 0,       item_brand: \"\",       item_categor",
-        "comments": [
-          {
-            "created": "2026-07-14T17:45:08.187Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "A Marta confirmou que só é possível realizar a validação da alteração no ambiente de PRD. Por este motivo, estarei movendo o card para a coluna \"Pronto para Publicar\". \n Subiremos este item no próximo deploy."
-          },
-          {
-            "created": "2026-07-13T17:52:19.893Z",
-            "by": "Ewerton Bezerra",
-            "text": "Disponível para testes em TST"
-          }
-        ]
-      },
-      {
-        "id": 28070,
-        "type": "Bug",
-        "title": "Erros retornados pela SSE Smart Checkout ao finalizar pedidos pelo App",
-        "state": "Validation PRD",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 47",
-        "sprint": "Sprint 47",
-        "createdDate": "11/06/2025",
-        "createdDateRaw": "2025-06-11T20:21:06.707Z",
-        "assignedTo": null,
-        "observation": "Sem responsável atribuído. Em validação de produção. O histórico cita as SRs Oracle 4-0000687590 e 4-0000873061 na SSE de checkout do app.",
-        "srCandidates": [
-          "4-0000687590",
-          "4-0000873061"
-        ],
-        "reason": "Moved out of state Blocked",
-        "descriptionExcerpt": "",
-        "comments": [
-          {
-            "created": "2025-08-13T18:20:20.8Z",
-            "by": "Fábio Vidart",
-            "text": "Vamos monitorar esses itens até o fim da próxima sprint."
-          },
-          {
-            "created": "2025-07-31T15:30:16.143Z",
-            "by": "Fábio Vidart",
-            "text": "Vamos aguardar mais alguns dias para verificar possíveis erros em pedidos no APP, para validarmos os logs gerados no Webhook.\nPois desde ontem existem logs no webhook, mas conforme a Best informou não existem erros de fechamento de pedido."
-          },
-          {
-            "created": "2025-07-31T12:41:56.303Z",
-            "by": "Fábio Vidart",
-            "text": "Os logs do webhook começaram a ser gerados a partir de ontem. \nVamos solicitar  pedidos que tenha ocorrido erro no APP, para validar o log."
-          },
-          {
-            "created": "2025-07-28T17:51:56.077Z",
-            "by": "Fábio Vidart",
-            "text": "A reinicialização não funcionou, continuamos com o erro. \nFoi solicitado para realizarmos mais alguns testes na interface do usuário admin. \n Respondemos para a Oracle e continuamos aguardando retorno."
-          },
-          {
-            "created": "2025-07-23T17:43:17.627Z",
-            "by": "Fábio Vidart",
-            "text": "A Oracle irá realizar o procedimento de reinicialização do serviço durante a madrugada para corrigir essa falha de comunicação no webhook."
-          },
-          {
-            "created": "2025-07-15T17:06:02.167Z",
-            "by": "Fábio Vidart",
-            "text": "A pedido da Oracle foi aberta a SR [4-0000873061](https://support.oracle.com/ic/builder/rt/customer_portal/live/webApps/customer-portal/?SR=4-0000873061 \"4-0000873061\") para análise do problema do Webhook que pode ser a causa da não geração de logs na SSE."
-          },
-          {
-            "created": "2025-07-05T12:35:53.277Z",
-            "by": "Fábio Vidart",
-            "text": "Identificado que nos logs da SSE não estão ocorrendo erros porém estão apresentando erros no order submit. Evidenciamos na SR 4-0000687590 para análise pela Oracle, sugerimos uma agenda para discutirmos e mostrarmos evidências para resolvermos definitivamente e estamos aguardando retorno."
-          },
-          {
-            "created": "2025-07-01T14:39:13.597Z",
-            "by": "Lucas Borges",
-            "text": "Realizado a extração dos logs do ambiente, foram identificado que apos o deploy não ocorreu o erro de update de order, conforme erro relatado anteriormente.\nEcaminhado para @"
-          },
-          {
-            "created": "2025-07-01T14:11:18.73Z",
-            "by": "Cristian Fior",
-            "text": "`[Lighthouse]` Validação realizada em ambiente de Produção `PRD`, deploy realizado na data `30/06/2025`\nTodos os cenários envolvendo checkout foram testados e validados com sucesso em ambiente Web."
-          },
-          {
-            "created": "2025-06-30T18:09:05.817Z",
-            "by": "Fábio Vidart",
-            "text": "Realizaremos o deploy as 16h."
-          },
-          {
-            "created": "2025-06-26T16:56:34.28Z",
-            "by": "Cristian Fior",
-            "text": "Validação em TST `26/06/2025`\nTodos os cenários envolvendo checkout foram testados e validados com sucesso."
-          },
-          {
-            "created": "2025-06-26T13:23:03.887Z",
-            "by": "Lucas Borges",
-            "text": "Feito o ajuste e realizado deploy para tst, anexado changelog nos arquivos e encaminhado para @ testes completo no checkout"
-          },
-          {
-            "created": "2025-06-25T17:35:21.35Z",
-            "by": "Lucas Borges",
-            "text": "Realizando a analise da atividade, tempo estimado 1 ponto"
-          },
-          {
-            "created": "2025-06-25T12:21:43.143Z",
-            "by": "Fábio Vidart",
-            "text": "Colocado no status de Bloqueado para tratar o card do Sitemap."
-          },
-          {
-            "created": "2025-06-24T16:47:23.867Z",
-            "by": "Lucas Borges",
-            "text": "Foram realizados divesos testes para o ambiente de tst e não ocorreram os erros do ambiente de produção, o proximo passo é realizar a troca do endpoint de update de order do ambiente store para o ambiente admin e verificar se o erro continua"
-          },
-          {
-            "created": "2025-06-24T14:15:49.837Z",
-            "by": "Lucas Borges",
-            "text": "Realizando testes para identificar possivel problema no update da order ao finalizar pedido"
-          },
-          {
-            "created": "2025-06-17T17:26:03.857Z",
-            "by": "Cristian Fior",
-            "text": "Realizada nova validação após redeploy da SSE.\nFluxos de pagamento passaram com sucesso nos cenários de: compra logada, compra rápida, compra anônima\n@ @ @"
-          },
-          {
-            "created": "2025-06-16T16:56:38.29Z",
-            "by": "lucas.figueiredo.3967 salonline.com.br",
-            "text": "@Cristian Fior  Subimos uma nova alteração nas SSEs de Checkout e pagaleve. Disponível para revalidação. \n psc @Fábio Vidart   @gustavo.morrell salonline.com.br"
-          },
-          {
-            "created": "2025-06-16T15:34:49.283Z",
-            "by": "Cristian Fior",
-            "text": "Realizado validação dos fluxos em TST devido SSE do dia 13/06/25.\nFluxos se encontram funcionando normalmente, com exceção do cenário: Fast Checkout com Pix Parcelado; que apresenta erro no endereço (mesmo que o endereço esteja completo e funcional).\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/217aad21-796f-4187-a10e-f8d85be9bbcc?fileName=image.png)\nAguardando análise e devolutiva para concluir a validação do ambiente.\n@ @"
-          }
-        ]
-      },
-      {
-        "id": 20387,
-        "type": "Melhoria",
-        "title": "Implementação cód. LP Galeria feed",
-        "state": "Validation PRD",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 29",
-        "sprint": "Sprint 29",
-        "createdDate": "21/10/2024",
-        "createdDateRaw": "2024-10-21T18:20:45.803Z",
-        "assignedTo": {
-          "displayName": "kauan.oliveira salonline.com.br",
-          "uniqueName": "kauan.oliveira@salonline.com.br"
-        },
-        "observation": "Responsável: kauan.oliveira salonline.com.br. Em validação de produção desde 2024: código da landing de galeria no feed.",
-        "srCandidates": [],
-        "reason": "Moved to state Validation PRD",
-        "descriptionExcerpt": "",
-        "comments": [
-          {
-            "created": "2024-12-04T14:51:49.873Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "@daniela  Pode instanciar um banner na LP Teste ou Modelo para verificarmos se está funcionando tudo certinho com essa implementação, por favor?"
-          },
-          {
-            "created": "2024-12-02T20:57:22.293Z",
-            "by": "Joaquim Brum",
-            "text": "Validado em PRD. Vídeo anexado"
-          },
-          {
-            "created": "2024-11-26T17:02:16.18Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Validado na URL  https://p7724145c1tst-store.occa.ocs.oraclecloud.com/lp-galeria-videos"
-          },
-          {
-            "created": "2024-11-25T14:43:34.64Z",
-            "by": "Joaquim Brum",
-            "text": "Validado em TST. Vídeo anexado"
-          },
-          {
-            "created": "2024-11-21T18:12:23.523Z",
-            "by": "Jéssica Coelho",
-            "text": "@ segue abaixo as informações do Gian, ainda não funcionou, pode comunicar a stream?"
-          },
-          {
-            "created": "2024-11-21T17:44:34.83Z",
-            "by": "Gianluca Ferreira",
-            "text": "Como combinado na daily com o pessoal da StreamShop, adicionado o case de \"liveshopAdsOpen\" e segue o mesmo problema."
-          },
-          {
-            "created": "2024-11-21T17:42:41.47Z",
-            "by": "Gianluca Ferreira",
-            "text": ""
-          },
-          {
-            "created": "2024-11-21T16:35:11.883Z",
-            "by": "Joaquim Brum",
-            "text": "Ainda não está funcionando.  Vídeo anexado"
-          },
-          {
-            "created": "2024-11-18T18:23:41.82Z",
-            "by": "Jéssica Coelho",
-            "text": "case 'liveshopAdsOpen':\n            window.openStreamShopLive(data.data);\n          break;"
-          },
-          {
-            "created": "2024-11-18T18:22:57.913Z",
-            "by": "Jéssica Coelho",
-            "text": "@ irá realizar a alteração conforme nova documentação passada pelo Vitor."
-          },
-          {
-            "created": "2024-11-14T18:29:18.95Z",
-            "by": "Jéssica Coelho",
-            "text": "Vamos realizar a agenda com eles na segunda 18/11"
-          },
-          {
-            "created": "2024-11-12T18:22:49.367Z",
-            "by": "Jéssica Coelho",
-            "text": "@ vai levar o item para a stream"
-          },
-          {
-            "created": "2024-11-12T12:58:16.573Z",
-            "by": "Gianluca Ferreira",
-            "text": "@ ![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/f8d8da55-f7f4-466f-b688-f3ff136ade00?fileName=image.png) \n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/1922cfff-68d7-492e-b147-3d0f981ffed5?fileName=image.png) \n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/3cfbda2c-79be-447c-815a-9711d2201670?fileName=image.png)"
-          },
-          {
-            "created": "2024-11-08T18:19:50.96Z",
-            "by": "Jéssica Coelho",
-            "text": "@ colocar nas evidências aqui no card de que o problema persiste"
-          }
-        ]
-      },
-      {
-        "id": 13160,
-        "type": "Bug",
-        "title": "Divergência Pedido x Payload -Site Pedido 570495481",
-        "state": "Validation PRD",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
-        "sprint": "Sprint 1",
-        "createdDate": "02/05/2024",
-        "createdDateRaw": "2024-05-02T18:33:34.677Z",
-        "assignedTo": {
-          "displayName": "Gianluca Ferreira",
-          "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
-        },
-        "observation": "Responsável: Gianluca Ferreira. Em validação de produção desde 2024, depois de uma correção pontual de item que o pedido não agrupou.",
-        "srCandidates": [],
-        "reason": "Moved to state Validation PRD",
-        "descriptionExcerpt": "",
-        "comments": [
-          {
-            "created": "2024-05-03T11:47:15.363Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "Fiz a correção pontual no pedido, vamos deixar em acompanhamento, pois o OCC não agrupou o item 32329, importante investigação referente a isso."
-          }
-        ]
-      },
-      {
         "id": 41401,
         "type": "Bug",
         "title": "Erro ao fechar pedido / Recalculo dos descontos",
         "state": "Monitoring",
+        "statusLabel": "Em Monitoramento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "14/09/2026",
         "createdDateRaw": "2026-09-14T19:29:37.407Z",
         "assignedTo": {
           "displayName": "luana.santos salonline.com.br",
           "uniqueName": "luana.santos@salonline.com.br"
         },
-        "observation": "Responsável: luana.santos salonline.com.br. Em monitoramento do recálculo de descontos ao fechar o pedido.",
+        "responsavel": "luana.santos salonline.com.br",
+        "observation": "Em monitoramento do recálculo de descontos ao fechar o pedido.",
         "srCandidates": [],
         "reason": "Moved out of state Validation PRD",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2026-09-23T18:02:33.2Z",
@@ -2441,77 +2016,24 @@
         ]
       },
       {
-        "id": 40912,
-        "type": "Bug",
-        "title": "Pedidos falhando na Integração - Erro \"VL_DESC_INC_UNIT nao poder ser menor que 0\"",
-        "state": "Monitoring",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "24/08/2026",
-        "createdDateRaw": "2026-08-24T19:07:58.377Z",
-        "assignedTo": {
-          "displayName": "luana.santos salonline.com.br",
-          "uniqueName": "luana.santos@salonline.com.br"
-        },
-        "observation": "Responsável: luana.santos salonline.com.br. Em monitoramento do erro de desconto negativo na integração do pedido.",
-        "srCandidates": [],
-        "reason": "Moved out of state Validation PRD",
-        "descriptionExcerpt": "",
-        "comments": [
-          {
-            "created": "2026-09-23T14:40:48.853Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Validado em PRD: \n ✅ Área Logada: - Pix PagaLeve: 581646782 \n- Cartão de Crédito: 581646803 \n- Pix: 581646806 \n- Boleto:  581646809 \n \n ✅  Fast Checkout: - Pix PagaLeve: 581646815\n- Pix: 581646819\n- Boleto: 581646827\n \n ✅  Guest Checkout: - Pix PagaLeve: 581646835\n- Pix: 581646840\n- Boleto: 581646842"
-          },
-          {
-            "created": "2026-09-17T14:17:48.587Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Validado em TST: \n ✅Área Logada: \n \n - Pix PagaLeve: 574583111 \n- Cartão de Crédito: 574583115 \n- Pix: 574583113 \n- Boleto: 574583117 \n \n ✅ Fast Checkout: \n \n - Pix PagaLeve: 574583119 \n- Cartão de Crédito: 574583121 \n- Pix: 574583181 \n- Boleto: 574583183 \n \n ✅ Guest Checkout: \n \n - Pix PagaLeve: 574583185 \n- Cartão de Crédito: 574583187\n- Pix: 574583189\n- Boleto: 574583191"
-          },
-          {
-            "created": "2026-09-16T20:22:24.947Z",
-            "by": "Ewerton Bezerra",
-            "text": "Foi implementado um mecanismo de **self-healing** no fluxo de submissão de pedidos do OrderService.ts através do módulo discountBalancer.ts.\n#### Fluxo de Execução\n1. **Interceptação no Hook de Submissão**: No método `processOrder`, logo após a validação de perfil, é executado `balanceOrderDiscountShares(order)`.\n2. **Avaliação de Inconsistências**: O módulo avalia se o pedido possui divergências de rateio de desconto ou inconsistências na estrutura de preços dos itens (`currentPriceDetailsSorted`).\n3. **Persistência no OCC e Memória**:\n * Se nenhuma anomalia for detectada, o pedido segue sem chamadas extras.\n * Se for detectada necessidade de ajuste (`needsUpdate: true`), o SSE dispara uma chamada `updateOrderAdmin` atualizando a lista de `commerceItems` no OCC e sincroniza a referência `order.commerceItems` em memória para que as etapas subsequentes do fluxo já utilizem os dados corrigidos.\n4. **Tolerância a Falhas**: O método é isolado em bloco `try/catch`. Caso o OCC rejeite a atualização ou ocorra timeout, a transação é registrada no `httpLogger` com severidade de erro, sem interromper o processamento global do pedido.\n### Tipos de Pedidos Tratados\nO self-healing atua sobre três anomalias geradas pelo motor de precificação do OCC:\n| Tipo de Anomalia | Cenário do Pedido | Ação de Auto-Correção |\n| --- | --- | --- |\n| **1. Rateio de desconto zerado ou faltante** | Pedidos com cupom de desconto geral (`discountInfo.orderDiscount > 0`) em que o OCC não distribuiu o valor nos"
-          },
-          {
-            "created": "2026-09-16T13:24:50.283Z",
-            "by": "Julio Lima",
-            "text": "Validação TST \n--------------\n* Todos os fluxos de checkout foram validados\nFluxo Logado\n------------\n* Pagaleve 574582807\n* Cartão 574582811, 574582814\n* Pix 574582816\n* Boleto 574582818\nGuest checkout \n---------------\n* Pagaleve 574582820\n* Cartão 574582822\n* Pix 574582825\n* Boleto 574582827\nFast Checkout\n-------------\n* Pagaleve 574582829\n* Cartão 574582831\n* Pix 574582833\n* Boleto 574582835"
-          },
-          {
-            "created": "2026-09-15T16:49:45.867Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  consegue documentar aqui as tratativas que foram realizadas, por favor?"
-          },
-          {
-            "created": "2026-09-14T19:25:58.633Z",
-            "by": "Ewerton Bezerra",
-            "text": "@ disponível para testes em TST"
-          },
-          {
-            "created": "2026-09-08T12:38:36.397Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  casos dos dias 05/09 e 07/09: \n Pedido: 579145708 \n {\n   \"error\": \"Error 400\",\n   \"code\": 400,\n   \"body\": {\n     \"message\": \"[VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0.]\",\n     \"detalheErro\": \"[VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0.]\"\n   } \n \n Pedido: 581468663 \n {\n   \"error\": \"Error 400\",\n   \"code\": 400,\n   \"body\": {\n     \"message\": \"[VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0.]\",\n     \"detalheErro\": \"[VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0., VL_DESC_INC_UNIT nao poder ser menor que 0.]\"\n   }"
-          }
-        ]
-      },
-      {
         "id": 40351,
         "type": "Bug",
         "title": "Pedidos com o erro \"Valor de Meio incorreto para PED_CLIENTE\"",
         "state": "Monitoring",
+        "statusLabel": "Em Monitoramento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "03/08/2026",
         "createdDateRaw": "2026-08-03T17:30:57.457Z",
         "assignedTo": {
           "displayName": "luana.santos salonline.com.br",
           "uniqueName": "luana.santos@salonline.com.br"
         },
-        "observation": "Responsável: luana.santos salonline.com.br. Em monitoramento do erro de valor de meio na integração do pedido.",
+        "responsavel": "luana.santos salonline.com.br",
+        "observation": "Em monitoramento do erro de valor de meio na integração do pedido.",
         "srCandidates": [],
         "reason": "Moved out of state Validation PRD",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2026-09-23T15:01:19.663Z",
@@ -2601,147 +2123,177 @@
         ]
       },
       {
-        "id": 41870,
+        "id": 41949,
         "type": "Melhoria",
-        "title": "Trazer informações de venda",
+        "title": "Algolia - Incluir campos relavantes de produto no index",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "08/10/2026",
+        "createdDateRaw": "2026-10-08T18:11:20.427Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: enviar à Algolia os campos de produto que ainda faltam para filtro e ranqueamento.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      },
+      {
+        "id": 41928,
+        "type": "Melhoria",
+        "title": "Análise de Segurança: Alerta de Vazamento de Credenciais",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "08/10/2026",
+        "createdDateRaw": "2026-10-08T13:12:59.363Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: alerta da Gemina sobre vazamento de credenciais do domínio, com baixa amostragem.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      },
+      {
+        "id": 41913,
+        "type": "Bug",
+        "title": "Slider de imagens do produto inconsistente",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "07/10/2026",
+        "createdDateRaw": "2026-10-07T19:06:45.763Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: o slider de imagens da PDP volta para a primeira imagem e impede ver o restante.",
+        "srCandidates": [],
+        "reason": "New"
+      },
+      {
+        "id": 41870,
+        "type": "Melhoria",
+        "title": "Algolia - Trazer informações de venda",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "06/10/2026",
         "createdDateRaw": "2026-10-06T12:51:02.587Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: incluir informações de venda de 30, 60 e 90 dias na indexação do produto.",
+        "responsavel": "",
+        "observation": "A fazer: incluir informações de venda de 30, 60 e 90 dias na indexação do produto.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Trazer informações de venda no produto, na indexação (30/60/90).",
-        "comments": []
+        "descriptionExcerpt": "Trazer informações de venda no produto, na indexação (30/60/90)."
       },
       {
         "id": 41683,
         "type": "Melhoria",
         "title": "Algolia | Adicionar a Algolia em Collections",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T02:58:23.85Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: avaliar o uso da Algolia nas collections.",
+        "responsavel": "",
+        "observation": "A fazer: avaliar o uso da Algolia nas collections.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Avaliar a disponibilidade dos atributos que identificam as coleções no catálogo Oracle e sua inclusão nos registros da Algolia. Considerar o uso de CategoryPageID , conforme a recomendação do roadmap, e documentar a alternativa adotada. Caso seja definida a integração das páginas de Collections à Algolia, mapear e enviar os atributos necessários e implementar a consulta correspondente. A renderização atual poderá ser mantida. \n Critérios de aceite: disponibilidade dos atributos e alternativa adotada documentadas; quando aprovada a integração, atributos enviados e Collections de referência retornando os produtos esperados;",
-        "comments": []
+        "descriptionExcerpt": "Avaliar a disponibilidade dos atributos que identificam as coleções no catálogo Oracle e sua inclusão nos registros da Algolia. Considerar o uso de CategoryPageID , conforme a recomendação do roadmap, e documentar a alternativa adotada. Caso seja definida a integração das páginas de Collections à Algolia, mapear e enviar os atributos necessários e implementar a consulta correspondente. A renderização atual poderá ser mantida. \n Critérios de aceite: disponibilidade dos atributos e alternativa adotada documentadas; quando aprovada a integração, atributos enviados e Collections de referência retornando os produtos esperados;"
       },
       {
         "id": 41680,
         "type": "Melhoria",
         "title": "Algolia | Implementar Federated Search",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T02:38:18.69Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: busca federada no autocomplete da Algolia.",
+        "responsavel": "",
+        "observation": "A fazer: busca federada no autocomplete da Algolia.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Implementar no autocomplete do Site OCC a experiência de busca federada, consultando os índices definidos para apresentar sugestões de termos e produtos populares, junto ao histórico local de buscas recentes. \n Critérios de aceite: índices e fontes documentados; sugestões de termos e produtos populares apresentados conforme o comportamento aprovado; seleções executam a busca ou navegação correspondente; funcionamento validado no desktop e mobile web. \n \n \n Documentação:  \n \n - https://www.algolia.com/doc/guides/solutions/ecommerce/search/autocomplete/federated-search",
-        "comments": []
-      },
-      {
-        "id": 41577,
-        "type": "Melhoria",
-        "title": "Envelopamento do Site — Black Friday",
-        "state": "New",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "createdDate": "23/09/2026",
-        "createdDateRaw": "2026-09-23T16:53:19.993Z",
-        "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: envelopamento visual do site para a campanha de Black Friday.",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI. \n A entrega deverá estar concluída até 1º de novembro . \n Requisitos/Regras - Aplicar a identidade visual da campanha nas áreas definidas do site. \n- Contemplar as versões Desktop e Mobile. \n- Garantir a responsividade dos elementos. \n- Validar a exibição das imagens, banners, textos e links. \n- Manter a usabilidade e a performance do",
-        "comments": [
-          {
-            "created": "2026-09-29T15:21:29.797Z",
-            "by": "daniela.damasceno salonline.com.br",
-            "text": "Cor que vamos utilizae no envelopamento \n Black Crow — #080806 - \nRGB: rgb(8, 8, 6)"
-          },
-          {
-            "created": "2026-09-28T16:51:06.497Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Virada no dia 02/11"
-          },
-          {
-            "created": "2026-09-23T17:02:20.413Z",
-            "by": "daniela.damasceno salonline.com.br",
-            "text": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI.\n A entrega deverá estar concluída até 1º de novembro .\n Requisitos/Regras - \nAplicar a identidade visual da campanha nas áreas definidas do site.\n- \nContemplar as versões Desktop e Mobile.\n- \nGarantir a responsividade dos elementos.\n- \nValidar a exibição das imagens, banners, textos e links.\n- \nManter a usabilidade e a performance do site.\n- \nRealizar os testes antes da publicação em produção.\n Critérios de validação - \nEnvelopamento aplicado corretamente nas páginas previstas.\n- \nElementos visuais funcionando em Desktop e Mobile.\n- \nLinks e redirecionamentos validados.\n- \nAusência de quebras de layout ou problemas de carregamento.\n- \nAprovação final das áreas responsáveis.\n Prazo Data de entrega: 1º de novembro."
-          }
-        ]
+        "descriptionExcerpt": "Implementar no autocomplete do Site OCC a experiência de busca federada, consultando os índices definidos para apresentar sugestões de termos e produtos populares, junto ao histórico local de buscas recentes. \n Critérios de aceite: índices e fontes documentados; sugestões de termos e produtos populares apresentados conforme o comportamento aprovado; seleções executam a busca ou navegação correspondente; funcionamento validado no desktop e mobile web. \n \n \n Documentação:  \n \n - https://www.algolia.com/doc/guides/solutions/ecommerce/search/autocomplete/federated-search"
       },
       {
         "id": 40638,
         "type": "Bug",
         "title": "Exibir itens de lançamento nas sugestões do Cronograma Capilar (Quiz)",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "12/08/2026",
         "createdDateRaw": "2026-08-12T13:30:25.413Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: exibir lançamentos nas sugestões do Cronograma Capilar.",
+        "responsavel": "",
+        "observation": "A fazer: exibir lançamentos nas sugestões do Cronograma Capilar.",
         "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "New"
       },
       {
         "id": 40290,
         "type": "Bug",
         "title": "[PDP] Cards de produtos relacionados duplicam o símbolo de moeda no parcelamento  Descrição",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "30/07/2026",
         "createdDateRaw": "2026-07-30T17:04:58.273Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: cards relacionados da página de produto duplicam o símbolo da moeda no parcelamento.",
+        "responsavel": "",
+        "observation": "A fazer: cards relacionados da página de produto duplicam o símbolo da moeda no parcelamento.",
         "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "New"
       },
       {
         "id": 39839,
         "type": "Bug",
         "title": "Quantidade incorreta de itens sendo adicionados via Streamshop",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "16/07/2026",
         "createdDateRaw": "2026-07-16T18:16:47.893Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: quantidade incorreta de itens adicionados pelo Streamshop.",
+        "responsavel": "",
+        "observation": "A fazer: quantidade incorreta de itens adicionados pelo Streamshop.",
         "srCandidates": [],
-        "reason": "Moved out of state Blocked",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "Moved out of state Blocked"
       },
       {
         "id": 38287,
         "type": "Bug",
         "title": "PLP Outlet repete produtos ao utilizar “Ver mais produtos”",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
         "createdDate": "13/05/2026",
         "createdDateRaw": "2026-05-13T19:45:07.78Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: a listagem de outlet repete produtos ao usar Ver mais produtos.",
+        "responsavel": "",
+        "observation": "A fazer: a listagem de outlet repete produtos ao usar Ver mais produtos.",
         "srCandidates": [],
         "reason": "Investigation Complete",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2026-06-05T18:08:56.863Z",
@@ -2761,38 +2313,19 @@
         ]
       },
       {
-        "id": 27982,
-        "type": "Bug",
-        "title": "Pedido sem registro de produtos na propriedade \"commerceItems\": [],",
-        "state": "New",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
-        "sprint": "Sprint 1",
-        "createdDate": "11/06/2025",
-        "createdDateRaw": "2025-06-11T11:59:54.077Z",
-        "assignedTo": null,
-        "observation": "Sem responsável atribuído. Item em aberto, sem descrição recente no card.",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "",
-        "comments": [
-          {
-            "created": "2025-07-02T12:37:08.697Z",
-            "by": "Fábio Vidart",
-            "text": "Conforme alinhado, por ser um caso pontual vamos enviar para a Sprint 1 para monitorar e verificar se ocorrem novos casos."
-          }
-        ]
-      },
-      {
         "id": 35776,
         "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Landing Page do Programa",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "30/01/2026",
         "createdDateRaw": "2026-01-30T18:19:48.98Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como visitante/cliente, quero acessar uma página explicando o programa e ver produtos para assinar, para entender benefícios e iniciar compra recorrente por ali",
+        "responsavel": "",
+        "observation": "A fazer: Como visitante/cliente, quero acessar uma página explicando o programa e ver produtos para assinar, para entender benefícios e iniciar compra recorrente por ali",
         "srCandidates": [],
         "reason": "New",
         "descriptionExcerpt": "Como visitante/cliente,\n quero acessar uma página explicando o programa e ver produtos para assinar,\n para entender benefícios e iniciar compra recorrente por ali. \n Regras / Requisitos - Criar LP com texto e imagens explicando funcionamento e vantagens, com carrosséis de produtos com CTA. \n \n Critérios de aceitação - LP deve explicar: o que é, como funciona, como pausar/cancelar, como preço funciona, benefícios. \n \n- Produtos do carrossel devem levar para PDP com opção de recorrência \n \n- \n \n \n Link da Documentação do Projeto https://docs.google.com/presentation/d/1DWK95jpxH8dHomV86-bf5a0qzMsZafLt/edit?usp=sharing&ouid=107693284762790825119&rtpof=true&sd=true Link do Figma do Projeto https:",
@@ -2809,12 +2342,15 @@
         "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Admin de Compras Recorrentes (Gerenciamento)",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "30/01/2026",
         "createdDateRaw": "2026-01-30T18:18:06.33Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente Quero gerenciar minhas compras recorrentes em Minha Conta Para pausar, cancelar, reativar ou ajustar minha recorrência Escopo - Tela “Minhas Compra",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente Quero gerenciar minhas compras recorrentes em Minha Conta Para pausar, cancelar, reativar ou ajustar minha recorrência Escopo - Tela “Minhas Compra",
         "srCandidates": [],
         "reason": "New",
         "descriptionExcerpt": "Como cliente Quero gerenciar minhas compras recorrentes em Minha Conta\n Para pausar, cancelar, reativar ou ajustar minha recorrência \n Escopo - Tela “Minhas Compras Recorrentes” com: \n - Lista de recorrências ativas (1 por período) \n \n- Recorrências canceladas/desativadas (em cinza, visíveis por 3–6 meses) \n \n \n- Ações disponíveis: \n - Alterar frequência \n \n- Pausar próxima entrega (até 1 dia antes da cobrança) \n \n- Cancelar recorrência (até 1 dia antes) \n \n- Reativar recorrência cancelada \n \n \n- Regras de cobrança: \n - Falha de pagamento → pausa por 1 ciclo + e-mail \n \n- Segunda falha consecutiva → cancelamento automático \n \n \n Critérios de Aceite - A cliente consegue gerenciar a recorrênci",
@@ -2831,12 +2367,15 @@
         "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Identificação da Compra Recorrente em Meus Pedidos",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "30/01/2026",
         "createdDateRaw": "2026-01-30T18:16:47.973Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente Quero identificar facilmente meus pedidos recorrentes Para acessar o gerenciamento quando necessário Escopo - Exibir tag de Compra Recorrente na li",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente Quero identificar facilmente meus pedidos recorrentes Para acessar o gerenciamento quando necessário Escopo - Exibir tag de Compra Recorrente na li",
         "srCandidates": [],
         "reason": "New",
         "descriptionExcerpt": "Como cliente Quero identificar facilmente meus pedidos recorrentes\n Para acessar o gerenciamento quando necessário \n Escopo - Exibir tag de Compra Recorrente na listagem de “Meus Pedidos” \n \n- No detalhe do pedido: \n - Informar que a compra é recorrente \n \n- Exibir CTA para acessar o Admin de Compras Recorrentes \n \n \n Critérios de Aceite - Pedidos recorrentes são claramente identificáveis \n \n- O acesso ao Admin é direto a partir do detalhe do pedido \n \n Figma - Meus Pedidos e Detalhe do Pedido\n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/%5BSalon-Line%5D-Design-System?node-id=2988-380105&t=fDzx7co3zx4K4Vyt-1 \n \n \n Link da Documentação do Projeto https://docs.google.com/presentation/d",
@@ -2853,12 +2392,15 @@
         "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Regras de Preço, Descontos e Operação da Recorrência",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "30/01/2026",
         "createdDateRaw": "2026-01-30T18:15:37.23Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente Quero entender claramente como funcionam preços, descontos e frete da recorrência Para confiar no programa Escopo - 10% de desconto adicional aplic",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente Quero entender claramente como funcionam preços, descontos e frete da recorrência Para confiar no programa Escopo - 10% de desconto adicional aplic",
         "srCandidates": [],
         "reason": "New",
         "descriptionExcerpt": "Como cliente\n Quero entender claramente como funcionam preços, descontos e frete da recorrência\n Para confiar no programa \n Escopo - 10% de desconto adicional aplicado a partir do primeiro pedido automático \n \n- Frete grátis a partir do primeiro pedido automático \n \n- Preço das recorrências sempre considera a tabela vigente no momento da cobrança \n \n- Exibir mensagem de transparência sobre variação de preço e disponibilidade \n \n- Se produto estiver sem estoque no dia da cobrança: \n - Pular o envio daquele ciclo \n \n- Informar a cliente por e-mail \n \n \n Critérios de Aceite - Mensagem de transparência visível durante a contratação \n \n- Benefícios aplicados corretamente apenas nos pedidos automá",
@@ -2875,12 +2417,15 @@
         "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Carrinho e Checkout com Compra Recorrente",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "30/01/2026",
         "createdDateRaw": "2026-01-30T18:13:41.687Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente Quero visualizar e confirmar minha compra recorrente no carrinho e checkout Para finalizar a contratação com clareza Escopo - Exibir no carrinho: -",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente Quero visualizar e confirmar minha compra recorrente no carrinho e checkout Para finalizar a contratação com clareza Escopo - Exibir no carrinho: -",
         "srCandidates": [],
         "reason": "New",
         "descriptionExcerpt": "Como cliente\n Quero visualizar e confirmar minha compra recorrente no carrinho e checkout\n Para finalizar a contratação com clareza \n Escopo - Exibir no carrinho: \n - Tag de Compra Recorrente \n \n- Seletor de frequência com o valor escolhido na PDP \n \n \n- No checkout: \n - Identificar que a compra é recorrente \n \n- Exigir salvamento de cartão de crédito \n \n \n- Primeira compra segue fluxo normal; recorrência inicia após ela \n \n Critérios de Aceite - Frequência selecionada na PDP é mantida no carrinho \n \n- A compra recorrente não pode ser concluída sem cartão salvo \n \n- O resumo do pedido deixa claro que se trata de uma recorrência \n \n Figma - Carrinho\n https://www.figma.com/design/8nzDWBJUxnDSC",
@@ -2897,79 +2442,90 @@
         "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Contratação da Compra Recorrente na PDP",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "30/01/2026",
         "createdDateRaw": "2026-01-30T18:07:49.687Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente do e-commerce Quero escolher entre Compra Única ou Compra Recorrente na PDP Para decidir receber meus produtos automaticamente em uma frequência fi",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente do e-commerce Quero escolher entre Compra Única ou Compra Recorrente na PDP Para decidir receber meus produtos automaticamente em uma frequência fi",
         "srCandidates": [],
         "reason": "New",
-        "descriptionExcerpt": "Como cliente do e-commerce\n \n Quero escolher entre Compra Única ou Compra Recorrente na PDP\n Para decidir receber meus produtos automaticamente em uma frequência fixa \n Escopo - Exibir seção de Compra Recorrente próxima ao botão de comprar \n \n- “Compra Única” vem pré-selecionada \n \n- Ao selecionar “Compra Recorrente”, expandir a seção com: \n - Breve explicação de funcionamento e vantagens \n \n- Seletor de frequência: 1, 2, 3 ou 4 meses \n \n \n- A Compra Recorrente só deve estar disponível para produtos com desconto ≤ 20% \n \n Critérios de Aceite - A cliente consegue selecionar a frequência antes de adicionar ao carrinho \n \n- Produtos não elegíveis não permitem ativar recorrência \n \n- A experiênc",
-        "comments": []
+        "descriptionExcerpt": "Como cliente do e-commerce\n \n Quero escolher entre Compra Única ou Compra Recorrente na PDP\n Para decidir receber meus produtos automaticamente em uma frequência fixa \n Escopo - Exibir seção de Compra Recorrente próxima ao botão de comprar \n \n- “Compra Única” vem pré-selecionada \n \n- Ao selecionar “Compra Recorrente”, expandir a seção com: \n - Breve explicação de funcionamento e vantagens \n \n- Seletor de frequência: 1, 2, 3 ou 4 meses \n \n \n- A Compra Recorrente só deve estar disponível para produtos com desconto ≤ 20% \n \n Critérios de Aceite - A cliente consegue selecionar a frequência antes de adicionar ao carrinho \n \n- Produtos não elegíveis não permitem ativar recorrência \n \n- A experiênc"
       },
       {
         "id": 35285,
         "type": "Melhoria",
         "title": "Exibir até 4 produtos por categoria",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "15/01/2026",
         "createdDateRaw": "2026-01-15T19:17:14.237Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente, quero ver mais opções por categoria (até 4) para comparar melhor as recomendações.",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente, quero ver mais opções por categoria (até 4) para comparar melhor as recomendações.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Como cliente, quero ver mais opções por categoria (até 4) para comparar melhor as recomendações.",
-        "comments": []
+        "descriptionExcerpt": "Como cliente, quero ver mais opções por categoria (até 4) para comparar melhor as recomendações."
       },
       {
         "id": 35284,
         "type": "Melhoria",
         "title": "Remover opção “Máscara” e ajustar impactos",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "15/01/2026",
         "createdDateRaw": "2026-01-15T19:00:32.343Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente, não devo ver a opção “Máscara” no Quiz nem ter recomendações de máscara no resultado ou no cronograma capilar.",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente, não devo ver a opção “Máscara” no Quiz nem ter recomendações de máscara no resultado ou no cronograma capilar.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Como cliente, não devo ver a opção “Máscara” no Quiz nem ter recomendações de máscara no resultado ou no cronograma capilar.",
-        "comments": []
+        "descriptionExcerpt": "Como cliente, não devo ver a opção “Máscara” no Quiz nem ter recomendações de máscara no resultado ou no cronograma capilar."
       },
       {
         "id": 35283,
         "type": "Melhoria",
         "title": "Aplicar UI do Quiz conforme Figma",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "15/01/2026",
         "createdDateRaw": "2026-01-15T18:42:45.747Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Como cliente, quero uma interface do Quiz igual ao Figma, g arantindo responsividade e alinhamento com o restante do produto.",
+        "responsavel": "",
+        "observation": "A fazer: Como cliente, quero uma interface do Quiz igual ao Figma, g arantindo responsividade e alinhamento com o restante do produto.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Como cliente, quero uma interface do Quiz igual ao Figma, g arantindo responsividade e alinhamento com o restante do produto.\n Basear-se no protótipo do Figma:   [ https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=103-368376&p=f&t=JDVaU6fh8FFRJb4R-0 ]",
-        "comments": []
+        "descriptionExcerpt": "Como cliente, quero uma interface do Quiz igual ao Figma, g arantindo responsividade e alinhamento com o restante do produto.\n Basear-se no protótipo do Figma:   [ https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=103-368376&p=f&t=JDVaU6fh8FFRJb4R-0 ]"
       },
       {
         "id": 27864,
         "type": "Melhoria",
         "title": "Melhorar experiência do usuário deslogado",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "05/06/2025",
         "createdDateRaw": "2025-06-05T12:25:27.99Z",
         "assignedTo": {
           "displayName": "Marcus Linck",
           "uniqueName": "marcus.linck@lighthouseit.com.br"
         },
-        "observation": "Responsável: Marcus Linck. A fazer: Realizar análise para melhor experiência do usuário na confirmação do pedido quando for usuário deslogado.",
+        "responsavel": "Marcus Linck",
+        "observation": "A fazer: Realizar análise para melhor experiência do usuário na confirmação do pedido quando for usuário deslogado.",
         "srCandidates": [],
         "reason": "Moved to state New",
         "descriptionExcerpt": "Realizar análise para melhor experiência do usuário na confirmação do pedido quando for usuário deslogado. \nHoje o guest checkout ao dar f5 ou qualquer usuário deslogado, ao entrar na página de confirmação do pedido, encontra ela com dados incorretos\nexemplo:\n https://www.salonline.com.br/checkout-order-confirmation?orderId=574290498",
@@ -2991,66 +2547,74 @@
         "type": "Melhoria",
         "title": "Criar a autenticação para acessar as paginas de config personalizadas",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "05/05/2025",
         "createdDateRaw": "2025-05-05T15:59:16.35Z",
         "assignedTo": {
           "displayName": "Marcus Linck",
           "uniqueName": "marcus.linck@lighthouseit.com.br"
         },
-        "observation": "Responsável: Marcus Linck. A fazer: Criar a autenticação pela conta do painel admin para acessar as paginas de config personalizadas.",
+        "responsavel": "Marcus Linck",
+        "observation": "A fazer: Criar a autenticação pela conta do painel admin para acessar as paginas de config personalizadas.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Criar a autenticação pela conta do painel admin para acessar as paginas de config personalizadas.\n const axios = require('axios');\nconst qs = require('qs');\nlet data = qs.stringify({\n  'grant_type': 'password',\n  'username': 'XXX',\n  'password': 'XXX',\n  'totp_code': 'p7724145c1TST' \n}); \n   \n let config = {\n  method: 'post',\n  maxBodyLength: Infinity,\n  url: ' https://p7724145c1tst-admin.occa.ocs.oraclecloud.com/ccadmin/v1/mfalogin/' ,\n  headers: { \n    'Content-Type': 'application/x-www-form-urlencoded', \n    'Authorization': 'OAuth', \n    'Cookie': 'ak_bmsc=0234A35FBE3B560C0E0C4157938FAF37~000000000000000000000000000000~YAAQwqMRAhJMKX2WAQAAoExtkhuMKChHHOPMmxNOR0YbXuJxBNR8Q9nwLsQpfLF51k/m1",
-        "comments": []
+        "descriptionExcerpt": "Criar a autenticação pela conta do painel admin para acessar as paginas de config personalizadas.\n const axios = require('axios');\nconst qs = require('qs');\nlet data = qs.stringify({\n  'grant_type': 'password',\n  'username': 'XXX',\n  'password': 'XXX',\n  'totp_code': 'p7724145c1TST' \n}); \n   \n let config = {\n  method: 'post',\n  maxBodyLength: Infinity,\n  url: ' https://p7724145c1tst-admin.occa.ocs.oraclecloud.com/ccadmin/v1/mfalogin/' ,\n  headers: { \n    'Content-Type': 'application/x-www-form-urlencoded', \n    'Authorization': 'OAuth', \n    'Cookie': 'ak_bmsc=0234A35FBE3B560C0E0C4157938FAF37~000000000000000000000000000000~YAAQwqMRAhJMKX2WAQAAoExtkhuMKChHHOPMmxNOR0YbXuJxBNR8Q9nwLsQpfLF51k/m1"
       },
       {
         "id": 24585,
         "type": "Melhoria",
         "title": "Melhoria na Experiência do Usuário – Mensagem no Modal de CPF",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "30/01/2025",
         "createdDateRaw": "2025-01-30T18:46:18.78Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Descrição: Atualmente, ao fazer login via login social e avançar para o checkout sem um CPF cadastrado, um modal é exibido solicitando o preenchimento do CPF.",
+        "responsavel": "",
+        "observation": "A fazer: Descrição: Atualmente, ao fazer login via login social e avançar para o checkout sem um CPF cadastrado, um modal é exibido solicitando o preenchimento do CPF.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Descrição: \nAtualmente, ao fazer login via login social e avançar para o checkout sem um CPF cadastrado, um modal é exibido solicitando o preenchimento do CPF. No entanto, o modal não informa claramente ao usuário a necessidade de inserir um CPF válido, o que pode gerar dúvidas e impactar a experiência. \n Melhoria solicitada: \n - Quando o modal for aberto, exibir a mensagem \" Informe um CPF válido \" de forma clara e visível para o cliente. \n - A mensagem deve estar bem posicionada dentro do modal para garantir que o usuário compreenda o que precisa ser feito antes de prosseguir no checkout. \n - Caso o usuário tente avançar sem preencher o CPF ou insira um CPF inválido, o campo deve ser desta",
-        "comments": []
+        "descriptionExcerpt": "Descrição: \nAtualmente, ao fazer login via login social e avançar para o checkout sem um CPF cadastrado, um modal é exibido solicitando o preenchimento do CPF. No entanto, o modal não informa claramente ao usuário a necessidade de inserir um CPF válido, o que pode gerar dúvidas e impactar a experiência. \n Melhoria solicitada: \n - Quando o modal for aberto, exibir a mensagem \" Informe um CPF válido \" de forma clara e visível para o cliente. \n - A mensagem deve estar bem posicionada dentro do modal para garantir que o usuário compreenda o que precisa ser feito antes de prosseguir no checkout. \n - Caso o usuário tente avançar sem preencher o CPF ou insira um CPF inválido, o campo deve ser desta"
       },
       {
         "id": 21540,
         "type": "Bug",
         "title": "Bug de espaçamento no header ao renderizar a pagina",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "29/11/2024",
         "createdDateRaw": "2024-11-29T17:26:56.073Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Item em aberto, sem descrição recente no card.",
+        "responsavel": "",
+        "observation": "Item em aberto, sem descrição recente no card.",
         "srCandidates": [],
-        "reason": "Investigation Complete",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "Investigation Complete"
       },
       {
         "id": 21214,
         "type": "Melhoria",
         "title": "Autenticação Apple - ( Sign in with Apple )",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "19/11/2024",
         "createdDateRaw": "2024-11-19T19:44:55.293Z",
         "assignedTo": {
           "displayName": "Lucas Borges",
           "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
         },
-        "observation": "Responsável: Lucas Borges. A fazer: Boa tarde time, Recebi a seguinte demanda do time de desenvolvimento do APP, gostaria que avaliassem e caso tenham duvidas formalizem neste card e se necessário",
+        "responsavel": "Lucas Borges",
+        "observation": "A fazer: Boa tarde time, Recebi a seguinte demanda do time de desenvolvimento do APP, gostaria que avaliassem e caso tenham duvidas formalizem neste card e se necessário",
         "srCandidates": [],
         "reason": "Moved to state New",
         "descriptionExcerpt": "Boa tarde time, \n \n \n Recebi a seguinte demanda do time de desenvolvimento do APP, gostaria que avaliassem e caso tenham duvidas formalizem neste card e se necessário agendamos um alinhamento técnico com eles.  \n \n \n É necessário implementar o sistema de autenticação da Apple (   Sign in with Apple   ) no site da Salon Line, especialmente devido à funcionalidade   Hide My Email   . Este recurso permite que os usuários criem contas no site utilizando um e-mail anônimo e protegido, promovendo maior privacidade e segurança, ou que atendam às expectativas dos consumidores que utilizam dispositivos Apple. \n \n \n Integração com um ID Apple   : O sistema deve estar configurado para autenticar usuári",
@@ -3147,28 +2711,33 @@
         "type": "Melhoria",
         "title": "Cotação de Frete na Pagina de Produtos",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "25/09/2024",
         "createdDateRaw": "2024-09-25T18:23:46.9Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Boa tarde 😉 Podem verificar a cotação de frete via pagina de produtos, parece não considerar a quantidade informada pelo cliente.",
+        "responsavel": "",
+        "observation": "A fazer: Boa tarde 😉 Podem verificar a cotação de frete via pagina de produtos, parece não considerar a quantidade informada pelo cliente.",
         "srCandidates": [],
         "reason": "Moved to state New",
-        "descriptionExcerpt": "Boa tarde  😉 \n Podem verificar a cotação de frete via pagina de produtos, parece não considerar a quantidade informada pelo cliente. Situação pode ser avaliada quando compras maior que R$ 99,90 onde oferecemos frete grátis.  Pode ser usado qualquer frete para verificação e simulação da ocorrência.",
-        "comments": []
+        "descriptionExcerpt": "Boa tarde  😉 \n Podem verificar a cotação de frete via pagina de produtos, parece não considerar a quantidade informada pelo cliente. Situação pode ser avaliada quando compras maior que R$ 99,90 onde oferecemos frete grátis.  Pode ser usado qualquer frete para verificação e simulação da ocorrência."
       },
       {
         "id": 17326,
         "type": "Melhoria",
         "title": "Implementação de Content Security Policy (CSP)",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "05/08/2024",
         "createdDateRaw": "2024-08-05T16:37:44.667Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. A fazer: Implementar uma Content Security Policy (CSP) para aumentar a segurança do site, mitigando ataques XSS e controlando a origem dos recursos carregados.",
+        "responsavel": "",
+        "observation": "A fazer: Implementar uma Content Security Policy (CSP) para aumentar a segurança do site, mitigando ataques XSS e controlando a origem dos recursos carregados.",
         "srCandidates": [],
         "reason": "Moved to state New",
         "descriptionExcerpt": "Implementar uma Content Security Policy (CSP) para aumentar a segurança do site, mitigando ataques XSS e controlando a origem dos recursos carregados. \n Tarefas: \n - Definir Política CSP:\n \n Exemplo: Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com ; \n \n- Configurar Servidor:\n Apache \n Exemplo: Header set Content-Security-Policy \"default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com ;\"\n Nginx Exemplo: add_header Content-Security-Policy \"default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com;\";\n ",
@@ -3200,15 +2769,18 @@
         "type": "Melhoria",
         "title": "Realizar a atualização automática do site map",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "21/05/2024",
         "createdDateRaw": "2024-05-21T18:43:58.297Z",
         "assignedTo": {
           "displayName": "Lucas Borges",
           "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
         },
-        "observation": "Responsável: Lucas Borges. A fazer: Conforme conversamos na reunião junto com o time de SEO no dia 18/09/24, precisamos perguntar para o Suporte da Oracle/Langer como podemos automatizar a atualiz",
+        "responsavel": "Lucas Borges",
+        "observation": "A fazer: Conforme conversamos na reunião junto com o time de SEO no dia 18/09/24, precisamos perguntar para o Suporte da Oracle/Langer como podemos automatizar a atualiz",
         "srCandidates": [],
         "reason": "Moved to state New",
         "descriptionExcerpt": "Conforme conversamos na reunião junto com o time de SEO no dia 18/09/24, precisamos perguntar para o Suporte da Oracle/Langer como podemos automatizar a atualização dos sitemaps: - Categorias \n- Imagens \n- Produtos \n Segundo o Search Console, a última atualização aconteceu em Janeiro de 2024",
@@ -3230,66 +2802,71 @@
         "type": "Bug",
         "title": "Botões para contato da pagina \"central de relacionamento\" não funciona no mobile. ",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "19/01/2024",
         "createdDateRaw": "2024-01-19T18:22:54.28Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Item em aberto, sem descrição recente no card.",
+        "responsavel": "",
+        "observation": "Item em aberto, sem descrição recente no card.",
         "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "New"
       },
       {
         "id": 10105,
         "type": "Bug",
         "title": "Desktop não está responsivo ",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "19/01/2024",
         "createdDateRaw": "2024-01-19T18:17:17.357Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Item em aberto, sem descrição recente no card.",
+        "responsavel": "",
+        "observation": "Item em aberto, sem descrição recente no card.",
         "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "New"
       },
       {
         "id": 9409,
         "type": "Bug",
         "title": "Exibição em telas pequenas está quebrando",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "20/12/2023",
         "createdDateRaw": "2023-12-20T19:28:28.263Z",
         "assignedTo": null,
-        "observation": "Sem responsável atribuído. Item em aberto, sem descrição recente no card.",
+        "responsavel": "",
+        "observation": "Item em aberto, sem descrição recente no card.",
         "srCandidates": [],
-        "reason": "New defect reported",
-        "descriptionExcerpt": "",
-        "comments": []
+        "reason": "New defect reported"
       },
       {
         "id": 9302,
         "type": "Bug",
         "title": "Divergência request de Cotação de frete - ENDEREÇO PRINCIPAL VS SECUNDÁRIO",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "15/12/2023",
         "createdDateRaw": "2023-12-15T14:49:03.853Z",
         "assignedTo": {
           "displayName": "Lucas Borges",
           "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
         },
-        "observation": "Responsável: Lucas Borges. Item em aberto, sem descrição recente no card.",
+        "responsavel": "Lucas Borges",
+        "observation": "Item em aberto, sem descrição recente no card.",
         "srCandidates": [],
         "reason": "Moved to the backlog",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2023-12-28T18:31:47.033Z",
@@ -3308,18 +2885,20 @@
         "type": "Bug",
         "title": "Pedido com quantidades e valores divergentes",
         "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
+        "iterationTimeFrame": "backlog",
         "createdDate": "07/12/2023",
         "createdDateRaw": "2023-12-07T14:04:02.03Z",
         "assignedTo": {
           "displayName": "Gianluca Ferreira",
           "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
         },
-        "observation": "Responsável: Gianluca Ferreira. Item em aberto, sem descrição recente no card.",
+        "responsavel": "Gianluca Ferreira",
+        "observation": "Item em aberto, sem descrição recente no card.",
         "srCandidates": [],
         "reason": "Moved to the backlog",
-        "descriptionExcerpt": "",
         "comments": [
           {
             "created": "2023-12-18T18:55:42.27Z",
