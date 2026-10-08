@@ -773,135 +773,89 @@
     "responsavelRule": "A coluna Responsável só é preenchida em itens Bloqueado, com quem segura o bloqueio e o motivo informados pelo usuário. Nos demais status a célula fica com travessão.",
     "items": [
       {
-        "id": 41682,
-        "type": "Melhoria",
-        "title": "Algolia | Adicionar AnalyticsTags",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
+        "id": 38287,
+        "type": "Bug",
+        "title": "PLP Outlet repete produtos ao utilizar “Ver mais produtos”",
+        "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "25/09/2026",
-        "createdDateRaw": "2026-09-26T02:55:07.147Z",
+        "createdDate": "13/05/2026",
+        "createdDateRaw": "2026-05-13T19:45:07.78Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "Bloqueado pela área de negócios: faltam os nomes das Analytics Tags de cada tela.",
+        "observation": "A fazer: a listagem de outlet repete produtos ao usar Ver mais produtos.",
         "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Enviar nas consultas da Algolia realizadas pelo Site OCC as AnalyticsTags definidas pela área de negócios para identificar a origem das buscas e permitir a segmentação no Analytics. Implementar o mapeamento das tags por tela após a disponibilização da definição prevista na linha 22. \n \n \n Dependência: definição prévia de nomes e valores por tela pela área de negócios. \n \n \n Critérios de aceite: mapeamento de telas e tags documentado; consultas enviam os valores definidos; segmentação validada no Analytics.",
+        "reason": "Investigation Complete",
         "comments": [
           {
-            "created": "2026-10-02T21:27:15.847Z",
+            "created": "2026-06-05T18:08:56.863Z",
             "by": "Fábio Vidart",
-            "text": "Área de negócios precisa especificar quais Tags devem ser incluídas em cada tela para auxiliar no rastreamento de onde a busca foi originada. \nLinha 22."
+            "text": "Não registramos mais o fato, conforme alinhado iremos fechar e continuar monitorando."
+          },
+          {
+            "created": "2026-05-25T12:48:27.6Z",
+            "by": "Fábio Vidart",
+            "text": "Aguardando retorno da Salon Line como será tratado esse ponto."
+          },
+          {
+            "created": "2026-05-18T19:57:47.69Z",
+            "by": "Marcus Linck",
+            "text": "Recebemos da Oracle 16 produtos por requisição, respeitando a ordenação selecionada pelo usuário (mais relevantes, menor, maior preço) e antes de renderizar em tela, passamos eles por uma função customizada no front que separa os produtos em 3 grupos.\n1 - Produtos disponiveis\n2 - Prdutos da categoria brinde\n3 - Prdoutos inativos\nA função refaz a lista colocando brindes e inativos no final dela, alterando a ordem nativa da oracle.\nImagine os primeiros 16 produtos, sendo 4 deles brindes\nA gente tira eles da ordem da oracle e mandamos pro final da lista.\nEsse comportamento ja acontecia com paginação, mas não ficava tão evidente como com scroll infinito.\nAo clicar em carregar mais produtos, a oracle envia mais 16 produtos e junto dos 16 primeiros, reorganizamos a lista e enviamos os brindes pro final dela. Dando impressão de \"bug\" ou produtos duplicados.\nA solução é não passar mais por esse filtro customizado e renderizar a lista que a Oracle manda de forma nativa"
           }
         ]
       },
       {
-        "id": 41509,
-        "type": "Melhoria",
-        "title": "Integração Server to Server Rakuten",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
+        "id": 39839,
+        "type": "Bug",
+        "title": "Quantidade incorreta de itens sendo adicionados via Streamshop",
+        "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "18/09/2026",
-        "createdDateRaw": "2026-09-18T15:48:34.283Z",
-        "assignedTo": {
-          "displayName": "Regis Ropke",
-          "uniqueName": "regis.ropke@lighthouseit.com.br"
-        },
-        "responsavel": "",
-        "observation": "Bloqueado pela Rakuten: o card espera credenciais da API e a resposta às dúvidas de homologação.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo \n Implementar um mecanismo de rastreamento preciso, confiável e automatizado das vendas originadas por links de afiliados da Rakuten nos canais digitais da Salon Line (Site e App), utilizando comunicação Server-to-Server (S2S) . Descrição Será implementado um fluxo para captura, processamento e envio dos eventos de conversão à plataforma de afiliados da Rakuten por meio de uma comunicação Server-to-Server (S2S) . O fluxo deverá considerar as informações necessárias para identificar a conversão e realizar sua correta atribuição ao afiliado, contemplando os canais Site e App e respeitando as particularidades técnicas de cada canal. \n \nA definição da arquitetura e da estratégia de inte",
-        "comments": [
-          {
-            "created": "2026-10-05T17:54:28.287Z",
-            "by": "Fábio Vidart",
-            "text": "Ok @ , vou bloquear o card para aguardar essa resposta e darmos continuidade nas outras demandas."
-          },
-          {
-            "created": "2026-10-05T16:57:55.603Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Regis Ropke  encaminhei as suas dúvidas para o time da Rakuten, assim que me retornarem, atualizo aqui no card."
-          },
-          {
-            "created": "2026-10-05T15:15:48.423Z",
-            "by": "Regis Ropke",
-            "text": "@luana.santos salonline.com.br , segue algumas duvidas e acessos necessarios para o desenvolvimento\nVamos implementar o rastreamento de conversões da Salon Line via S2S utilizando a Advertiser Transaction API (REST). Para isso, precisamos: \n Acessos \n - client_id e client_secret da Transaction API \n \n- Nosso advertiser_id \n \n- Acesso ao Advertiser Dashboard \n \n- Contato do Implementation Specialist \n \n Testes \n - Existe sandbox/conta de teste? Caso não, como devemos validar pedidos de teste? \n \n- Um link de afiliado (ou ranSiteID ) de teste \n \n Dúvidas técnicas \n - Qual o corpo exato da requisição POST /token ( grant_type , scope etc.)? \n \n- Temos cupons exclusivos por afiliado cadastrados (ex.: UOL12, BRADESCO10, CLARO10, TICKET10SL, ESTADAO10SL, RAKUTEN13OFF…). Confirmam que esses cupons estão configurados como Linkless no programa e que devemos enviar via API os pedidos que os utilizarem, mesmo sem click_id ? E, quando o pedido tiver click_id de um afiliado e cupom de outro, enviamos os dois e a Rakuten decide a atribuição? \n \n- O endpoint /refunds aceita Idempotency-Key ? Devolução parcial por item é obrigatória ou podemos iniciar apenas com cancelamento total? \n \n Alinhamentos \n - Podemos receber os links de afiliado diretamente nas páginas do site (home/PDP) com o parâmetro ranSiteID , sem página de entrada dedicada? \n \n- Como tratar o pixel atual (tag 126083 via GTM) após a virada para S2S, evitando contagem duplicada?"
-          }
-        ]
-      },
-      {
-        "id": 41486,
-        "type": "Melhoria",
-        "title": "Alinhamento de Expectativa de Tráfego e Capacidade para a Black Friday 2026",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "17/09/2026",
-        "createdDateRaw": "2026-09-17T17:27:20.003Z",
+        "createdDate": "16/07/2026",
+        "createdDateRaw": "2026-07-16T18:16:47.893Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "Bloqueado pela Oracle (SR 4-0003839520; histórico SR 4-0001220950): análise preventiva de capacidade para a Black Friday.",
-        "srCandidates": [
-          "4-0001220950",
-          "4-0003839520"
-        ],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo Antecipar ao time responsável pelo OCC a expectativa de tráfego e acessos previstos para o Site e App durante a Black Friday 2026, garantindo que todas as medidas preventivas sejam avaliadas e aplicadas para evitar novas quedas de performance ou indisponibilidades. \n Descrição Na última Black Friday, tivemos uma queda durante o período de maior demanda. Por esse motivo, queremos sinalizar previamente ao OCC a expectativa de acessos para a Black Friday 2026 e solicitar o acompanhamento necessário da capacidade da plataforma, infraestrutura e integrações. \n A expectativa é que o volume de acessos seja superior ao do ano anterior, sendo necessário realizar um planejamento antecipado pa",
-        "comments": [
-          {
-            "created": "2026-09-22T16:50:36.837Z",
-            "by": "Fábio Vidart",
-            "text": "@ @ \nAbrimos a SR 4-0003839520 para análise da Oracle. O objetivo é ser tratado de forma preventiva a nível de capacidade e evitar qualquer falha com relação ao alto tráfego. Resgatamos também o que foi tratado no histórico da SR SR 4-0001220950 na questão do Slot Variation e na manutenção de cache, buscando entender se houve melhorias nesse quesito e também no que é recomendado pela Oracle nesse sentido de personalização de públicos que foi uma recomendação da própria Oracle.\nA SR está em análise. Estamos no aguardo.\nSegue detalhes descritos na SR 4-0003839520:\nOlá, equipe de Suporte Oracle,\nEstamos abrindo esta SR de forma preventiva em preparação para a **Black Friday 2026**.\nNosso objetivo é realizar uma revisão preventiva do ambiente Oracle Commerce Cloud e identificar eventuais pontos de atenção relacionados a configuração, capacidade, infraestrutura, cache, CDN, escalabilidade, monitoramento ou arquitetura que possam impactar a estabilidade e a performance da plataforma durante o período esperado de alto tráfego.\nDurante o período da Black Friday anterior, tivemos uma indisponibilidade no site, que foi investigada por meio da **SR 4-0001220950**.\nDe acordo com a análise fornecida pela Oracle naquela SR, foi identificado e bloqueado um **evento de DoS**. A Oracle também informou que, após o evento de ataque, o site levou aproximadamente **5 minutos para se recuperar completamente**, e um dos fatores mencionados foi o fato de o conteúdo da página inicial não possuir cach"
-          },
-          {
-            "created": "2026-09-21T17:20:57.727Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Fábio Vidart"
-          }
-        ]
+        "observation": "A fazer: quantidade incorreta de itens adicionados pelo Streamshop.",
+        "srCandidates": [],
+        "reason": "Moved out of state Blocked"
       },
       {
-        "id": 40904,
-        "type": "Melhoria",
-        "title": "Novos Requisitos para Imagem dos Produtos",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
+        "id": 40290,
+        "type": "Bug",
+        "title": "[PDP] Cards de produtos relacionados duplicam o símbolo de moeda no parcelamento  Descrição",
+        "state": "New",
+        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "24/08/2026",
-        "createdDateRaw": "2026-08-24T14:10:20.91Z",
+        "createdDate": "30/07/2026",
+        "createdDateRaw": "2026-07-30T17:04:58.273Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "Bloqueado pelo Google: aguardando a confirmação de quais imagens e configurações o Merchant Center exige.",
+        "observation": "A fazer: cards relacionados da página de produto duplicam o símbolo da moeda no parcelamento.",
         "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo:  Avaliar e definir as ações necessárias para adequação ao novo requisito de tamanho mínimo de imagens de produtos exigido pelo Google Merchant Center (mínimo de 500x500 pixels até 31/01/2027). \n Contexto:  O Google Merchant Center notificou uma alteração em suas diretrizes de qualidade, estipulando que, a partir de 31/01/2027 , todos os produtos publicados deverão possuir imagens com dimensões mínimas de 500x500 pixels .\n \n Como a fonte de dados do Merchant Center é capturada diretamente do nosso e-commerce, é necessário investigar se o ajuste deverá ser feito diretamente pelo site ou se existe alguma outra tratativa que possa ser realizada. \n Para embasamento e validação inicial, ",
-        "comments": [
-          {
-            "created": "2026-09-28T16:52:48.623Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Ainda estamos aguardando a confirmação das imagens que precisam ser atualizadas."
-          },
-          {
-            "created": "2026-09-21T17:20:16.367Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Fábio Vidart  recomendações da Google adicionadas na descrição do card e planilha atualizada em anexo (Salon Line (123897021) - Merchant Excellence - Set'26)"
-          },
-          {
-            "created": "2026-09-14T16:54:52.57Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Card bloqueado, pois estamos aguardando a confirmação da Google sobre as configurações das imagens."
-          }
-        ]
+        "reason": "New"
+      },
+      {
+        "id": 40638,
+        "type": "Bug",
+        "title": "Exibir itens de lançamento nas sugestões do Cronograma Capilar (Quiz)",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "12/08/2026",
+        "createdDateRaw": "2026-08-12T13:30:25.413Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: exibir lançamentos nas sugestões do Cronograma Capilar.",
+        "srCandidates": [],
+        "reason": "New"
       },
       {
         "id": 40883,
@@ -980,113 +934,58 @@
         ]
       },
       {
-        "id": 41756,
+        "id": 40904,
         "type": "Melhoria",
-        "title": "Algolia | Criar replicas de ordenação e filtros",
-        "state": "Active",
-        "statusLabel": "Em Desenvolvimento",
+        "title": "Novos Requisitos para Imagem dos Produtos",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "01/10/2026",
-        "createdDateRaw": "2026-10-01T12:17:31.067Z",
-        "assignedTo": {
-          "displayName": "Ewerton Bezerra",
-          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
-        },
-        "responsavel": "",
-        "observation": "Em desenvolvimento: réplicas de ordenação por preço e mais vendidos e índice de filtros na Algolia.",
-        "srCandidates": [],
-        "reason": "Moved to state Active",
-        "descriptionExcerpt": "Precisamos criar as replicas de index para ordenação (Preço menor, preço maior, mais vendidos) assim como também deverá ser criado o index de filtros dentro da plataforma da Algolia."
-      },
-      {
-        "id": 41681,
-        "type": "Melhoria",
-        "title": "Algolia | Adicionar a Algolia nas páginas de categoria",
-        "state": "Active",
-        "statusLabel": "Em Desenvolvimento",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "25/09/2026",
-        "createdDateRaw": "2026-09-26T02:49:37.79Z",
+        "createdDate": "24/08/2026",
+        "createdDateRaw": "2026-08-24T14:10:20.91Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "Em desenvolvimento: consulta de produtos das páginas de categoria pela Algolia.",
+        "observation": "Bloqueado pelo Google: aguardando a confirmação de quais imagens e configurações o Merchant Center exige.",
         "srCandidates": [],
-        "reason": "Moved to state Active",
-        "descriptionExcerpt": "Integrar as páginas de categoria do Site OCC à Algolia para consultar e apresentar os produtos correspondentes à categoria acessada, mantendo uma experiência consistente entre busca e navegação. Registrar o atributo ou filtro utilizado para identificar cada categoria e reutilizar os componentes de resultados aplicáveis. \n Critérios de aceite: categorias de referência apresentam os produtos correspondentes; filtros e navegação funcionam conforme o comportamento aprovado; consultas utilizam a identificação correta da categoria; validação no desktop e mobile web."
-      },
-      {
-        "id": 41577,
-        "type": "Melhoria",
-        "title": "Envelopamento do Site — Black Friday",
-        "state": "Active",
-        "statusLabel": "Em Desenvolvimento",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "23/09/2026",
-        "createdDateRaw": "2026-09-23T16:53:19.993Z",
-        "assignedTo": {
-          "displayName": "Regis Ropke"
-        },
-        "responsavel": "",
-        "observation": "Em desenvolvimento: envelopamento visual do site para a campanha de Black Friday.",
-        "srCandidates": [],
-        "reason": "Moved to state Active",
-        "descriptionExcerpt": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI. \n A entrega deverá estar concluída até 1º de novembro . \n Requisitos/Regras - Aplicar a identidade visual da campanha nas áreas definidas do site. \n- Contemplar as versões Desktop e Mobile. \n- Garantir a responsividade dos elementos. \n- Validar a exibição das imagens, banners, textos e links. \n- Manter a usabilidade e a performance do",
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Objetivo:  Avaliar e definir as ações necessárias para adequação ao novo requisito de tamanho mínimo de imagens de produtos exigido pelo Google Merchant Center (mínimo de 500x500 pixels até 31/01/2027). \n Contexto:  O Google Merchant Center notificou uma alteração em suas diretrizes de qualidade, estipulando que, a partir de 31/01/2027 , todos os produtos publicados deverão possuir imagens com dimensões mínimas de 500x500 pixels .\n \n Como a fonte de dados do Merchant Center é capturada diretamente do nosso e-commerce, é necessário investigar se o ajuste deverá ser feito diretamente pelo site ou se existe alguma outra tratativa que possa ser realizada. \n Para embasamento e validação inicial, ",
         "comments": [
           {
-            "created": "2026-09-29T15:21:29.797Z",
-            "by": "daniela.damasceno salonline.com.br",
-            "text": "Cor que vamos utilizae no envelopamento \n Black Crow — #080806 - \nRGB: rgb(8, 8, 6)"
-          },
-          {
-            "created": "2026-09-28T16:51:06.497Z",
+            "created": "2026-09-28T16:52:48.623Z",
             "by": "luana.santos salonline.com.br",
-            "text": "Virada no dia 02/11"
+            "text": "Ainda estamos aguardando a confirmação das imagens que precisam ser atualizadas."
           },
           {
-            "created": "2026-09-23T17:02:20.413Z",
-            "by": "daniela.damasceno salonline.com.br",
-            "text": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI.\n A entrega deverá estar concluída até 1º de novembro .\n Requisitos/Regras - \nAplicar a identidade visual da campanha nas áreas definidas do site.\n- \nContemplar as versões Desktop e Mobile.\n- \nGarantir a responsividade dos elementos.\n- \nValidar a exibição das imagens, banners, textos e links.\n- \nManter a usabilidade e a performance do site.\n- \nRealizar os testes antes da publicação em produção.\n Critérios de validação - \nEnvelopamento aplicado corretamente nas páginas previstas.\n- \nElementos visuais funcionando em Desktop e Mobile.\n- \nLinks e redirecionamentos validados.\n- \nAusência de quebras de layout ou problemas de carregamento.\n- \nAprovação final das áreas responsáveis.\n Prazo Data de entrega: 1º de novembro."
+            "created": "2026-09-21T17:20:16.367Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "@Fábio Vidart  recomendações da Google adicionadas na descrição do card e planilha atualizada em anexo (Salon Line (123897021) - Merchant Excellence - Set'26)"
+          },
+          {
+            "created": "2026-09-14T16:54:52.57Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Card bloqueado, pois estamos aguardando a confirmação da Google sobre as configurações das imagens."
           }
         ]
       },
       {
-        "id": 41820,
+        "id": 40929,
         "type": "Melhoria",
-        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "title": "Desenvolvimento do novo layout da Página de Produto",
         "state": "Code Review",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDateRaw": "2026-10-02T20:45:09.937Z",
-        "assignedTo": null,
+        "createdDateRaw": "2026-08-25T16:59:34.3Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
         "responsavel": "",
-        "observation": "Em revisão de código: atualização incremental do catálogo. O preço atualiza no índice, mas o front dos resultados ainda não reflete a alteração.",
+        "observation": "Em revisão de código: novo layout da página de produto, com o desenvolvimento acompanhado em TST.",
         "reason": "Moved to state Code Review",
         "srCandidates": [],
-        "createdDate": "02/10/2026",
-        "statusLabel": "Em revisão de código"
-      },
-      {
-        "id": 41786,
-        "type": "Melhoria",
-        "title": "Algolia | Adaptar FrontEnd da busca",
-        "state": "Code Review",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDateRaw": "2026-10-01T20:08:20.603Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Em revisão de código: autocomplete da busca. Há correções em aberto no menu da Algolia, no clique do produto e após a busca.",
-        "reason": "Moved to state Code Review",
-        "srCandidates": [],
-        "createdDate": "01/10/2026",
+        "createdDate": "25/08/2026",
         "statusLabel": "Em revisão de código"
       },
       {
@@ -1110,137 +1009,27 @@
         "statusLabel": "Em revisão de código"
       },
       {
-        "id": 40929,
+        "id": 41480,
         "type": "Melhoria",
-        "title": "Desenvolvimento do novo layout da Página de Produto",
-        "state": "Code Review",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDateRaw": "2026-08-25T16:59:34.3Z",
-        "assignedTo": {
-          "displayName": "Regis Ropke",
-          "uniqueName": "regis.ropke@lighthouseit.com.br"
-        },
-        "responsavel": "",
-        "observation": "Em revisão de código: novo layout da página de produto, com o desenvolvimento acompanhado em TST.",
-        "reason": "Moved to state Code Review",
-        "srCandidates": [],
-        "createdDate": "25/08/2026",
-        "statusLabel": "Em revisão de código"
-      },
-      {
-        "id": 41676,
-        "type": "Melhoria",
-        "title": "Algolia | Implementar userToken nos eventos",
-        "state": "In Test Light",
-        "statusLabel": "Em Testes LH",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "25/09/2026",
-        "createdDateRaw": "2026-09-26T01:59:53.97Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Em teste LH: identificador de usuário nos eventos e nas consultas da Algolia.",
-        "srCandidates": [],
-        "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Aplicar o userToken de forma\nconsistente nas consultas e nos eventos do Site OCC, para permitir a associação\ndas interações de uma mesma jornada. \n \n \n Critérios de aceite: Consultas e eventos de uma mesma jornada de teste utilizam o\nidentificador esperado, conforme a regra aprovada. \n \n \n Documentação:  https://www.algolia.com/doc/guides/sending-events/concepts/usertoken",
-        "comments": [
-          {
-            "created": "2026-10-05T15:14:00.207Z",
-            "by": "Ewerton Bezerra",
-            "text": "Implementado o envio dos enventos conforme documentação:\n**Deslogado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/02427f25-5a5e-4cd6-9571-e878b11f1a0c?fileName=image.png) \n**Logado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b2a0f98d-a3d6-4349-b960-382a4c695c2f?fileName=image.png)"
-          },
-          {
-            "created": "2026-10-01T14:12:29.343Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Identificação do usuário User Token O User Token é utilizado pela Algolia para identificar um usuário durante sua interação com a plataforma.\n Principais pontos:\n - \nÉ um identificador anônimo .\n- \nNão depende do usuário estar logado.\n- \nDeve ser persistido no navegador.\n- \nO mesmo token deve permanecer consistente durante a experiência do usuário.\n- \nA recomendação apresentada foi manter o token por aproximadamente 90 dias , realizando sua renovação posteriormente.\n- \nÉ necessário considerar a estratégia de persistência e cookies no Site.\n- \nA geração do token pode utilizar a biblioteca disponibilizada pela Algolia.\n- \nO formato do ID não é o principal ponto; o mais importante é que ele seja único e consistente .\n Site x App - \nSite e App podem possuir User Tokens diferentes quando o usuário está navegando de forma anônima.\n- \nCaso o usuário faça login, existe a possibilidade de utilizar um identificador autenticado ( authenticatedUserToken ) para associá-lo especificamente à sua conta.\n- \nPortanto, o token anônimo identifica a experiência do usuário, enquanto o authenticatedUserToken permite identificar o usuário autenticado.\n @Fábio Vidart   @Ewerton Bezerra"
-          }
-        ]
-      },
-      {
-        "id": 41516,
-        "type": "Melhoria",
-        "title": "Algolia | Eventos & Analitycs",
-        "state": "In Test Light",
-        "statusLabel": "Em Testes LH",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "18/09/2026",
-        "createdDateRaw": "2026-09-18T20:07:31.137Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Em teste LH: eventos de visualização, clique e conversão da Algolia.",
-        "srCandidates": [],
-        "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Implementar no Site OCC os eventos de view , click e conversion acordados para as jornadas de busca e navegação. Documentar os pontos de disparo, os dados enviados e validar o recebimento na Algolia, atendendo à recomendação de disponibilizar dados para Analytics e funcionalidades de IA. Documentações: - Insights API Overview \n \n- Analytics Overview \n \n- https://www.algolia.com/doc/guides/sending-events/concepts/event-types",
-        "comments": [
-          {
-            "created": "2026-10-05T15:13:39.447Z",
-            "by": "Ewerton Bezerra",
-            "text": "Implementado o envio dos enventos conforme documentação:\n**Deslogado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/02427f25-5a5e-4cd6-9571-e878b11f1a0c?fileName=image.png) \n**Logado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b2a0f98d-a3d6-4349-b960-382a4c695c2f?fileName=image.png)"
-          },
-          {
-            "created": "2026-10-01T14:19:13.567Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Eventos implementados no APP:  \n \n \n @Ewerton Bezerra   @Fábio Vidart"
-          },
-          {
-            "created": "2026-10-01T14:14:51.977Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Analytics Tags As tags podem ser utilizadas para classificar a origem e o contexto das buscas.\n Exemplos:\n - \nSite / App\n- \nUsuário logado / deslogado\n- \nBusca realizada pelo autocomplete\n- \nOrigem específica da busca\n A utilização dessas tags não é obrigatória, mas é considerada uma boa prática , pois permite análises e segmentações mais específicas.\n Também foi reforçada a necessidade de manter um padrão de nomenclatura entre Site e App . Os nomes não precisam ser necessariamente idênticos, mas devem seguir uma mesma lógica.\n Eventos Após a configuração das buscas, o próximo passo é implementar os eventos que serão enviados para a Algolia.\n A documentação apresentada durante a reunião foi:\n Documentação Algolia — Event Types \n Os eventos podem ser classificados por prioridade:\n Alta prioridade São os principais eventos para a mensuração da jornada e devem ser priorizados na implementação:\n - clickedObjectIDsAfterSearch \n- convertedObjectIDsAfterSearch \n- addedToCartObjectIDsAfterSearch \n- purchasedObjectIDsAfterSearch \n Média prioridade Devem ser implementados posteriormente, pois possuem menor impacto na alimentação dos dados da Algolia:\n - clickedObjectIDs \n- convertedObjectIDs \n- addedToCartObjectIDs \n- purchasedObjectIDs \n Baixa prioridade Eventos complementares. Um exemplo citado foi o viewObjectIDs , que pode ser utilizado na PDP para informar à Algolia que determinado produto foi visualizado:\n - viewedObjectIDs \n- clickedFilters \n- convertedFilters \n- viewedFilters \n"
-          }
-        ]
-      },
-      {
-        "id": 41485,
-        "type": "Melhoria",
-        "title": "[PDP] Monte sua Rotina",
+        "title": "[PDP] Trust Bar",
         "state": "In Test Light",
         "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
         "createdDate": "17/09/2026",
-        "createdDateRaw": "2026-09-17T15:20:04.45Z",
+        "createdDateRaw": "2026-09-17T15:10:06.063Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "Em teste LH: widget Monte sua Rotina, com destaque do produto que o cliente está vendo.",
+        "observation": "Em teste LH: faixa de benefícios da nova página de produto.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Objetivo \n Desenvolver o novo widget “Monte sua Rotina” na PDP para apresentar produtos complementares organizados por etapas, conforme o layout aprovado no Figma. \n O componente deverá destacar o produto correspondente à PDP acessada e permitir a navegação para a rotina completa, respeitando as estruturas de relacionamento de produtos já existentes sempre que aplicável. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o",
+        "descriptionExcerpt": "Objetivo \n Desenvolver o novo componente Trust Bar da PDP, conforme o layout aprovado no Figma, permitindo a apresentação de benefícios comerciais e institucionais de forma configurável pela OCC. \n O componente deverá seguir os padrões visuais e técnicos já utilizados no projeto, preservando a experiência responsiva da PDP. \n Referência \n Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar um novo widget para exibição de benefícios na P",
         "comments": [
           {
-            "created": "2026-09-18T12:15:00.723Z",
+            "created": "2026-09-18T12:22:32.807Z",
             "by": "Regis Ropke",
-            "text": "Widget: _ProductRoutine\n \n 1 campo customizado novo no produto: sl_rotinaSkus\n \n IMPORTANTE pra testar certo:\n - Precisa incluir o ID do PRÓPRIO produto na lista, pra ele aparecer destacado como \"Você está aqui\".\n - Precisa colar o MESMO valor (mesma lista, mesma ordem) em TODOS os produtos que fazem parte da rotina\n Sem o campo preenchido, o widget não aparece (esperado)."
-          }
-        ]
-      },
-      {
-        "id": 41482,
-        "type": "Melhoria",
-        "title": "[PDP] Ritual em {x} passos",
-        "state": "In Test Light",
-        "statusLabel": "Em Testes LH",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "17/09/2026",
-        "createdDateRaw": "2026-09-17T15:14:25Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Em teste LH: ritual em passos, exibido somente quando o produto tem o conteúdo preenchido.",
-        "srCandidates": [],
-        "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Objetivo \n Desenvolver um novo widget para apresentar o modo de uso do produto em etapas , conforme o layout aprovado no Figma, permitindo uma quantidade variável de passos e atualização dinâmica do título do componente. \n O widget deverá ser configurável pela OCC, responsivo e exibido somente quando houver conteúdo cadastrado. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o novo componente “Ritual em {x} passos” para",
-        "comments": [
-          {
-            "created": "2026-09-18T12:13:23.65Z",
-            "by": "Regis Ropke",
-            "text": "Widget: _RitualEmPassos\n \n 3 campos customizados novos no produto, todos texto, separados por \"|\" (pipe), na mesma ordem entre si:\n - sl_ritualTitulos: título de cada passo (ex: Aplique|Massageie|Aguarde|Enxágue)\n - sl_ritualDescricoes: descrição de cada passo\n - sl_ritualIcones: palavra-chave do ícone de cada passo — só aceita: aplicar, aguardar, enxaguar (minúsculo, sem acento)\n \n Sem esses campos preenchidos, o widget não aparece na PDP (comportamento esperado).\n Obs: só existem 3 ícones hoje — se o Figma pedir um 4º ícone diferente, ainda está em aberto com o design."
+            "text": "Widget: _BenefitsCarouselHero\n nova instancia do mesmo carousel de beneficios que ja foi desenvolvido, adicionado novos campos customizaveis no widget"
           }
         ]
       },
@@ -1270,76 +1059,125 @@
         ]
       },
       {
-        "id": 41480,
+        "id": 41482,
         "type": "Melhoria",
-        "title": "[PDP] Trust Bar",
+        "title": "[PDP] Ritual em {x} passos",
         "state": "In Test Light",
         "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
         "createdDate": "17/09/2026",
-        "createdDateRaw": "2026-09-17T15:10:06.063Z",
+        "createdDateRaw": "2026-09-17T15:14:25Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "Em teste LH: faixa de benefícios da nova página de produto.",
+        "observation": "Em teste LH: ritual em passos, exibido somente quando o produto tem o conteúdo preenchido.",
         "srCandidates": [],
         "reason": "Moved to state In Test Light",
-        "descriptionExcerpt": "Objetivo \n Desenvolver o novo componente Trust Bar da PDP, conforme o layout aprovado no Figma, permitindo a apresentação de benefícios comerciais e institucionais de forma configurável pela OCC. \n O componente deverá seguir os padrões visuais e técnicos já utilizados no projeto, preservando a experiência responsiva da PDP. \n Referência \n Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar um novo widget para exibição de benefícios na P",
+        "descriptionExcerpt": "Objetivo \n Desenvolver um novo widget para apresentar o modo de uso do produto em etapas , conforme o layout aprovado no Figma, permitindo uma quantidade variável de passos e atualização dinâmica do título do componente. \n O widget deverá ser configurável pela OCC, responsivo e exibido somente quando houver conteúdo cadastrado. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o novo componente “Ritual em {x} passos” para",
         "comments": [
           {
-            "created": "2026-09-18T12:22:32.807Z",
+            "created": "2026-09-18T12:13:23.65Z",
             "by": "Regis Ropke",
-            "text": "Widget: _BenefitsCarouselHero\n nova instancia do mesmo carousel de beneficios que ja foi desenvolvido, adicionado novos campos customizaveis no widget"
+            "text": "Widget: _RitualEmPassos\n \n 3 campos customizados novos no produto, todos texto, separados por \"|\" (pipe), na mesma ordem entre si:\n - sl_ritualTitulos: título de cada passo (ex: Aplique|Massageie|Aguarde|Enxágue)\n - sl_ritualDescricoes: descrição de cada passo\n - sl_ritualIcones: palavra-chave do ícone de cada passo — só aceita: aplicar, aguardar, enxaguar (minúsculo, sem acento)\n \n Sem esses campos preenchidos, o widget não aparece na PDP (comportamento esperado).\n Obs: só existem 3 ícones hoje — se o Figma pedir um 4º ícone diferente, ainda está em aberto com o design."
           }
         ]
       },
       {
-        "id": 41677,
+        "id": 41485,
         "type": "Melhoria",
-        "title": "Algolia | Implementar Recent Searches",
-        "state": "Ready PRD",
-        "statusLabel": "Pronto para Publicar PRD",
+        "title": "[PDP] Monte sua Rotina",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "25/09/2026",
-        "createdDateRaw": "2026-09-26T02:14:43.083Z",
-        "assignedTo": {
-          "displayName": "luana.santos salonline.com.br"
-        },
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:20:04.45Z",
+        "assignedTo": null,
         "responsavel": "",
-        "observation": "Pronto para publicar em produção: buscas recentes salvas no navegador e reaproveitadas no autocomplete.",
+        "observation": "Em teste LH: widget Monte sua Rotina, com destaque do produto que o cliente está vendo.",
         "srCandidates": [],
-        "reason": "Moved to state Ready PRD",
-        "descriptionExcerpt": "Armazenar localmente no navegador as buscas recentes realizadas no Site OCC e permitir sua reutilização no autocomplete.\n \n \n \n Critérios de aceite: histórico persistido localmente; termos recentes exibidos; seleção de um termo executa a busca correspondente; remoção funciona conforme a regra aprovada; validação no desktop e mobile web.",
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Objetivo \n Desenvolver o novo widget “Monte sua Rotina” na PDP para apresentar produtos complementares organizados por etapas, conforme o layout aprovado no Figma. \n O componente deverá destacar o produto correspondente à PDP acessada e permitir a navegação para a rotina completa, respeitando as estruturas de relacionamento de produtos já existentes sempre que aplicável. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o",
         "comments": [
           {
-            "created": "2026-10-05T15:14:36.787Z",
-            "by": "Ewerton Bezerra",
-            "text": "implementado:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/3d433557-5380-4217-b205-9605bcd27a95?fileName=image.png)"
+            "created": "2026-09-18T12:15:00.723Z",
+            "by": "Regis Ropke",
+            "text": "Widget: _ProductRoutine\n \n 1 campo customizado novo no produto: sl_rotinaSkus\n \n IMPORTANTE pra testar certo:\n - Precisa incluir o ID do PRÓPRIO produto na lista, pra ele aparecer destacado como \"Você está aqui\".\n - Precisa colar o MESMO valor (mesma lista, mesma ordem) em TODOS os produtos que fazem parte da rotina\n Sem o campo preenchido, o widget não aparece (esperado)."
           }
         ]
       },
       {
-        "id": 41515,
+        "id": 41486,
         "type": "Melhoria",
-        "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
-        "state": "Ready PRD",
-        "statusLabel": "Pronto para Publicar PRD",
+        "title": "Alinhamento de Expectativa de Tráfego e Capacidade para a Black Friday 2026",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T17:27:20.003Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Bloqueado pela Oracle (SR 4-0003839520; histórico SR 4-0001220950): análise preventiva de capacidade para a Black Friday.",
+        "srCandidates": [
+          "4-0001220950",
+          "4-0003839520"
+        ],
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Objetivo Antecipar ao time responsável pelo OCC a expectativa de tráfego e acessos previstos para o Site e App durante a Black Friday 2026, garantindo que todas as medidas preventivas sejam avaliadas e aplicadas para evitar novas quedas de performance ou indisponibilidades. \n Descrição Na última Black Friday, tivemos uma queda durante o período de maior demanda. Por esse motivo, queremos sinalizar previamente ao OCC a expectativa de acessos para a Black Friday 2026 e solicitar o acompanhamento necessário da capacidade da plataforma, infraestrutura e integrações. \n A expectativa é que o volume de acessos seja superior ao do ano anterior, sendo necessário realizar um planejamento antecipado pa",
+        "comments": [
+          {
+            "created": "2026-09-22T16:50:36.837Z",
+            "by": "Fábio Vidart",
+            "text": "@ @ \nAbrimos a SR 4-0003839520 para análise da Oracle. O objetivo é ser tratado de forma preventiva a nível de capacidade e evitar qualquer falha com relação ao alto tráfego. Resgatamos também o que foi tratado no histórico da SR SR 4-0001220950 na questão do Slot Variation e na manutenção de cache, buscando entender se houve melhorias nesse quesito e também no que é recomendado pela Oracle nesse sentido de personalização de públicos que foi uma recomendação da própria Oracle.\nA SR está em análise. Estamos no aguardo.\nSegue detalhes descritos na SR 4-0003839520:\nOlá, equipe de Suporte Oracle,\nEstamos abrindo esta SR de forma preventiva em preparação para a **Black Friday 2026**.\nNosso objetivo é realizar uma revisão preventiva do ambiente Oracle Commerce Cloud e identificar eventuais pontos de atenção relacionados a configuração, capacidade, infraestrutura, cache, CDN, escalabilidade, monitoramento ou arquitetura que possam impactar a estabilidade e a performance da plataforma durante o período esperado de alto tráfego.\nDurante o período da Black Friday anterior, tivemos uma indisponibilidade no site, que foi investigada por meio da **SR 4-0001220950**.\nDe acordo com a análise fornecida pela Oracle naquela SR, foi identificado e bloqueado um **evento de DoS**. A Oracle também informou que, após o evento de ataque, o site levou aproximadamente **5 minutos para se recuperar completamente**, e um dos fatores mencionados foi o fato de o conteúdo da página inicial não possuir cach"
+          },
+          {
+            "created": "2026-09-21T17:20:57.727Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "@Fábio Vidart"
+          }
+        ]
+      },
+      {
+        "id": 41509,
+        "type": "Melhoria",
+        "title": "Integração Server to Server Rakuten",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
         "createdDate": "18/09/2026",
-        "createdDateRaw": "2026-09-18T19:52:14.257Z",
+        "createdDateRaw": "2026-09-18T15:48:34.283Z",
         "assignedTo": {
-          "displayName": "luana.santos salonline.com.br"
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
         },
         "responsavel": "",
-        "observation": "Pronto para publicar em produção: indexação do catálogo Oracle na Algolia.",
+        "observation": "Bloqueado pela Rakuten: o card espera credenciais da API e a resposta às dúvidas de homologação.",
         "srCandidates": [],
-        "reason": "Moved to state Ready PRD",
-        "descriptionExcerpt": "Objetivo: - Mapear os atributos disponíveis no Oracle para o primeiro índice. \n- Identificar campos adicionais necessários para relevância e ordenação, como vendas dos últimos 90 dias.  \n- Validar acesso ao Sandbox e às credenciais da Algolia. \n- Realizar a integração do catálogo Oracle com a Algolia e a estruturação do processo de envio dos dados.  \n Critérios de aceite: catálogo previsto enviado e consultável na Algolia \n \n Documentações: - Getting Started \n \n- Importing Data \n \n- Push to Algolia \n \n- Prepare Your Data for Algolia \n \n- Partial Updates"
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Objetivo \n Implementar um mecanismo de rastreamento preciso, confiável e automatizado das vendas originadas por links de afiliados da Rakuten nos canais digitais da Salon Line (Site e App), utilizando comunicação Server-to-Server (S2S) . Descrição Será implementado um fluxo para captura, processamento e envio dos eventos de conversão à plataforma de afiliados da Rakuten por meio de uma comunicação Server-to-Server (S2S) . O fluxo deverá considerar as informações necessárias para identificar a conversão e realizar sua correta atribuição ao afiliado, contemplando os canais Site e App e respeitando as particularidades técnicas de cada canal. \n \nA definição da arquitetura e da estratégia de inte",
+        "comments": [
+          {
+            "created": "2026-10-05T17:54:28.287Z",
+            "by": "Fábio Vidart",
+            "text": "Ok @ , vou bloquear o card para aguardar essa resposta e darmos continuidade nas outras demandas."
+          },
+          {
+            "created": "2026-10-05T16:57:55.603Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "@Regis Ropke  encaminhei as suas dúvidas para o time da Rakuten, assim que me retornarem, atualizo aqui no card."
+          },
+          {
+            "created": "2026-10-05T15:15:48.423Z",
+            "by": "Regis Ropke",
+            "text": "@luana.santos salonline.com.br , segue algumas duvidas e acessos necessarios para o desenvolvimento\nVamos implementar o rastreamento de conversões da Salon Line via S2S utilizando a Advertiser Transaction API (REST). Para isso, precisamos: \n Acessos \n - client_id e client_secret da Transaction API \n \n- Nosso advertiser_id \n \n- Acesso ao Advertiser Dashboard \n \n- Contato do Implementation Specialist \n \n Testes \n - Existe sandbox/conta de teste? Caso não, como devemos validar pedidos de teste? \n \n- Um link de afiliado (ou ranSiteID ) de teste \n \n Dúvidas técnicas \n - Qual o corpo exato da requisição POST /token ( grant_type , scope etc.)? \n \n- Temos cupons exclusivos por afiliado cadastrados (ex.: UOL12, BRADESCO10, CLARO10, TICKET10SL, ESTADAO10SL, RAKUTEN13OFF…). Confirmam que esses cupons estão configurados como Linkless no programa e que devemos enviar via API os pedidos que os utilizarem, mesmo sem click_id ? E, quando o pedido tiver click_id de um afiliado e cupom de outro, enviamos os dois e a Rakuten decide a atribuição? \n \n- O endpoint /refunds aceita Idempotency-Key ? Devolução parcial por item é obrigatória ou podemos iniciar apenas com cancelamento total? \n \n Alinhamentos \n - Podemos receber os links de afiliado diretamente nas páginas do site (home/PDP) com o parâmetro ranSiteID , sem página de entrada dedicada? \n \n- Como tratar o pixel atual (tag 126083 via GTM) após a virada para S2S, evitando contagem duplicada?"
+          }
+        ]
       },
       {
         "id": 41513,
@@ -1379,91 +1217,153 @@
         ]
       },
       {
-        "id": 41949,
+        "id": 41515,
         "type": "Melhoria",
-        "title": "Algolia - Incluir campos relavantes de produto no index",
-        "state": "New",
-        "statusLabel": "À fazer",
+        "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "08/10/2026",
-        "createdDateRaw": "2026-10-08T18:11:20.427Z",
-        "assignedTo": null,
+        "createdDate": "18/09/2026",
+        "createdDateRaw": "2026-09-18T19:52:14.257Z",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
         "responsavel": "",
-        "observation": "A fazer: enviar à Algolia os campos de produto que ainda faltam para filtro e ranqueamento.",
+        "observation": "Pronto para publicar em produção: indexação do catálogo Oracle na Algolia.",
         "srCandidates": [],
-        "reason": "Moved to state New"
+        "reason": "Moved to state Ready PRD",
+        "descriptionExcerpt": "Objetivo: - Mapear os atributos disponíveis no Oracle para o primeiro índice. \n- Identificar campos adicionais necessários para relevância e ordenação, como vendas dos últimos 90 dias.  \n- Validar acesso ao Sandbox e às credenciais da Algolia. \n- Realizar a integração do catálogo Oracle com a Algolia e a estruturação do processo de envio dos dados.  \n Critérios de aceite: catálogo previsto enviado e consultável na Algolia \n \n Documentações: - Getting Started \n \n- Importing Data \n \n- Push to Algolia \n \n- Prepare Your Data for Algolia \n \n- Partial Updates"
       },
       {
-        "id": 41928,
+        "id": 41516,
         "type": "Melhoria",
-        "title": "Análise de Segurança: Alerta de Vazamento de Credenciais",
-        "state": "New",
-        "statusLabel": "À fazer",
+        "title": "Algolia | Eventos & Analitycs",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "08/10/2026",
-        "createdDateRaw": "2026-10-08T13:12:59.363Z",
+        "createdDate": "18/09/2026",
+        "createdDateRaw": "2026-09-18T20:07:31.137Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "A fazer: alerta da Gemina sobre vazamento de credenciais do domínio, com baixa amostragem.",
+        "observation": "Em teste LH: eventos de visualização, clique e conversão da Algolia.",
         "srCandidates": [],
-        "reason": "Moved to state New"
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Implementar no Site OCC os eventos de view , click e conversion acordados para as jornadas de busca e navegação. Documentar os pontos de disparo, os dados enviados e validar o recebimento na Algolia, atendendo à recomendação de disponibilizar dados para Analytics e funcionalidades de IA. Documentações: - Insights API Overview \n \n- Analytics Overview \n \n- https://www.algolia.com/doc/guides/sending-events/concepts/event-types",
+        "comments": [
+          {
+            "created": "2026-10-05T15:13:39.447Z",
+            "by": "Ewerton Bezerra",
+            "text": "Implementado o envio dos enventos conforme documentação:\n**Deslogado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/02427f25-5a5e-4cd6-9571-e878b11f1a0c?fileName=image.png) \n**Logado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b2a0f98d-a3d6-4349-b960-382a4c695c2f?fileName=image.png)"
+          },
+          {
+            "created": "2026-10-01T14:19:13.567Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Eventos implementados no APP:  \n \n \n @Ewerton Bezerra   @Fábio Vidart"
+          },
+          {
+            "created": "2026-10-01T14:14:51.977Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Analytics Tags As tags podem ser utilizadas para classificar a origem e o contexto das buscas.\n Exemplos:\n - \nSite / App\n- \nUsuário logado / deslogado\n- \nBusca realizada pelo autocomplete\n- \nOrigem específica da busca\n A utilização dessas tags não é obrigatória, mas é considerada uma boa prática , pois permite análises e segmentações mais específicas.\n Também foi reforçada a necessidade de manter um padrão de nomenclatura entre Site e App . Os nomes não precisam ser necessariamente idênticos, mas devem seguir uma mesma lógica.\n Eventos Após a configuração das buscas, o próximo passo é implementar os eventos que serão enviados para a Algolia.\n A documentação apresentada durante a reunião foi:\n Documentação Algolia — Event Types \n Os eventos podem ser classificados por prioridade:\n Alta prioridade São os principais eventos para a mensuração da jornada e devem ser priorizados na implementação:\n - clickedObjectIDsAfterSearch \n- convertedObjectIDsAfterSearch \n- addedToCartObjectIDsAfterSearch \n- purchasedObjectIDsAfterSearch \n Média prioridade Devem ser implementados posteriormente, pois possuem menor impacto na alimentação dos dados da Algolia:\n - clickedObjectIDs \n- convertedObjectIDs \n- addedToCartObjectIDs \n- purchasedObjectIDs \n Baixa prioridade Eventos complementares. Um exemplo citado foi o viewObjectIDs , que pode ser utilizado na PDP para informar à Algolia que determinado produto foi visualizado:\n - viewedObjectIDs \n- clickedFilters \n- convertedFilters \n- viewedFilters \n"
+          }
+        ]
       },
       {
-        "id": 41913,
-        "type": "Bug",
-        "title": "Slider de imagens do produto inconsistente",
-        "state": "New",
-        "statusLabel": "À fazer",
+        "id": 41577,
+        "type": "Melhoria",
+        "title": "Envelopamento do Site — Black Friday",
+        "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "07/10/2026",
-        "createdDateRaw": "2026-10-07T19:06:45.763Z",
-        "assignedTo": null,
+        "createdDate": "23/09/2026",
+        "createdDateRaw": "2026-09-23T16:53:19.993Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke"
+        },
         "responsavel": "",
-        "observation": "A fazer: o slider de imagens da PDP volta para a primeira imagem e impede ver o restante.",
+        "observation": "Em desenvolvimento: envelopamento visual do site para a campanha de Black Friday.",
         "srCandidates": [],
-        "reason": "New"
+        "reason": "Moved to state Active",
+        "descriptionExcerpt": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI. \n A entrega deverá estar concluída até 1º de novembro . \n Requisitos/Regras - Aplicar a identidade visual da campanha nas áreas definidas do site. \n- Contemplar as versões Desktop e Mobile. \n- Garantir a responsividade dos elementos. \n- Validar a exibição das imagens, banners, textos e links. \n- Manter a usabilidade e a performance do",
+        "comments": [
+          {
+            "created": "2026-09-29T15:21:29.797Z",
+            "by": "daniela.damasceno salonline.com.br",
+            "text": "Cor que vamos utilizae no envelopamento \n Black Crow — #080806 - \nRGB: rgb(8, 8, 6)"
+          },
+          {
+            "created": "2026-09-28T16:51:06.497Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Virada no dia 02/11"
+          },
+          {
+            "created": "2026-09-23T17:02:20.413Z",
+            "by": "daniela.damasceno salonline.com.br",
+            "text": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI.\n A entrega deverá estar concluída até 1º de novembro .\n Requisitos/Regras - \nAplicar a identidade visual da campanha nas áreas definidas do site.\n- \nContemplar as versões Desktop e Mobile.\n- \nGarantir a responsividade dos elementos.\n- \nValidar a exibição das imagens, banners, textos e links.\n- \nManter a usabilidade e a performance do site.\n- \nRealizar os testes antes da publicação em produção.\n Critérios de validação - \nEnvelopamento aplicado corretamente nas páginas previstas.\n- \nElementos visuais funcionando em Desktop e Mobile.\n- \nLinks e redirecionamentos validados.\n- \nAusência de quebras de layout ou problemas de carregamento.\n- \nAprovação final das áreas responsáveis.\n Prazo Data de entrega: 1º de novembro."
+          }
+        ]
       },
       {
-        "id": 41870,
+        "id": 41676,
         "type": "Melhoria",
-        "title": "Algolia - Trazer informações de venda",
-        "state": "New",
-        "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "06/10/2026",
-        "createdDateRaw": "2026-10-06T12:51:02.587Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: incluir informações de venda de 30, 60 e 90 dias na indexação do produto.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Trazer informações de venda no produto, na indexação (30/60/90)."
-      },
-      {
-        "id": 41683,
-        "type": "Melhoria",
-        "title": "Algolia | Adicionar a Algolia em Collections",
-        "state": "New",
-        "statusLabel": "À fazer",
+        "title": "Algolia | Implementar userToken nos eventos",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
         "createdDate": "25/09/2026",
-        "createdDateRaw": "2026-09-26T02:58:23.85Z",
+        "createdDateRaw": "2026-09-26T01:59:53.97Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "A fazer: avaliar o uso da Algolia nas collections.",
+        "observation": "Em teste LH: identificador de usuário nos eventos e nas consultas da Algolia.",
         "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Avaliar a disponibilidade dos atributos que identificam as coleções no catálogo Oracle e sua inclusão nos registros da Algolia. Considerar o uso de CategoryPageID , conforme a recomendação do roadmap, e documentar a alternativa adotada. Caso seja definida a integração das páginas de Collections à Algolia, mapear e enviar os atributos necessários e implementar a consulta correspondente. A renderização atual poderá ser mantida. \n Critérios de aceite: disponibilidade dos atributos e alternativa adotada documentadas; quando aprovada a integração, atributos enviados e Collections de referência retornando os produtos esperados;"
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Aplicar o userToken de forma\nconsistente nas consultas e nos eventos do Site OCC, para permitir a associação\ndas interações de uma mesma jornada. \n \n \n Critérios de aceite: Consultas e eventos de uma mesma jornada de teste utilizam o\nidentificador esperado, conforme a regra aprovada. \n \n \n Documentação:  https://www.algolia.com/doc/guides/sending-events/concepts/usertoken",
+        "comments": [
+          {
+            "created": "2026-10-05T15:14:00.207Z",
+            "by": "Ewerton Bezerra",
+            "text": "Implementado o envio dos enventos conforme documentação:\n**Deslogado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/02427f25-5a5e-4cd6-9571-e878b11f1a0c?fileName=image.png) \n**Logado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b2a0f98d-a3d6-4349-b960-382a4c695c2f?fileName=image.png)"
+          },
+          {
+            "created": "2026-10-01T14:12:29.343Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Identificação do usuário User Token O User Token é utilizado pela Algolia para identificar um usuário durante sua interação com a plataforma.\n Principais pontos:\n - \nÉ um identificador anônimo .\n- \nNão depende do usuário estar logado.\n- \nDeve ser persistido no navegador.\n- \nO mesmo token deve permanecer consistente durante a experiência do usuário.\n- \nA recomendação apresentada foi manter o token por aproximadamente 90 dias , realizando sua renovação posteriormente.\n- \nÉ necessário considerar a estratégia de persistência e cookies no Site.\n- \nA geração do token pode utilizar a biblioteca disponibilizada pela Algolia.\n- \nO formato do ID não é o principal ponto; o mais importante é que ele seja único e consistente .\n Site x App - \nSite e App podem possuir User Tokens diferentes quando o usuário está navegando de forma anônima.\n- \nCaso o usuário faça login, existe a possibilidade de utilizar um identificador autenticado ( authenticatedUserToken ) para associá-lo especificamente à sua conta.\n- \nPortanto, o token anônimo identifica a experiência do usuário, enquanto o authenticatedUserToken permite identificar o usuário autenticado.\n @Fábio Vidart   @Ewerton Bezerra"
+          }
+        ]
+      },
+      {
+        "id": 41677,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Recent Searches",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:14:43.083Z",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
+        "responsavel": "",
+        "observation": "Pronto para publicar em produção: buscas recentes salvas no navegador e reaproveitadas no autocomplete.",
+        "srCandidates": [],
+        "reason": "Moved to state Ready PRD",
+        "descriptionExcerpt": "Armazenar localmente no navegador as buscas recentes realizadas no Site OCC e permitir sua reutilização no autocomplete.\n \n \n \n Critérios de aceite: histórico persistido localmente; termos recentes exibidos; seleção de um termo executa a busca correspondente; remoção funciona conforme a regra aprovada; validação no desktop e mobile web.",
+        "comments": [
+          {
+            "created": "2026-10-05T15:14:36.787Z",
+            "by": "Ewerton Bezerra",
+            "text": "implementado:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/3d433557-5380-4217-b205-9605bcd27a95?fileName=image.png)"
+          }
+        ]
       },
       {
         "id": 41680,
@@ -1484,89 +1384,189 @@
         "descriptionExcerpt": "Implementar no autocomplete do Site OCC a experiência de busca federada, consultando os índices definidos para apresentar sugestões de termos e produtos populares, junto ao histórico local de buscas recentes. \n Critérios de aceite: índices e fontes documentados; sugestões de termos e produtos populares apresentados conforme o comportamento aprovado; seleções executam a busca ou navegação correspondente; funcionamento validado no desktop e mobile web. \n \n \n Documentação:  \n \n - https://www.algolia.com/doc/guides/solutions/ecommerce/search/autocomplete/federated-search"
       },
       {
-        "id": 40638,
-        "type": "Bug",
-        "title": "Exibir itens de lançamento nas sugestões do Cronograma Capilar (Quiz)",
-        "state": "New",
-        "statusLabel": "À fazer",
+        "id": 41681,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia nas páginas de categoria",
+        "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "12/08/2026",
-        "createdDateRaw": "2026-08-12T13:30:25.413Z",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:49:37.79Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "A fazer: exibir lançamentos nas sugestões do Cronograma Capilar.",
+        "observation": "Em desenvolvimento: consulta de produtos das páginas de categoria pela Algolia.",
         "srCandidates": [],
-        "reason": "New"
+        "reason": "Moved to state Active",
+        "descriptionExcerpt": "Integrar as páginas de categoria do Site OCC à Algolia para consultar e apresentar os produtos correspondentes à categoria acessada, mantendo uma experiência consistente entre busca e navegação. Registrar o atributo ou filtro utilizado para identificar cada categoria e reutilizar os componentes de resultados aplicáveis. \n Critérios de aceite: categorias de referência apresentam os produtos correspondentes; filtros e navegação funcionam conforme o comportamento aprovado; consultas utilizam a identificação correta da categoria; validação no desktop e mobile web."
       },
       {
-        "id": 40290,
-        "type": "Bug",
-        "title": "[PDP] Cards de produtos relacionados duplicam o símbolo de moeda no parcelamento  Descrição",
-        "state": "New",
-        "statusLabel": "À fazer",
+        "id": 41682,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar AnalyticsTags",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "sprint": "Sprint 77",
         "iterationTimeFrame": "current",
-        "createdDate": "30/07/2026",
-        "createdDateRaw": "2026-07-30T17:04:58.273Z",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:55:07.147Z",
         "assignedTo": null,
         "responsavel": "",
-        "observation": "A fazer: cards relacionados da página de produto duplicam o símbolo da moeda no parcelamento.",
+        "observation": "Bloqueado pela área de negócios: faltam os nomes das Analytics Tags de cada tela.",
         "srCandidates": [],
-        "reason": "New"
-      },
-      {
-        "id": 39839,
-        "type": "Bug",
-        "title": "Quantidade incorreta de itens sendo adicionados via Streamshop",
-        "state": "New",
-        "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "16/07/2026",
-        "createdDateRaw": "2026-07-16T18:16:47.893Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: quantidade incorreta de itens adicionados pelo Streamshop.",
-        "srCandidates": [],
-        "reason": "Moved out of state Blocked"
-      },
-      {
-        "id": 38287,
-        "type": "Bug",
-        "title": "PLP Outlet repete produtos ao utilizar “Ver mais produtos”",
-        "state": "New",
-        "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "13/05/2026",
-        "createdDateRaw": "2026-05-13T19:45:07.78Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: a listagem de outlet repete produtos ao usar Ver mais produtos.",
-        "srCandidates": [],
-        "reason": "Investigation Complete",
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Enviar nas consultas da Algolia realizadas pelo Site OCC as AnalyticsTags definidas pela área de negócios para identificar a origem das buscas e permitir a segmentação no Analytics. Implementar o mapeamento das tags por tela após a disponibilização da definição prevista na linha 22. \n \n \n Dependência: definição prévia de nomes e valores por tela pela área de negócios. \n \n \n Critérios de aceite: mapeamento de telas e tags documentado; consultas enviam os valores definidos; segmentação validada no Analytics.",
         "comments": [
           {
-            "created": "2026-06-05T18:08:56.863Z",
+            "created": "2026-10-02T21:27:15.847Z",
             "by": "Fábio Vidart",
-            "text": "Não registramos mais o fato, conforme alinhado iremos fechar e continuar monitorando."
-          },
-          {
-            "created": "2026-05-25T12:48:27.6Z",
-            "by": "Fábio Vidart",
-            "text": "Aguardando retorno da Salon Line como será tratado esse ponto."
-          },
-          {
-            "created": "2026-05-18T19:57:47.69Z",
-            "by": "Marcus Linck",
-            "text": "Recebemos da Oracle 16 produtos por requisição, respeitando a ordenação selecionada pelo usuário (mais relevantes, menor, maior preço) e antes de renderizar em tela, passamos eles por uma função customizada no front que separa os produtos em 3 grupos.\n1 - Produtos disponiveis\n2 - Prdutos da categoria brinde\n3 - Prdoutos inativos\nA função refaz a lista colocando brindes e inativos no final dela, alterando a ordem nativa da oracle.\nImagine os primeiros 16 produtos, sendo 4 deles brindes\nA gente tira eles da ordem da oracle e mandamos pro final da lista.\nEsse comportamento ja acontecia com paginação, mas não ficava tão evidente como com scroll infinito.\nAo clicar em carregar mais produtos, a oracle envia mais 16 produtos e junto dos 16 primeiros, reorganizamos a lista e enviamos os brindes pro final dela. Dando impressão de \"bug\" ou produtos duplicados.\nA solução é não passar mais por esse filtro customizado e renderizar a lista que a Oracle manda de forma nativa"
+            "text": "Área de negócios precisa especificar quais Tags devem ser incluídas em cada tela para auxiliar no rastreamento de onde a busca foi originada. \nLinha 22."
           }
         ]
+      },
+      {
+        "id": 41683,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia em Collections",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:58:23.85Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: avaliar o uso da Algolia nas collections.",
+        "srCandidates": [],
+        "reason": "Moved to state New",
+        "descriptionExcerpt": "Avaliar a disponibilidade dos atributos que identificam as coleções no catálogo Oracle e sua inclusão nos registros da Algolia. Considerar o uso de CategoryPageID , conforme a recomendação do roadmap, e documentar a alternativa adotada. Caso seja definida a integração das páginas de Collections à Algolia, mapear e enviar os atributos necessários e implementar a consulta correspondente. A renderização atual poderá ser mantida. \n Critérios de aceite: disponibilidade dos atributos e alternativa adotada documentadas; quando aprovada a integração, atributos enviados e Collections de referência retornando os produtos esperados;"
+      },
+      {
+        "id": 41756,
+        "type": "Melhoria",
+        "title": "Algolia | Criar replicas de ordenação e filtros",
+        "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "01/10/2026",
+        "createdDateRaw": "2026-10-01T12:17:31.067Z",
+        "assignedTo": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "responsavel": "",
+        "observation": "Em desenvolvimento: réplicas de ordenação por preço e mais vendidos e índice de filtros na Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state Active",
+        "descriptionExcerpt": "Precisamos criar as replicas de index para ordenação (Preço menor, preço maior, mais vendidos) assim como também deverá ser criado o index de filtros dentro da plataforma da Algolia."
+      },
+      {
+        "id": 41786,
+        "type": "Melhoria",
+        "title": "Algolia | Adaptar FrontEnd da busca",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-10-01T20:08:20.603Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em revisão de código: autocomplete da busca. Há correções em aberto no menu da Algolia, no clique do produto e após a busca.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "01/10/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41820,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-10-02T20:45:09.937Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em revisão de código: atualização incremental do catálogo. O preço atualiza no índice, mas o front dos resultados ainda não reflete a alteração.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "02/10/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41870,
+        "type": "Melhoria",
+        "title": "Algolia - Trazer informações de venda",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "06/10/2026",
+        "createdDateRaw": "2026-10-06T12:51:02.587Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: incluir informações de venda de 30, 60 e 90 dias na indexação do produto.",
+        "srCandidates": [],
+        "reason": "Moved to state New",
+        "descriptionExcerpt": "Trazer informações de venda no produto, na indexação (30/60/90)."
+      },
+      {
+        "id": 41913,
+        "type": "Bug",
+        "title": "Slider de imagens do produto inconsistente",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "07/10/2026",
+        "createdDateRaw": "2026-10-07T19:06:45.763Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: o slider de imagens da PDP volta para a primeira imagem e impede ver o restante.",
+        "srCandidates": [],
+        "reason": "New"
+      },
+      {
+        "id": 41928,
+        "type": "Melhoria",
+        "title": "Análise de Segurança: Alerta de Vazamento de Credenciais",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "08/10/2026",
+        "createdDateRaw": "2026-10-08T13:12:59.363Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: alerta da Gemina sobre vazamento de credenciais do domínio, com baixa amostragem.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      },
+      {
+        "id": 41949,
+        "type": "Melhoria",
+        "title": "Algolia - Incluir campos relavantes de produto no index",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "08/10/2026",
+        "createdDateRaw": "2026-10-08T18:11:20.427Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: enviar à Algolia os campos de produto que ainda faltam para filtro e ranqueamento.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
       }
     ],
     "excludedBecauseProductBacklog": [
@@ -1905,7 +1905,8 @@
         "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
         "reason": "Em Validação (PRD). Já entregue, fora do slide de Backlog Atual."
       }
-    ]
+    ],
+    "order": "Data de abertura, da mais antiga para a mais recente."
   },
   "otherOpenWorkItems": {
     "count": 72,
