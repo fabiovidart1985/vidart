@@ -640,10 +640,10 @@
     }
   ],
   "backlog": {
-    "count": 32,
+    "count": 33,
     "asOf": "2026-10-08",
-    "scope": "Bug e Melhoria em estado aberto na iteração atual e nas iterações futuras. A Sprint Backlog (iteração raiz) fica de fora. In Test Customer e Ready PRD continuam quando estão nessas iterações. Tasks, User Stories, Epics e Test Tasks ficam fora.",
-    "isCurrentRule": "Não existe campo Is Current no work item. O recorte pedido é o timeFrame da iteração do time: current e future. Em 08/10/2026 a única iteração current é a Sprint 77 e não há iteração future. Itens da Sprint Backlog e de sprints encerradas ficam de fora.",
+    "scope": "Bug e Melhoria da Sprint 77, iteração atual, nos estados que ainda estão no board, exceto Monitoramento. Não há sprint futura. Tasks, User Stories e itens Closed ficam fora.",
+    "isCurrentRule": "Recorte da iteração atual e das futuras. Em 08/10/2026 só existe a Sprint 77. Itens em Monitoramento saíram do slide de Backlog Atual. Itens em Code Review voltaram porque estão no board da sprint.",
     "excludedBecausePastIteration": [
       {
         "id": 12356,
@@ -711,30 +711,6 @@
     ],
     "leftOpenStatesSincePriorSnapshot": [
       {
-        "id": 41479,
-        "title": "[PDP] Hero da PDP",
-        "previousState": "Active",
-        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
-      },
-      {
-        "id": 40929,
-        "title": "Desenvolvimento do novo layout da Página de Produto",
-        "previousState": "Active",
-        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
-      },
-      {
-        "id": 41820,
-        "title": "Algolia | Implementar atualizações incrementais do catálogo",
-        "previousState": "In Test Light",
-        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
-      },
-      {
-        "id": 41786,
-        "title": "Algolia | Adaptar FrontEnd da busca",
-        "previousState": "In Test Light",
-        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
-      },
-      {
         "id": 41726,
         "title": "[Projeto CDP] Abandono Checkout",
         "previousState": "Ready PRD",
@@ -785,6 +761,11 @@
       },
       "New": {
         "label": "À fazer",
+        "fill": null,
+        "font": null
+      },
+      "Code Review": {
+        "label": "Em revisão de código",
         "fill": null,
         "font": null
       }
@@ -1073,6 +1054,80 @@
             "text": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI.\n A entrega deverá estar concluída até 1º de novembro .\n Requisitos/Regras - \nAplicar a identidade visual da campanha nas áreas definidas do site.\n- \nContemplar as versões Desktop e Mobile.\n- \nGarantir a responsividade dos elementos.\n- \nValidar a exibição das imagens, banners, textos e links.\n- \nManter a usabilidade e a performance do site.\n- \nRealizar os testes antes da publicação em produção.\n Critérios de validação - \nEnvelopamento aplicado corretamente nas páginas previstas.\n- \nElementos visuais funcionando em Desktop e Mobile.\n- \nLinks e redirecionamentos validados.\n- \nAusência de quebras de layout ou problemas de carregamento.\n- \nAprovação final das áreas responsáveis.\n Prazo Data de entrega: 1º de novembro."
           }
         ]
+      },
+      {
+        "id": 41820,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-10-02T20:45:09.937Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em revisão de código: atualização incremental do catálogo. O preço atualiza no índice, mas o front dos resultados ainda não reflete a alteração.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "02/10/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41786,
+        "type": "Melhoria",
+        "title": "Algolia | Adaptar FrontEnd da busca",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-10-01T20:08:20.603Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em revisão de código: autocomplete da busca. Há correções em aberto no menu da Algolia, no clique do produto e após a busca.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "01/10/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41479,
+        "type": "Melhoria",
+        "title": "[PDP] Hero da PDP",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-09-17T14:55:29.463Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
+        "responsavel": "Regis Ropke",
+        "observation": "Em revisão de código: hero da nova página de produto. O Figma do botão de compartilhar ainda foi apontado como pendência.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "17/09/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 40929,
+        "type": "Melhoria",
+        "title": "Desenvolvimento do novo layout da Página de Produto",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-08-25T16:59:34.3Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
+        "responsavel": "Regis Ropke",
+        "observation": "Em revisão de código: novo layout da página de produto, com o desenvolvimento acompanhado em TST.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "25/08/2026",
+        "statusLabel": "Em revisão de código"
       },
       {
         "id": 41676,
@@ -1426,206 +1481,6 @@
             "created": "2026-08-28T17:33:52.523Z",
             "by": "Ewerton Bezerra",
             "text": "Hoje por padrão é possível realizar o upload de arquivos de GIF animados através do OCC, não sendo necessário alteração da nossa parte.\nPorém vale ressaltar que os arquivos de .mp4 com alta qualidade que forem transformados em GIF, irão ficar com o tamanho maior e a qualidade reduzida.\nExemplo abaixo com base no vídeo em anexo:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/ee42bf16-dd70-4863-a9ac-64e7bb45b4db?fileName=image.png) \nAlém disso, podemos realizar o upload através da pagina ecomm-config, como no exemplo abaixo, fiz a alteração em TST para que fosse aceito:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/935f1f8f-784e-444c-b99b-23c25d41a9b4?fileName=image.png) \nO vídeo fica disponível em, [https://p7724145c1tst-store.occa.ocs.oraclecloud.com/file/general/video-teste.mp4](https://p7724145c1tst-store.occa.ocs.oraclecloud.com/file/general/video-teste.mp4)\nPorém no cadastro do produto não aparece para que seja possível atrelar o vídeo ao produto:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/c4afa442-e986-444c-a324-548fd1160f9d?fileName=image.png) \n# **Recomendação**\nO ideal é que esses vídeos sejam enviados e gerado o link (por vídeo) e a gente adicione esse link a uma propriedade custom no produto, no lado do frontend podemos fazer com que esse vídeo seja carregado n"
-          }
-        ]
-      },
-      {
-        "id": 41755,
-        "type": "Bug",
-        "title": "Preço zerado em produtos após retorno null no endpoint listProducts",
-        "state": "Monitoring",
-        "statusLabel": "Em Monitoramento",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "30/09/2026",
-        "createdDateRaw": "2026-09-30T22:37:37.71Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Em monitoramento. SR Oracle 4-0003936169 aberta para o preço zerado após retorno nulo de produtos.",
-        "srCandidates": [
-          "4-0003936169"
-        ],
-        "reason": "Moved out of state Validation PRD",
-        "comments": [
-          {
-            "created": "2026-10-01T00:26:48.2Z",
-            "by": "Julio Lima",
-            "text": "## Validação Pós-Deploy PRD \nProduto `SKU_95787 - Tratamento para Crescer Cabelo Rápido S.O.S Bomba Original com Tônico Salon Line`\n![prd1.gif](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/0fed6aea-1e5d-4b50-b5a2-e13d73c586df?fileName=prd1.gif) \n-------------------------------------------------------------------------------------------------------\nProduto `SKU_95739 - Crescimento Capilar S.O.S Bomba 200ml + Máscara de Hidratação 500g Salon Line`\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/1290d184-e6c2-4094-9da9-09f9a3898af6?fileName=image.png) \n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/9210290e-cd0c-4f42-b0e2-2b24c96566bc?fileName=image.png)"
-          },
-          {
-            "created": "2026-09-30T22:40:23.693Z",
-            "by": "Fábio Vidart",
-            "text": "Aberta a SR 4-0003936169 para tratamento pela Oracle. SR escalada."
-          }
-        ]
-      },
-      {
-        "id": 41401,
-        "type": "Bug",
-        "title": "Erro ao fechar pedido / Recalculo dos descontos",
-        "state": "Monitoring",
-        "statusLabel": "Em Monitoramento",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "14/09/2026",
-        "createdDateRaw": "2026-09-14T19:29:37.407Z",
-        "assignedTo": {
-          "displayName": "luana.santos salonline.com.br",
-          "uniqueName": "luana.santos@salonline.com.br"
-        },
-        "responsavel": "luana.santos salonline.com.br",
-        "observation": "Em monitoramento do recálculo de descontos ao fechar o pedido.",
-        "srCandidates": [],
-        "reason": "Moved out of state Validation PRD",
-        "comments": [
-          {
-            "created": "2026-09-23T18:02:33.2Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Validado em PRD: \n ✅ Área Logada: \n - Pix PagaLeve: 581647140 \n- Cartão de Crédito: 581647142\n- PIX: 581647146\n- Boleto: 581647151\n \n ✅ Fast Checkout: \n - Pix PagaLeve: 581647157 \n- PIX: 581647159 / 581647162 \n- Boleto: 581647181 \n \n ✅ Guest Checkout: \n - PIX: 581647166\n- Pix PagaLeve: 581647171\n- Boleto: 581647179"
-          },
-          {
-            "created": "2026-09-21T19:19:48.637Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Validado em TST : \n ✅ Área Logada: \n \n - Pix PagaLeve: 574584262 \n- Cartão de Crédito: 574584276 \n- Pix: 574584278 \n- Boleto: 574584282 \n \n ✅ Fast Checkout: \n \n - Pix PagaLeve: 574584284 \n- Cartão de Crédito: 574584286 \n- Pix: 574584288 \n- Boleto: 574584290 \n \n ✅ Guest Checkout: \n \n - Pix PagaLeve: 574584292 \n- Cartão de Crédito: 574584294 \n- Pix: 574584296\n- Boleto: 574584298\n \n ✅ Loader ao calcular frete: \n \n \n \n ✅ Loader ao alterar meio de pagamento:"
-          },
-          {
-            "created": "2026-09-21T16:38:30.04Z",
-            "by": "Julio Lima",
-            "text": "## Validação TST \n* Todos os fluxos de checkout validados após alterações\nGuest\n Pagaleve - 574584210\nCartão - 574584212\nPix - 574584216\nBoleto - 574584218\nFast \nPagaleve - 574584220\nCartão - 574584222\nPix - 574584224\nBoleto - 574584227\nLogin Comum \nPagaleve - 574584229\nCartão -  574584231\nPix - 574584233, 574584235\nBoleto - 574584237"
-          },
-          {
-            "created": "2026-09-21T13:51:40.863Z",
-            "by": "Ewerton Bezerra",
-            "text": "@ disponivel para testes em TST"
-          },
-          {
-            "created": "2026-09-21T13:51:08.9Z",
-            "by": "Ewerton Bezerra",
-            "text": "Realizei as seguintes alterações na tela de checkout:\n**Toda a tela entra em loading:** enquanto os fretes estão calculando, o botão de cupom, a lixeira de remoção e todos os radios de pagamento ficam bloqueados (`disabled`).\n**Lock bidirecional:** ao clicar em \"Aplicar\" ou remover um cupom, o checkout ativa `isCheckoutLoading: true`, protegendo as demais seções até que a árvore de promoções seja recalculada.\n**Recálculo sempre executado:** o clique em qualquer meio de pagamento sempre dispara a mutação `updateCart`, garantindo o recálculo obrigatório de descontos, fretes e totais no OCC.\n**Payload consolidado em 1 única chamada:** propriedades de UTM, origem, transportadora e endereço trafegam agrupadas, eliminando concorrência no momento crítico do envio (antes era feito varias chamadas de update)."
-          },
-          {
-            "created": "2026-09-17T14:56:29.347Z",
-            "by": "Ewerton Bezerra",
-            "text": "Pedido da data de hoje (17/09):\n![WhatsApp Image 2026-09-17 at 11.50.00.jpeg](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/e269f8a4-8c4c-4b32-92b6-f0375e012ad5?fileName=WhatsApp%20Image%202026-09-17%20at%2011.50.00.jpeg) \nestou investigando um possível problema de race condition (múltiplas chamadas de atualização de carrinho) no processo de checkout que pode estar afetando esses pedidos."
-          },
-          {
-            "created": "2026-09-14T20:10:29.653Z",
-            "by": "Ewerton Bezerra",
-            "text": "Estou realizando analise para verificar se existe mais alguma correção necessária no SSE de acordo com os erros encontrados no final de semana"
-          },
-          {
-            "created": "2026-09-14T20:10:00.043Z",
-            "by": "Ewerton Bezerra",
-            "text": "Quase todas as validações foram adicionadas juntamente da correção dos cards #40912 e #40351"
-          }
-        ]
-      },
-      {
-        "id": 40351,
-        "type": "Bug",
-        "title": "Pedidos com o erro \"Valor de Meio incorreto para PED_CLIENTE\"",
-        "state": "Monitoring",
-        "statusLabel": "Em Monitoramento",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
-        "createdDate": "03/08/2026",
-        "createdDateRaw": "2026-08-03T17:30:57.457Z",
-        "assignedTo": {
-          "displayName": "luana.santos salonline.com.br",
-          "uniqueName": "luana.santos@salonline.com.br"
-        },
-        "responsavel": "luana.santos salonline.com.br",
-        "observation": "Em monitoramento do erro de valor de meio na integração do pedido.",
-        "srCandidates": [],
-        "reason": "Moved out of state Validation PRD",
-        "comments": [
-          {
-            "created": "2026-09-23T15:01:19.663Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Validado em PRD: \n ✅ Área Logada: \n - Pix: 581646848 \n- Boleto: 581646855 \n- Pix PagaLeve: 581646865 \n- Cartão de Crédito: 581646867 \n \n ✅ Fast Checkout: \n - Pix: 581646873 \n- Boleto: 581646880 \n- Pix PagaLeve: 581646877 \n \n ✅ Guest Checkout: \n - Pix: 581646888 \n- Boleto: 581646905 \n- Pix PagaLeve: 581646896"
-          },
-          {
-            "created": "2026-09-17T14:40:54.523Z",
-            "by": "Ewerton Bezerra",
-            "text": "Foi implementado um mecanismo de **self-healing** no fluxo de submissão de pedidos do OrderService.ts através do módulo discountBalancer.ts.\n#### Fluxo de Execução\n1. **Interceptação no Hook de Submissão**: No método `processOrder`, logo após a validação de perfil, é executado `balanceOrderDiscountShares(order)`.\n2. **Avaliação de Inconsistências**: O módulo avalia se o pedido possui divergências de rateio de desconto ou inconsistências na estrutura de preços dos itens (`currentPriceDetailsSorted`).\n3. **Persistência no OCC e Memória**:\n * Se nenhuma anomalia for detectada, o pedido segue sem chamadas extras.\n * Se for detectada necessidade de ajuste (`needsUpdate: true`), o SSE dispara uma chamada `updateOrderAdmin` atualizando a lista de `commerceItems` no OCC e sincroniza a referência `order.commerceItems` em memória para que as etapas subsequentes do fluxo já utilizem os dados corrigidos.\n4. **Tolerância a Falhas**: O método é isolado em bloco `try/catch`. Caso o OCC rejeite a atualização ou ocorra timeout, a transação é registrada no `httpLogger` com severidade de erro, sem interromper o processamento global do pedido.\n### Tipos de Pedidos Tratados\nO self-healing atua sobre três anomalias geradas pelo motor de precificação do OCC:\n| Tipo de Anomalia | Cenário do Pedido | Ação de Auto-Correção |\n| --- | --- | --- |\n| ** Divergência de quantidade/valor** | Pedidos em que a quantidade ou valor registrado divergem do item pai (exemplo: item com 2 unidades, mas detalhe de pre"
-          },
-          {
-            "created": "2026-09-17T13:49:30.39Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Validado em TST: \n ✅ Área Logada:\n \n - Pix PagaLeve: 574583085\n- Cartão de Crédito: 574583087\n- Pix: 574583089\n- Boleto: 574583091\n \n ✅ Fast Checkout: \n \n - Pix PagaLeve: 574583093 \n- Cartão de Crédito: 574583095\n- Pix: 574583097\n- Boleto: 574583099\n \n ✅ Guest Checkout: \n \n - Pix PagaLeve: 574583102 \n- Cartão de Crédito: 574583104 \n- Pix: 574583106 \n- Boleto: 574583108"
-          },
-          {
-            "created": "2026-09-16T13:25:01.55Z",
-            "by": "Julio Lima",
-            "text": "Validação TST \n--------------\n* Todos os fluxos de checkout foram validados\nFluxo Logado\n------------\n* Pagaleve 574582807\n* Cartão 574582811, 574582814\n* Pix 574582816\n* Boleto 574582818\nGuest checkout \n---------------\n* Pagaleve 574582820\n* Cartão 574582822\n* Pix 574582825\n* Boleto 574582827\nFast Checkout\n-------------\n* Pagaleve 574582829\n* Cartão 574582831\n* Pix 574582833\n* Boleto 574582835"
-          },
-          {
-            "created": "2026-09-15T18:00:04.583Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  poderia documentar aqui as tratativas realizadas, por favor?"
-          },
-          {
-            "created": "2026-09-14T19:26:05.98Z",
-            "by": "Ewerton Bezerra",
-            "text": "@ disponível para testes em TST"
-          },
-          {
-            "created": "2026-09-09T18:20:18.28Z",
-            "by": "Ewerton Bezerra",
-            "text": "@ Pedidos submetidos, estou analisando e tentando entender o motivo desses pedidos específicos terem tido esse problema"
-          },
-          {
-            "created": "2026-09-08T12:26:23.07Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  pedidos do dia 06/09 falhando por conta do valor_meio : \n Pedido:  580473261 \n {\n  \"error\": \"Error 400\",\n  \"code\": 400,\n  \"body\": {\n    \"message\": \"Valor de Meio incorreto para PED_CLIENTE 580473261: vl_meio 480.75 vl calculado2 527.44 Valores: vl_merc 669.63, Frete: 0, Despesa: 0, Desconto 142.19, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0\",\n    \"detalheErro\": \"ORA-20000: Valor de Meio incorreto para PED_CLIENTE 580473261: vl_meio 480.75 vl calculado2 527.44 Valores: vl_merc 669.63, Frete: 0, Despesa: 0, Desconto 142.19, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0 ORA-06512: at \\\"BSELLER_1.PCK_API_PEDIDO\\\", line 462 ORA-06512: at line 1\"\n  } \n \n Pedido:  574897615 \n {\n  \"error\": \"Error 400\",\n  \"code\": 400,\n  \"body\": {\n    \"message\": \"Valor de Meio incorreto para PED_CLIENTE 574897615: vl_meio 249.84 vl calculado2 464.55 Valores: vl_merc 588.06, Frete: 0, Despesa: 0, Desconto 123.51, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0\",\n    \"detalheErro\": \"ORA-20000: Valor de Meio incorreto para PED_CLIENTE 574897615: vl_meio 249.84 vl calculado2 464.55 Valores: vl_merc 588.06, Frete: 0, Despesa: 0, Desconto 123.51, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0 ORA-06512: at \\\"BSELLER_1.PCK_API_PEDIDO\\\", line 462 ORA-06512: at line 1\"\n  }"
-          },
-          {
-            "created": "2026-08-24T13:25:42.737Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  Pedidos que estão falhando na integração por conta do valor_meio . Comprovantes de pagamento encontram-se em anexo.  \n Pedido:  580713627 \n {\n   \"error\": \"Error 400\",\n   \"code\": 400,\n   \"body\": {\n     \"message\": \"Valor de Meio incorreto para PED_CLIENTE 580713627: vl_meio 141.97 vl calculado2 150.02 Valores: vl_merc 182.62, Frete: 0, Despesa: 0, Desconto 32.6, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0\",\n     \"detalheErro\": \"ORA-20000: Valor de Meio incorreto para PED_CLIENTE 580713627: vl_meio 141.97 vl calculado2 150.02 Valores: vl_merc 182.62, Frete: 0, Despesa: 0, Desconto 32.6, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0 ORA-06512: at \\\"BSELLER_1.PCK_API_PEDIDO\\\", line 462 ORA-06512: at line 1\"\n   }, \n \n \n Pedido:   580633979 \n {\n   \"error\": \"Error 400\",\n   \"code\": 400,\n   \"body\": {\n     \"message\": \"Valor de Meio incorreto para PED_CLIENTE 580633979: vl_meio 74.39 vl calculado2 85.21 Valores: vl_merc 91.51, Frete: 0, Despesa: 0, Desconto 6.3, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0\",\n     \"detalheErro\": \"ORA-20000: Valor de Meio incorreto para PED_CLIENTE 580633979: vl_meio 74.39 vl calculado2 85.21 Valores: vl_merc 91.51, Frete: 0, Despesa: 0, Desconto 6.3, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0 ORA-06512: at \\\"BSELLER_1.PCK_API_PEDIDO\\\", line 462 ORA-06512: at line 1\"\n   } \n \n \n \n Pedido:   580648191 \n {\n   \"error\": \"Error 400\",\n   \"code\": 400,\n   \"body\": {\n     \"message\": \"Valor de Meio incorreto para PED_CLIENTE 580648191: vl_meio 161.27 vl calculado2"
-          },
-          {
-            "created": "2026-08-18T13:31:06.163Z",
-            "by": "Ewerton Bezerra",
-            "text": "Sugestão, adicionar timestamp ou uuid no id de Idempotência.\n Assim sempre que tivermos um novo pagamento, será adicionado ou o tempo exato daquela request ou um id aleatório fazendo com que seja sempre um id de Idempotência diferente para cada request."
-          },
-          {
-            "created": "2026-08-18T03:04:04.87Z",
-            "by": "Ewerton Bezerra",
-            "text": "O usuário já havia tentado pagar o pedido no dia 30/07 (dia em que tivemos problema com a Digibee).\n Nisso, o pagamento foi gerado mas o pedido ficou como INCOMPLETE.\n Depois o próprio usuário acabou tentando fechar o pedido novamente no dia 09, como mostro no print abaixo: \n \n O pedido se iniciou da seguinte forma: \n \n Quando o usuário finalmente tentou finalizar o pedido novamente (pós incidente da Digibee), o pedido já tinha outro produto: \n \n Mas o problema real está na chave de idempotência, da forma que está hoje, não é levado em consideração o timestemp da transação, portanto se torna um ID fixo caso o pedido por algum motivo fique como INCOMPLETE.\nNo logs abaixo, mostro exatamente o payload enviado no dia 09/08/2026 (com o valor correto): \n \n Logo depois a resposta do mercado pago, perceba que mesmo a transação tendo sido no dia  09/08/2026, está sendo retornado como data de criação e update 30/07/2026, por utilizar a mesma chave de idempotência , o mercado pago simplesmente devolve o pagamento já criado anteriormente: \n \n E para prova, temos a data correta que foi enviada no header da requisição: \n \n \n ​Campo no Log Valor Retornado O que isso significa headers.date Sun, 09 Aug 2026 19:17:24 GMT Data em que a requisição de R$ 69,84 foi disparada pelo OCC/Digibee. body.date_created 2026-07-30T16:41:32.000-04:00 Data real de criação da transação retornada (incidente Digibee). body.date_of_expiration 2026-07-31T16:41:31.000-04:00 A transação retornada já havia expirado e"
-          },
-          {
-            "created": "2026-08-17T18:15:15.833Z",
-            "by": "Fábio Vidart",
-            "text": "Vamos colocar o card em Monitoramento para verificar se identificamos novos casos."
-          },
-          {
-            "created": "2026-08-17T17:43:14.473Z",
-            "by": "Ewerton Bezerra",
-            "text": "Já tentamos reproduzir esse erro de algumas maneiras (desconto em KIT, atualização de preços na Bseller, atualização de preços no OCC, quantidade x desconto) mas até o momento não conseguimos reproduzir o problema.\nTambém não tivemos mais nenhum caso desde o dia 12/08.\n \nEstá difícil de identificar a causa raiz, tendo em vista que se quer tivemos deploy de front ou sse nesse período.\nSerá que vale a pena bloquearmos o card por enquanto para darmos vazão aos demais cards/analises."
-          },
-          {
-            "created": "2026-08-12T11:48:42.7Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  pedido integrado com sucesso  ✅"
-          },
-          {
-            "created": "2026-08-11T22:30:35.127Z",
-            "by": "Ewerton Bezerra",
-            "text": "@luana.santos salonline.com.br  Pedido corrigido"
-          },
-          {
-            "created": "2026-08-10T21:24:27.417Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  o pedido 581071662 também está retornando o erro de valor meio incorreto: \n {\n  \"error\": \"Error 400\",\n  \"code\": 400,\n  \"body\": {\n    \"message\": \"Valor de Meio incorreto para PED_CLIENTE 581071662: vl_meio 52.77 vl calculado2 69.84 Valores: vl_merc 96.3, Frete: 0, Despesa: 0, Desconto 26.46, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0\",\n    \"detalheErro\": \"ORA-20000: Valor de Meio incorreto para PED_CLIENTE 581071662: vl_meio 52.77 vl calculado2 69.84 Valores: vl_merc 96.3, Frete: 0, Despesa: 0, Desconto 26.46, desp fin 0, IPI 0, ICMS ST 0, ICMS Des 0 ORA-06512: at \\\"BSELLER_1.PCK_API_PEDIDO\\\", line 468 ORA-06512: at line 1\"\n  } \n \n Seria possível realizar a atualização desse pedido para que seja integrado com sucesso, por favor? \n Pedido realizado em 09/08 via  PIX ."
-          },
-          {
-            "created": "2026-08-03T20:09:05.093Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra"
           }
         ]
       },
@@ -2116,6 +1971,29 @@
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
         "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      }
+    ],
+    "excludedBecauseMonitoring": [
+      {
+        "id": 41755,
+        "title": "Preço zerado em produtos após retorno null no endpoint listProducts",
+        "state": "Monitoring",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Monitoramento. Fora do slide de Backlog Atual, a pedido."
+      },
+      {
+        "id": 41401,
+        "title": "Erro ao fechar pedido / Recalculo dos descontos",
+        "state": "Monitoring",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Monitoramento. Fora do slide de Backlog Atual, a pedido."
+      },
+      {
+        "id": 40351,
+        "title": "Pedidos com o erro \"Valor de Meio incorreto para PED_CLIENTE\"",
+        "state": "Monitoring",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Monitoramento. Fora do slide de Backlog Atual, a pedido."
       }
     ]
   },
