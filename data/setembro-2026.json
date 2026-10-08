@@ -640,10 +640,10 @@
     }
   ],
   "backlog": {
-    "count": 69,
+    "count": 32,
     "asOf": "2026-10-08",
-    "scope": "Bug e Melhoria em estado aberto, no backlog do projeto ou na Sprint 77. In Test Customer e Ready PRD continuam no backlog quando o estado está aberto. Tasks, User Stories, Epics e Test Tasks ficam fora.",
-    "isCurrentRule": "Não existe campo Is Current no work item nem no processo lighthouseinnovation Kanban. O equivalente usado foi o timeFrame da iteração do time: current na Sprint 77 e o backlog raiz do projeto. Itens em iteração past (Sprint 1, Sprint 29, Sprint 47 e Sprint 73) saíram porque não fazem parte do backlog atual.",
+    "scope": "Bug e Melhoria em estado aberto na iteração atual e nas iterações futuras. A Sprint Backlog (iteração raiz) fica de fora. In Test Customer e Ready PRD continuam quando estão nessas iterações. Tasks, User Stories, Epics e Test Tasks ficam fora.",
+    "isCurrentRule": "Não existe campo Is Current no work item. O recorte pedido é o timeFrame da iteração do time: current e future. Em 08/10/2026 a única iteração current é a Sprint 77 e não há iteração future. Itens da Sprint Backlog e de sprints encerradas ficam de fora.",
     "excludedBecausePastIteration": [
       {
         "id": 12356,
@@ -999,427 +999,6 @@
         ]
       },
       {
-        "id": 41484,
-        "type": "Melhoria",
-        "title": "[PDP] Tire suas dúvidas",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "17/09/2026",
-        "createdDateRaw": "2026-09-17T15:18:41.037Z",
-        "assignedTo": null,
-        "responsavel": "YourViews",
-        "observation": "Bloqueado na definição com a YourViews: falta decidir se a seção Tire suas dúvidas será da ferramenta ou interna.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo \n Adequar a seção “Tire suas dúvidas” da PDP ao novo layout aprovado no Figma, preservando integralmente as funcionalidades atuais da integração com a YourViews . \n A implementação deverá considerar as possibilidades de customização disponibilizadas pela ferramenta, sem alterar o comportamento funcional já existente. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Adaptar a seção “Tire suas dúvidas” , integrada à You",
-        "comments": [
-          {
-            "created": "2026-10-06T12:44:47.41Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Segue a documentação da YourViews para avaliarmos a possibilidade de implementar o frontend internamente, consumindo os dados disponibilizados pela API: \n \n \n Documentação YourViews — API \n \n O objetivo é entendermos a viabilidade técnica dessa abordagem , considerando principalmente: \n - Complexidade da implementação; \n- Esforço e tempo estimados para construção; \n- Dependências e limitações técnicas; \n- Possíveis riscos ou impactos na aplicação; \n- Necessidade de manutenção futura. \n \n A partir dessa avaliação, conseguimos comparar os cenários e entender se é mais viável realizarmos a implementação internamente ou seguirmos com o orçamento da YourViews. \n \n \n @Fábio Vidart   @Regis Ropke"
-          },
-          {
-            "created": "2026-09-18T17:13:50.91Z",
-            "by": "Fábio Vidart",
-            "text": "Conforme alinhado com a Luana, estamos aguardando a definição sobre o desenvolvimento, se vai ocorrer do lado da YourViews, caso seja desenvolvido do nosso lado precisamos de um alinhamento junto à YourViews para desenvolver de acordo com a integração YourViews."
-          }
-        ]
-      },
-      {
-        "id": 41483,
-        "type": "Melhoria",
-        "title": "[PDP] Avaliações",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "17/09/2026",
-        "createdDateRaw": "2026-09-17T15:15:51.37Z",
-        "assignedTo": null,
-        "responsavel": "YourViews",
-        "observation": "Bloqueado na definição com a YourViews: falta decidir se o front das avaliações será da ferramenta ou interno.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo \n Adequar a seção de Avaliações da PDP ao novo layout aprovado no Figma, preservando integralmente as funcionalidades atuais da integração com a YourViews . \n A implementação deverá considerar as possibilidades de customização disponibilizadas pela ferramenta, sem comprometer o funcionamento existente. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Adaptar a seção de Avaliações integrada à YourViews ao novo layout d",
-        "comments": [
-          {
-            "created": "2026-10-06T12:44:06.103Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Fábio Vidart   @Regis Ropke   Segue a documentação da YourViews para avaliarmos a possibilidade de implementar o frontend internamente, consumindo os dados disponibilizados pela API: \n Documentação YourViews — API \n O objetivo é entendermos a viabilidade técnica dessa abordagem , considerando principalmente: \n - Complexidade da implementação; \n- Esforço e tempo estimados para construção; \n- Dependências e limitações técnicas; \n- Possíveis riscos ou impactos na aplicação; \n- Necessidade de manutenção futura. \n A partir dessa avaliação, conseguimos comparar os cenários e entender se é mais viável realizarmos a implementação internamente ou seguirmos com o orçamento da YourViews."
-          },
-          {
-            "created": "2026-09-18T17:14:09.137Z",
-            "by": "Fábio Vidart",
-            "text": "Conforme alinhado com a Luana, estamos aguardando a definição sobre o desenvolvimento, se vai ocorrer do lado da YourViews, caso seja desenvolvido do nosso lado precisamos de um alinhamento junto à YourViews para desenvolver de acordo com a integração YourViews."
-          }
-        ]
-      },
-      {
-        "id": 39624,
-        "type": "Melhoria",
-        "title": "Inclusão de novos campos no formulário da central de atendimento",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "13/07/2026",
-        "createdDateRaw": "2026-07-13T18:51:42.383Z",
-        "assignedTo": null,
-        "responsavel": "Salesforce",
-        "observation": "Bloqueado pela Salesforce: a plataforma ainda precisa receber os novos campos do formulário da central de atendimento.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo O objetivo desta funcionalidade é otimizar o processo de identificação, triagem e resolução de bugs reportados pelos usuários dentro da plataforma. \n Atualmente, quando um cliente enfrenta um erro, ele preenche relatos vagos ou precisa acionar o SAC. Isso gera um tempo alto de diagnóstico para o time, que frequentemente não sabe em qual canal o erro ocorreu ou o que exatamente o cliente visualizou. \n Essa feature resolve esse problema ao estruturar a captura do erro na raiz, colhendo o canal exato e a prova visual (print) direto da jornada do usuário. \n Descrição Será implementada uma melhoria no formulário de contato/ajuda do cliente, adicionando duas novas interações obrigatórias,",
-        "comments": [
-          {
-            "created": "2026-09-02T17:21:46.773Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Fábio Vidart   Estou bloqueando este card temporariamente, pois, para avançarmos com o desenvolvimento, é necessária uma implementação prévia do lado da Salesforce , para que a plataforma esteja preparada para receber os novos campos. \n No momento, o time da Salesforce está atuando em outras demandas priorizadas. Assim que essas entregas forem concluídas, esta demanda será retomada pelo time para realização da implementação necessária. \n Após a adequação na Salesforce, poderemos dar continuidade ao desenvolvimento deste card."
-          },
-          {
-            "created": "2026-07-21T13:30:20.68Z",
-            "by": "Ewerton Bezerra",
-            "text": "Tenho duas duvidas em relação a esses novos campos:\n 1 - quais os campo (name) que será enviado esses dados?\n2 - qual formato será aceito essa imagem? base64?"
-          }
-        ]
-      },
-      {
-        "id": 37871,
-        "type": "Melhoria",
-        "title": "Análise de Performance do Site",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "22/04/2026",
-        "createdDateRaw": "2026-04-22T18:18:04.013Z",
-        "assignedTo": {
-          "displayName": "Marcus Linck",
-          "uniqueName": "marcus.linck@lighthouseit.com.br"
-        },
-        "responsavel": "Salon Line",
-        "observation": "Bloqueado pela Salon Line: a lentidão foi atribuída ao peso das imagens e o plano de ação ficou com o time interno.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Contexto: \nA performance do site já apresenta degradação. Após implementações recentes, precisamos identificar se houve impacto adicional ou se os problemas já eram existentes. \n Escopo: \n - Métricas principais (LCP, CLS, INP, TTFB) \n \n- Comparativo antes vs depois (se houver histórico) \n \n- Scripts/componentes com maior impacto \n \n- Assets pesados (imagens, vídeos) \n \n- Requisições externas (APIs, trackers) \n \n \n Critérios de sucesso: \n \n - Principais gargalos identificados/ Navegação Fluída",
-        "comments": [
-          {
-            "created": "2026-05-28T18:19:22.273Z",
-            "by": "Julio Lima",
-            "text": "Ficou constatado que a maior lentidão na performance é decorrente dos tamanhos de imagens, não sendo necessária alteração em código. Time da Salon irá analisar um plano de ação"
-          },
-          {
-            "created": "2026-05-27T20:25:51.74Z",
-            "by": "Marcus Linck",
-            "text": "Em anexo:\nPlanilha contendo nome da imagem, tamanho e localização no site para imagens entre 200KB e 500KB\nPlanilha contendo nome da imagem, tamanho e localização no site para imagens entre 500KB e 1MB\nPlanilha contendo nome da imagem, tamanho e localização no site para imagens acima de 1MB\nPDF contendo analise técnica sobre as imagens."
-          }
-        ]
-      },
-      {
-        "id": 37626,
-        "type": "Melhoria",
-        "title": "Inclusão de Apple Pay e Google Pay como formas de pagamento",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "09/04/2026",
-        "createdDateRaw": "2026-04-09T17:30:20.957Z",
-        "assignedTo": {
-          "displayName": "luana.santos salonline.com.br",
-          "uniqueName": "luana.santos@salonline.com.br"
-        },
-        "responsavel": "Área de negócios",
-        "observation": "Bloqueado pela área de negócios: o Mercado Pago não cobre Apple Pay nem Google Pay e o gateway ainda não foi escolhido.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo Disponibilizar Apple Pay e Google Pay como métodos de pagamento no   aplicativo   e no   site   da Salon Line, com o objetivo de: \n - Reduzir fricção no checkout \n- Aumentar a taxa de conversão \n- Melhorar a experiência de compra \n- Oferecer meios de pagamento alinhados ao comportamento atual dos consumidores \n- Padronizar a oferta de métodos de pagamento entre os canais digitais \n \n Público impactado - Usuários de iPhone compatíveis com Apple Pay \n- Usuários de Android compatíveis com Google Pay \n \n- Clientes que compram pelo site em dispositivos e navegadores compatíveis \n \n- Clientes recorrentes que valorizam agilidade no checkout \n \n \n Escopo da solução: Inclusões: \n - Integraçã",
-        "comments": [
-          {
-            "created": "2026-04-14T17:33:28.573Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@karina.zaghetto salonline.com.br  o Ewerton levantou algumas opções de gateways de pagamento:\n Cielo: - https://docs.cielo.com.br/link/docs/meios-de-pagamento \n \n Adyen: - https://docs.adyen.com/payment-methods/?supported_integrations%5B0%5D=web+drop-in&countries_regions%5B0%5D=brazil \n Stripe: - https://stripe.com/br/payments/payment-methods \n \n Google: - https://developers.google.com/pay/api/web/overview?hl=pt-br \n- https://www.youtube.com/watch?v=XBB_tQv6-vA \n  Apple:   -   https://developer.apple.com/br/help/account/capabilities/configure-apple-pay-on-the-web/ \n- https://developer.apple.com/documentation/applepayontheweb/choosing-an-api-for-implementing-apple-pay-on-your-website \n- https://developer.apple.com/videos/play/tech-talks/111381/"
-          },
-          {
-            "created": "2026-04-14T13:26:31.027Z",
-            "by": "Ewerton Bezerra",
-            "text": "@luana.santos salonline.com.br  realizando pesquisas, as 3 que encontrei que conheço/já ouvi falar são Cielo, Adyen e Stripe.\nAs 3 possuem ambos (Google/Apple pay), vou deixar abaixo o link de referencia com os meios de pagamentos das 3.\nCielo:\n https://docs.cielo.com.br/link/docs/meios-de-pagamento \nAdyen:\n https://docs.adyen.com/payment-methods/?supported_integrations%5B0%5D=web+drop-in&countries_regions%5B0%5D=brazil \nStripe:\n https://stripe.com/br/payments/payment-methods"
-          },
-          {
-            "created": "2026-04-13T20:50:33.717Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra  muito obrigada pela análise! Você poderia, por gentileza, nos indicar sugestões de gateways de pagamento que considere mais viáveis e adequados para seguirmos com a implementação? \n Com essas informações, conseguiremos avançar com a avaliação junto à área de negócio."
-          },
-          {
-            "created": "2026-04-13T18:34:37.36Z",
-            "by": "Ewerton Bezerra",
-            "text": "Por padrão o Mercado Pago não realiza integração com Apple/Google Pay.\n Será necessário a utilização de um outro gateway de pagamento para esses tipos de pagamento ou a implementação direta utilizando a biblioteca javascript disponível nos sites da Apple e Google.\nLembrando que se iremos utilizar código próprio (sem gateway de pagamento) deverá ser necessário realizar as configurações de ambiente/certificados por conta própria, sem auxilio de uma suporte por exemplo. \nPreciso dos seguintes detalhes para continuar com a validação/analise:\n  - Será utilizado outro gateway de pagamento ou será integrado com o código próprio?\n - Será utilizado digibee ou apenas OCC/SSE?\nLinks uteis:\n - Google:\n   -  https://developers.google.com/pay/api/web/overview?hl=pt-br \n   -  https://www.youtube.com/watch?v=XBB_tQv6-vA \n - Apple:\n   -  https://developer.apple.com/br/help/account/capabilities/configure-apple-pay-on-the-web/ \n   -  https://developer.apple.com/documentation/applepayontheweb/choosing-an-api-for-implementing-apple-pay-on-your-website \n   -  https://developer.apple.com/videos/play/tech-talks/111381/ \n Recomendação: \nRecomendo fortemente que seja pensado em um gateway de pagamento que tenha suporte para ambas wallets (Google/Apple), assim a gente consegue integrar de forma simplificada e temos suporte do gateway caso seja necessário, assim como também teremos um maior controle de fraudes/erros por padrão para esses tipos de pagamentos."
-          }
-        ]
-      },
-      {
-        "id": 37408,
-        "type": "Melhoria",
-        "title": "Ajustar exibição de mensagem de frete grátis no cálculo de frete",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "02/04/2026",
-        "createdDateRaw": "2026-04-02T17:22:03.917Z",
-        "assignedTo": {
-          "displayName": "Marcus Linck",
-          "uniqueName": "marcus.linck@lighthouseit.com.br"
-        },
-        "responsavel": "Salon Line",
-        "observation": "Bloqueado pela Salon Line: a prioridade foi adiada até a definição das regras de mensagem de frete grátis.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Atualmente, o componente de cálculo de frete exibe a mensagem “Oba, você já tem frete grátis!” mesmo para clientes/localidades que não estão elegíveis à regra de frete grátis. \n Regra desejada: \nA mensagem de frete grátis não deve ser exibida para clientes que pertencem às listas da Intelipost que não recebem frete grátis (ou seja, quando houver cobrança de frete). \n Comportamento esperado: \n - \nValidar, via retorno da Intelipost, se o cliente/região está elegível para frete grátis.\n- \nExibir a mensagem de frete grátis somente quando o valor do frete for R$ 0,00 .\n- \nCaso exista qualquer valor de frete (Normal, Expresso, etc.), não exibir a mensagem .",
-        "comments": [
-          {
-            "created": "2026-04-14T13:29:42.773Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "@Fábio Vidart   @luana.santos salonline.com.br  preciso que documentem as decisões de negocios, Karina solicitou bloqueio do card, pois não se trata de um prioridade e vão tratar futuramente como melhoria nas regras de negocios para apresentação das mensagens do site, pois as restrições são temporarias."
-          },
-          {
-            "created": "2026-04-09T18:14:23.02Z",
-            "by": "Fábio Vidart",
-            "text": "Aguardando definição de regras de negócios por região, mapeando o comportamento do perfil logado e deslogado. Após essa definição iremos dar continuidade no desenvolvimento."
-          }
-        ]
-      },
-      {
-        "id": 37148,
-        "type": "Melhoria",
-        "title": "Integração App SEO + Oracle",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "26/03/2026",
-        "createdDateRaw": "2026-03-26T18:46:56.91Z",
-        "assignedTo": {
-          "displayName": "Ewerton Bezerra",
-          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
-        },
-        "responsavel": "Área de negócios",
-        "observation": "Bloqueado pela área de negócios: a contratação do Semrush está em aprovação e o card só avança depois dela.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Pessoal, gostaríamos de avaliar, junto ao time, a viabilidade técnica de integração entre um aplicativo de SEO e a Oracle. Objetivo da análise: \nEntender as possibilidades de automação e validar a viabilidade técnica da implementação. \n Pontos que precisamos avaliar: \n - \nQuais processos podem ser automatizados dentro da Oracle;\n- \nViabilidade técnica para automação dessas ações;\n- \nPossibilidade de inclusão automática de conteúdos como H1, H2 e textos descritivos.\n Proposta do aplicativo: \nO app em questão oferece as seguintes funcionalidades: \n - \nAnálise de SEO;\n- \nGeração de sugestões de conteúdo;\n- \nAutomação da implementação de textos na Oracle;\n- \nPontuação de produtos com base em cri",
-        "comments": [
-          {
-            "created": "2026-08-04T20:46:17.813Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "O card permanece bloqueado, pois precisamos realizar a contratação do semrush, que está em fase de aprovação pela área de negócio. Só conseguiremos avançar com este card após essa contratação.  \n psc: @Fábio Vidart   @daniela.damasceno salonline.com.br   @lucas.figueiredo veredatech.com.br"
-          },
-          {
-            "created": "2026-07-06T15:06:03.497Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "⚠ Em análise com o time de SEO."
-          },
-          {
-            "created": "2026-04-20T14:20:12.777Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "Atualizações solicitadas pelo @Ewerton Bezerra  já foram realizadas dentro do projeto."
-          },
-          {
-            "created": "2026-03-30T15:43:10.457Z",
-            "by": "Ewerton Bezerra",
-            "text": "Combinamos de que será utilizado a mesma estrutura que temos hoje na pagina de produto/configuração do produto, assim a gente consegue só realizar o update do produto utilizando o endpoint.\nTambém será necessário criar um SSE para não expor o endpoint diretamente na app."
-          },
-          {
-            "created": "2026-03-26T18:59:18.947Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Fábio Vidart   @karina.zaghetto salonline.com.br"
-          }
-        ]
-      },
-      {
-        "id": 37147,
-        "type": "Melhoria",
-        "title": "Integração \"Viva Você Studio\" + Ecomm",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "26/03/2026",
-        "createdDateRaw": "2026-03-26T18:40:24.01Z",
-        "assignedTo": {
-          "displayName": "karina.zaghetto salonline.com.br",
-          "uniqueName": "karina.zaghetto@salonline.com.br"
-        },
-        "responsavel": "Viva Você Studio",
-        "observation": "Aguardando a revisão do Viva Você Studio.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "Objetivo \n Integrar o aplicativo Viva Você Studio ao Ecomm, disponibilizando seu conteúdo como uma página interna do site via iframe. \n Descrição \n O aplicativo Viva Você Studio será incorporado ao Ecomm por meio de um iframe, acessado através de um slug dedicado no site. Essa abordagem mantém a navegação dentro do domínio, oferecendo ao usuário uma experiência fluida como se fosse uma página nativa. A URL de TST já está disponível para início da implementação; a URL de produção será compartilhada assim que os testes forem concluídos. \n Requisitos / Regras \n \n - A página do Viva Você Studio deve ser carregada via iframe dentro do Ecomm. \n- Deve ser criado um slug no site para que a página se",
-        "comments": [
-          {
-            "created": "2026-05-13T18:05:30.367Z",
-            "by": "Julio Lima",
-            "text": "Aguardando revisão do Viva Você Studio"
-          },
-          {
-            "created": "2026-05-12T18:10:57.23Z",
-            "by": "Julio Lima",
-            "text": "## Validação TST \n* Widget _IframeEmbedder corretamente apontando para o app \n**Botões dentro do app não estão funcionais**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/4060c5dc-e20c-4929-b80b-b0121b7ad55a?fileName=image.png) \n## Validado Mobile\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/0cde6460-45ea-4550-b758-57d224dbb8ea?fileName=image.png)"
-          },
-          {
-            "created": "2026-05-08T18:02:27.197Z",
-            "by": "Julio Lima",
-            "text": "## Em Validação\n.\n.\n."
-          },
-          {
-            "created": "2026-05-07T17:06:31.157Z",
-            "by": "Marcus Linck",
-            "text": "Novo widget criado: **_IframeEmbedder**\nWidget customizavel para integrações de Iframes.\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/d5197460-c04a-4f2f-84cd-1aef1d5a5058?fileName=image.png) \nBranch: feat/37147-create-new-widget-IframeEmbedder\n**Explicação sobre os campos:**\n**URL do site** - URL completa do conteúdo que será exibido. Obrigatório usar HTTPS.\n**Título para SEO** - Define o atributo title do iframe. Essencial para acessibilidade (leitores de tela) e SEO.\n**Largura Desktop** - Define a largura do iframe em telas grandes.\n**Altura Desktop** - Define a altura fixa do iframe em telas grandes.\n**Altura Mobile** - Define a altura do iframe em dispositivos móveis.\n**Largura Total?** - Se ativo, remove as margens laterais (container) para o iframe ocupar 100% da largura da janela.\n**Lazy Load?** - Ativa o carregamento sob demanda. O conteúdo externo só é baixado quando o usuário chega na seção.\n**Sandbox** - Define restrições de segurança para o iframe.\n**Borda Arredondada** - Define o arredondamento dos cantos do iframe.\n**Sandbox - Opções:**\n**allow-scripts**: (Essencial) Permite que o site externo execute JavaScript. Sem isso, botões e animações geralmente não funcionam.\n**allow-same-origin**: Permite que o conteúdo mantenha seus próprios cookies e sessões.\n**allow-forms**: Permite que o usuário preencha e envie formulários.\n**allow-popups**: Permite que o iframe abra novas janelas ou abas.\n**allo"
-          },
-          {
-            "created": "2026-04-08T14:05:21.157Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Ewerton Bezerra   @Marcus Linck   @Fábio Vidart Segue o link do ambiente de TST disponibilizado: https://app-viva-voce-studio-mkt-717311056969.us-central1.run.app/ \n Sobre as pendências: \n - URL de TST já disponibilizada. Assim que a implementação no ambiente de testes for concluída, compartilharemos o link de produção. \n- A página deve ser acessada via iframe. \n- A correção da API exposta já foi realizada."
-          },
-          {
-            "created": "2026-03-30T14:54:08.577Z",
-            "by": "Ewerton Bezerra",
-            "text": "Ficou do pessoal da Salon:\n 1 - devolver as URLs de TST e PRD;\n 2 - Verificar com o time de negocios se irá acessar través de subdominio (direto para a aplicação) ou será através de iframe (pagina dentro do OCC).\n3 - Corrigir essa API exposta do lado do frontend."
-          },
-          {
-            "created": "2026-03-27T18:53:05.03Z",
-            "by": "Ewerton Bezerra",
-            "text": "Aplicação com falha de segurança, está sendo exibido o api key da gemini (IA):"
-          },
-          {
-            "created": "2026-03-26T18:45:27.087Z",
-            "by": "luana.santos salonline.com.br",
-            "text": "@Fábio Vidart"
-          }
-        ]
-      },
-      {
-        "id": 37101,
-        "type": "Melhoria",
-        "title": "Implementação no Modal de Visualização Rápida (Quick View) – PLP Web e Mobile",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "25/03/2026",
-        "createdDateRaw": "2026-03-25T14:32:02.797Z",
-        "assignedTo": {
-          "displayName": "karina.zaghetto salonline.com.br",
-          "uniqueName": "karina.zaghetto@salonline.com.br"
-        },
-        "responsavel": "Salon Line",
-        "observation": "Bloqueado pela Salon Line: o time ainda analisa se a funcionalidade segue.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "descriptionExcerpt": "📄 Contexto \n O modal de visualização rápida (Quick View) deve ser simplificado para exibir apenas informações essenciais, mantendo uma experiência leve e objetiva. \n Como benchmark, seguimos o padrão da Lacoste, que permite: \n - Visualização rápida do produto \n \n- Ação direta (adicionar à sacola) \n \n- Navegação para PDP quando necessário \n \n 🎯 Objetivo de UX - Leitura rápida (scan em poucos segundos) \n \n- Redução de fricção \n \n- Permitir ação rápida (add to cart) \n \n- Manter acesso fácil à PDP \n \n 👤 Necessidade do usuário O usuário quer: \n - Entender rapidamente o produto \n \n- Saber se é para o tipo de cabelo dele \n \n- Ver o preço \n \n- Visualizar a volumetria (ex: 300ml, 500g, 1kg) \n \n- Pode",
-        "comments": [
-          {
-            "created": "2026-05-20T16:56:35.313Z",
-            "by": "Marcus Linck",
-            "text": "Card bloqueado.\nAguardamos análise pelo time da Salon para vermos se seguimos com essa funcionalidade."
-          },
-          {
-            "created": "2026-05-06T15:36:05.103Z",
-            "by": "kauan.oliveira salonline.com.br",
-            "text": "Figma liberado:\nhttps://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=103-202500&p=f&t=hNf4QGVmIDuUtoQJ-0\n(**FALTA APENAS O  Skeleton Screen, porém podem seguindo com o desenvolvimento, o UX está finalizando o  Skeleton Screen**)"
-          },
-          {
-            "created": "2026-04-24T18:26:15.18Z",
-            "by": "kauan.oliveira salonline.com.br",
-            "text": "Será necessário fazer uma análise de impacto de  performance do desenvolvimento no site. \n caso afetar não iremos subir esse desenvolvimento."
-          },
-          {
-            "created": "2026-03-25T14:46:08.827Z",
-            "by": "kauan.oliveira salonline.com.br",
-            "text": "LINK REF:  https://www.lacoste.com/br/lacoste/explorar/tendencia/emerging-from-summer/?utm_source=google&utm_campaign=[Institucional]Puro&gad_source=1&gad_campaignid=18592045191&gbraid=0AAAAAC55wIRmbIs-8BoGKcTmCx2NY_fZm&gclid=Cj0KCQjwj47OBhCmARIsAF5wUEGpQypyYD7g2aKHJfAmUSAC-4I7H_5I7VuuPqkZ5-p0hjmRU1YW_ZIaAmi7EALw_wcB"
-          }
-        ]
-      },
-      {
-        "id": 10644,
-        "type": "Bug",
-        "title": "Boleto Pago Após o Vencimento",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "07/02/2024",
-        "createdDateRaw": "2024-02-07T18:18:44.22Z",
-        "assignedTo": null,
-        "responsavel": "Não identificado",
-        "observation": "Card sem descrição e sem comentário. O responsável pelo bloqueio não está no card.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked"
-      },
-      {
-        "id": 10100,
-        "type": "Bug",
-        "title": "Indexação não está sendo refletida no Front - Categorias não são atualizadas",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "19/01/2024",
-        "createdDateRaw": "2024-01-19T14:58:43.767Z",
-        "assignedTo": null,
-        "responsavel": "Não identificado",
-        "observation": "Bloqueio sem dono nem motivo vigente. O último comentário é de janeiro de 2024.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "comments": [
-          {
-            "created": "2024-01-19T15:02:27.183Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "@Marcelo Bortolini   @marta.bispo Conforme falamos, esse problema voltou a acontecer nos últimos dias"
-          }
-        ]
-      },
-      {
-        "id": 9260,
-        "type": "Bug",
-        "title": "Request para Cotação de Frete com divergências - PESO INCORRETO",
-        "state": "Blocked",
-        "statusLabel": "Bloqueado",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "12/12/2023",
-        "createdDateRaw": "2023-12-12T13:01:18.823Z",
-        "assignedTo": {
-          "displayName": "Lucas Borges",
-          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
-        },
-        "responsavel": "Marcelo Bortolini",
-        "observation": "Mantido bloqueado para preservar as evidências de peso incorreto, no aguardo de nova ocorrência.",
-        "srCandidates": [],
-        "reason": "Moved to state Blocked",
-        "comments": [
-          {
-            "created": "2024-01-04T18:21:19.77Z",
-            "by": "Marcelo Bortolini",
-            "text": "Deixar no backlog para manter as evidências, aguardar novas ocorrências"
-          }
-        ]
-      },
-      {
         "id": 41756,
         "type": "Melhoria",
         "title": "Algolia | Criar replicas de ordenação e filtros",
@@ -1494,78 +1073,6 @@
             "text": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI.\n A entrega deverá estar concluída até 1º de novembro .\n Requisitos/Regras - \nAplicar a identidade visual da campanha nas áreas definidas do site.\n- \nContemplar as versões Desktop e Mobile.\n- \nGarantir a responsividade dos elementos.\n- \nValidar a exibição das imagens, banners, textos e links.\n- \nManter a usabilidade e a performance do site.\n- \nRealizar os testes antes da publicação em produção.\n Critérios de validação - \nEnvelopamento aplicado corretamente nas páginas previstas.\n- \nElementos visuais funcionando em Desktop e Mobile.\n- \nLinks e redirecionamentos validados.\n- \nAusência de quebras de layout ou problemas de carregamento.\n- \nAprovação final das áreas responsáveis.\n Prazo Data de entrega: 1º de novembro."
           }
         ]
-      },
-      {
-        "id": 23616,
-        "type": "Bug",
-        "title": "Problema/Cronograma-Capilar exibindo imagens quebradas",
-        "state": "Active",
-        "statusLabel": "Em Desenvolvimento",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "09/01/2025",
-        "createdDateRaw": "2025-01-09T20:26:20.967Z",
-        "assignedTo": {
-          "displayName": "Gianluca Ferreira",
-          "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
-        },
-        "responsavel": "Gianluca Ferreira",
-        "observation": "Imagens quebradas no Cronograma Capilar. O último comentário, de janeiro de 2025, pede validação em produção.",
-        "srCandidates": [],
-        "reason": "Approved",
-        "comments": [
-          {
-            "created": "2025-01-10T18:28:42.833Z",
-            "by": "Anderson Thiago Pereira Fagundes",
-            "text": "Validar também em PRD o comportamento."
-          },
-          {
-            "created": "2025-01-09T20:30:15.37Z",
-            "by": "kauan.oliveira salonline.com.br",
-            "text": "Diversas Funcionalidades não estão funcionando @Anderson Thiago Pereira Fagundes"
-          }
-        ]
-      },
-      {
-        "id": 10004,
-        "type": "Bug",
-        "title": "Produtos sendo exibidos como \"Grátis\" no carrinho incorretamente",
-        "state": "Active",
-        "statusLabel": "Em Desenvolvimento",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "17/01/2024",
-        "createdDateRaw": "2024-01-17T18:00:32.467Z",
-        "assignedTo": {
-          "displayName": "Gianluca Ferreira",
-          "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
-        },
-        "responsavel": "Gianluca Ferreira",
-        "observation": "Bug antigo ainda em desenvolvimento, sem descrição nem comentário recente no card.",
-        "srCandidates": [],
-        "reason": "Approved"
-      },
-      {
-        "id": 9669,
-        "type": "Bug",
-        "title": "Valor TOTAL de pedido parcelado COM Juros está sendo exibido com soma incorreta",
-        "state": "Active",
-        "statusLabel": "Em Desenvolvimento",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "04/01/2024",
-        "createdDateRaw": "2024-01-04T17:35:47.72Z",
-        "assignedTo": {
-          "displayName": "Gianluca Ferreira",
-          "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
-        },
-        "responsavel": "Gianluca Ferreira",
-        "observation": "Bug antigo ainda em desenvolvimento, sem descrição nem comentário recente no card.",
-        "srCandidates": [],
-        "reason": "Approved"
       },
       {
         "id": 41676,
@@ -2311,601 +1818,304 @@
             "text": "Recebemos da Oracle 16 produtos por requisição, respeitando a ordenação selecionada pelo usuário (mais relevantes, menor, maior preço) e antes de renderizar em tela, passamos eles por uma função customizada no front que separa os produtos em 3 grupos.\n1 - Produtos disponiveis\n2 - Prdutos da categoria brinde\n3 - Prdoutos inativos\nA função refaz a lista colocando brindes e inativos no final dela, alterando a ordem nativa da oracle.\nImagine os primeiros 16 produtos, sendo 4 deles brindes\nA gente tira eles da ordem da oracle e mandamos pro final da lista.\nEsse comportamento ja acontecia com paginação, mas não ficava tão evidente como com scroll infinito.\nAo clicar em carregar mais produtos, a oracle envia mais 16 produtos e junto dos 16 primeiros, reorganizamos a lista e enviamos os brindes pro final dela. Dando impressão de \"bug\" ou produtos duplicados.\nA solução é não passar mais por esse filtro customizado e renderizar a lista que a Oracle manda de forma nativa"
           }
         ]
+      }
+    ],
+    "excludedBecauseProductBacklog": [
+      {
+        "id": 41484,
+        "title": "[PDP] Tire suas dúvidas",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 41483,
+        "title": "[PDP] Avaliações",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 39624,
+        "title": "Inclusão de novos campos no formulário da central de atendimento",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37871,
+        "title": "Análise de Performance do Site",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37626,
+        "title": "Inclusão de Apple Pay e Google Pay como formas de pagamento",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37408,
+        "title": "Ajustar exibição de mensagem de frete grátis no cálculo de frete",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37148,
+        "title": "Integração App SEO + Oracle",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37147,
+        "title": "Integração \"Viva Você Studio\" + Ecomm",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37101,
+        "title": "Implementação no Modal de Visualização Rápida (Quick View) – PLP Web e Mobile",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10644,
+        "title": "Boleto Pago Após o Vencimento",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10100,
+        "title": "Indexação não está sendo refletida no Front - Categorias não são atualizadas",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 9260,
+        "title": "Request para Cotação de Frete com divergências - PESO INCORRETO",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 23616,
+        "title": "Problema/Cronograma-Capilar exibindo imagens quebradas",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10004,
+        "title": "Produtos sendo exibidos como \"Grátis\" no carrinho incorretamente",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 9669,
+        "title": "Valor TOTAL de pedido parcelado COM Juros está sendo exibido com soma incorreta",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35776,
-        "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Landing Page do Programa",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "30/01/2026",
-        "createdDateRaw": "2026-01-30T18:19:48.98Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como visitante/cliente, quero acessar uma página explicando o programa e ver produtos para assinar, para entender benefícios e iniciar compra recorrente por ali",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "Como visitante/cliente,\n quero acessar uma página explicando o programa e ver produtos para assinar,\n para entender benefícios e iniciar compra recorrente por ali. \n Regras / Requisitos - Criar LP com texto e imagens explicando funcionamento e vantagens, com carrosséis de produtos com CTA. \n \n Critérios de aceitação - LP deve explicar: o que é, como funciona, como pausar/cancelar, como preço funciona, benefícios. \n \n- Produtos do carrossel devem levar para PDP com opção de recorrência \n \n- \n \n \n Link da Documentação do Projeto https://docs.google.com/presentation/d/1DWK95jpxH8dHomV86-bf5a0qzMsZafLt/edit?usp=sharing&ouid=107693284762790825119&rtpof=true&sd=true Link do Figma do Projeto https:",
-        "comments": [
-          {
-            "created": "2026-01-30T18:19:48.98Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Copied with all links from #35771"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35775,
-        "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Admin de Compras Recorrentes (Gerenciamento)",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "30/01/2026",
-        "createdDateRaw": "2026-01-30T18:18:06.33Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente Quero gerenciar minhas compras recorrentes em Minha Conta Para pausar, cancelar, reativar ou ajustar minha recorrência Escopo - Tela “Minhas Compra",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "Como cliente Quero gerenciar minhas compras recorrentes em Minha Conta\n Para pausar, cancelar, reativar ou ajustar minha recorrência \n Escopo - Tela “Minhas Compras Recorrentes” com: \n - Lista de recorrências ativas (1 por período) \n \n- Recorrências canceladas/desativadas (em cinza, visíveis por 3–6 meses) \n \n \n- Ações disponíveis: \n - Alterar frequência \n \n- Pausar próxima entrega (até 1 dia antes da cobrança) \n \n- Cancelar recorrência (até 1 dia antes) \n \n- Reativar recorrência cancelada \n \n \n- Regras de cobrança: \n - Falha de pagamento → pausa por 1 ciclo + e-mail \n \n- Segunda falha consecutiva → cancelamento automático \n \n \n Critérios de Aceite - A cliente consegue gerenciar a recorrênci",
-        "comments": [
-          {
-            "created": "2026-01-30T18:18:06.33Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Copied with all links from #35771"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35774,
-        "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Identificação da Compra Recorrente em Meus Pedidos",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "30/01/2026",
-        "createdDateRaw": "2026-01-30T18:16:47.973Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente Quero identificar facilmente meus pedidos recorrentes Para acessar o gerenciamento quando necessário Escopo - Exibir tag de Compra Recorrente na li",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "Como cliente Quero identificar facilmente meus pedidos recorrentes\n Para acessar o gerenciamento quando necessário \n Escopo - Exibir tag de Compra Recorrente na listagem de “Meus Pedidos” \n \n- No detalhe do pedido: \n - Informar que a compra é recorrente \n \n- Exibir CTA para acessar o Admin de Compras Recorrentes \n \n \n Critérios de Aceite - Pedidos recorrentes são claramente identificáveis \n \n- O acesso ao Admin é direto a partir do detalhe do pedido \n \n Figma - Meus Pedidos e Detalhe do Pedido\n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/%5BSalon-Line%5D-Design-System?node-id=2988-380105&t=fDzx7co3zx4K4Vyt-1 \n \n \n Link da Documentação do Projeto https://docs.google.com/presentation/d",
-        "comments": [
-          {
-            "created": "2026-01-30T18:16:47.973Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Copied with all links from #35771"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35773,
-        "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Regras de Preço, Descontos e Operação da Recorrência",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "30/01/2026",
-        "createdDateRaw": "2026-01-30T18:15:37.23Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente Quero entender claramente como funcionam preços, descontos e frete da recorrência Para confiar no programa Escopo - 10% de desconto adicional aplic",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "Como cliente\n Quero entender claramente como funcionam preços, descontos e frete da recorrência\n Para confiar no programa \n Escopo - 10% de desconto adicional aplicado a partir do primeiro pedido automático \n \n- Frete grátis a partir do primeiro pedido automático \n \n- Preço das recorrências sempre considera a tabela vigente no momento da cobrança \n \n- Exibir mensagem de transparência sobre variação de preço e disponibilidade \n \n- Se produto estiver sem estoque no dia da cobrança: \n - Pular o envio daquele ciclo \n \n- Informar a cliente por e-mail \n \n \n Critérios de Aceite - Mensagem de transparência visível durante a contratação \n \n- Benefícios aplicados corretamente apenas nos pedidos automá",
-        "comments": [
-          {
-            "created": "2026-01-30T18:15:37.23Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Copied from #35772"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35772,
-        "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Carrinho e Checkout com Compra Recorrente",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "30/01/2026",
-        "createdDateRaw": "2026-01-30T18:13:41.687Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente Quero visualizar e confirmar minha compra recorrente no carrinho e checkout Para finalizar a contratação com clareza Escopo - Exibir no carrinho: -",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "Como cliente\n Quero visualizar e confirmar minha compra recorrente no carrinho e checkout\n Para finalizar a contratação com clareza \n Escopo - Exibir no carrinho: \n - Tag de Compra Recorrente \n \n- Seletor de frequência com o valor escolhido na PDP \n \n \n- No checkout: \n - Identificar que a compra é recorrente \n \n- Exigir salvamento de cartão de crédito \n \n \n- Primeira compra segue fluxo normal; recorrência inicia após ela \n \n Critérios de Aceite - Frequência selecionada na PDP é mantida no carrinho \n \n- A compra recorrente não pode ser concluída sem cartão salvo \n \n- O resumo do pedido deixa claro que se trata de uma recorrência \n \n Figma - Carrinho\n https://www.figma.com/design/8nzDWBJUxnDSC",
-        "comments": [
-          {
-            "created": "2026-01-30T18:13:41.687Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "Copied with all links from #35771"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35771,
-        "type": "Melhoria",
         "title": "[COMPRA RECORRENTE] Contratação da Compra Recorrente na PDP",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "30/01/2026",
-        "createdDateRaw": "2026-01-30T18:07:49.687Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente do e-commerce Quero escolher entre Compra Única ou Compra Recorrente na PDP Para decidir receber meus produtos automaticamente em uma frequência fi",
-        "srCandidates": [],
-        "reason": "New",
-        "descriptionExcerpt": "Como cliente do e-commerce\n \n Quero escolher entre Compra Única ou Compra Recorrente na PDP\n Para decidir receber meus produtos automaticamente em uma frequência fixa \n Escopo - Exibir seção de Compra Recorrente próxima ao botão de comprar \n \n- “Compra Única” vem pré-selecionada \n \n- Ao selecionar “Compra Recorrente”, expandir a seção com: \n - Breve explicação de funcionamento e vantagens \n \n- Seletor de frequência: 1, 2, 3 ou 4 meses \n \n \n- A Compra Recorrente só deve estar disponível para produtos com desconto ≤ 20% \n \n Critérios de Aceite - A cliente consegue selecionar a frequência antes de adicionar ao carrinho \n \n- Produtos não elegíveis não permitem ativar recorrência \n \n- A experiênc"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35285,
-        "type": "Melhoria",
         "title": "Exibir até 4 produtos por categoria",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "15/01/2026",
-        "createdDateRaw": "2026-01-15T19:17:14.237Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente, quero ver mais opções por categoria (até 4) para comparar melhor as recomendações.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Como cliente, quero ver mais opções por categoria (até 4) para comparar melhor as recomendações."
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35284,
-        "type": "Melhoria",
         "title": "Remover opção “Máscara” e ajustar impactos",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "15/01/2026",
-        "createdDateRaw": "2026-01-15T19:00:32.343Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente, não devo ver a opção “Máscara” no Quiz nem ter recomendações de máscara no resultado ou no cronograma capilar.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Como cliente, não devo ver a opção “Máscara” no Quiz nem ter recomendações de máscara no resultado ou no cronograma capilar."
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 35283,
-        "type": "Melhoria",
         "title": "Aplicar UI do Quiz conforme Figma",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "15/01/2026",
-        "createdDateRaw": "2026-01-15T18:42:45.747Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Como cliente, quero uma interface do Quiz igual ao Figma, g arantindo responsividade e alinhamento com o restante do produto.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Como cliente, quero uma interface do Quiz igual ao Figma, g arantindo responsividade e alinhamento com o restante do produto.\n Basear-se no protótipo do Figma:   [ https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=103-368376&p=f&t=JDVaU6fh8FFRJb4R-0 ]"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 27864,
-        "type": "Melhoria",
         "title": "Melhorar experiência do usuário deslogado",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "05/06/2025",
-        "createdDateRaw": "2025-06-05T12:25:27.99Z",
-        "assignedTo": {
-          "displayName": "Marcus Linck",
-          "uniqueName": "marcus.linck@lighthouseit.com.br"
-        },
-        "responsavel": "Marcus Linck",
-        "observation": "A fazer: Realizar análise para melhor experiência do usuário na confirmação do pedido quando for usuário deslogado.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Realizar análise para melhor experiência do usuário na confirmação do pedido quando for usuário deslogado. \nHoje o guest checkout ao dar f5 ou qualquer usuário deslogado, ao entrar na página de confirmação do pedido, encontra ela com dados incorretos\nexemplo:\n https://www.salonline.com.br/checkout-order-confirmation?orderId=574290498",
-        "comments": [
-          {
-            "created": "2025-06-16T14:36:18.413Z",
-            "by": "Fábio Vidart",
-            "text": "@lucas.figueiredo.3967 salonline.com.br   @Marcus Linck   @gustavo.morrell salonline.com.br  \nAbri o card 28118 para tratarmos esse ponto."
-          },
-          {
-            "created": "2025-06-16T14:07:38.61Z",
-            "by": "lucas.figueiredo.3967 salonline.com.br",
-            "text": "@Marcus Linck   \nPonto de atenção: \nFoi identificado um comportamento inesperado no fluxo de Fast Checkout ao utilizar o método de pagamento Pix Parcelado (Pagaleve). Após a confirmação do pagamento, o sistema redireciona o usuário para a página \"Meus Pedidos\". Este redirecionamento é incorreto, visto que o fluxo de Fast Checkout é projetado para usuários que não estão autenticados. \n psc @Fábio Vidart   @gustavo.morrell salonline.com.br"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 27152,
-        "type": "Melhoria",
         "title": "Criar a autenticação para acessar as paginas de config personalizadas",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "05/05/2025",
-        "createdDateRaw": "2025-05-05T15:59:16.35Z",
-        "assignedTo": {
-          "displayName": "Marcus Linck",
-          "uniqueName": "marcus.linck@lighthouseit.com.br"
-        },
-        "responsavel": "Marcus Linck",
-        "observation": "A fazer: Criar a autenticação pela conta do painel admin para acessar as paginas de config personalizadas.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Criar a autenticação pela conta do painel admin para acessar as paginas de config personalizadas.\n const axios = require('axios');\nconst qs = require('qs');\nlet data = qs.stringify({\n  'grant_type': 'password',\n  'username': 'XXX',\n  'password': 'XXX',\n  'totp_code': 'p7724145c1TST' \n}); \n   \n let config = {\n  method: 'post',\n  maxBodyLength: Infinity,\n  url: ' https://p7724145c1tst-admin.occa.ocs.oraclecloud.com/ccadmin/v1/mfalogin/' ,\n  headers: { \n    'Content-Type': 'application/x-www-form-urlencoded', \n    'Authorization': 'OAuth', \n    'Cookie': 'ak_bmsc=0234A35FBE3B560C0E0C4157938FAF37~000000000000000000000000000000~YAAQwqMRAhJMKX2WAQAAoExtkhuMKChHHOPMmxNOR0YbXuJxBNR8Q9nwLsQpfLF51k/m1"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 24585,
-        "type": "Melhoria",
         "title": "Melhoria na Experiência do Usuário – Mensagem no Modal de CPF",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "30/01/2025",
-        "createdDateRaw": "2025-01-30T18:46:18.78Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Descrição: Atualmente, ao fazer login via login social e avançar para o checkout sem um CPF cadastrado, um modal é exibido solicitando o preenchimento do CPF.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Descrição: \nAtualmente, ao fazer login via login social e avançar para o checkout sem um CPF cadastrado, um modal é exibido solicitando o preenchimento do CPF. No entanto, o modal não informa claramente ao usuário a necessidade de inserir um CPF válido, o que pode gerar dúvidas e impactar a experiência. \n Melhoria solicitada: \n - Quando o modal for aberto, exibir a mensagem \" Informe um CPF válido \" de forma clara e visível para o cliente. \n - A mensagem deve estar bem posicionada dentro do modal para garantir que o usuário compreenda o que precisa ser feito antes de prosseguir no checkout. \n - Caso o usuário tente avançar sem preencher o CPF ou insira um CPF inválido, o campo deve ser desta"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 21540,
-        "type": "Bug",
         "title": "Bug de espaçamento no header ao renderizar a pagina",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "29/11/2024",
-        "createdDateRaw": "2024-11-29T17:26:56.073Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Item em aberto, sem descrição recente no card.",
-        "srCandidates": [],
-        "reason": "Investigation Complete"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 21214,
-        "type": "Melhoria",
         "title": "Autenticação Apple - ( Sign in with Apple )",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "19/11/2024",
-        "createdDateRaw": "2024-11-19T19:44:55.293Z",
-        "assignedTo": {
-          "displayName": "Lucas Borges",
-          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
-        },
-        "responsavel": "Lucas Borges",
-        "observation": "A fazer: Boa tarde time, Recebi a seguinte demanda do time de desenvolvimento do APP, gostaria que avaliassem e caso tenham duvidas formalizem neste card e se necessário",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Boa tarde time, \n \n \n Recebi a seguinte demanda do time de desenvolvimento do APP, gostaria que avaliassem e caso tenham duvidas formalizem neste card e se necessário agendamos um alinhamento técnico com eles.  \n \n \n É necessário implementar o sistema de autenticação da Apple (   Sign in with Apple   ) no site da Salon Line, especialmente devido à funcionalidade   Hide My Email   . Este recurso permite que os usuários criem contas no site utilizando um e-mail anônimo e protegido, promovendo maior privacidade e segurança, ou que atendam às expectativas dos consumidores que utilizam dispositivos Apple. \n \n \n Integração com um ID Apple   : O sistema deve estar configurado para autenticar usuári",
-        "comments": [
-          {
-            "created": "2026-02-03T16:25:23.4Z",
-            "by": "marta.bispo salonline.com.br",
-            "text": "@Fábio Vidart conforme falamos vamos mover este item para um backlog +1 ano, assim definimos o momento exato de qual sprint ele tem que entrar."
-          },
-          {
-            "created": "2025-06-25T11:59:51.397Z",
-            "by": "Fábio Vidart",
-            "text": "O item Autenticação Apple está parado para tratamento de outras demandas priorizadas."
-          },
-          {
-            "created": "2025-05-20T12:46:45.717Z",
-            "by": "Fábio Vidart",
-            "text": "Plano de ação A:\n \n Estamos fazendo o depara com outro ambiente para debugar o erro \"Client ID or URL redirect invalid\" para o login social Apple.\nPlano de ação B:\nCriar conta na APPLE (para testes) e configurar do zero para verificar erro de credenciais no domínio."
-          },
-          {
-            "created": "2025-05-16T17:33:45.96Z",
-            "by": "Fábio Vidart",
-            "text": "Criada agenda com a @marta.bispo salonline.com.br , @Lucas Borges  e @Flamarion Fagundes  para ajuste do Login Social APPLE.\nAgenda 19/05/2025 as 14h."
-          },
-          {
-            "created": "2025-05-02T17:41:49.923Z",
-            "by": "Lucas Borges",
-            "text": "O serviço da apple está com intermitencia, segue print a baixo, causando indisponibilidades de testes no ambiente de tst e prd, além de não conseguir efetuar o cadastro da minha conta na apple developer, para validar as configurações das credencias da conta.\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/9fe6a400-c815-4469-b625-4d800b728553?fileName=image.png)"
-          },
-          {
-            "created": "2025-04-30T18:01:45.36Z",
-            "by": "Fábio Vidart",
-            "text": "Enfrentamos problemas ao fazer o login na Apple, solicitamos o acesso ao  https://developer.apple.com/  para validar as configurações. Estamos no aguardo"
-          },
-          {
-            "created": "2025-04-29T16:27:26.493Z",
-            "by": "Fábio Vidart",
-            "text": "Boa tarde!\n \nConforme alinhamos com a Martinha. Implantamos o login social porém não está autorizando a autenticação, provavelmente devido ao ambiente de teste. Precisamos subir para produção para realizar os testes, vamos subir hoje a tarde com o login da Apple oculto para os usuários. Iremos alinhar na daily de hoje o horário do deploy."
-          },
-          {
-            "created": "2025-04-23T15:10:25.127Z",
-            "by": "Fábio Vidart",
-            "text": "O @Lucas Borges  está desenvolvendo o front. Próximo passo é ajustar o SSE para realizar o login social."
-          },
-          {
-            "created": "2025-04-22T18:33:27.477Z",
-            "by": "lucas.figueiredo.3967 salonline.com.br",
-            "text": "Foi adicionado o authkey em anexo nesta US. Team id: AF6LZ65AN3 \nClient id: com.salonline.storefront \nKeyID: 595426KVHM\nPreciso que vocês decidam o redirect Url para ser alterado. @Lucas Borges   @Marcus Linck   @Flamarion Fagundes \n psc @marta.bispo salonline.com.br   @gustavo.morrell salonline.com.br"
-          },
-          {
-            "created": "2025-04-17T12:25:27.287Z",
-            "by": "Joaquim Brum",
-            "text": "Houve a reunião de alinhamento e foi acertado com o time de desenvolvimento (Lucas Figueiredo) verificar os acessos/credenciais para o time Lighthouse no dia de hoje (17/04)"
-          },
-          {
-            "created": "2025-04-15T12:23:49.833Z",
-            "by": "Joaquim Brum",
-            "text": "Reunião com o Lucas Figueiredo agendada para 16/04 às 16h"
-          },
-          {
-            "created": "2025-04-14T12:51:52.943Z",
-            "by": "Joaquim Brum",
-            "text": "Aguardando envio dos acessos por parte da Salon, conforme alinhado em daily"
-          },
-          {
-            "created": "2025-04-10T18:38:40.383Z",
-            "by": "lucas.figueiredo.3967 salonline.com.br",
-            "text": "Como já temos as credenciais cadastradas no Firebase, utilizaremos esse serviço para realizar a autenticação tanto na versão web quanto no aplicativo.\n Segue a baixo a documentação referente ao tema.\n https://firebase.google.com/docs/auth/web/apple?hl=pt&authuser=0&_gl=1*1764fsw*_ga*MTQyMzQzNDQzNC4xNzQwMDc0NDIw*_ga_CW55HF8NVT*MTc0NDMxMDEyOC40NC4xLjE3NDQzMTAxMjkuNTkuMC4w \n \n https://salonline-app-41060.firebaseapp.com/__/auth/handler"
-          },
-          {
-            "created": "2025-04-02T12:29:17Z",
-            "by": "Nelson Richter",
-            "text": "Aguardando as credenciais para seguir com o desenvolvimento. @gustavo.morrell salonline.com.br"
-          },
-          {
-            "created": "2025-03-31T17:27:03.297Z",
-            "by": "Lucas Borges",
-            "text": "### **1. Configurar o \"Sign in with Apple\" no Apple Developer**\nPrecisamos de algumas credenciais e algum acessos para darmos inicio ao login social da apple\n1. Precisamos configurar o acesso do [Apple Developer Portal](https://developer.apple.com/account).\n \n2. Criar um Identifiers em **Certificates, Identifiers & Profiles**.\n \n3. Criar um novo **Services ID**.\n \n4. Ativar a opção **Sign in with Apple** e configure os domínios e redirecionamentos.\n \n5. Gerar um **Private Key** para autenticação JWT."
-          },
-          {
-            "created": "2024-12-31T12:27:18.45Z",
-            "by": "Jéssica Coelho",
-            "text": "Estimativa de tempo para desenvolvimento: +-40h"
-          },
-          {
-            "created": "2024-11-22T18:31:19.983Z",
-            "by": "Jéssica Coelho",
-            "text": "@ estimar o tempo"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 19425,
-        "type": "Melhoria",
         "title": "Cotação de Frete na Pagina de Produtos",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "25/09/2024",
-        "createdDateRaw": "2024-09-25T18:23:46.9Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Boa tarde 😉 Podem verificar a cotação de frete via pagina de produtos, parece não considerar a quantidade informada pelo cliente.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Boa tarde  😉 \n Podem verificar a cotação de frete via pagina de produtos, parece não considerar a quantidade informada pelo cliente. Situação pode ser avaliada quando compras maior que R$ 99,90 onde oferecemos frete grátis.  Pode ser usado qualquer frete para verificação e simulação da ocorrência."
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 17326,
-        "type": "Melhoria",
         "title": "Implementação de Content Security Policy (CSP)",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "05/08/2024",
-        "createdDateRaw": "2024-08-05T16:37:44.667Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "A fazer: Implementar uma Content Security Policy (CSP) para aumentar a segurança do site, mitigando ataques XSS e controlando a origem dos recursos carregados.",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Implementar uma Content Security Policy (CSP) para aumentar a segurança do site, mitigando ataques XSS e controlando a origem dos recursos carregados. \n Tarefas: \n - Definir Política CSP:\n \n Exemplo: Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com ; \n \n- Configurar Servidor:\n Apache \n Exemplo: Header set Content-Security-Policy \"default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com ;\"\n Nginx Exemplo: add_header Content-Security-Policy \"default-src 'self'; script-src 'self' https://trusted-scripts.com; style-src 'self' https://trusted-styles.com;\";\n ",
-        "comments": [
-          {
-            "created": "2024-08-30T17:27:59.777Z",
-            "by": "flavio.guedes",
-            "text": "O esperado é o CSP para chamadas e interações externas e internas do site, adicionando não só nos cabeçalho de chamadas internas, mas em Meta Tag Type CSP \n <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'\"> E também na config do servidor, como sabemos, o nosso é Nginx e provavelmente vamos precisar abrir SR para a Oracle adicionar em camada de servidor."
-          },
-          {
-            "created": "2024-08-29T17:41:29.67Z",
-            "by": "Joaquim Brum",
-            "text": "Componentes que é possível testar em TST:\n - Login\n- Parcelas\n- Consulta do CEP\n- Barra Progressiva\n As demais são internas e portanto não tem como validar \n Login; \n \n Barra Progressiva: \n \n Parcelas: \n \n Cálculo do CEP:"
-          },
-          {
-            "created": "2024-08-27T21:32:32.89Z",
-            "by": "Lucas Borges",
-            "text": "Realizado o ajuste no codigo para chamadas realizado pelo osf com o novo parametro de segurança, realizado testes de naveção rodando a aplicação local e agora aguardando proximo deploy para TST para teste completo"
-          },
-          {
-            "created": "2024-08-27T17:49:27.34Z",
-            "by": "Lucas Borges",
-            "text": "Em analise"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 13805,
-        "type": "Melhoria",
         "title": "Realizar a atualização automática do site map",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "21/05/2024",
-        "createdDateRaw": "2024-05-21T18:43:58.297Z",
-        "assignedTo": {
-          "displayName": "Lucas Borges",
-          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
-        },
-        "responsavel": "Lucas Borges",
-        "observation": "A fazer: Conforme conversamos na reunião junto com o time de SEO no dia 18/09/24, precisamos perguntar para o Suporte da Oracle/Langer como podemos automatizar a atualiz",
-        "srCandidates": [],
-        "reason": "Moved to state New",
-        "descriptionExcerpt": "Conforme conversamos na reunião junto com o time de SEO no dia 18/09/24, precisamos perguntar para o Suporte da Oracle/Langer como podemos automatizar a atualização dos sitemaps: - Categorias \n- Imagens \n- Produtos \n Segundo o Search Console, a última atualização aconteceu em Janeiro de 2024",
-        "comments": [
-          {
-            "created": "2024-09-18T19:59:10.143Z",
-            "by": "gustavo.morrell salonline.com.br",
-            "text": "@Jéssica Coelho Atualizei nesse card a Descrição de acordo com o que conversamos hoje na reunião"
-          },
-          {
-            "created": "2024-09-16T18:21:33.277Z",
-            "by": "Jéssica Coelho",
-            "text": "Criar sse e a interface paa o time salon subir as informações (colocar os arquivos)"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 10106,
-        "type": "Bug",
         "title": "Botões para contato da pagina \"central de relacionamento\" não funciona no mobile. ",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "19/01/2024",
-        "createdDateRaw": "2024-01-19T18:22:54.28Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Item em aberto, sem descrição recente no card.",
-        "srCandidates": [],
-        "reason": "New"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 10105,
-        "type": "Bug",
         "title": "Desktop não está responsivo ",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "19/01/2024",
-        "createdDateRaw": "2024-01-19T18:17:17.357Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Item em aberto, sem descrição recente no card.",
-        "srCandidates": [],
-        "reason": "New"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 9409,
-        "type": "Bug",
         "title": "Exibição em telas pequenas está quebrando",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "20/12/2023",
-        "createdDateRaw": "2023-12-20T19:28:28.263Z",
-        "assignedTo": null,
-        "responsavel": "",
-        "observation": "Item em aberto, sem descrição recente no card.",
-        "srCandidates": [],
-        "reason": "New defect reported"
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 9302,
-        "type": "Bug",
         "title": "Divergência request de Cotação de frete - ENDEREÇO PRINCIPAL VS SECUNDÁRIO",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "15/12/2023",
-        "createdDateRaw": "2023-12-15T14:49:03.853Z",
-        "assignedTo": {
-          "displayName": "Lucas Borges",
-          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
-        },
-        "responsavel": "Lucas Borges",
-        "observation": "Item em aberto, sem descrição recente no card.",
-        "srCandidates": [],
-        "reason": "Moved to the backlog",
-        "comments": [
-          {
-            "created": "2023-12-28T18:31:47.033Z",
-            "by": "Joaquim Brum",
-            "text": "Será movido para Pronto com o intuito de verificarmos se haverá outras situações semelhantes"
-          },
-          {
-            "created": "2023-12-28T18:29:17.58Z",
-            "by": "Joaquim Brum",
-            "text": "pedido feito 06/12/2023 e até então só um caso foi reportado"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       },
       {
         "id": 9211,
-        "type": "Bug",
         "title": "Pedido com quantidades e valores divergentes",
         "state": "New",
-        "statusLabel": "À fazer",
         "iterationPath": "Salon Line - Squad OCC",
         "sprint": "Backlog",
-        "iterationTimeFrame": "backlog",
-        "createdDate": "07/12/2023",
-        "createdDateRaw": "2023-12-07T14:04:02.03Z",
-        "assignedTo": {
-          "displayName": "Gianluca Ferreira",
-          "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
-        },
-        "responsavel": "Gianluca Ferreira",
-        "observation": "Item em aberto, sem descrição recente no card.",
-        "srCandidates": [],
-        "reason": "Moved to the backlog",
-        "comments": [
-          {
-            "created": "2023-12-18T18:55:42.27Z",
-            "by": "Marcelo Bortolini",
-            "text": "não conseguimos simular o comportamento, isso foi um único caso que aconteceu. manteremos neste status para mapear se ocorrer nova situação"
-          }
-        ]
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
       }
     ]
   },
