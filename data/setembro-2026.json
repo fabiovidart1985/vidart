@@ -1,0 +1,3013 @@
+{
+  "referenceMonth": "Setembro/2026",
+  "timezone": "America/Sao_Paulo (UTC-3, sem horário de verão)",
+  "period": {
+    "start": "2026-09-01T00:00:00-03:00",
+    "end": "2026-09-30T23:59:59-03:00"
+  },
+  "businessDays": 21,
+  "businessDayRule": {
+    "weekdays": 22,
+    "deducted": [
+      "2026-09-07 Independência do Brasil (segunda-feira)"
+    ],
+    "notDeducted": [
+      "2026-09-20 Revolução Farroupilha cai no domingo",
+      "Nenhum feriado municipal de Porto Alegre em setembro",
+      "Nenhum ponto facultativo do Decreto Estadual RS 58.607/2026 em setembro"
+    ]
+  },
+  "availability": {
+    "monthPercent": 100,
+    "targetPercent": 100,
+    "unavailabilityEvents": []
+  },
+  "stateMapping": {
+    "expectedNamesFromRequest": [
+      "New",
+      "Bloqued",
+      "Active",
+      "In Test Light",
+      "Validation PRD",
+      "Monitoring"
+    ],
+    "actualWorkflowStates": [
+      "New",
+      "Active",
+      "Blocked",
+      "Code Review",
+      "In Test Light",
+      "In Test Customer",
+      "Ready PRD",
+      "Validation PRD",
+      "Monitoring",
+      "Closed",
+      "Removed"
+    ],
+    "mapping": {
+      "New": "New",
+      "Bloqued": "Blocked",
+      "Active": "Active",
+      "In Test Light": "In Test Light",
+      "Validation PRD": "Validation PRD",
+      "Monitoring": "Monitoring"
+    },
+    "additionalOpenStatesIncluded": [
+      "In Test Customer",
+      "Ready PRD"
+    ],
+    "additionalOpenStatesUnused": [
+      "Code Review"
+    ],
+    "templatePortugueseLabelsNotUsed": {
+      "A FAZER": "New",
+      "BLOQUEADO": "Blocked",
+      "EM DESENVOLVIMENTO": "Active",
+      "EM TESTE - LH": "In Test Light"
+    },
+    "note": "A tabela do backlog usa os rótulos em português definidos para o status report de setembro/2026.",
+    "displayLabels": {
+      "Blocked": "Bloqueado",
+      "Active": "Em Desenvolvimento",
+      "In Test Light": "Em Testes LH",
+      "In Test Customer": "Em Testes Salon",
+      "Ready PRD": "Pronto para Publicar PRD",
+      "Validation PRD": "Em Validação (PRD)",
+      "Monitoring": "Em Monitoramento",
+      "New": "À fazer"
+    }
+  },
+  "delivered": {
+    "count": 9,
+    "rule": "State Closed e Closed Date no mês, em America/Sao_Paulo. Changed Date não foi usado. Nenhum Closed Date ausente.",
+    "composition": {
+      "Bug": 2,
+      "Melhoria": 7
+    },
+    "byDeveloper": [
+      {
+        "name": "Ewerton Bezerra",
+        "count": 6
+      },
+      {
+        "name": "Regis Ropke",
+        "count": 3
+      }
+    ],
+    "unassignedDuringActive": [],
+    "items": [
+      {
+        "id": 38005,
+        "type": "Melhoria",
+        "title": "Análise de Logs - error 500 OCC",
+        "closedDate": "2026-09-28T15:07:55.047000-03:00",
+        "closedDateRaw": "2026-09-28T18:07:55.047Z",
+        "developmentBusinessDays": 26,
+        "activeAssignee": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-05-11T16:28:40.230000-03:00",
+            "end": "2026-05-20T14:53:13.860000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 7
+          },
+          {
+            "start": "2026-05-29T09:05:21.800000-03:00",
+            "end": "2026-06-08T12:06:10.477000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 5
+          },
+          {
+            "start": "2026-08-06T15:22:22.053000-03:00",
+            "end": "2026-08-26T15:00:36.710000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 14
+          }
+        ],
+        "assigneeDeterminable": true
+      },
+      {
+        "id": 40930,
+        "type": "Melhoria",
+        "title": "Novo Widget de Carrossel “Oferta do Dia\"",
+        "closedDate": "2026-09-26T00:20:19.860000-03:00",
+        "closedDateRaw": "2026-09-26T03:20:19.86Z",
+        "developmentBusinessDays": 6,
+        "activeAssignee": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-08-31T15:15:05.250000-03:00",
+            "end": "2026-09-09T09:09:49.200000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 6
+          }
+        ],
+        "assigneeDeterminable": true
+      },
+      {
+        "id": 37970,
+        "type": "Melhoria",
+        "title": "Análise de Consumo de APIs Externas – Excedente de Requisições Oracle",
+        "closedDate": "2026-09-04T15:17:29.953000-03:00",
+        "closedDateRaw": "2026-09-04T18:17:29.953Z",
+        "developmentBusinessDays": 4,
+        "activeAssignee": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-04-28T16:00:07.523000-03:00",
+            "end": "2026-05-05T15:07:45.290000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 4
+          }
+        ],
+        "assigneeDeterminable": true
+      },
+      {
+        "id": 40838,
+        "type": "Bug",
+        "title": "Revisão do Fluxo de Checkout - Pedidos com status \"Incomplete\"",
+        "closedDate": "2026-09-23T11:10:39.923000-03:00",
+        "closedDateRaw": "2026-09-23T14:10:39.923Z",
+        "developmentBusinessDays": 4,
+        "activeAssignee": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-08-20T15:16:23.640000-03:00",
+            "end": "2026-08-26T15:00:36.740000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 4
+          }
+        ],
+        "assigneeDeterminable": true
+      },
+      {
+        "id": 40608,
+        "type": "Melhoria",
+        "title": "Desenvolvimento do Widget Carrossel de Benefícios",
+        "closedDate": "2026-09-04T15:05:12.100000-03:00",
+        "closedDateRaw": "2026-09-04T18:05:12.1Z",
+        "developmentBusinessDays": 3,
+        "activeAssignee": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-08-21T09:09:06.273000-03:00",
+            "end": "2026-08-26T15:10:50.687000-03:00",
+            "lastAssignee": "Regis Ropke",
+            "businessDaysExclusiveEnd": 3
+          }
+        ],
+        "assigneeDeterminable": true
+      },
+      {
+        "id": 40344,
+        "type": "Melhoria",
+        "title": "Identificação da Origem do Cadastro do Cliente – APP ou Site",
+        "closedDate": "2026-09-01T15:34:30.243000-03:00",
+        "closedDateRaw": "2026-09-01T18:34:30.243Z",
+        "developmentBusinessDays": 3,
+        "activeAssignee": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-08-12T09:15:42.367000-03:00",
+            "end": "2026-08-17T09:41:43.190000-03:00",
+            "lastAssignee": "Regis Ropke",
+            "businessDaysExclusiveEnd": 3
+          }
+        ],
+        "assigneeDeterminable": true
+      },
+      {
+        "id": 41059,
+        "type": "Melhoria",
+        "title": "Alterar comportamento na requisição do SSE - sl-acs-statistics",
+        "closedDate": "2026-09-01T15:25:24.110000-03:00",
+        "closedDateRaw": "2026-09-01T18:25:24.11Z",
+        "developmentBusinessDays": 1,
+        "activeAssignee": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-08-28T15:39:33.240000-03:00",
+            "end": "2026-08-29T13:36:18.083000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 1
+          }
+        ],
+        "assigneeDeterminable": true
+      },
+      {
+        "id": 41344,
+        "type": "Bug",
+        "title": "Logo não aparecendo no site",
+        "closedDate": "2026-09-28T15:08:06.053000-03:00",
+        "closedDateRaw": "2026-09-28T18:08:06.053Z",
+        "developmentBusinessDays": 1,
+        "activeAssignee": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br",
+          "source": "Informado pelo usuário em 06/10/2026"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-09-11T09:07:52.343000-03:00",
+            "end": "2026-09-11T10:29:44.837000-03:00",
+            "lastAssignee": null,
+            "businessDaysExclusiveEnd": 0
+          }
+        ],
+        "assigneeDeterminable": true,
+        "assigneeSource": "user"
+      },
+      {
+        "id": 40949,
+        "type": "Melhoria",
+        "title": "Preencher propriedade dinâmica sl_origem",
+        "closedDate": "2026-09-02T09:31:20.963000-03:00",
+        "closedDateRaw": "2026-09-02T12:31:20.963Z",
+        "developmentBusinessDays": 1,
+        "activeAssignee": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "activeIntervals": [
+          {
+            "start": "2026-08-26T15:12:51.680000-03:00",
+            "end": "2026-08-27T14:55:18.360000-03:00",
+            "lastAssignee": "Ewerton Bezerra",
+            "businessDaysExclusiveEnd": 1
+          }
+        ],
+        "assigneeDeterminable": true
+      }
+    ]
+  },
+  "history": {
+    "2026-07": 11,
+    "2026-08": 18,
+    "2026-09": 9,
+    "chartValues": [
+      11,
+      18,
+      9
+    ]
+  },
+  "historyNote": {
+    "julyPreviousDeck": 15,
+    "julyClosedDateRecount": 11,
+    "augustMatchesDeck": true,
+    "chartValues": [
+      11,
+      18,
+      9
+    ],
+    "julyDeltaExplanation": "O recálculo por Closed Date encontra 11 bugs e melhorias em julho/2026, não 15. Cinco cards tiveram revisão em julho, mas o Closed Date permanece em junho; eles não foram contados. A soma desses cinco com os 11 fechamentos de julho é 16, então o 15 do deck anterior não foi reproduzido."
+  },
+  "internallyDetected": {
+    "count": 16,
+    "rule": "Created Date em setembro/2026 e Created By exatamente Fábio Vidart, Julio Lima, Ewerton Bezerra ou Regis Ropke. Somente Bug e Melhoria.",
+    "byPerson": {
+      "Fábio Vidart": 15,
+      "Julio Lima": 1
+    },
+    "identityCandidates": [
+      {
+        "name": "Fábio Vidart",
+        "email": "fabio.vidart@lighthouseit.com.br"
+      },
+      {
+        "name": "Julio Lima",
+        "email": "julio.lima@lighthouseit.com.br"
+      },
+      {
+        "name": "Ewerton Bezerra",
+        "email": "ewerton.bezerra@lighthouseit.com.br"
+      },
+      {
+        "name": "Regis Ropke",
+        "email": "regis.ropke@lighthouseit.com.br"
+      }
+    ],
+    "identityAmbiguous": false,
+    "items": [
+      {
+        "id": 41344,
+        "type": "Bug",
+        "title": "Logo não aparecendo no site",
+        "createdDate": "2026-09-11T09:07:41.360000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41401,
+        "type": "Bug",
+        "title": "Erro ao fechar pedido / Recalculo dos descontos",
+        "createdDate": "2026-09-14T16:29:37.407000-03:00",
+        "createdBy": {
+          "displayName": "Julio Lima",
+          "uniqueName": "julio.lima@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Julio Lima"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41479,
+        "type": "Melhoria",
+        "title": "[PDP] Hero da PDP",
+        "createdDate": "2026-09-17T11:55:29.463000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41480,
+        "type": "Melhoria",
+        "title": "[PDP] Trust Bar",
+        "createdDate": "2026-09-17T12:10:06.063000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41481,
+        "type": "Melhoria",
+        "title": "[PDP] Informações do Produto",
+        "createdDate": "2026-09-17T12:11:41.233000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41482,
+        "type": "Melhoria",
+        "title": "[PDP] Ritual em {x} passos",
+        "createdDate": "2026-09-17T12:14:25-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41483,
+        "type": "Melhoria",
+        "title": "[PDP] Avaliações",
+        "createdDate": "2026-09-17T12:15:51.370000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41484,
+        "type": "Melhoria",
+        "title": "[PDP] Tire suas dúvidas",
+        "createdDate": "2026-09-17T12:18:41.037000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41485,
+        "type": "Melhoria",
+        "title": "[PDP] Monte sua Rotina",
+        "createdDate": "2026-09-17T12:20:04.450000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41676,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar userToken nos eventos",
+        "createdDate": "2026-09-25T22:59:53.970000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41677,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Recent Searches",
+        "createdDate": "2026-09-25T23:14:43.083000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41680,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Federated Search",
+        "createdDate": "2026-09-25T23:38:18.690000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41681,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia nas páginas de categoria",
+        "createdDate": "2026-09-25T23:49:37.790000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41682,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar AnalyticsTags",
+        "createdDate": "2026-09-25T23:55:07.147000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41683,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia em Collections",
+        "createdDate": "2026-09-25T23:58:23.850000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      },
+      {
+        "id": 41755,
+        "type": "Bug",
+        "title": "Preço zerado em produtos após retorno null no endpoint listProducts",
+        "createdDate": "2026-09-30T19:37:37.710000-03:00",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "matchedIdentities": [
+          "Fábio Vidart"
+        ],
+        "ambiguous": false
+      }
+    ],
+    "userStoriesCreatedByInternalTeamNotCounted": [
+      {
+        "id": 41125,
+        "title": "[Suporte] Sprint 76",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "counted": false,
+        "reason": "A métrica pede Bugs e Melhorias. User Story não entra na contagem."
+      },
+      {
+        "id": 41378,
+        "title": "[Suporte] Sprint 77",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "counted": false,
+        "reason": "A métrica pede Bugs e Melhorias. User Story não entra na contagem."
+      },
+      {
+        "id": 41674,
+        "title": "[Algolia] Sprint 77",
+        "createdBy": {
+          "displayName": "Fábio Vidart",
+          "uniqueName": "fabio.vidart@lighthouseit.com.br"
+        },
+        "counted": false,
+        "reason": "A métrica pede Bugs e Melhorias. User Story não entra na contagem."
+      }
+    ]
+  },
+  "otherClosedTypes": [
+    {
+      "id": 40350,
+      "type": "User Story",
+      "title": "[Suporte] Sprint 74",
+      "closedDate": "2026-09-01T09:57:22.900000-03:00",
+      "includedInDeliveryKpi": false,
+      "reason": "User Story fora da conta de entregas, por confirmação do usuário. Somente Bug e Melhoria.",
+      "developmentBusinessDays": 0,
+      "activeAssignee": null
+    },
+    {
+      "id": 40714,
+      "type": "User Story",
+      "title": "[Suporte] Sprint 75",
+      "closedDate": "2026-09-26T00:22:04.637000-03:00",
+      "includedInDeliveryKpi": false,
+      "reason": "User Story fora da conta de entregas, por confirmação do usuário. Somente Bug e Melhoria.",
+      "developmentBusinessDays": 0,
+      "activeAssignee": null
+    },
+    {
+      "id": 41125,
+      "type": "User Story",
+      "title": "[Suporte] Sprint 76",
+      "closedDate": "2026-09-26T00:23:24.970000-03:00",
+      "includedInDeliveryKpi": false,
+      "reason": "User Story fora da conta de entregas, por confirmação do usuário. Somente Bug e Melhoria.",
+      "developmentBusinessDays": 0,
+      "activeAssignee": null
+    }
+  ],
+  "backlog": {
+    "count": 33,
+    "asOf": "2026-10-08",
+    "scope": "Bug e Melhoria nas iterações atual e futuras (Sprint 77, Sprint 78 e Sprint 79), exceto Monitoramento e Validação (PRD). A Sprint Backlog e as sprints encerradas ficam de fora.",
+    "isCurrentRule": "Recorte da iteração atual e das futuras. Em 08/10/2026 a Sprint 77 é a atual e as Sprints 78 e 79 são futuras. Itens em Monitoramento e em Validação (PRD) continuam fora do slide.",
+    "excludedBecausePastIteration": [
+      {
+        "id": 12356,
+        "title": "Pedido com amountAuthorized zerado",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 13160,
+        "title": "Divergência Pedido x Payload -Site Pedido 570495481",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 13441,
+        "title": "Não é possivel acessar a conta de algumas clientes",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 19253,
+        "title": "Pedido com erro - OCC",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 20387,
+        "title": "Implementação cód. LP Galeria feed",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 29",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 20412,
+        "title": "Análise: Produtos iguais não estão sendo agrupados no pedido",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 27982,
+        "title": "Pedido sem registro de produtos na propriedade \"commerceItems\": [],",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 28070,
+        "title": "Erros retornados pela SSE Smart Checkout ao finalizar pedidos pelo App",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 47",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      },
+      {
+        "id": 39603,
+        "title": "[Análise & Ajuste] array dataLayer",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 73",
+        "reason": "Iteração com timeFrame past. Fora do backlog atual."
+      }
+    ],
+    "leftOpenStatesSincePriorSnapshot": [
+      {
+        "id": 41726,
+        "title": "[Projeto CDP] Abandono Checkout",
+        "previousState": "Ready PRD",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      },
+      {
+        "id": 40912,
+        "title": "Pedidos falhando na Integração - Erro \"VL_DESC_INC_UNIT nao poder ser menor que 0\"",
+        "previousState": "Monitoring",
+        "reason": "Não está mais em estado aberto de Bug ou Melhoria na consulta de 08/10/2026."
+      }
+    ],
+    "statusLabels": {
+      "Blocked": {
+        "label": "Bloqueado",
+        "fill": "C62828",
+        "font": "FFFFFF"
+      },
+      "Active": {
+        "label": "Em Desenvolvimento",
+        "fill": "1565C0",
+        "font": "FFFFFF"
+      },
+      "In Test Light": {
+        "label": "Em Testes LH",
+        "fill": "FFF4CC",
+        "font": "1A1A1A"
+      },
+      "In Test Customer": {
+        "label": "Em Testes Salon",
+        "fill": "FFF4CC",
+        "font": "1A1A1A"
+      },
+      "Ready PRD": {
+        "label": "Pronto para Publicar PRD",
+        "fill": "1565C0",
+        "font": "FFFFFF"
+      },
+      "Validation PRD": {
+        "label": "Em Validação (PRD)",
+        "fill": "2E7D32",
+        "font": "FFFFFF"
+      },
+      "Monitoring": {
+        "label": "Em Monitoramento",
+        "fill": "F6C445",
+        "font": "1A1A1A"
+      },
+      "New": {
+        "label": "À fazer",
+        "fill": null,
+        "font": null
+      },
+      "Code Review": {
+        "label": "Em revisão de código",
+        "fill": "1565C0",
+        "font": "FFFFFF"
+      }
+    },
+    "responsavelRule": "A coluna Responsável só é preenchida em itens Bloqueado, com quem segura o bloqueio e o motivo informados pelo usuário. Nos demais status a célula fica com travessão.",
+    "items": [
+      {
+        "id": 38287,
+        "type": "Bug",
+        "title": "PLP Outlet repete produtos ao utilizar “Ver mais produtos”",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "13/05/2026",
+        "createdDateRaw": "2026-05-13T19:45:07.78Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: a listagem de outlet repete produtos ao usar Ver mais produtos.",
+        "srCandidates": [],
+        "reason": "Investigation Complete",
+        "comments": [
+          {
+            "created": "2026-06-05T18:08:56.863Z",
+            "by": "Fábio Vidart",
+            "text": "Não registramos mais o fato, conforme alinhado iremos fechar e continuar monitorando."
+          },
+          {
+            "created": "2026-05-25T12:48:27.6Z",
+            "by": "Fábio Vidart",
+            "text": "Aguardando retorno da Salon Line como será tratado esse ponto."
+          },
+          {
+            "created": "2026-05-18T19:57:47.69Z",
+            "by": "Marcus Linck",
+            "text": "Recebemos da Oracle 16 produtos por requisição, respeitando a ordenação selecionada pelo usuário (mais relevantes, menor, maior preço) e antes de renderizar em tela, passamos eles por uma função customizada no front que separa os produtos em 3 grupos.\n1 - Produtos disponiveis\n2 - Prdutos da categoria brinde\n3 - Prdoutos inativos\nA função refaz a lista colocando brindes e inativos no final dela, alterando a ordem nativa da oracle.\nImagine os primeiros 16 produtos, sendo 4 deles brindes\nA gente tira eles da ordem da oracle e mandamos pro final da lista.\nEsse comportamento ja acontecia com paginação, mas não ficava tão evidente como com scroll infinito.\nAo clicar em carregar mais produtos, a oracle envia mais 16 produtos e junto dos 16 primeiros, reorganizamos a lista e enviamos os brindes pro final dela. Dando impressão de \"bug\" ou produtos duplicados.\nA solução é não passar mais por esse filtro customizado e renderizar a lista que a Oracle manda de forma nativa"
+          }
+        ]
+      },
+      {
+        "id": 39839,
+        "type": "Bug",
+        "title": "Quantidade incorreta de itens sendo adicionados via Streamshop",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "16/07/2026",
+        "createdDateRaw": "2026-07-16T18:16:47.893Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: quantidade incorreta de itens adicionados pelo Streamshop.",
+        "srCandidates": [],
+        "reason": "Moved out of state Blocked"
+      },
+      {
+        "id": 40290,
+        "type": "Bug",
+        "title": "[PDP] Cards de produtos relacionados duplicam o símbolo de moeda no parcelamento  Descrição",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "30/07/2026",
+        "createdDateRaw": "2026-07-30T17:04:58.273Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: cards relacionados da página de produto duplicam o símbolo da moeda no parcelamento.",
+        "srCandidates": [],
+        "reason": "New"
+      },
+      {
+        "id": 40638,
+        "type": "Bug",
+        "title": "Exibir itens de lançamento nas sugestões do Cronograma Capilar (Quiz)",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "12/08/2026",
+        "createdDateRaw": "2026-08-12T13:30:25.413Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: exibir lançamentos nas sugestões do Cronograma Capilar.",
+        "srCandidates": [],
+        "reason": "New"
+      },
+      {
+        "id": 40883,
+        "type": "Bug",
+        "title": "Bug Relatorios",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "21/08/2026",
+        "createdDateRaw": "2026-08-21T15:04:37.15Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Bloqueado pela Oracle (SR 4-0003585464): cobrada a causa raiz das falhas recorrentes do serviço de relatórios.",
+        "srCandidates": [
+          "4-0003585464"
+        ],
+        "reason": "Moved to state Blocked",
+        "comments": [
+          {
+            "created": "2026-10-06T11:26:48.873Z",
+            "by": "Ewerton Bezerra",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/45525c5f-dcef-4379-a56c-29aaf87e1d2b?fileName=image.png)"
+          },
+          {
+            "created": "2026-10-01T11:52:12.173Z",
+            "by": "Ewerton Bezerra",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/1b67dac9-d8ef-47a0-883f-3e1faea567d1?fileName=image.png)"
+          },
+          {
+            "created": "2026-09-30T12:19:02.667Z",
+            "by": "Ewerton Bezerra",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/5a3c8bd5-2668-4d27-b53e-72e7a24d8c9c?fileName=image.png)"
+          },
+          {
+            "created": "2026-09-25T16:32:02.633Z",
+            "by": "Ewerton Bezerra",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/aff13ed3-89f5-46d6-abdf-87e247689a59?fileName=image.png)"
+          },
+          {
+            "created": "2026-09-25T13:57:18.427Z",
+            "by": "Ewerton Bezerra",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/1a5cc4b2-d956-4018-b9f7-b7db40eaaf09?fileName=image.png)"
+          },
+          {
+            "created": "2026-09-15T17:40:11.7Z",
+            "by": "Fábio Vidart",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/483018dc-0c9b-4d75-8666-044b9fd384d0?fileName=image.png)"
+          },
+          {
+            "created": "2026-09-10T18:01:51.887Z",
+            "by": "Fábio Vidart",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/f2ed07af-7160-4609-bb0d-fb29e7ebeb68?fileName=image.png)"
+          },
+          {
+            "created": "2026-09-09T12:34:17.147Z",
+            "by": "Ewerton Bezerra",
+            "text": "Segue resposta da Oracle:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/df7cb314-4895-4eeb-b7f7-0a4cab536cfa?fileName=image.png)"
+          },
+          {
+            "created": "2026-09-04T17:43:44.82Z",
+            "by": "Fábio Vidart",
+            "text": "Cobramos uma análise de causa raiz, visto que as três últimas ocorrências com os relatórios foram decorrentes desse mesmo serviço OBIEE. Aguardando retorno."
+          },
+          {
+            "created": "2026-09-01T14:10:42.473Z",
+            "by": "Ewerton Bezerra",
+            "text": "![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/f53abc80-54e3-4f43-9c97-7bfd4df544f9?fileName=image.png)"
+          },
+          {
+            "created": "2026-08-21T18:04:43.513Z",
+            "by": "Ewerton Bezerra",
+            "text": "Segue atualização:"
+          }
+        ]
+      },
+      {
+        "id": 40904,
+        "type": "Melhoria",
+        "title": "Novos Requisitos para Imagem dos Produtos",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "24/08/2026",
+        "createdDateRaw": "2026-08-24T14:10:20.91Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Bloqueado pelo Google: aguardando a confirmação de quais imagens e configurações o Merchant Center exige.",
+        "srCandidates": [],
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Objetivo:  Avaliar e definir as ações necessárias para adequação ao novo requisito de tamanho mínimo de imagens de produtos exigido pelo Google Merchant Center (mínimo de 500x500 pixels até 31/01/2027). \n Contexto:  O Google Merchant Center notificou uma alteração em suas diretrizes de qualidade, estipulando que, a partir de 31/01/2027 , todos os produtos publicados deverão possuir imagens com dimensões mínimas de 500x500 pixels .\n \n Como a fonte de dados do Merchant Center é capturada diretamente do nosso e-commerce, é necessário investigar se o ajuste deverá ser feito diretamente pelo site ou se existe alguma outra tratativa que possa ser realizada. \n Para embasamento e validação inicial, ",
+        "comments": [
+          {
+            "created": "2026-09-28T16:52:48.623Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Ainda estamos aguardando a confirmação das imagens que precisam ser atualizadas."
+          },
+          {
+            "created": "2026-09-21T17:20:16.367Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "@Fábio Vidart  recomendações da Google adicionadas na descrição do card e planilha atualizada em anexo (Salon Line (123897021) - Merchant Excellence - Set'26)"
+          },
+          {
+            "created": "2026-09-14T16:54:52.57Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Card bloqueado, pois estamos aguardando a confirmação da Google sobre as configurações das imagens."
+          }
+        ]
+      },
+      {
+        "id": 40929,
+        "type": "Melhoria",
+        "title": "Desenvolvimento do novo layout da Página de Produto",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-08-25T16:59:34.3Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
+        "responsavel": "",
+        "observation": "Em revisão de código: novo layout da página de produto, com o desenvolvimento acompanhado em TST.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "25/08/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41479,
+        "type": "Melhoria",
+        "title": "[PDP] Hero da PDP",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-09-17T14:55:29.463Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
+        "responsavel": "",
+        "observation": "Em revisão de código: hero da nova página de produto. O Figma do botão de compartilhar ainda foi apontado como pendência.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "17/09/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41480,
+        "type": "Melhoria",
+        "title": "[PDP] Trust Bar",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:10:06.063Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em teste LH: faixa de benefícios da nova página de produto.",
+        "srCandidates": [],
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Objetivo \n Desenvolver o novo componente Trust Bar da PDP, conforme o layout aprovado no Figma, permitindo a apresentação de benefícios comerciais e institucionais de forma configurável pela OCC. \n O componente deverá seguir os padrões visuais e técnicos já utilizados no projeto, preservando a experiência responsiva da PDP. \n Referência \n Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar um novo widget para exibição de benefícios na P",
+        "comments": [
+          {
+            "created": "2026-09-18T12:22:32.807Z",
+            "by": "Regis Ropke",
+            "text": "Widget: _BenefitsCarouselHero\n nova instancia do mesmo carousel de beneficios que ja foi desenvolvido, adicionado novos campos customizaveis no widget"
+          }
+        ]
+      },
+      {
+        "id": 41481,
+        "type": "Melhoria",
+        "title": "[PDP] Informações do Produto",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:11:41.233Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em teste LH: informações do produto, incluindo a seção Dica de Ouro.",
+        "srCandidates": [],
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Objetivo \n Adequar a seção Informações do Produto ao novo layout da PDP, preservando as informações já existentes e adicionando a nova seção “Dica de Ouro” , conforme definido no Figma e no card pai #40929 . \n A implementação deverá manter o padrão de accordion já utilizado no projeto e respeitar as regras gerais de responsividade, configuração e exibição condicional definidas no card principal. \n Referência \n Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-7",
+        "comments": [
+          {
+            "created": "2026-09-18T12:11:33.323Z",
+            "by": "Regis Ropke",
+            "text": "Campo customizado nas propriedades de produto: sl_dicaDeOuro (Rich Text) — preencher no produto pra testar o accordion \"DICA DE OURO\"; se vazio, o accordion não aparece (comportamento esperado, não bug). \n Os demais accordions/tags usam campos que já existiam antes (sl_descriptionActives, sl_descriptionWayOfUse, sl_isLiberado, sl_isVegan etc.)."
+          }
+        ]
+      },
+      {
+        "id": 41482,
+        "type": "Melhoria",
+        "title": "[PDP] Ritual em {x} passos",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:14:25Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em teste LH: ritual em passos, exibido somente quando o produto tem o conteúdo preenchido.",
+        "srCandidates": [],
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Objetivo \n Desenvolver um novo widget para apresentar o modo de uso do produto em etapas , conforme o layout aprovado no Figma, permitindo uma quantidade variável de passos e atualização dinâmica do título do componente. \n O widget deverá ser configurável pela OCC, responsivo e exibido somente quando houver conteúdo cadastrado. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o novo componente “Ritual em {x} passos” para",
+        "comments": [
+          {
+            "created": "2026-09-18T12:13:23.65Z",
+            "by": "Regis Ropke",
+            "text": "Widget: _RitualEmPassos\n \n 3 campos customizados novos no produto, todos texto, separados por \"|\" (pipe), na mesma ordem entre si:\n - sl_ritualTitulos: título de cada passo (ex: Aplique|Massageie|Aguarde|Enxágue)\n - sl_ritualDescricoes: descrição de cada passo\n - sl_ritualIcones: palavra-chave do ícone de cada passo — só aceita: aplicar, aguardar, enxaguar (minúsculo, sem acento)\n \n Sem esses campos preenchidos, o widget não aparece na PDP (comportamento esperado).\n Obs: só existem 3 ícones hoje — se o Figma pedir um 4º ícone diferente, ainda está em aberto com o design."
+          }
+        ]
+      },
+      {
+        "id": 41483,
+        "type": "Melhoria",
+        "title": "[PDP] Avaliações",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:15:51.37Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: seção de avaliações da PDP no novo layout, avaliando implementar o front internamente com a API da YourViews.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      },
+      {
+        "id": 41484,
+        "type": "Melhoria",
+        "title": "[PDP] Tire suas dúvidas",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:18:41.037Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: seção Tire suas dúvidas da PDP no novo layout, avaliando implementar o front internamente com a API da YourViews.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      },
+      {
+        "id": 41485,
+        "type": "Melhoria",
+        "title": "[PDP] Monte sua Rotina",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:20:04.45Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em teste LH: widget Monte sua Rotina, com destaque do produto que o cliente está vendo.",
+        "srCandidates": [],
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Objetivo \n Desenvolver o novo widget “Monte sua Rotina” na PDP para apresentar produtos complementares organizados por etapas, conforme o layout aprovado no Figma. \n O componente deverá destacar o produto correspondente à PDP acessada e permitir a navegação para a rotina completa, respeitando as estruturas de relacionamento de produtos já existentes sempre que aplicável. \n Referência Este card faz parte do desenvolvimento definido no card pai #40929 – Desenvolvimento do novo layout da Página de Produto . \n As definições visuais devem seguir o protótipo aprovado no Figma: \n https://www.figma.com/design/8nzDWBJUxnDSCDYKOm6JGi/-Salon-Line--Design-System?node-id=5290-74689&t= \n Descrição Criar o",
+        "comments": [
+          {
+            "created": "2026-09-18T12:15:00.723Z",
+            "by": "Regis Ropke",
+            "text": "Widget: _ProductRoutine\n \n 1 campo customizado novo no produto: sl_rotinaSkus\n \n IMPORTANTE pra testar certo:\n - Precisa incluir o ID do PRÓPRIO produto na lista, pra ele aparecer destacado como \"Você está aqui\".\n - Precisa colar o MESMO valor (mesma lista, mesma ordem) em TODOS os produtos que fazem parte da rotina\n Sem o campo preenchido, o widget não aparece (esperado)."
+          }
+        ]
+      },
+      {
+        "id": 41486,
+        "type": "Melhoria",
+        "title": "Alinhamento de Expectativa de Tráfego e Capacidade para a Black Friday 2026",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T17:27:20.003Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Bloqueado pela Oracle (SR 4-0003839520; histórico SR 4-0001220950): análise preventiva de capacidade para a Black Friday.",
+        "srCandidates": [
+          "4-0001220950",
+          "4-0003839520"
+        ],
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Objetivo Antecipar ao time responsável pelo OCC a expectativa de tráfego e acessos previstos para o Site e App durante a Black Friday 2026, garantindo que todas as medidas preventivas sejam avaliadas e aplicadas para evitar novas quedas de performance ou indisponibilidades. \n Descrição Na última Black Friday, tivemos uma queda durante o período de maior demanda. Por esse motivo, queremos sinalizar previamente ao OCC a expectativa de acessos para a Black Friday 2026 e solicitar o acompanhamento necessário da capacidade da plataforma, infraestrutura e integrações. \n A expectativa é que o volume de acessos seja superior ao do ano anterior, sendo necessário realizar um planejamento antecipado pa",
+        "comments": [
+          {
+            "created": "2026-09-22T16:50:36.837Z",
+            "by": "Fábio Vidart",
+            "text": "@ @ \nAbrimos a SR 4-0003839520 para análise da Oracle. O objetivo é ser tratado de forma preventiva a nível de capacidade e evitar qualquer falha com relação ao alto tráfego. Resgatamos também o que foi tratado no histórico da SR SR 4-0001220950 na questão do Slot Variation e na manutenção de cache, buscando entender se houve melhorias nesse quesito e também no que é recomendado pela Oracle nesse sentido de personalização de públicos que foi uma recomendação da própria Oracle.\nA SR está em análise. Estamos no aguardo.\nSegue detalhes descritos na SR 4-0003839520:\nOlá, equipe de Suporte Oracle,\nEstamos abrindo esta SR de forma preventiva em preparação para a **Black Friday 2026**.\nNosso objetivo é realizar uma revisão preventiva do ambiente Oracle Commerce Cloud e identificar eventuais pontos de atenção relacionados a configuração, capacidade, infraestrutura, cache, CDN, escalabilidade, monitoramento ou arquitetura que possam impactar a estabilidade e a performance da plataforma durante o período esperado de alto tráfego.\nDurante o período da Black Friday anterior, tivemos uma indisponibilidade no site, que foi investigada por meio da **SR 4-0001220950**.\nDe acordo com a análise fornecida pela Oracle naquela SR, foi identificado e bloqueado um **evento de DoS**. A Oracle também informou que, após o evento de ataque, o site levou aproximadamente **5 minutos para se recuperar completamente**, e um dos fatores mencionados foi o fato de o conteúdo da página inicial não possuir cach"
+          },
+          {
+            "created": "2026-09-21T17:20:57.727Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "@Fábio Vidart"
+          }
+        ]
+      },
+      {
+        "id": 41509,
+        "type": "Melhoria",
+        "title": "Integração Server to Server Rakuten",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "18/09/2026",
+        "createdDateRaw": "2026-09-18T15:48:34.283Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke",
+          "uniqueName": "regis.ropke@lighthouseit.com.br"
+        },
+        "responsavel": "",
+        "observation": "Bloqueado pela Rakuten: o card espera credenciais da API e a resposta às dúvidas de homologação.",
+        "srCandidates": [],
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Objetivo \n Implementar um mecanismo de rastreamento preciso, confiável e automatizado das vendas originadas por links de afiliados da Rakuten nos canais digitais da Salon Line (Site e App), utilizando comunicação Server-to-Server (S2S) . Descrição Será implementado um fluxo para captura, processamento e envio dos eventos de conversão à plataforma de afiliados da Rakuten por meio de uma comunicação Server-to-Server (S2S) . O fluxo deverá considerar as informações necessárias para identificar a conversão e realizar sua correta atribuição ao afiliado, contemplando os canais Site e App e respeitando as particularidades técnicas de cada canal. \n \nA definição da arquitetura e da estratégia de inte",
+        "comments": [
+          {
+            "created": "2026-10-05T17:54:28.287Z",
+            "by": "Fábio Vidart",
+            "text": "Ok @ , vou bloquear o card para aguardar essa resposta e darmos continuidade nas outras demandas."
+          },
+          {
+            "created": "2026-10-05T16:57:55.603Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "@Regis Ropke  encaminhei as suas dúvidas para o time da Rakuten, assim que me retornarem, atualizo aqui no card."
+          },
+          {
+            "created": "2026-10-05T15:15:48.423Z",
+            "by": "Regis Ropke",
+            "text": "@luana.santos salonline.com.br , segue algumas duvidas e acessos necessarios para o desenvolvimento\nVamos implementar o rastreamento de conversões da Salon Line via S2S utilizando a Advertiser Transaction API (REST). Para isso, precisamos: \n Acessos \n - client_id e client_secret da Transaction API \n \n- Nosso advertiser_id \n \n- Acesso ao Advertiser Dashboard \n \n- Contato do Implementation Specialist \n \n Testes \n - Existe sandbox/conta de teste? Caso não, como devemos validar pedidos de teste? \n \n- Um link de afiliado (ou ranSiteID ) de teste \n \n Dúvidas técnicas \n - Qual o corpo exato da requisição POST /token ( grant_type , scope etc.)? \n \n- Temos cupons exclusivos por afiliado cadastrados (ex.: UOL12, BRADESCO10, CLARO10, TICKET10SL, ESTADAO10SL, RAKUTEN13OFF…). Confirmam que esses cupons estão configurados como Linkless no programa e que devemos enviar via API os pedidos que os utilizarem, mesmo sem click_id ? E, quando o pedido tiver click_id de um afiliado e cupom de outro, enviamos os dois e a Rakuten decide a atribuição? \n \n- O endpoint /refunds aceita Idempotency-Key ? Devolução parcial por item é obrigatória ou podemos iniciar apenas com cancelamento total? \n \n Alinhamentos \n - Podemos receber os links de afiliado diretamente nas páginas do site (home/PDP) com o parâmetro ranSiteID , sem página de entrada dedicada? \n \n- Como tratar o pixel atual (tag 126083 via GTM) após a virada para S2S, evitando contagem duplicada?"
+          }
+        ]
+      },
+      {
+        "id": 41513,
+        "type": "Melhoria",
+        "title": "Algolia | Spike Técnico: Viabilidade de Instalação (widgets/showcase/js)",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "18/09/2026",
+        "createdDateRaw": "2026-09-18T18:59:18.69Z",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
+        "responsavel": "",
+        "observation": "Pronto para publicar em produção: estudo de viabilidade do InstantSearch da Algolia, já disponível em TST.",
+        "srCandidates": [],
+        "reason": "Moved to state Ready PRD",
+        "descriptionExcerpt": "Objetivo: O objetivo desta tarefa é realizar um estudo de viabilidade técnica para avaliar a integração do mecanismo de busca e recomendação da Algolia com a nossa plataforma de e-commerce, utilizando os componentes da biblioteca de interface ( widgets showcase / InstantSearch). Descrição: Realizar uma análise de arquitetura baseada na documentação oficial do Algolia (widgets/showcase/js) para mapear: \n - As formas de instalação da biblioteca no nosso ambiente;\n \n- A compatibilidade dos widgets de busca com a nossa estrutura atual de front-end. \n Entregáveis do Spike Técnico: - Avaliar como a Algolia será integrada ao OCC e a recomendação oficial de instalação e padrões de implementação.\n \n-",
+        "comments": [
+          {
+            "created": "2026-09-30T17:27:34.293Z",
+            "by": "Julio Lima",
+            "text": "## Validação TST \n* Instant Search adicionado corretamente\n![validacaoTST.gif](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/8a859d72-f70e-41e2-886c-43cab7404d59?fileName=validacaoTST.gif) \n*mobile*\n![validacaoMobileTST.gif](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/07c05ee4-c540-45e4-8cb7-7f620d129751?fileName=validacaoMobileTST.gif) \n--------------------------------------------------------------------------------------------------\n* Navegando para o resultado \n![validacao2TST.gif](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/f6a1934d-8ba0-41d7-8924-5580e6e9e54a?fileName=validacao2TST.gif) \n--------------------------------------------------------------------------------------------------"
+          },
+          {
+            "created": "2026-09-25T23:07:39.73Z",
+            "by": "Ewerton Bezerra",
+            "text": "Consegui realizar uma implementação inicial em cima do instant search.\nEstou subindo para o ambiente de TST e já libero para testes, ainda não é uma fase final mas já é possível realizar testes e entender se de fato iremos seguir da forma que está.\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/85a3c448-671c-437a-a62f-68ce8fa6b2b3?fileName=image.png) \n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/87cef7bf-ddbe-4c6a-bb17-05a644d9d5c6?fileName=image.png) \nTambém gostaria de ressaltar que temos alguns componentes que podem ser modificados (usando a versão que já está disponível na documentação) https://www.algolia.com/doc/guides/building-search-ui/widgets/showcase/js"
+          },
+          {
+            "created": "2026-09-24T18:25:01.377Z",
+            "by": "marta.bispo salonline.com.br",
+            "text": "pessoal, boa tarde, \n Incluindo aqui o roteiro de implantação para apoiar os times nas sesões de trabalho com a algolia.  \n https://docs.google.com/spreadsheets/d/14ufFRPhzuO8wp1i6kVqbwCrg8NndiC1e-zwT21J3beM/edit?gid=584875024#gid=584875024 \n \n Também foi criado o acesso de vocês na plataforma, avisem se precisarem de algum acesso extra:"
+          }
+        ]
+      },
+      {
+        "id": 41515,
+        "type": "Melhoria",
+        "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "18/09/2026",
+        "createdDateRaw": "2026-09-18T19:52:14.257Z",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
+        "responsavel": "",
+        "observation": "Pronto para publicar em produção: indexação do catálogo Oracle na Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state Ready PRD",
+        "descriptionExcerpt": "Objetivo: - Mapear os atributos disponíveis no Oracle para o primeiro índice. \n- Identificar campos adicionais necessários para relevância e ordenação, como vendas dos últimos 90 dias.  \n- Validar acesso ao Sandbox e às credenciais da Algolia. \n- Realizar a integração do catálogo Oracle com a Algolia e a estruturação do processo de envio dos dados.  \n Critérios de aceite: catálogo previsto enviado e consultável na Algolia \n \n Documentações: - Getting Started \n \n- Importing Data \n \n- Push to Algolia \n \n- Prepare Your Data for Algolia \n \n- Partial Updates"
+      },
+      {
+        "id": 41516,
+        "type": "Melhoria",
+        "title": "Algolia | Eventos & Analitycs",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "18/09/2026",
+        "createdDateRaw": "2026-09-18T20:07:31.137Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em teste LH: eventos de visualização, clique e conversão da Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Implementar no Site OCC os eventos de view , click e conversion acordados para as jornadas de busca e navegação. Documentar os pontos de disparo, os dados enviados e validar o recebimento na Algolia, atendendo à recomendação de disponibilizar dados para Analytics e funcionalidades de IA. Documentações: - Insights API Overview \n \n- Analytics Overview \n \n- https://www.algolia.com/doc/guides/sending-events/concepts/event-types",
+        "comments": [
+          {
+            "created": "2026-10-05T15:13:39.447Z",
+            "by": "Ewerton Bezerra",
+            "text": "Implementado o envio dos enventos conforme documentação:\n**Deslogado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/02427f25-5a5e-4cd6-9571-e878b11f1a0c?fileName=image.png) \n**Logado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b2a0f98d-a3d6-4349-b960-382a4c695c2f?fileName=image.png)"
+          },
+          {
+            "created": "2026-10-01T14:19:13.567Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Eventos implementados no APP:  \n \n \n @Ewerton Bezerra   @Fábio Vidart"
+          },
+          {
+            "created": "2026-10-01T14:14:51.977Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Analytics Tags As tags podem ser utilizadas para classificar a origem e o contexto das buscas.\n Exemplos:\n - \nSite / App\n- \nUsuário logado / deslogado\n- \nBusca realizada pelo autocomplete\n- \nOrigem específica da busca\n A utilização dessas tags não é obrigatória, mas é considerada uma boa prática , pois permite análises e segmentações mais específicas.\n Também foi reforçada a necessidade de manter um padrão de nomenclatura entre Site e App . Os nomes não precisam ser necessariamente idênticos, mas devem seguir uma mesma lógica.\n Eventos Após a configuração das buscas, o próximo passo é implementar os eventos que serão enviados para a Algolia.\n A documentação apresentada durante a reunião foi:\n Documentação Algolia — Event Types \n Os eventos podem ser classificados por prioridade:\n Alta prioridade São os principais eventos para a mensuração da jornada e devem ser priorizados na implementação:\n - clickedObjectIDsAfterSearch \n- convertedObjectIDsAfterSearch \n- addedToCartObjectIDsAfterSearch \n- purchasedObjectIDsAfterSearch \n Média prioridade Devem ser implementados posteriormente, pois possuem menor impacto na alimentação dos dados da Algolia:\n - clickedObjectIDs \n- convertedObjectIDs \n- addedToCartObjectIDs \n- purchasedObjectIDs \n Baixa prioridade Eventos complementares. Um exemplo citado foi o viewObjectIDs , que pode ser utilizado na PDP para informar à Algolia que determinado produto foi visualizado:\n - viewedObjectIDs \n- clickedFilters \n- convertedFilters \n- viewedFilters \n"
+          }
+        ]
+      },
+      {
+        "id": 41577,
+        "type": "Melhoria",
+        "title": "Envelopamento do Site — Black Friday",
+        "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "23/09/2026",
+        "createdDateRaw": "2026-09-23T16:53:19.993Z",
+        "assignedTo": {
+          "displayName": "Regis Ropke"
+        },
+        "responsavel": "",
+        "observation": "Em desenvolvimento: envelopamento visual do site para a campanha de Black Friday.",
+        "srCandidates": [],
+        "reason": "Moved to state Active",
+        "descriptionExcerpt": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI. \n A entrega deverá estar concluída até 1º de novembro . \n Requisitos/Regras - Aplicar a identidade visual da campanha nas áreas definidas do site. \n- Contemplar as versões Desktop e Mobile. \n- Garantir a responsividade dos elementos. \n- Validar a exibição das imagens, banners, textos e links. \n- Manter a usabilidade e a performance do",
+        "comments": [
+          {
+            "created": "2026-09-29T15:21:29.797Z",
+            "by": "daniela.damasceno salonline.com.br",
+            "text": "Cor que vamos utilizae no envelopamento \n Black Crow — #080806 - \nRGB: rgb(8, 8, 6)"
+          },
+          {
+            "created": "2026-09-28T16:51:06.497Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Virada no dia 02/11"
+          },
+          {
+            "created": "2026-09-23T17:02:20.413Z",
+            "by": "daniela.damasceno salonline.com.br",
+            "text": "Realizar o envelopamento do site para a campanha de Black Friday, garantindo que a identidade visual seja aplicada de forma consistente na versão Web. \n Descrição Desenvolver e disponibilizar o envelopamento visual do site, contemplando as adaptações necessárias para Desktop e Mobile, conforme os layouts e materiais aprovados pelas equipes de Marketing e UX/UI.\n A entrega deverá estar concluída até 1º de novembro .\n Requisitos/Regras - \nAplicar a identidade visual da campanha nas áreas definidas do site.\n- \nContemplar as versões Desktop e Mobile.\n- \nGarantir a responsividade dos elementos.\n- \nValidar a exibição das imagens, banners, textos e links.\n- \nManter a usabilidade e a performance do site.\n- \nRealizar os testes antes da publicação em produção.\n Critérios de validação - \nEnvelopamento aplicado corretamente nas páginas previstas.\n- \nElementos visuais funcionando em Desktop e Mobile.\n- \nLinks e redirecionamentos validados.\n- \nAusência de quebras de layout ou problemas de carregamento.\n- \nAprovação final das áreas responsáveis.\n Prazo Data de entrega: 1º de novembro."
+          }
+        ]
+      },
+      {
+        "id": 41676,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar userToken nos eventos",
+        "state": "In Test Light",
+        "statusLabel": "Em Testes LH",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T01:59:53.97Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em teste LH: identificador de usuário nos eventos e nas consultas da Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state In Test Light",
+        "descriptionExcerpt": "Aplicar o userToken de forma\nconsistente nas consultas e nos eventos do Site OCC, para permitir a associação\ndas interações de uma mesma jornada. \n \n \n Critérios de aceite: Consultas e eventos de uma mesma jornada de teste utilizam o\nidentificador esperado, conforme a regra aprovada. \n \n \n Documentação:  https://www.algolia.com/doc/guides/sending-events/concepts/usertoken",
+        "comments": [
+          {
+            "created": "2026-10-05T15:14:00.207Z",
+            "by": "Ewerton Bezerra",
+            "text": "Implementado o envio dos enventos conforme documentação:\n**Deslogado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/02427f25-5a5e-4cd6-9571-e878b11f1a0c?fileName=image.png) \n**Logado:**\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/b2a0f98d-a3d6-4349-b960-382a4c695c2f?fileName=image.png)"
+          },
+          {
+            "created": "2026-10-01T14:12:29.343Z",
+            "by": "luana.santos salonline.com.br",
+            "text": "Identificação do usuário User Token O User Token é utilizado pela Algolia para identificar um usuário durante sua interação com a plataforma.\n Principais pontos:\n - \nÉ um identificador anônimo .\n- \nNão depende do usuário estar logado.\n- \nDeve ser persistido no navegador.\n- \nO mesmo token deve permanecer consistente durante a experiência do usuário.\n- \nA recomendação apresentada foi manter o token por aproximadamente 90 dias , realizando sua renovação posteriormente.\n- \nÉ necessário considerar a estratégia de persistência e cookies no Site.\n- \nA geração do token pode utilizar a biblioteca disponibilizada pela Algolia.\n- \nO formato do ID não é o principal ponto; o mais importante é que ele seja único e consistente .\n Site x App - \nSite e App podem possuir User Tokens diferentes quando o usuário está navegando de forma anônima.\n- \nCaso o usuário faça login, existe a possibilidade de utilizar um identificador autenticado ( authenticatedUserToken ) para associá-lo especificamente à sua conta.\n- \nPortanto, o token anônimo identifica a experiência do usuário, enquanto o authenticatedUserToken permite identificar o usuário autenticado.\n @Fábio Vidart   @Ewerton Bezerra"
+          }
+        ]
+      },
+      {
+        "id": 41677,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Recent Searches",
+        "state": "Ready PRD",
+        "statusLabel": "Pronto para Publicar PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:14:43.083Z",
+        "assignedTo": {
+          "displayName": "luana.santos salonline.com.br"
+        },
+        "responsavel": "",
+        "observation": "Pronto para publicar em produção: buscas recentes salvas no navegador e reaproveitadas no autocomplete.",
+        "srCandidates": [],
+        "reason": "Moved to state Ready PRD",
+        "descriptionExcerpt": "Armazenar localmente no navegador as buscas recentes realizadas no Site OCC e permitir sua reutilização no autocomplete.\n \n \n \n Critérios de aceite: histórico persistido localmente; termos recentes exibidos; seleção de um termo executa a busca correspondente; remoção funciona conforme a regra aprovada; validação no desktop e mobile web.",
+        "comments": [
+          {
+            "created": "2026-10-05T15:14:36.787Z",
+            "by": "Ewerton Bezerra",
+            "text": "implementado:\n![image.png](https://dev.azure.com/lighthouseinnovation/67da89b8-4edf-48b9-ada4-5c67e8367616/_apis/wit/attachments/3d433557-5380-4217-b205-9605bcd27a95?fileName=image.png)"
+          }
+        ]
+      },
+      {
+        "id": 41680,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Federated Search",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:38:18.69Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: busca federada no autocomplete da Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state New",
+        "descriptionExcerpt": "Implementar no autocomplete do Site OCC a experiência de busca federada, consultando os índices definidos para apresentar sugestões de termos e produtos populares, junto ao histórico local de buscas recentes. \n Critérios de aceite: índices e fontes documentados; sugestões de termos e produtos populares apresentados conforme o comportamento aprovado; seleções executam a busca ou navegação correspondente; funcionamento validado no desktop e mobile web. \n \n \n Documentação:  \n \n - https://www.algolia.com/doc/guides/solutions/ecommerce/search/autocomplete/federated-search"
+      },
+      {
+        "id": 41681,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia nas páginas de categoria",
+        "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:49:37.79Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em desenvolvimento: consulta de produtos das páginas de categoria pela Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state Active",
+        "descriptionExcerpt": "Integrar as páginas de categoria do Site OCC à Algolia para consultar e apresentar os produtos correspondentes à categoria acessada, mantendo uma experiência consistente entre busca e navegação. Registrar o atributo ou filtro utilizado para identificar cada categoria e reutilizar os componentes de resultados aplicáveis. \n Critérios de aceite: categorias de referência apresentam os produtos correspondentes; filtros e navegação funcionam conforme o comportamento aprovado; consultas utilizam a identificação correta da categoria; validação no desktop e mobile web."
+      },
+      {
+        "id": 41682,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar AnalyticsTags",
+        "state": "Blocked",
+        "statusLabel": "Bloqueado",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:55:07.147Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Bloqueado pela área de negócios: faltam os nomes das Analytics Tags de cada tela.",
+        "srCandidates": [],
+        "reason": "Moved to state Blocked",
+        "descriptionExcerpt": "Enviar nas consultas da Algolia realizadas pelo Site OCC as AnalyticsTags definidas pela área de negócios para identificar a origem das buscas e permitir a segmentação no Analytics. Implementar o mapeamento das tags por tela após a disponibilização da definição prevista na linha 22. \n \n \n Dependência: definição prévia de nomes e valores por tela pela área de negócios. \n \n \n Critérios de aceite: mapeamento de telas e tags documentado; consultas enviam os valores definidos; segmentação validada no Analytics.",
+        "comments": [
+          {
+            "created": "2026-10-02T21:27:15.847Z",
+            "by": "Fábio Vidart",
+            "text": "Área de negócios precisa especificar quais Tags devem ser incluídas em cada tela para auxiliar no rastreamento de onde a busca foi originada. \nLinha 22."
+          }
+        ]
+      },
+      {
+        "id": 41683,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia em Collections",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
+        "createdDate": "25/09/2026",
+        "createdDateRaw": "2026-09-26T02:58:23.85Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: avaliar o uso da Algolia nas collections.",
+        "srCandidates": [],
+        "reason": "Moved to state New",
+        "descriptionExcerpt": "Avaliar a disponibilidade dos atributos que identificam as coleções no catálogo Oracle e sua inclusão nos registros da Algolia. Considerar o uso de CategoryPageID , conforme a recomendação do roadmap, e documentar a alternativa adotada. Caso seja definida a integração das páginas de Collections à Algolia, mapear e enviar os atributos necessários e implementar a consulta correspondente. A renderização atual poderá ser mantida. \n Critérios de aceite: disponibilidade dos atributos e alternativa adotada documentadas; quando aprovada a integração, atributos enviados e Collections de referência retornando os produtos esperados;"
+      },
+      {
+        "id": 41756,
+        "type": "Melhoria",
+        "title": "Algolia | Criar replicas de ordenação e filtros",
+        "state": "Active",
+        "statusLabel": "Em Desenvolvimento",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDate": "01/10/2026",
+        "createdDateRaw": "2026-10-01T12:17:31.067Z",
+        "assignedTo": {
+          "displayName": "Ewerton Bezerra",
+          "uniqueName": "ewerton.bezerra@lighthouseit.com.br"
+        },
+        "responsavel": "",
+        "observation": "Em desenvolvimento: réplicas de ordenação por preço e mais vendidos e índice de filtros na Algolia.",
+        "srCandidates": [],
+        "reason": "Moved to state Active",
+        "descriptionExcerpt": "Precisamos criar as replicas de index para ordenação (Preço menor, preço maior, mais vendidos) assim como também deverá ser criado o index de filtros dentro da plataforma da Algolia."
+      },
+      {
+        "id": 41786,
+        "type": "Melhoria",
+        "title": "Algolia | Adaptar FrontEnd da busca",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-10-01T20:08:20.603Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em revisão de código: autocomplete da busca. Há correções em aberto no menu da Algolia, no clique do produto e após a busca.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "01/10/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41820,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "state": "Code Review",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "sprint": "Sprint 77",
+        "iterationTimeFrame": "current",
+        "createdDateRaw": "2026-10-02T20:45:09.937Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "Em revisão de código: atualização incremental do catálogo. O preço atualiza no índice, mas o front dos resultados ainda não reflete a alteração.",
+        "reason": "Moved to state Code Review",
+        "srCandidates": [],
+        "createdDate": "02/10/2026",
+        "statusLabel": "Em revisão de código"
+      },
+      {
+        "id": 41870,
+        "type": "Melhoria",
+        "title": "Algolia - Trazer informações de venda",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "06/10/2026",
+        "createdDateRaw": "2026-10-06T12:51:02.587Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: incluir informações de venda de 30, 60 e 90 dias na indexação do produto.",
+        "srCandidates": [],
+        "reason": "Moved to state New",
+        "descriptionExcerpt": "Trazer informações de venda no produto, na indexação (30/60/90)."
+      },
+      {
+        "id": 41913,
+        "type": "Bug",
+        "title": "Slider de imagens do produto inconsistente",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "07/10/2026",
+        "createdDateRaw": "2026-10-07T19:06:45.763Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: o slider de imagens da PDP volta para a primeira imagem e impede ver o restante.",
+        "srCandidates": [],
+        "reason": "New"
+      },
+      {
+        "id": 41928,
+        "type": "Melhoria",
+        "title": "Análise de Segurança: Alerta de Vazamento de Credenciais",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "08/10/2026",
+        "createdDateRaw": "2026-10-08T13:12:59.363Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: alerta da Gemina sobre vazamento de credenciais do domínio, com baixa amostragem.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      },
+      {
+        "id": 41949,
+        "type": "Melhoria",
+        "title": "Algolia - Incluir campos relavantes de produto no index",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
+        "createdDate": "08/10/2026",
+        "createdDateRaw": "2026-10-08T18:11:20.427Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: enviar à Algolia os campos de produto que ainda faltam para filtro e ranqueamento.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      }
+    ],
+    "excludedBecauseProductBacklog": [
+      {
+        "id": 39624,
+        "title": "Inclusão de novos campos no formulário da central de atendimento",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37871,
+        "title": "Análise de Performance do Site",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37626,
+        "title": "Inclusão de Apple Pay e Google Pay como formas de pagamento",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37408,
+        "title": "Ajustar exibição de mensagem de frete grátis no cálculo de frete",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37148,
+        "title": "Integração App SEO + Oracle",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37147,
+        "title": "Integração \"Viva Você Studio\" + Ecomm",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 37101,
+        "title": "Implementação no Modal de Visualização Rápida (Quick View) – PLP Web e Mobile",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10644,
+        "title": "Boleto Pago Após o Vencimento",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10100,
+        "title": "Indexação não está sendo refletida no Front - Categorias não são atualizadas",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 9260,
+        "title": "Request para Cotação de Frete com divergências - PESO INCORRETO",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 23616,
+        "title": "Problema/Cronograma-Capilar exibindo imagens quebradas",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10004,
+        "title": "Produtos sendo exibidos como \"Grátis\" no carrinho incorretamente",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 9669,
+        "title": "Valor TOTAL de pedido parcelado COM Juros está sendo exibido com soma incorreta",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35776,
+        "title": "[COMPRA RECORRENTE] Landing Page do Programa",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35775,
+        "title": "[COMPRA RECORRENTE] Admin de Compras Recorrentes (Gerenciamento)",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35774,
+        "title": "[COMPRA RECORRENTE] Identificação da Compra Recorrente em Meus Pedidos",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35773,
+        "title": "[COMPRA RECORRENTE] Regras de Preço, Descontos e Operação da Recorrência",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35772,
+        "title": "[COMPRA RECORRENTE] Carrinho e Checkout com Compra Recorrente",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35771,
+        "title": "[COMPRA RECORRENTE] Contratação da Compra Recorrente na PDP",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35285,
+        "title": "Exibir até 4 produtos por categoria",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35284,
+        "title": "Remover opção “Máscara” e ajustar impactos",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 35283,
+        "title": "Aplicar UI do Quiz conforme Figma",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 27864,
+        "title": "Melhorar experiência do usuário deslogado",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 27152,
+        "title": "Criar a autenticação para acessar as paginas de config personalizadas",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 24585,
+        "title": "Melhoria na Experiência do Usuário – Mensagem no Modal de CPF",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 21540,
+        "title": "Bug de espaçamento no header ao renderizar a pagina",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 21214,
+        "title": "Autenticação Apple - ( Sign in with Apple )",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 19425,
+        "title": "Cotação de Frete na Pagina de Produtos",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 17326,
+        "title": "Implementação de Content Security Policy (CSP)",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 13805,
+        "title": "Realizar a atualização automática do site map",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10106,
+        "title": "Botões para contato da pagina \"central de relacionamento\" não funciona no mobile. ",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 10105,
+        "title": "Desktop não está responsivo ",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 9409,
+        "title": "Exibição em telas pequenas está quebrando",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 9302,
+        "title": "Divergência request de Cotação de frete - ENDEREÇO PRINCIPAL VS SECUNDÁRIO",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      },
+      {
+        "id": 9211,
+        "title": "Pedido com quantidades e valores divergentes",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "sprint": "Backlog",
+        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
+      }
+    ],
+    "excludedBecauseMonitoring": [
+      {
+        "id": 41755,
+        "title": "Preço zerado em produtos após retorno null no endpoint listProducts",
+        "state": "Monitoring",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Monitoramento. Fora do slide de Backlog Atual, a pedido."
+      },
+      {
+        "id": 41401,
+        "title": "Erro ao fechar pedido / Recalculo dos descontos",
+        "state": "Monitoring",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Monitoramento. Fora do slide de Backlog Atual, a pedido."
+      },
+      {
+        "id": 40351,
+        "title": "Pedidos com o erro \"Valor de Meio incorreto para PED_CLIENTE\"",
+        "state": "Monitoring",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Monitoramento. Fora do slide de Backlog Atual, a pedido."
+      }
+    ],
+    "excludedBecauseValidationPRD": [
+      {
+        "id": 41853,
+        "title": "Adicinar a marca Trata no menu",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Validação (PRD). Já entregue, fora do slide de Backlog Atual."
+      },
+      {
+        "id": 40639,
+        "title": "Permitir vídeo ou GIF na PDP",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "reason": "Em Validação (PRD). Já entregue, fora do slide de Backlog Atual."
+      }
+    ],
+    "order": "Data de abertura, da mais antiga para a mais recente.",
+    "sprintMovesOn2026-10-08": [
+      {
+        "id": 38287,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 39839,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 40290,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 40638,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41680,
+        "from": "Sprint 77",
+        "to": "Sprint 78"
+      },
+      {
+        "id": 41683,
+        "from": "Sprint 77",
+        "to": "Sprint 78"
+      },
+      {
+        "id": 41870,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41913,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41928,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41949,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      }
+    ]
+  },
+  "otherOpenWorkItems": {
+    "count": 72,
+    "byTypeAndState": {
+      "Epic|New": 2,
+      "Task|Active": 2,
+      "Task|Blocked": 5,
+      "Task|In Test Customer": 1,
+      "Task|New": 30,
+      "Task|Validation PRD": 2,
+      "Test Task|New": 1,
+      "User Story|Active": 1,
+      "User Story|New": 28
+    },
+    "items": [
+      {
+        "id": 9465,
+        "type": "Task",
+        "title": "[SEO] Meta Title e SEO Description nas LPs",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "Gianluca Ferreira",
+          "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
+        },
+        "createdDate": "22/12/2023",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 9568,
+        "type": "Task",
+        "title": "[SEO] Nova formatação Sitemap ",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "Gianluca Ferreira",
+          "uniqueName": "gianluca.ferreira@lighthouseit.com.br"
+        },
+        "createdDate": "03/01/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10039,
+        "type": "User Story",
+        "title": "[PROBLEMAS PASSADOS PARA MONITORAR]",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "assignedTo": null,
+        "createdDate": "18/01/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10173,
+        "type": "User Story",
+        "title": "[BACKLOG DE SUPORTE]",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "24/01/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10188,
+        "type": "Task",
+        "title": "Email de Nota Fiscal com Layout antigo (Enviar HTML para a NDD)",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "24/01/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10246,
+        "type": "Task",
+        "title": "Revisar as opções de Configurações do Site que não estão sendo mais utilizadas",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "26/01/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10281,
+        "type": "Task",
+        "title": "Incluir Link de redirecionamento para whatsapp no rodapé do site",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "29/01/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10578,
+        "type": "Task",
+        "title": "SR 3-35639854251 : [Proactive SR Created By Oracle] Non stop Publishing & Indexing detected - Provide guidance",
+        "state": "In Test Customer",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "marta.bispo salonline.com.br",
+          "uniqueName": "marta.bispo@salonline.com.br"
+        },
+        "createdDate": "06/02/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10579,
+        "type": "User Story",
+        "title": "[SEO] Image Sitemap",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "06/02/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 10647,
+        "type": "User Story",
+        "title": "[CRM] Sugestão de Principais provedores de email na criação do Cadastro e preenchimento de email nos Formulários de CRM",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "07/02/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11009,
+        "type": "Task",
+        "title": "Desenvolver uma mensagem de alerta personalizada para notificar o cliente quando o pagamento dos pedidos não forem autorizados ",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "22/02/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11221,
+        "type": "Task",
+        "title": "[ADMIN] Remover acessos não autorizado do ambiente de PRD",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "03/03/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11222,
+        "type": "User Story",
+        "title": "Restringir permissões de acessos a funcionalidades de ADMIN",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "marta.bispo salonline.com.br",
+          "uniqueName": "marta.bispo@salonline.com.br"
+        },
+        "createdDate": "03/03/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11410,
+        "type": "Task",
+        "title": "Adicionar Video no Carrossel de Imagens em Pdp",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "08/03/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11730,
+        "type": "Task",
+        "title": "Produto Infinity - Plugin form tracking - Pagamento Cartão Novo",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "marta.bispo salonline.com.br",
+          "uniqueName": "marta.bispo@salonline.com.br"
+        },
+        "createdDate": "19/03/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11770,
+        "type": "Task",
+        "title": "Definição de processo de trabalho",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "20/03/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11829,
+        "type": "Task",
+        "title": "Criar repositório e versionar SSes (Legado)",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "Lucas Borges",
+          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
+        },
+        "createdDate": "22/03/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 11926,
+        "type": "Task",
+        "title": "Análise Cenário",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "marta.bispo salonline.com.br",
+          "uniqueName": "marta.bispo@salonline.com.br"
+        },
+        "createdDate": "27/03/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 12026,
+        "type": "User Story",
+        "title": "Analise SSE's - Salon line",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "Lucas Borges",
+          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
+        },
+        "createdDate": "01/04/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 12481,
+        "type": "Test Task",
+        "title": "teste",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Novas Funcionalidades Abril",
+        "assignedTo": null,
+        "createdDate": "15/04/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 12622,
+        "type": "User Story",
+        "title": "Mini PDP Visualização Rápida",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "17/04/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 13115,
+        "type": "Task",
+        "title": "Analisar itens que devem ser equalizados em PRD e TST",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "Lucas Borges",
+          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
+        },
+        "createdDate": "29/04/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 14293,
+        "type": "User Story",
+        "title": "Manter a sessão Logada Por mais tempo (como é no GMail)",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "03/06/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 15477,
+        "type": "User Story",
+        "title": "[CHECKOUT] Informar o prazo de Pagamento do Pix e do Boleto no Emails Transacionais de Pedido Realizado",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "27/06/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 16400,
+        "type": "Task",
+        "title": "Api para detectar pedidos com profileId errado ou sem cpf e mp",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "16/07/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 18531,
+        "type": "User Story",
+        "title": "Melhorias na experiencia de uso do Quiz \"Monte seu Kit\"",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "03/09/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 19258,
+        "type": "User Story",
+        "title": "Mostrar a Timeline do último pedido (mais recente) na tela de \"Meus Pedidos\"",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "20/09/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 19259,
+        "type": "Task",
+        "title": "Realizar a Atualização Manual",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "kauan.oliveira salonline.com.br",
+          "uniqueName": "kauan.oliveira@salonline.com.br"
+        },
+        "createdDate": "20/09/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 19547,
+        "type": "User Story",
+        "title": "[CHECKOUT] Informação de Valor Total na barra flutuante do Checkout Mobile",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "27/09/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 20236,
+        "type": "Task",
+        "title": "Queda no número de fechamentos de pedidos 15/10 as 15h",
+        "state": "Blocked",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 1",
+        "assignedTo": null,
+        "createdDate": "16/10/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 21019,
+        "type": "Task",
+        "title": "Não exibir breadcrumb quando a coleção for filha da Categoria \"Campanhas\"",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 29",
+        "assignedTo": {
+          "displayName": "kauan.oliveira salonline.com.br",
+          "uniqueName": "kauan.oliveira@salonline.com.br"
+        },
+        "createdDate": "12/11/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 21385,
+        "type": "User Story",
+        "title": "Implementar a forma nativa  (Streamshop) dos Stories de Produto",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "26/11/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 21428,
+        "type": "Task",
+        "title": "Não exibir breadcrumb quando a coleção for filha da Categoria \"Promoções\"",
+        "state": "Validation PRD",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 29",
+        "assignedTo": {
+          "displayName": "kauan.oliveira salonline.com.br",
+          "uniqueName": "kauan.oliveira@salonline.com.br"
+        },
+        "createdDate": "27/11/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 21973,
+        "type": "User Story",
+        "title": "Hub de Conteúdos",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "04/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 21975,
+        "type": "User Story",
+        "title": "LP Explicando a Inteligencia Artificial da Salon",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "04/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 22059,
+        "type": "Task",
+        "title": "Adicionar TV Salon Line no Menu",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "06/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23097,
+        "type": "Task",
+        "title": "Testes 24/12 03:00",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Time Monitoramento l Dezembro",
+        "assignedTo": {
+          "displayName": "Marcos Fortunato",
+          "uniqueName": "marcos.fortunato@lighthouseit.com.br"
+        },
+        "createdDate": "24/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23098,
+        "type": "Task",
+        "title": "Testes 24/12 06:00",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Time Monitoramento l Dezembro",
+        "assignedTo": {
+          "displayName": "Marcos Fortunato",
+          "uniqueName": "marcos.fortunato@lighthouseit.com.br"
+        },
+        "createdDate": "24/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23119,
+        "type": "Task",
+        "title": "Testes 24/12 18:00",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Time Monitoramento l Dezembro",
+        "assignedTo": {
+          "displayName": "Marcos Fortunato",
+          "uniqueName": "marcos.fortunato@lighthouseit.com.br"
+        },
+        "createdDate": "24/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23120,
+        "type": "Task",
+        "title": "Testes 25/12 00:00",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Time Monitoramento l Dezembro",
+        "assignedTo": {
+          "displayName": "Marcos Fortunato",
+          "uniqueName": "marcos.fortunato@lighthouseit.com.br"
+        },
+        "createdDate": "24/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23121,
+        "type": "Task",
+        "title": "Testes 25/12 12:00",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Time Monitoramento l Dezembro",
+        "assignedTo": {
+          "displayName": "Marcos Fortunato",
+          "uniqueName": "marcos.fortunato@lighthouseit.com.br"
+        },
+        "createdDate": "25/12/2024",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23751,
+        "type": "Epic",
+        "title": "Compra Recorrente",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 32",
+        "assignedTo": null,
+        "createdDate": "14/01/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23777,
+        "type": "User Story",
+        "title": "Melhorias na Barra de Busca do site",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "15/01/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 23778,
+        "type": "User Story",
+        "title": "[CHECKOUT] Carrinho com Seletor de itens que serão comprados",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "15/01/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 24592,
+        "type": "User Story",
+        "title": "[BACKLOG DE MELHORIAS UXUI",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "30/01/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 24677,
+        "type": "Task",
+        "title": "Documentação Mercado pago - Compras Recorrentes",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "03/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25473,
+        "type": "Epic",
+        "title": "Automação de Testes",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 35",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25474,
+        "type": "User Story",
+        "title": "Padronizar Elementos do Frontend",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25475,
+        "type": "User Story",
+        "title": "Configurar Repositório",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25476,
+        "type": "User Story",
+        "title": "Configurar Roteiro de Testes",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25477,
+        "type": "User Story",
+        "title": "Criar Pipeline",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25478,
+        "type": "Task",
+        "title": "Criar Roteiro de Login",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25479,
+        "type": "Task",
+        "title": "Roteiros de Checkout",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25480,
+        "type": "Task",
+        "title": "Feed XML",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25481,
+        "type": "Task",
+        "title": "Barra Progressiva",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25482,
+        "type": "Task",
+        "title": "Guest Checkout",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25483,
+        "type": "Task",
+        "title": "Fast Checkout (Compra Rápida)",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25484,
+        "type": "User Story",
+        "title": "Automatizar Evidências de Testes",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25487,
+        "type": "User Story",
+        "title": "Criar Preset de Testes",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25489,
+        "type": "Task",
+        "title": "Preset Deploy",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25490,
+        "type": "Task",
+        "title": "Preset Mentoria",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25491,
+        "type": "Task",
+        "title": "Preset Monitoramento",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25492,
+        "type": "Task",
+        "title": "Preset Pagamento",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25493,
+        "type": "Task",
+        "title": "Preset FeedXML",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25494,
+        "type": "Task",
+        "title": "Padronizar Elementos do fluxo de LOGIN",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "Alexandre Silva",
+          "uniqueName": "alexandre.silva@lighthouseit.com.br"
+        },
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 25495,
+        "type": "Task",
+        "title": "Padronizar Elementos",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "25/02/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 28404,
+        "type": "User Story",
+        "title": "Otimização e Manutenção das SSEs",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "26/06/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 28438,
+        "type": "Task",
+        "title": "Documentar e registrar todas as SSEs",
+        "state": "Active",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": {
+          "displayName": "Lucas Borges",
+          "uniqueName": "OIDCONFLICT_UpnReuse_1cf9b09c-0dba-6773-b74d-049b77d2f5bb_lucas.borges@lighthouseit.com.br"
+        },
+        "createdDate": "27/06/2025",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 35766,
+        "type": "User Story",
+        "title": "Compra Recorrente",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC",
+        "assignedTo": null,
+        "createdDate": "30/01/2026",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 39583,
+        "type": "User Story",
+        "title": "[Suporte] Sprint 73",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 73",
+        "assignedTo": null,
+        "createdDate": "09/07/2026",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 41378,
+        "type": "User Story",
+        "title": "[Suporte] Sprint 77",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "assignedTo": null,
+        "createdDate": "14/09/2026",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      },
+      {
+        "id": 41674,
+        "type": "User Story",
+        "title": "[Algolia] Sprint 77",
+        "state": "New",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "assignedTo": null,
+        "createdDate": "25/09/2026",
+        "inBacklogTable": false,
+        "reason": "Fora do escopo Bug/Melhoria usado na tabela do relatório, no mesmo recorte do template de agosto."
+      }
+    ]
+  },
+  "blockersMissing": [
+    {
+      "id": 10100,
+      "title": "Indexação não está sendo refletida no Front - Categorias não são atualizadas",
+      "missing": "Dono da dependência e motivo vigente do bloqueio. O último comentário é de janeiro/2024."
+    },
+    {
+      "id": 10644,
+      "title": "Boleto Pago Após o Vencimento",
+      "missing": "Card sem descrição e sem comentário. Faltam o dono da dependência e o motivo do bloqueio."
+    },
+    {
+      "id": 12356,
+      "title": "Pedido com amountAuthorized zerado",
+      "missing": "A discussão é de abril/2024 (Digibee e Mercado Pago) e não define a dependência vigente."
+    },
+    {
+      "id": 19253,
+      "title": "Pedido com erro - OCC",
+      "missing": "Card sem descrição e sem comentário. Faltam o dono da dependência e o motivo do bloqueio."
+    },
+    {
+      "id": 20412,
+      "title": "Análise: Produtos iguais não estão sendo agrupados no pedido",
+      "missing": "Há referência à SR Oracle 3-38505981351, que não está no formato 4-. Falta a SR vigente nesse formato, se existir, e o motivo atual."
+    },
+    {
+      "id": 37101,
+      "title": "Implementação no Modal de Visualização Rápida (Quick View) – PLP Web e Mobile",
+      "missing": "O estado é Blocked, mas o comentário mais recente libera o Figma. Faltam o motivo atual e o dono da dependência."
+    },
+    {
+      "id": 37148,
+      "title": "Integração App SEO + Oracle",
+      "missing": "Não há SR no formato 4- e o comentário recente informa que os ajustes solicitados já foram feitos. Faltam o motivo vigente e a SR Oracle, se a dependência continuar sendo a Oracle."
+    }
+  ],
+  "developmentDayRule": {
+    "description": "Soma dos dias úteis de cada intervalo em Active, com o dia de saída excluído (busday_count). Se a soma for zero e houve atividade em dia útil, conta 1. Calibrado nos 18 itens de agosto/2026.",
+    "holidays": "Nacionais, 20/09 somente em dia útil, 02/02 e 26/03 de Porto Alegre, Corpus Christi e Consciência Negra.",
+    "septemberItemsUpTo4BusinessDays": 7,
+    "septemberItems": 9
+  },
+  "slides6And7": {
+    "deploysKnown": true,
+    "srsKnown": true,
+    "note": "Deploys de setembro atualizados. SRs do slide ainda são as de agosto do template."
+  },
+  "validation": {
+    "bugsPlusMelhoriasEqualsDelivered": true,
+    "bugs": 2,
+    "melhorias": 7,
+    "otherClosedTypes": 3,
+    "deliveredKpi": 9,
+    "strictSumIncludingOtherTypes": 12,
+    "strictSumMatchesKpi": true,
+    "strictSumNote": "Três User Stories fechadas em setembro ficam fora do KPI, por confirmação do usuário. Bugs 2 + Melhorias 7 = 9.",
+    "developerSum": 9,
+    "identifiableActiveAssignees": 9,
+    "developerSumMatchesIdentifiable": true,
+    "historySeptemberEqualsDelivered": true,
+    "historyAugustMatchesPreviousDeck": true,
+    "historyJulyPreviousDeck": 15,
+    "historyJulyRecount": 11,
+    "historyJulyMatchesPreviousDeck": false,
+    "pendingCount": 81,
+    "pendingCountMatchesRows": true,
+    "closedDateMissing": 0,
+    "identityAmbiguous": [],
+    "userStories": 0,
+    "bugsPlusMelhoriasPlusUserStories": 9,
+    "pendingAssigneeQuestion": [],
+    "note": "Setembro conta 9 bugs e melhorias. User Stories excluídas. Julho 11 e agosto 18 permanecem no mesmo critério.",
+    "deployRows": 3,
+    "deployRowsMatchTotal": true,
+    "publishedItems": 12,
+    "publishedItemsMatchLines": true,
+    "successRate": "100%",
+    "srRows": 2,
+    "srRowsMatchTotal": true,
+    "srStatusSum": 2
+  },
+  "output": {
+    "draftPptx": "/workspace/Status Report - Salon Line - Setembro 2026 - rascunho.pptx",
+    "finalPptxNotProduced": true,
+    "reason": "Deploys e SRs ainda pendentes."
+  },
+  "userDecisions": {
+    "inTestCustomerAndReadyPrdInBacklog": true,
+    "supportUserStoriesCountAsDeliveries": false,
+    "card41344Assignee": "Regis Ropke",
+    "supportUserStoriesRule": "Confirmado em 06/10/2026: User Stories não entram. Somente Bug e Melhoria."
+  },
+  "deploys": {
+    "total": 3,
+    "publishedItems": 12,
+    "successCount": 3,
+    "successRate": "100%",
+    "statusRule": "Sucesso porque a validação pós-deploy de Julio Lima marcou todos os checks como aprovados. Horário do deploy não constava na mensagem.",
+    "items": [
+      {
+        "date": "01/09/2026",
+        "time": null,
+        "status": "Sucesso",
+        "observation": "",
+        "workItemIds": [
+          40949,
+          40838,
+          38005,
+          40608,
+          40344,
+          41059
+        ]
+      },
+      {
+        "date": "22/09/2026",
+        "time": null,
+        "status": "Sucesso",
+        "observation": "",
+        "workItemIds": [
+          40912,
+          40351,
+          40930,
+          41344,
+          41401
+        ]
+      },
+      {
+        "date": "30/09/2026",
+        "time": null,
+        "status": "Sucesso",
+        "observation": "",
+        "workItemIds": [
+          41755
+        ]
+      }
+    ]
+  },
+  "srs": {
+    "total": 2,
+    "emAnaliseOracle": 2,
+    "emAnaliseSalonLine": 0,
+    "emAnaliseLighthouse": 0,
+    "note": "Usuário confirmou em 06/10/2026 que somente estas duas SRs estão abertas. A aba que exige atenção do cliente não tem outras SRs.",
+    "items": [
+      {
+        "sr": "4-0003585464",
+        "subject": "Inconsistências recorrentes nos dados de relatórios e atualizações atrasadas de relatórios",
+        "opened": "21/08/2026",
+        "openedSource": "Data registrada no status report anterior e criação do card 40883. A tela da Oracle não exibiu a data de abertura.",
+        "lastUpdate": "06/10/2026",
+        "portalStatus": "Defeito de Revisão",
+        "status": "Em Análise Oracle",
+        "observation": "Oracle enviou plano de ação em 06/10: segue analisando o fluxo de pedidos e a falha na atualização dos relatórios, com escalação interna. Pediu retorno em até 5 dias."
+      },
+      {
+        "sr": "4-0003839520",
+        "subject": "Black Friday 2026 - Avaliação Preventiva da Prontidão e Capacidade Ambiental do OCC",
+        "opened": "22/09/2026",
+        "openedSource": "Comentário de Fábio Vidart no card 41486 em 22/09/2026: Abrimos a SR 4-0003839520.",
+        "lastUpdate": "05/10/2026",
+        "portalStatus": "Atualização da Análise",
+        "status": "Em Análise Oracle",
+        "observation": "Em 05/10 a Lighthouse detalhou os slots da home e pediu a avaliação preventiva de capacidade para a Black Friday, mantendo os Espaços de Variação de Conteúdo."
+      }
+    ]
+  }
+}
