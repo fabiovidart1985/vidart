@@ -640,10 +640,10 @@
     }
   ],
   "backlog": {
-    "count": 31,
+    "count": 33,
     "asOf": "2026-10-08",
-    "scope": "Bug e Melhoria da Sprint 77, iteração atual, nos estados que ainda estão no board, exceto Monitoramento. Não há sprint futura. Tasks, User Stories e itens Closed ficam fora. Itens em Validação (PRD) ficam de fora porque já foram entregues.",
-    "isCurrentRule": "Recorte da iteração atual e das futuras. Em 08/10/2026 só existe a Sprint 77. Itens em Monitoramento saíram do slide de Backlog Atual. Itens em Code Review voltaram porque estão no board da sprint.",
+    "scope": "Bug e Melhoria nas iterações atual e futuras (Sprint 77, Sprint 78 e Sprint 79), exceto Monitoramento e Validação (PRD). A Sprint Backlog e as sprints encerradas ficam de fora.",
+    "isCurrentRule": "Recorte da iteração atual e das futuras. Em 08/10/2026 a Sprint 77 é a atual e as Sprints 78 e 79 são futuras. Itens em Monitoramento e em Validação (PRD) continuam fora do slide.",
     "excludedBecausePastIteration": [
       {
         "id": 12356,
@@ -778,9 +778,9 @@
         "title": "PLP Outlet repete produtos ao utilizar “Ver mais produtos”",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "13/05/2026",
         "createdDateRaw": "2026-05-13T19:45:07.78Z",
         "assignedTo": null,
@@ -812,9 +812,9 @@
         "title": "Quantidade incorreta de itens sendo adicionados via Streamshop",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "16/07/2026",
         "createdDateRaw": "2026-07-16T18:16:47.893Z",
         "assignedTo": null,
@@ -829,9 +829,9 @@
         "title": "[PDP] Cards de produtos relacionados duplicam o símbolo de moeda no parcelamento  Descrição",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "30/07/2026",
         "createdDateRaw": "2026-07-30T17:04:58.273Z",
         "assignedTo": null,
@@ -846,9 +846,9 @@
         "title": "Exibir itens de lançamento nas sugestões do Cronograma Capilar (Quiz)",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "12/08/2026",
         "createdDateRaw": "2026-08-12T13:30:25.413Z",
         "assignedTo": null,
@@ -1082,6 +1082,40 @@
             "text": "Widget: _RitualEmPassos\n \n 3 campos customizados novos no produto, todos texto, separados por \"|\" (pipe), na mesma ordem entre si:\n - sl_ritualTitulos: título de cada passo (ex: Aplique|Massageie|Aguarde|Enxágue)\n - sl_ritualDescricoes: descrição de cada passo\n - sl_ritualIcones: palavra-chave do ícone de cada passo — só aceita: aplicar, aguardar, enxaguar (minúsculo, sem acento)\n \n Sem esses campos preenchidos, o widget não aparece na PDP (comportamento esperado).\n Obs: só existem 3 ícones hoje — se o Figma pedir um 4º ícone diferente, ainda está em aberto com o design."
           }
         ]
+      },
+      {
+        "id": 41483,
+        "type": "Melhoria",
+        "title": "[PDP] Avaliações",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:15:51.37Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: seção de avaliações da PDP no novo layout, avaliando implementar o front internamente com a API da YourViews.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
+      },
+      {
+        "id": 41484,
+        "type": "Melhoria",
+        "title": "[PDP] Tire suas dúvidas",
+        "state": "New",
+        "statusLabel": "À fazer",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
+        "createdDate": "17/09/2026",
+        "createdDateRaw": "2026-09-17T15:18:41.037Z",
+        "assignedTo": null,
+        "responsavel": "",
+        "observation": "A fazer: seção Tire suas dúvidas da PDP no novo layout, avaliando implementar o front internamente com a API da YourViews.",
+        "srCandidates": [],
+        "reason": "Moved to state New"
       },
       {
         "id": 41485,
@@ -1371,9 +1405,9 @@
         "title": "Algolia | Implementar Federated Search",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T02:38:18.69Z",
         "assignedTo": null,
@@ -1432,9 +1466,9 @@
         "title": "Algolia | Adicionar a Algolia em Collections",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "sprint": "Sprint 78",
+        "iterationTimeFrame": "future",
         "createdDate": "25/09/2026",
         "createdDateRaw": "2026-09-26T02:58:23.85Z",
         "assignedTo": null,
@@ -1505,9 +1539,9 @@
         "title": "Algolia - Trazer informações de venda",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "06/10/2026",
         "createdDateRaw": "2026-10-06T12:51:02.587Z",
         "assignedTo": null,
@@ -1523,9 +1557,9 @@
         "title": "Slider de imagens do produto inconsistente",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "07/10/2026",
         "createdDateRaw": "2026-10-07T19:06:45.763Z",
         "assignedTo": null,
@@ -1540,9 +1574,9 @@
         "title": "Análise de Segurança: Alerta de Vazamento de Credenciais",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "08/10/2026",
         "createdDateRaw": "2026-10-08T13:12:59.363Z",
         "assignedTo": null,
@@ -1557,9 +1591,9 @@
         "title": "Algolia - Incluir campos relavantes de produto no index",
         "state": "New",
         "statusLabel": "À fazer",
-        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
-        "sprint": "Sprint 77",
-        "iterationTimeFrame": "current",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "sprint": "Sprint 79",
+        "iterationTimeFrame": "future",
         "createdDate": "08/10/2026",
         "createdDateRaw": "2026-10-08T18:11:20.427Z",
         "assignedTo": null,
@@ -1570,22 +1604,6 @@
       }
     ],
     "excludedBecauseProductBacklog": [
-      {
-        "id": 41484,
-        "title": "[PDP] Tire suas dúvidas",
-        "state": "Blocked",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
-      },
-      {
-        "id": 41483,
-        "title": "[PDP] Avaliações",
-        "state": "Blocked",
-        "iterationPath": "Salon Line - Squad OCC",
-        "sprint": "Backlog",
-        "reason": "Item na Sprint Backlog (iteração raiz do projeto). Fora da iteração atual e das futuras."
-      },
       {
         "id": 39624,
         "title": "Inclusão de novos campos no formulário da central de atendimento",
@@ -1906,7 +1924,59 @@
         "reason": "Em Validação (PRD). Já entregue, fora do slide de Backlog Atual."
       }
     ],
-    "order": "Data de abertura, da mais antiga para a mais recente."
+    "order": "Data de abertura, da mais antiga para a mais recente.",
+    "sprintMovesOn2026-10-08": [
+      {
+        "id": 38287,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 39839,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 40290,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 40638,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41680,
+        "from": "Sprint 77",
+        "to": "Sprint 78"
+      },
+      {
+        "id": 41683,
+        "from": "Sprint 77",
+        "to": "Sprint 78"
+      },
+      {
+        "id": 41870,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41913,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41928,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      },
+      {
+        "id": 41949,
+        "from": "Sprint 77",
+        "to": "Sprint 79"
+      }
+    ]
   },
   "otherOpenWorkItems": {
     "count": 72,
