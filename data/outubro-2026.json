@@ -1,0 +1,1181 @@
+{
+  "referenceMonth": "Outubro/2026",
+  "timezone": "America/Sao_Paulo (UTC-3, sem horário de verão)",
+  "asOf": "2026-11-06",
+  "period": {
+    "start": "2026-10-01T00:00:00-03:00",
+    "end": "2026-10-31T23:59:59-03:00"
+  },
+  "businessDays": 21,
+  "businessDayRule": {
+    "weekdays": 22,
+    "deducted": [
+      "2026-10-12 Nossa Senhora Aparecida (segunda-feira)"
+    ],
+    "notDeducted": [
+      "Nenhum feriado municipal de Porto Alegre em outubro",
+      "Ponto facultativo não confirmado pelo usuário"
+    ]
+  },
+  "deliveryRule": {
+    "types": [
+      "Bug",
+      "Melhoria"
+    ],
+    "enteredStates": [
+      "In Test Light",
+      "In Test Customer",
+      "Ready PRD",
+      "Validation PRD",
+      "Monitoring",
+      "Closed"
+    ],
+    "reference": "No mês, a data de entrada no último status dessa ordem. Se o card entrou mais de uma vez nesse status, vale a entrada mais recente.",
+    "userStoriesExcluded": [
+      {
+        "id": 41378,
+        "title": "[Suporte] Sprint 77"
+      },
+      {
+        "id": 41674,
+        "title": "[Algolia] Sprint 77"
+      },
+      {
+        "id": 41974,
+        "title": "[Algolia] Sprint 78"
+      }
+    ]
+  },
+  "availability": {
+    "monthPercent": null,
+    "targetPercent": 100,
+    "note": "A confirmar com o usuário. A meta permanece 100%."
+  },
+  "delivered": {
+    "count": 30,
+    "composition": {
+      "Bug": 3,
+      "Melhoria": 27
+    },
+    "upTo4BusinessDays": 24,
+    "byDeveloper": [
+      {
+        "name": "A confirmar",
+        "count": 12
+      },
+      {
+        "name": "Ewerton Bezerra",
+        "count": 12
+      },
+      {
+        "name": "Regis Ropke",
+        "count": 5
+      },
+      {
+        "name": "Lucas Figueiredo",
+        "count": 1
+      }
+    ],
+    "items": [
+      {
+        "id": 40929,
+        "type": "Melhoria",
+        "title": "Desenvolvimento do novo layout da Página de Produto",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-23T14:49:41.880000-03:00",
+        "developmentBusinessDays": 21,
+        "assigneeRaw": "Regis Ropke",
+        "assignee": "Regis Ropke",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-08-25T16:59:34.3Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41577,
+        "type": "Melhoria",
+        "title": "Envelopamento do Site — Black Friday",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-28T15:20:49.383000-03:00",
+        "developmentBusinessDays": 13,
+        "assigneeRaw": "Regis Ropke",
+        "assignee": "Regis Ropke",
+        "statesInMonth": [
+          "In Test Light",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-23T16:53:19.993Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Validation PRD"
+      },
+      {
+        "id": 41756,
+        "type": "Melhoria",
+        "title": "Algolia | Criar replicas de ordenação e filtros",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-28T10:22:23.600000-03:00",
+        "developmentBusinessDays": 11,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-10-01T12:17:31.067Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41479,
+        "type": "Melhoria",
+        "title": "[PDP] Hero da PDP",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-20T15:15:02.113000-03:00",
+        "developmentBusinessDays": 8,
+        "assigneeRaw": "Regis Ropke",
+        "assignee": "Regis Ropke",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-17T14:55:29.463Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 40639,
+        "type": "Melhoria",
+        "title": "Permitir vídeo ou GIF na PDP",
+        "refState": "Closed",
+        "refAt": "2026-10-09T10:43:18.403000-03:00",
+        "developmentBusinessDays": 6,
+        "assigneeRaw": "Regis Ropke",
+        "assignee": "Regis Ropke",
+        "statesInMonth": [
+          "Ready PRD",
+          "Validation PRD",
+          "Closed"
+        ],
+        "createdDate": "2026-08-12T13:33:13.36Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "currentState": "Closed"
+      },
+      {
+        "id": 41681,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia nas páginas de categoria",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-22T14:04:21.890000-03:00",
+        "developmentBusinessDays": 5,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-26T02:49:37.79Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 40912,
+        "type": "Bug",
+        "title": "Pedidos falhando na Integração - Erro \"VL_DESC_INC_UNIT nao poder ser menor que 0\"",
+        "refState": "Closed",
+        "refAt": "2026-10-07T11:02:16.767000-03:00",
+        "developmentBusinessDays": 4,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "Closed"
+        ],
+        "createdDate": "2026-08-24T19:07:58.377Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "currentState": "Closed"
+      },
+      {
+        "id": 41513,
+        "type": "Melhoria",
+        "title": "Algolia | Spike Técnico: Viabilidade de Instalação (widgets/showcase/js)",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-08T15:49:28.337000-03:00",
+        "developmentBusinessDays": 4,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-18T18:59:18.69Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41683,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia em Collections",
+        "refState": "In Test Customer",
+        "refAt": "2026-10-30T08:06:13.150000-03:00",
+        "developmentBusinessDays": 4,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer"
+        ],
+        "createdDate": "2026-09-26T02:58:23.85Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41820,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "refState": "In Test Customer",
+        "refAt": "2026-10-28T10:22:14.223000-03:00",
+        "developmentBusinessDays": 4,
+        "assigneeRaw": "lucas.figueiredo veredatech.com.br",
+        "assignee": "Lucas Figueiredo",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer"
+        ],
+        "createdDate": "2026-10-02T20:45:09.937Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41515,
+        "type": "Melhoria",
+        "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-08T09:39:27.520000-03:00",
+        "developmentBusinessDays": 3,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-18T19:52:14.257Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41516,
+        "type": "Melhoria",
+        "title": "Algolia | Eventos & Analitycs",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-22T13:59:45.257000-03:00",
+        "developmentBusinessDays": 3,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-18T20:07:31.137Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41509,
+        "type": "Melhoria",
+        "title": "Integração Server to Server Rakuten",
+        "refState": "In Test Customer",
+        "refAt": "2026-10-27T10:00:42.323000-03:00",
+        "developmentBusinessDays": 2,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer"
+        ],
+        "createdDate": "2026-09-18T15:48:34.283Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "In Test Customer"
+      },
+      {
+        "id": 41978,
+        "type": "Melhoria",
+        "title": "Algolia | Atributos dos produtos",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-21T14:41:05.070000-03:00",
+        "developmentBusinessDays": 2,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-10-09T12:29:45.787Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 42092,
+        "type": "Melhoria",
+        "title": "Algolia - Fazer com que o menu lateral seja dinamico",
+        "refState": "In Test Customer",
+        "refAt": "2026-10-30T08:06:15.420000-03:00",
+        "developmentBusinessDays": 2,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer"
+        ],
+        "createdDate": "2026-10-16T18:06:29.167Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41480,
+        "type": "Melhoria",
+        "title": "[PDP] Trust Bar",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-21T10:58:42.553000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-17T15:10:06.063Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41481,
+        "type": "Melhoria",
+        "title": "[PDP] Informações do Produto",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-21T10:54:21.580000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-17T15:11:41.233Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41482,
+        "type": "Melhoria",
+        "title": "[PDP] Ritual em {x} passos",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-26T13:42:46.660000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-17T15:14:25Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41485,
+        "type": "Melhoria",
+        "title": "[PDP] Monte sua Rotina",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-28T10:40:48.383000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-17T15:20:04.45Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41676,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar userToken nos eventos",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-19T15:01:26.850000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-26T01:59:53.97Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41677,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Recent Searches",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-08T09:59:01.667000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-26T02:14:43.083Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41680,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Federated Search",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-22T14:00:32.903000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-09-26T02:38:18.69Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41682,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar AnalyticsTags",
+        "refState": "In Test Customer",
+        "refAt": "2026-10-30T08:06:11.547000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": "Ewerton Bezerra",
+        "assignee": "Ewerton Bezerra",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer"
+        ],
+        "createdDate": "2026-09-26T02:55:07.147Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41726,
+        "type": "Melhoria",
+        "title": "[Projeto CDP] Abandono Checkout",
+        "refState": "Closed",
+        "refAt": "2026-10-07T15:06:39.077000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": "Regis Ropke",
+        "assignee": "Regis Ropke",
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD",
+          "Validation PRD",
+          "Closed"
+        ],
+        "createdDate": "2026-09-29T18:53:58.03Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "currentState": "Closed"
+      },
+      {
+        "id": 41755,
+        "type": "Bug",
+        "title": "Preço zerado em produtos após retorno null no endpoint listProducts",
+        "refState": "Monitoring",
+        "refAt": "2026-10-06T15:14:36.177000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "Validation PRD",
+          "Monitoring"
+        ],
+        "createdDate": "2026-09-30T22:37:37.71Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "currentState": "Closed"
+      },
+      {
+        "id": 41786,
+        "type": "Melhoria",
+        "title": "Algolia | Adaptar FrontEnd da busca",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-19T15:10:31.473000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-10-01T20:08:20.603Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 42106,
+        "type": "Melhoria",
+        "title": "Algolia - Corrigir exibição das imagens no dashboard",
+        "refState": "Ready PRD",
+        "refAt": "2026-10-21T16:52:38.223000-03:00",
+        "developmentBusinessDays": 1,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Ready PRD"
+        ],
+        "createdDate": "2026-10-16T21:55:21.897Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 79",
+        "currentState": "Ready PRD"
+      },
+      {
+        "id": 41853,
+        "type": "Melhoria",
+        "title": "Adicinar a marca Trata no menu",
+        "refState": "Closed",
+        "refAt": "2026-10-09T10:41:40.763000-03:00",
+        "developmentBusinessDays": 0,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "Validation PRD",
+          "Closed"
+        ],
+        "createdDate": "2026-10-05T17:47:23.147Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 77",
+        "currentState": "Closed"
+      },
+      {
+        "id": 42043,
+        "type": "Melhoria",
+        "title": "Avaliação do Formulário da LP de Black Friday",
+        "refState": "Closed",
+        "refAt": "2026-10-22T15:09:36.803000-03:00",
+        "developmentBusinessDays": 0,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Light",
+          "In Test Customer",
+          "Validation PRD",
+          "Closed"
+        ],
+        "createdDate": "2026-10-14T13:25:51.733Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "currentState": "Closed"
+      },
+      {
+        "id": 42071,
+        "type": "Bug",
+        "title": "Solicitação de revisão de regras de firewall/WAF",
+        "refState": "Closed",
+        "refAt": "2026-10-22T15:14:26.247000-03:00",
+        "developmentBusinessDays": 0,
+        "assigneeRaw": null,
+        "assignee": null,
+        "statesInMonth": [
+          "In Test Light",
+          "Closed"
+        ],
+        "createdDate": "2026-10-15T19:16:31.32Z",
+        "iterationPath": "Salon Line - Squad OCC\\Sprint 78",
+        "currentState": "Closed"
+      }
+    ]
+  },
+  "historySameRule": {
+    "2026-07": {
+      "count": 22,
+      "bug": 15,
+      "melhoria": 7
+    },
+    "2026-08": {
+      "count": 25,
+      "bug": 11,
+      "melhoria": 14
+    },
+    "2026-09": {
+      "count": 19,
+      "bug": 5,
+      "melhoria": 14
+    },
+    "2026-10": {
+      "count": 30,
+      "bug": 3,
+      "melhoria": 27
+    }
+  },
+  "historyNote": "Julho, agosto e setembro deste gráfico usam a regra nova, não o Closed Date do deck de setembro (11, 18 e 9).",
+  "internallyDetected": {
+    "count": 8,
+    "items": [
+      {
+        "id": 41756,
+        "type": "Melhoria",
+        "title": "Algolia | Criar replicas de ordenação e filtros",
+        "createdBy": "Ewerton Bezerra",
+        "createdDate": "2026-10-01T09:17:31.067000-03:00"
+      },
+      {
+        "id": 41820,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "createdBy": "Fábio Vidart",
+        "createdDate": "2026-10-02T17:45:09.937000-03:00"
+      },
+      {
+        "id": 41853,
+        "type": "Melhoria",
+        "title": "Adicinar a marca Trata no menu",
+        "createdBy": "Fábio Vidart",
+        "createdDate": "2026-10-05T14:47:23.147000-03:00"
+      },
+      {
+        "id": 41870,
+        "type": "Melhoria",
+        "title": "Algolia - Trazer informações de venda",
+        "createdBy": "Fábio Vidart",
+        "createdDate": "2026-10-06T09:51:02.587000-03:00"
+      },
+      {
+        "id": 41913,
+        "type": "Bug",
+        "title": "Slider de imagens do produto inconsistente",
+        "createdBy": "Julio Lima",
+        "createdDate": "2026-10-07T16:06:45.763000-03:00"
+      },
+      {
+        "id": 42071,
+        "type": "Bug",
+        "title": "Solicitação de revisão de regras de firewall/WAF",
+        "createdBy": "Ewerton Bezerra",
+        "createdDate": "2026-10-15T16:16:31.320000-03:00"
+      },
+      {
+        "id": 42092,
+        "type": "Melhoria",
+        "title": "Algolia - Fazer com que o menu lateral seja dinamico",
+        "createdBy": "Ewerton Bezerra",
+        "createdDate": "2026-10-16T15:06:29.167000-03:00"
+      },
+      {
+        "id": 42106,
+        "type": "Melhoria",
+        "title": "Algolia - Corrigir exibição das imagens no dashboard",
+        "createdBy": "Ewerton Bezerra",
+        "createdDate": "2026-10-16T18:55:21.897000-03:00"
+      }
+    ]
+  },
+  "backlog": {
+    "count": 46,
+    "sprints": [
+      "Sprint 79",
+      "Sprint 80",
+      "Sprint 81",
+      "Sprint 82"
+    ],
+    "current": "Sprint 79",
+    "excludedStates": [
+      "Monitoring",
+      "Validation PRD",
+      "Closed",
+      "Removed"
+    ],
+    "items": [
+      {
+        "id": 38287,
+        "type": "Bug",
+        "title": "PLP Outlet repete produtos ao utilizar “Ver mais produtos”",
+        "state": "New",
+        "sprint": "Sprint 80",
+        "createdDate": "13/05/2026",
+        "createdSort": "2026-05-13T16:45:07.780000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 39839,
+        "type": "Bug",
+        "title": "Quantidade incorreta de itens sendo adicionados via Streamshop",
+        "state": "New",
+        "sprint": "Sprint 81",
+        "createdDate": "16/07/2026",
+        "createdSort": "2026-07-16T15:16:47.893000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 40290,
+        "type": "Bug",
+        "title": "[PDP] Cards de produtos relacionados duplicam o símbolo de moeda no parcelamento  Descrição",
+        "state": "New",
+        "sprint": "Sprint 81",
+        "createdDate": "30/07/2026",
+        "createdSort": "2026-07-30T14:04:58.273000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 40638,
+        "type": "Bug",
+        "title": "Exibir itens de lançamento nas sugestões do Cronograma Capilar (Quiz)",
+        "state": "New",
+        "sprint": "Sprint 80",
+        "createdDate": "12/08/2026",
+        "createdSort": "2026-08-12T10:30:25.413000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 40929,
+        "type": "Melhoria",
+        "title": "Desenvolvimento do novo layout da Página de Produto",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "25/08/2026",
+        "createdSort": "2026-08-25T13:59:34.300000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41479,
+        "type": "Melhoria",
+        "title": "[PDP] Hero da PDP",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T11:55:29.463000-03:00",
+        "assignedTo": "daniela.damasceno salonline.com.br"
+      },
+      {
+        "id": 41480,
+        "type": "Melhoria",
+        "title": "[PDP] Trust Bar",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T12:10:06.063000-03:00",
+        "assignedTo": "daniela.damasceno salonline.com.br"
+      },
+      {
+        "id": 41481,
+        "type": "Melhoria",
+        "title": "[PDP] Informações do Produto",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T12:11:41.233000-03:00",
+        "assignedTo": "Regis Ropke"
+      },
+      {
+        "id": 41482,
+        "type": "Melhoria",
+        "title": "[PDP] Ritual em {x} passos",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T12:14:25-03:00",
+        "assignedTo": "daniela.damasceno salonline.com.br"
+      },
+      {
+        "id": 41483,
+        "type": "Melhoria",
+        "title": "[PDP] Avaliações",
+        "state": "New",
+        "sprint": "Sprint 82",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T12:15:51.370000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41484,
+        "type": "Melhoria",
+        "title": "[PDP] Tire suas dúvidas",
+        "state": "New",
+        "sprint": "Sprint 82",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T12:18:41.037000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41485,
+        "type": "Melhoria",
+        "title": "[PDP] Monte sua Rotina",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T12:20:04.450000-03:00",
+        "assignedTo": "daniela.damasceno salonline.com.br"
+      },
+      {
+        "id": 41486,
+        "type": "Melhoria",
+        "title": "Alinhamento de Expectativa de Tráfego e Capacidade para a Black Friday 2026",
+        "state": "Blocked",
+        "sprint": "Sprint 79",
+        "createdDate": "17/09/2026",
+        "createdSort": "2026-09-17T14:27:20.003000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41509,
+        "type": "Melhoria",
+        "title": "Integração Server to Server Rakuten",
+        "state": "In Test Customer",
+        "sprint": "Sprint 79",
+        "createdDate": "18/09/2026",
+        "createdSort": "2026-09-18T12:48:34.283000-03:00",
+        "assignedTo": "lucas.figueiredo veredatech.com.br"
+      },
+      {
+        "id": 41513,
+        "type": "Melhoria",
+        "title": "Algolia | Spike Técnico: Viabilidade de Instalação (widgets/showcase/js)",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "18/09/2026",
+        "createdSort": "2026-09-18T15:59:18.690000-03:00",
+        "assignedTo": "luana.santos salonline.com.br"
+      },
+      {
+        "id": 41515,
+        "type": "Melhoria",
+        "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "18/09/2026",
+        "createdSort": "2026-09-18T16:52:14.257000-03:00",
+        "assignedTo": "luana.santos salonline.com.br"
+      },
+      {
+        "id": 41516,
+        "type": "Melhoria",
+        "title": "Algolia | Eventos & Analitycs",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "18/09/2026",
+        "createdSort": "2026-09-18T17:07:31.137000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41676,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar userToken nos eventos",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "25/09/2026",
+        "createdSort": "2026-09-25T22:59:53.970000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41677,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Recent Searches",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "25/09/2026",
+        "createdSort": "2026-09-25T23:14:43.083000-03:00",
+        "assignedTo": "luana.santos salonline.com.br"
+      },
+      {
+        "id": 41680,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar Federated Search",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "25/09/2026",
+        "createdSort": "2026-09-25T23:38:18.690000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41681,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia nas páginas de categoria",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "25/09/2026",
+        "createdSort": "2026-09-25T23:49:37.790000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41682,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar AnalyticsTags",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "25/09/2026",
+        "createdSort": "2026-09-25T23:55:07.147000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41683,
+        "type": "Melhoria",
+        "title": "Algolia | Adicionar a Algolia em Collections",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "25/09/2026",
+        "createdSort": "2026-09-25T23:58:23.850000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41756,
+        "type": "Melhoria",
+        "title": "Algolia | Criar replicas de ordenação e filtros",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "01/10/2026",
+        "createdSort": "2026-10-01T09:17:31.067000-03:00",
+        "assignedTo": "lucas.figueiredo veredatech.com.br"
+      },
+      {
+        "id": 41786,
+        "type": "Melhoria",
+        "title": "Algolia | Adaptar FrontEnd da busca",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "01/10/2026",
+        "createdSort": "2026-10-01T17:08:20.603000-03:00",
+        "assignedTo": "lucas.figueiredo veredatech.com.br"
+      },
+      {
+        "id": 41820,
+        "type": "Melhoria",
+        "title": "Algolia | Implementar atualizações incrementais do catálogo",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "02/10/2026",
+        "createdSort": "2026-10-02T17:45:09.937000-03:00",
+        "assignedTo": "lucas.figueiredo veredatech.com.br"
+      },
+      {
+        "id": 41870,
+        "type": "Melhoria",
+        "title": "Algolia - Trazer informações de venda",
+        "state": "Blocked",
+        "sprint": "Sprint 79",
+        "createdDate": "06/10/2026",
+        "createdSort": "2026-10-06T09:51:02.587000-03:00",
+        "assignedTo": "lucas.figueiredo veredatech.com.br"
+      },
+      {
+        "id": 41913,
+        "type": "Bug",
+        "title": "Slider de imagens do produto inconsistente",
+        "state": "New",
+        "sprint": "Sprint 80",
+        "createdDate": "07/10/2026",
+        "createdSort": "2026-10-07T16:06:45.763000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41928,
+        "type": "Melhoria",
+        "title": "Análise de Segurança: Alerta de Vazamento de Credenciais",
+        "state": "New",
+        "sprint": "Sprint 82",
+        "createdDate": "08/10/2026",
+        "createdSort": "2026-10-08T10:12:59.363000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 41978,
+        "type": "Melhoria",
+        "title": "Algolia | Atributos dos produtos",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "09/10/2026",
+        "createdSort": "2026-10-09T09:29:45.787000-03:00",
+        "assignedTo": "lucas.figueiredo veredatech.com.br"
+      },
+      {
+        "id": 42092,
+        "type": "Melhoria",
+        "title": "Algolia - Fazer com que o menu lateral seja dinamico",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "16/10/2026",
+        "createdSort": "2026-10-16T15:06:29.167000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42106,
+        "type": "Melhoria",
+        "title": "Algolia - Corrigir exibição das imagens no dashboard",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "16/10/2026",
+        "createdSort": "2026-10-16T18:55:21.897000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42228,
+        "type": "Melhoria",
+        "title": "Desenvolvimento da LP de Black Friday — Salon Friday",
+        "state": "Ready PRD",
+        "sprint": "Sprint 79",
+        "createdDate": "23/10/2026",
+        "createdSort": "2026-10-23T14:59:38.513000-03:00",
+        "assignedTo": "daniela.damasceno salonline.com.br"
+      },
+      {
+        "id": 42396,
+        "type": "Melhoria",
+        "title": "Ativar melhoria automática de imagens (image AIU enabled) - Merchant Center",
+        "state": "New",
+        "sprint": "Sprint 81",
+        "createdDate": "28/10/2026",
+        "createdSort": "2026-10-28T17:50:55.400000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42397,
+        "type": "Melhoria",
+        "title": "Configurar atributos de envio dos produtos - Merchant Center",
+        "state": "New",
+        "sprint": "Sprint 81",
+        "createdDate": "28/10/2026",
+        "createdSort": "2026-10-28T17:57:57.607000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42398,
+        "type": "Melhoria",
+        "title": "Configurar velocidade e prazo de entrega - Merchant Center",
+        "state": "New",
+        "sprint": "Sprint 81",
+        "createdDate": "28/10/2026",
+        "createdSort": "2026-10-28T18:18:49.787000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42543,
+        "type": "Melhoria",
+        "title": "Abrir SR na Oracle: liberar robôs e agentes de IA no Akamai Bot Manager da loja e ajustar lastmod do sitemap",
+        "state": "Blocked",
+        "sprint": "Sprint 79",
+        "createdDate": "29/10/2026",
+        "createdSort": "2026-10-29T14:52:56.027000-03:00",
+        "assignedTo": "Ewerton Bezerra"
+      },
+      {
+        "id": 42555,
+        "type": "Melhoria",
+        "title": "Ajustes no Envelopamento de black",
+        "state": "In Test Customer",
+        "sprint": "Sprint 79",
+        "createdDate": "30/10/2026",
+        "createdSort": "2026-10-30T10:28:09.993000-03:00",
+        "assignedTo": "daniela.damasceno salonline.com.br"
+      },
+      {
+        "id": 42556,
+        "type": "Melhoria",
+        "title": "Detalhar a categoria dos produtos (product_type depth) - Merchant Center",
+        "state": "New",
+        "sprint": "Sprint 81",
+        "createdDate": "30/10/2026",
+        "createdSort": "2026-10-30T10:58:59.697000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42557,
+        "type": "Melhoria",
+        "title": "Inserir atributos de destaque dos produtos",
+        "state": "New",
+        "sprint": "Sprint 81",
+        "createdDate": "30/10/2026",
+        "createdSort": "2026-10-30T11:00:24.487000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42566,
+        "type": "Melhoria",
+        "title": "Implementar informações de promoção",
+        "state": "In Test Light",
+        "sprint": "Sprint 79",
+        "createdDate": "03/11/2026",
+        "createdSort": "2026-11-03T09:34:03.197000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42616,
+        "type": "Melhoria",
+        "title": "Ajustes no painel para campos de SEO e formatação da descrição do produto",
+        "state": "Active",
+        "sprint": "Sprint 80",
+        "createdDate": "04/11/2026",
+        "createdSort": "2026-11-04T12:29:00.600000-03:00",
+        "assignedTo": "Regis Ropke"
+      },
+      {
+        "id": 42717,
+        "type": "Bug",
+        "title": "Algolia - Correção da exibição de preços promocionais",
+        "state": "In Test Light",
+        "sprint": "Sprint 79",
+        "createdDate": "05/11/2026",
+        "createdSort": "2026-11-05T14:56:49.817000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42718,
+        "type": "Melhoria",
+        "title": "Ajustar fundo da imagem da PDP no envelopamento desktop",
+        "state": "In Test Light",
+        "sprint": "Sprint 79",
+        "createdDate": "05/11/2026",
+        "createdSort": "2026-11-05T15:05:02.767000-03:00",
+        "assignedTo": "Julio Lima"
+      },
+      {
+        "id": 42758,
+        "type": "Melhoria",
+        "title": "[GEO] Feed xml",
+        "state": "New",
+        "sprint": "Sprint 80",
+        "createdDate": "06/11/2026",
+        "createdSort": "2026-11-06T15:21:47.700000-03:00",
+        "assignedTo": null
+      },
+      {
+        "id": 42759,
+        "type": "Melhoria",
+        "title": "[GEO] Sitemap.xml",
+        "state": "New",
+        "sprint": "Sprint 80",
+        "createdDate": "06/11/2026",
+        "createdSort": "2026-11-06T15:21:56.260000-03:00",
+        "assignedTo": null
+      }
+    ]
+  },
+  "deploys": null,
+  "srs": null,
+  "pendingQuestions": [
+    "Houve indisponibilidade do e-commerce em outubro?",
+    "Deploys do mês: data, itens e se a validação pós-deploy fechou verde.",
+    "SRs Oracle abertas nas duas abas do portal.",
+    "Para cada bloqueado (41486, 41870, 42543): com quem está e por quê?",
+    "Quem recebe as entregas que não tiveram responsável durante o Active?"
+  ]
+}
