@@ -814,11 +814,44 @@
       }
     ]
   },
-  "srs": null,
+  "srs": {
+    "open": 3,
+    "queues": {
+      "oracle": 2,
+      "salonLine": 0,
+      "lighthouse": 0
+    },
+    "note": "A 4-0003585464 está com encerramento solicitado e não entra nas três filas. As datas de abertura não foram informadas nesta atualização.",
+    "items": [
+      {
+        "number": "4-0004059016",
+        "subject": "Solicitação para Revisão das Regras de Firewall/WAF que bloqueiam bots de IA e rastreadores web",
+        "opened": null,
+        "lastUpdate": "04/11/2026",
+        "queue": "Oracle",
+        "status": "Em análise pela equipe Oracle."
+      },
+      {
+        "number": "4-0003585464",
+        "subject": "Inconsistências recorrentes nos dados de relatórios e atualizações atrasadas de relatórios",
+        "opened": null,
+        "lastUpdate": "06/11/2026",
+        "queue": null,
+        "status": "Solucionado do lado da Digibee. Solicitado o encerramento."
+      },
+      {
+        "number": "4-0003839520",
+        "subject": "Black Friday 2026 - Avaliação Preventiva da Prontidão e Capacidade Ambiental do OCC",
+        "opened": null,
+        "lastUpdate": "19/10/2026",
+        "queue": "Oracle",
+        "status": "Em análise pela equipe Oracle."
+      }
+    ]
+  },
   "pendingQuestions": [
     "Houve indisponibilidade do e-commerce em outubro?",
     "Deploys do mês: data, itens e se a validação pós-deploy fechou verde.",
-    "SRs Oracle abertas nas duas abas do portal.",
     "Para cada bloqueado (41486, 41870, 42543): com quem está e por quê?",
     "Quem recebe as entregas que não tiveram responsável durante o Active?"
   ]
