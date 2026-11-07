@@ -52,20 +52,20 @@
     "unavailabilityEvents": []
   },
   "delivered": {
-    "count": 17,
+    "count": 29,
     "composition": {
-      "Bug": 1,
-      "Melhoria": 16
+      "Bug": 3,
+      "Melhoria": 26
     },
-    "upTo4BusinessDays": 11,
+    "upTo4BusinessDays": 23,
     "byDeveloper": [
       {
         "name": "Ewerton Bezerra",
-        "count": 12
+        "count": 17
       },
       {
         "name": "Regis Ropke",
-        "count": 5
+        "count": 12
       }
     ],
     "items": [
@@ -381,70 +381,132 @@
       {
         "id": 41515,
         "title": "Algolia | Indexação / Backend (Integração de Catálogo)",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Ewerton Bezerra"
       },
       {
         "id": 41480,
         "title": "[PDP] Trust Bar",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Regis Ropke"
       },
       {
         "id": 41481,
         "title": "[PDP] Informações do Produto",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Regis Ropke"
       },
       {
         "id": 41482,
         "title": "[PDP] Ritual em {x} passos",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Regis Ropke"
       },
       {
         "id": 41485,
         "title": "[PDP] Monte sua Rotina",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Regis Ropke"
       },
       {
         "id": 41677,
         "title": "Algolia | Implementar Recent Searches",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Ewerton Bezerra"
       },
       {
         "id": 41755,
         "title": "Preço zerado em produtos após retorno null no endpoint listProducts",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Ewerton Bezerra"
       },
       {
         "id": 41786,
         "title": "Algolia | Adaptar FrontEnd da busca",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Ewerton Bezerra"
       },
       {
         "id": 42106,
         "title": "Algolia - Corrigir exibição das imagens no dashboard",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Ewerton Bezerra"
       },
       {
         "id": 41853,
         "title": "Adicinar a marca Trata no menu",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Regis Ropke"
       },
       {
         "id": 42043,
         "title": "Avaliação do Formulário da LP de Black Friday",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Regis Ropke"
       },
       {
         "id": 42071,
         "title": "Solicitação de revisão de regras de firewall/WAF",
-        "assignee": null
+        "assignee": null,
+        "assigneeConfirmedByUser": "Regis Ropke"
+      }
+    ],
+    "assigneeConfirmations": [
+      {
+        "id": 41755,
+        "assignee": "Ewerton Bezerra"
+      },
+      {
+        "id": 41515,
+        "assignee": "Ewerton Bezerra"
+      },
+      {
+        "id": 41677,
+        "assignee": "Ewerton Bezerra"
+      },
+      {
+        "id": 41853,
+        "assignee": "Regis Ropke"
+      },
+      {
+        "id": 41786,
+        "assignee": "Ewerton Bezerra"
+      },
+      {
+        "id": 41481,
+        "assignee": "Regis Ropke"
+      },
+      {
+        "id": 41480,
+        "assignee": "Regis Ropke"
+      },
+      {
+        "id": 42106,
+        "assignee": "Ewerton Bezerra"
+      },
+      {
+        "id": 42043,
+        "assignee": "Regis Ropke"
+      },
+      {
+        "id": 42071,
+        "assignee": "Regis Ropke"
+      },
+      {
+        "id": 41482,
+        "assignee": "Regis Ropke"
+      },
+      {
+        "id": 41485,
+        "assignee": "Regis Ropke"
       }
     ]
   },
   "historySameRule": {
     "2026-08": 22,
     "2026-09": 13,
-    "2026-10": 17,
-    "note": "Mesma regra de status e somente os quatro responsáveis do squad."
+    "2026-10": 29,
+    "note": "Outubro inclui os 12 cards cujo responsável no Active foi informado pelo usuário em 06/11/2026. Lucas Figueiredo (41820) permanece fora do indicador do squad."
   },
   "historyNote": "Julho, agosto e setembro deste gráfico usam a regra nova, não o Closed Date do deck de setembro (11, 18 e 9).",
   "internallyDetected": {
