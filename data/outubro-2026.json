@@ -508,7 +508,7 @@
     "2026-10": 29,
     "note": "Outubro inclui os 12 cards cujo responsável no Active foi informado pelo usuário em 06/11/2026. Lucas Figueiredo (41820) permanece fora do indicador do squad."
   },
-  "historyNote": "O gráfico de outubro mostra agosto 18 e setembro 9, os números da apresentação de setembro, e outubro 29. A recontagem pela regra nova (22 e 13) fica só no JSON.",
+  "historyNote": "O gráfico mostra julho 11, agosto 18, setembro 9 e outubro 29. Julho a setembro repetem a apresentação anterior. A recontagem pela regra nova não entra no gráfico.",
   "internallyDetected": {
     "count": 8,
     "items": [
@@ -856,9 +856,10 @@
     "Quem recebe as entregas que não tiveram responsável durante o Active?"
   ],
   "historyChart": {
+    "2026-07": 11,
     "2026-08": 18,
     "2026-09": 9,
     "2026-10": 29,
-    "source": "Agosto e setembro repetem o que foi apresentado no deck de setembro (18 e 9). Outubro é 29. A recontagem pela regra nova daria 22 em agosto e 13 em setembro e não entra no gráfico."
+    "source": "Julho 11, agosto 18 e setembro 9 são os números apresentados no deck de setembro. Outubro é 29."
   }
 }
