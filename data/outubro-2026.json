@@ -508,7 +508,7 @@
     "2026-10": 29,
     "note": "Outubro inclui os 12 cards cujo responsável no Active foi informado pelo usuário em 06/11/2026. Lucas Figueiredo (41820) permanece fora do indicador do squad."
   },
-  "historyNote": "Julho, agosto e setembro deste gráfico usam a regra nova, não o Closed Date do deck de setembro (11, 18 e 9).",
+  "historyNote": "O gráfico de outubro mostra agosto 18 e setembro 9, os números da apresentação de setembro, e outubro 29. A recontagem pela regra nova (22 e 13) fica só no JSON.",
   "internallyDetected": {
     "count": 8,
     "items": [
@@ -854,5 +854,11 @@
     "Deploys do mês: data, itens e se a validação pós-deploy fechou verde.",
     "Para cada bloqueado (41486, 41870, 42543): com quem está e por quê?",
     "Quem recebe as entregas que não tiveram responsável durante o Active?"
-  ]
+  ],
+  "historyChart": {
+    "2026-08": 18,
+    "2026-09": 9,
+    "2026-10": 29,
+    "source": "Agosto e setembro repetem o que foi apresentado no deck de setembro (18 e 9). Outubro é 29. A recontagem pela regra nova daria 22 em agosto e 13 em setembro e não entra no gráfico."
+  }
 }
